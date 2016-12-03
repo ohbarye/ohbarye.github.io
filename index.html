@@ -7,64 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico" />
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <style>
-        body {
-            font-family: 'Lato', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;
-        }
-        #wrapper {
-            position: absolute;
-            background-color: rgba(256,256,256,0.8);
-            text-align: center;
-            top: 20%;
-            left: 50%;
-            width: 320px;
-            margin-left: -160px;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
-        h1 {
-            font-family: 'Lato', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;
-            letter-spacing: 9px;
-        }
-        h2 {
-            color: #777;
-            font-weight: normal;
-            font-size: 15px;
-            letter-spacing: .12em;
-            margin-bottom: 30px;
-        }
-        h1, h2 {
-            position: relative;
-        }
-        p {
-            font-size: 14px;
-            line-height: 2em;
-            margin: 0;
-            letter-spacing: 2px;
-        }
-        canvas {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-        }
-        a {
-            color: #999;
-            text-decoration: none;
-            transition: color .2s ease;
-        }
-        a:hover {
-            color: #0080FF;
-        }
-    </style>
+    <link href='./me.css' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="./me.js"></script>
   </head>
-  <body onload="init();">
-    <canvas id="my_canvas" width="2880" height="1552"></canvas>
-    <div id="wrapper">
+  <body>
+    <div id="canvas-wrapper">
+      <canvas id="my-canvas"></canvas>
+    </div>
+    <div id="content-wrapper">
       <h1>Masato Ohba</h1>
       <h2>Tokyo based software engineer.</h2>
       <p><a href="https://github.com/ohbarye" target="_blank">GitHub</a></p>
@@ -72,70 +22,6 @@
       <p><a href="https://twitter.com/ohbarye" target="_blank">Twitter</a></p>
       <p><a href="https://www.linkedin.com/in/masato-ohba-6a90b497" target="_blank">LikedIn</a></p>
     </div>
-    <script type="text/javascript">
-      var speedX,  speedY, color, ctx, canvas;
-      var locX = getRandomInt(0, 1000);
-      var locY = getRandomInt(0, 1000);
-      var colors =  ['#3399FF', '#0168b3', '#fc7753', '#88b83e', '#df928e', '#6bb6bb', '#f2cf01', '#7a8bc3'];
-
-      window.onclick = changeSpeedAndColor;
-
-      function init() {
-        canvas = document.getElementById('my_canvas');
-        if (canvas.getContext){
-          changeSpeedAndColor();
-   
-          ctx = canvas.getContext('2d');
-          setInterval(draw, 25);
-          setInterval(changeSpeedAndColor, 2000);
-        }
-      }
-   
-      function draw() {
-        ctx.globalCompositeOperation = "source-over";
-        ctx.fillStyle = "rgba(8,8,12,.2)";
-        ctx.globalCompositeOperation = "lighter";
-     
-        locX += speedX;
-        locY += speedY;
-        
-        if (locX < 0 || locX > canvas.width){
-          speedX *= -1;
-        }
-     
-        if (locY < 0 || locY > canvas.height){
-          speedY *= -1;
-        }
-        
-        ctx.beginPath();
-        ctx.fillStyle = color;
-        ctx.arc(locX, locY, 10, 0, Math.PI*2.0, true);
-        ctx.fill();
-      }
-
-      function changeSpeedAndColor() {
-        changeSpeed();
-        changeColor();
-      }
-
-      function changeSpeed() {
-        speedX = randomSpeed();
-        speedY = randomSpeed();
-      }
-
-      function changeColor() {
-        color = colors[getRandomInt(0, colors.length-1)];
-      }
-
-      function randomSpeed() {
-        var sign = [1, -1];
-        return getRandomInt(5, 30) * sign[getRandomInt(0, 1)];
-      }
-
-      function getRandomInt(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-      }
-    </script>
   </body>
 </html>
 
