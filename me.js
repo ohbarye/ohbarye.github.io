@@ -1,7 +1,7 @@
 window.onload = function onLoad() {
     var speedX, speedY, color, context, canvas;
-    var positionX = getRandomInt(0, 1000);
-    var positionY = getRandomInt(0, 1000);
+    var positionX = getRandomInt(10, 200);
+    var positionY = getRandomInt(10, 50);
     var colors = ['#3399FF', '#0168b3', '#fc7753', '#88b83e', '#df928e', '#6bb6bb', '#f2cf01', '#7a8bc3'];
     var sign = [1, -1];
 
@@ -15,6 +15,9 @@ window.onload = function onLoad() {
             wrapper = document.getElementById('canvas-wrapper');
             canvas.setAttribute('width', wrapper.offsetWidth);
             canvas.setAttribute('height', wrapper.offsetHeight);
+
+            positionX = getRandomInt(10, wrapper.offsetWidth - 20);
+            positionY = getRandomInt(10, wrapper.offsetHeight - 20);
 
             changeSpeedAndColor();
 
