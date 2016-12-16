@@ -1,19 +1,19 @@
-/* line 3, ../sass/me.scss */
+/* line 22, ../sass/me.scss */
 html {
   height: 100%;
 }
-/* line 6, ../sass/me.scss */
+/* line 25, ../sass/me.scss */
 html body {
   font-family: 'Lato', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;
   height: 100%;
   margin: 0;
 }
-/* line 11, ../sass/me.scss */
+/* line 30, ../sass/me.scss */
 html body #canvas-wrapper {
   width: 100%;
   height: 100%;
 }
-/* line 15, ../sass/me.scss */
+/* line 34, ../sass/me.scss */
 html body #canvas-wrapper canvas {
   position: absolute;
   top: 0;
@@ -23,10 +23,14 @@ html body #canvas-wrapper canvas {
   height: 100%;
   pointer-events: none;
 }
-/* line 26, ../sass/me.scss */
+/* line 45, ../sass/me.scss */
 html body #content-wrapper {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
   position: absolute;
   background-color: rgba(255, 255, 255, 0.9);
+  text-shadow: -1px 1px 0 white;
   text-align: center;
   top: 20%;
   left: 50%;
@@ -35,12 +39,12 @@ html body #content-wrapper {
   user-select: none;
   padding-bottom: 16px;
 }
-/* line 37, ../sass/me.scss */
+/* line 58, ../sass/me.scss */
 html body #content-wrapper h1 {
   font-family: 'Lato', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;
-  letter-spacing: 9px;
+  letter-spacing: 8px;
 }
-/* line 42, ../sass/me.scss */
+/* line 63, ../sass/me.scss */
 html body #content-wrapper h2 {
   color: #777;
   font-weight: normal;
@@ -48,24 +52,24 @@ html body #content-wrapper h2 {
   letter-spacing: .12em;
   margin-bottom: 30px;
 }
-/* line 50, ../sass/me.scss */
+/* line 71, ../sass/me.scss */
 html body #content-wrapper h1, html body #content-wrapper h2 {
   position: relative;
 }
-/* line 54, ../sass/me.scss */
+/* line 75, ../sass/me.scss */
 html body #content-wrapper p {
   font-size: 14px;
   line-height: 2em;
   margin: 0;
   letter-spacing: 2px;
 }
-/* line 60, ../sass/me.scss */
+/* line 81, ../sass/me.scss */
 html body #content-wrapper p a {
   color: #999;
   text-decoration: none;
   transition: color .2s ease;
 }
-/* line 65, ../sass/me.scss */
+/* line 86, ../sass/me.scss */
 html body #content-wrapper p a:hover {
   color: #0080FF;
 }
