@@ -1,15 +1,24 @@
 window.onload = function onLoad() {
+    var speedX, speedY, color, context, canvas;
+    var positionX = getRandomInt(10, 200);
+    var positionY = getRandomInt(10, 50);
+    var sign = [1, -1];
 
     function getRandomInt(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
+    function changeSpeed() {
+        speedX = randomSpeed();
+        speedY = randomSpeed();
+    }
+
+    function randomSpeed() {
+        return getRandomInt(10, 20) * sign[getRandomInt(0, 1)];
+    }
+
     var dotDrawer = function () {
-        var speedX, speedY, color, context, canvas;
-        var positionX = getRandomInt(10, 200);
-        var positionY = getRandomInt(10, 50);
         var colors = ['#3399FF', '#0168b3', '#fc7753', '#88b83e', '#df928e', '#6bb6bb', '#f2cf01', '#7a8bc3'];
-        var sign = [1, -1];
 
         init();
         window.onclick = changeSpeedAndColor;
@@ -60,25 +69,12 @@ window.onload = function onLoad() {
             changeColor();
         }
 
-        function changeSpeed() {
-            speedX = randomSpeed();
-            speedY = randomSpeed();
-        }
-
         function changeColor() {
             color = colors[getRandomInt(0, colors.length - 1)];
-        }
-
-        function randomSpeed() {
-            return getRandomInt(10, 20) * sign[getRandomInt(0, 1)];
         }
     };
 
     var catDrawer = function() {
-        var speedX, speedY, context, canvas;
-        var positionX = getRandomInt(10, 200);
-        var positionY = getRandomInt(10, 50);
-        var sign = [1, -1];
         var img = new Image();
 
         init();
@@ -126,17 +122,7 @@ window.onload = function onLoad() {
             context.clearRect(0, 0, canvas.width, canvas.height);
             context.drawImage(img, positionX, positionY, 32, 32);
         }
-
-        function changeSpeed() {
-            speedX = randomSpeed();
-            speedY = randomSpeed();
-        }
-
-        function randomSpeed() {
-            return getRandomInt(10, 20) * sign[getRandomInt(0, 1)];
-        }
     };
 
-    //dotDrawer();
-    catDrawer();
+    [dotDrawer, catDrawer][getRandomInt(0, 1)]();
 };
