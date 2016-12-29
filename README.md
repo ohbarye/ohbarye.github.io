@@ -4,11 +4,22 @@
 
 ## Development
 
-```shell
+```sh
 $ git clone git@github.com:ohbarye/me.git
-$ bi
-$ compass watch
 
-# another console
 $ open index.html
 ```
+
+### JavaScript
+
+```sh
+$ yarn
+$ webpack --watch
+```
+### CSS
+
+```sh
+$ bi
+$ compass watch
+```
+
