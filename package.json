@@ -8,5 +8,10 @@
     "type": "git"
   },
   "author": "ohbarye <over.rye@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2016": "^6.16.0",
+    "webpack": "^1.14.0"
+  }
 }
