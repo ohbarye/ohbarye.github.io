@@ -8,13 +8,13 @@ window.onload = function onLoad() {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-  function changeSpeed() {
-    speedX = randomSpeed();
-    speedY = randomSpeed();
+  function changeSpeed(from, to) {
+    speedX = randomSpeed(from, to);
+    speedY = randomSpeed(from, to);
   }
 
-  function randomSpeed() {
-    return getRandomInt(10, 20) * sign[getRandomInt(0, 1)];
+  function randomSpeed(from, to) {
+    return getRandomInt(from, to) * sign[getRandomInt(0, 1)];
   }
 
   var dotDrawer = function () {
@@ -65,7 +65,7 @@ window.onload = function onLoad() {
     }
 
     function changeSpeedAndColor() {
-      changeSpeed();
+      changeSpeed(10, 20);
       changeColor();
     }
 
@@ -75,6 +75,8 @@ window.onload = function onLoad() {
   };
 
   var catDrawer = function () {
+    var imgSize = 32;
+    var catSize = imgSize;
     var img = new Image();
     var fish = new Image();
     var fishExist = false;
@@ -95,11 +97,11 @@ window.onload = function onLoad() {
         positionX = getRandomInt(10, wrapper.offsetWidth - 20);
         positionY = getRandomInt(10, wrapper.offsetHeight - 20);
 
-        changeSpeed();
+        changeSpeed(2, 4);
 
         img.src = "./images/cat2.png?" + new Date().getTime();
         img.onload = function () {
-          setInterval(draw, 200);
+          setInterval(draw, 30);
 
           fish.src = "./images/fish.png?" + new Date().getTime();
             fish.onload = function () {
@@ -113,10 +115,10 @@ window.onload = function onLoad() {
               fishX = e.clientX - rect.left;
               fishY = e.clientY - rect.top;
 
-              context.drawImage(fish, fishX, fishY, 32, 32);
+              context.drawImage(fish, fishX, fishY, imgSize, imgSize);
 
-              speedX = (fishX - positionX) / 5;
-              speedY = (fishY - positionY) / 5;
+              speedX = (fishX - positionX) / 10;
+              speedY = (fishY - positionY) / 10;
             }, false);
           }
         }
@@ -124,12 +126,13 @@ window.onload = function onLoad() {
     }
 
     function draw() {
-      if (fishExist && (Math.abs(positionX - fishX) < 32) && (Math.abs(positionY - fishY) < 32)) {
+      if (fishExist && (Math.abs(fishX - positionX) < imgSize) && (Math.abs(fishY - positionY) < imgSize)) {
+        context.clearRect(fishX, fishY, imgSize, imgSize);
         fishExist = false;
         fishX = undefined;
         fishY = undefined;
-        context.clearRect(fishX, fishY, 32, 32);
-        changeSpeed();
+        catSize += 4;
+        changeSpeed(2, 4);
       }
 
       context.globalCompositeOperation = "source-over";
@@ -137,7 +140,7 @@ window.onload = function onLoad() {
       context.globalCompositeOperation = "lighter";
 
       // Remove a previous cat
-      context.clearRect(positionX, positionY, 32, 32);
+      context.clearRect(positionX, positionY, catSize, catSize);
 
       positionX += speedX;
       positionY += speedY;
@@ -150,7 +153,7 @@ window.onload = function onLoad() {
         speedY *= -1;
       }
 
-      context.drawImage(img, positionX, positionY, 32, 32);
+      context.drawImage(img, positionX, positionY, catSize, catSize);
     }
   };
 
