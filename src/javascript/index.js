@@ -1,3 +1,6 @@
+import cat2 from '../images/cat2.png';
+import fish from '../images/fish.png';
+
 window.onload = function onLoad() {
   var speedX, speedY, color, context, canvas;
   var positionX = getRandomInt(10, 200);
@@ -27,7 +30,7 @@ window.onload = function onLoad() {
       canvas = document.getElementById('my-canvas');
 
       if (canvas.getContext) {
-        wrapper = document.getElementById('canvas-wrapper');
+        var wrapper = document.getElementById('canvas-wrapper');
         canvas.setAttribute('width', wrapper.offsetWidth);
         canvas.setAttribute('height', wrapper.offsetHeight);
 
@@ -77,8 +80,8 @@ window.onload = function onLoad() {
   var catDrawer = function () {
     var imgSize = 32;
     var catSize = imgSize;
-    var img = new Image();
-    var fish = new Image();
+    var catImg = new Image();
+    var fishImg = new Image();
     var fishExist = false;
     var fishX, fishY;
 
@@ -88,7 +91,7 @@ window.onload = function onLoad() {
       canvas = document.getElementById('my-canvas');
 
       if (canvas.getContext) {
-        wrapper = document.getElementById('canvas-wrapper');
+        var wrapper = document.getElementById('canvas-wrapper');
         canvas.setAttribute('width', wrapper.offsetWidth);
         canvas.setAttribute('height', wrapper.offsetHeight);
 
@@ -99,12 +102,12 @@ window.onload = function onLoad() {
 
         changeSpeed(2, 4);
 
-        img.src = "./images/cat2.png?" + new Date().getTime();
-        img.onload = function () {
+        catImg.src = cat2;
+        catImg.onload = function () {
           setInterval(draw, 30);
 
-          fish.src = "./images/fish.png?" + new Date().getTime();
-            fish.onload = function () {
+          fishImg.src = fish;
+          fishImg.onload = function () {
             wrapper.addEventListener('click', function(e) {
               if (fishExist) {
                 return
@@ -115,7 +118,7 @@ window.onload = function onLoad() {
               fishX = e.clientX - rect.left;
               fishY = e.clientY - rect.top;
 
-              context.drawImage(fish, fishX, fishY, imgSize, imgSize);
+              context.drawImage(fishImg, fishX, fishY, imgSize, imgSize);
 
               speedX = (fishX - positionX) / 10;
               speedY = (fishY - positionY) / 10;
@@ -153,7 +156,7 @@ window.onload = function onLoad() {
         speedY *= -1;
       }
 
-      context.drawImage(img, positionX, positionY, catSize, catSize);
+      context.drawImage(catImg, positionX, positionY, catSize, catSize);
     }
   };
 

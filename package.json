@@ -10,8 +10,11 @@
   "author": "ohbarye <over.rye@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "babel-core": "^6.21.0",
     "babel-loader": "^6.2.10",
-    "babel-preset-es2016": "^6.16.0",
+    "babel-preset-es2015": "^6.18.0",
+    "file-loader": "^0.9.0",
+    "url-loader": "^0.5.7",
     "webpack": "^1.14.0"
   }
 }
