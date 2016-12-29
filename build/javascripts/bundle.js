@@ -180,6 +180,8 @@
 	    this.x = (0, _utils.randomInt)(10, this.wrapper.offsetWidth - 20);
 	    this.y = (0, _utils.randomInt)(10, this.wrapper.offsetHeight - 20);
 
+	    this.fishes = [];
+
 	    this.changePace();
 
 	    this.img.onload = function () {
@@ -190,18 +192,17 @@
 	  _createClass(Cat, [{
 	    key: 'setFish',
 	    value: function setFish(fish) {
-	      if (this.fish) {
-	        return;
+	      this.fishes.push(fish);
+	      if (this.fishes.length == 1) {
+	        this.changePace();
 	      }
-	      this.fish = fish;
-	      this.changePace();
 	    }
 	  }, {
 	    key: 'changePace',
 	    value: function changePace() {
-	      if (this.fish) {
-	        this.speedX = (this.fish.x - this.x) / 10;
-	        this.speedY = (this.fish.y - this.y) / 10;
+	      if (this.fishes.length != 0) {
+	        this.speedX = (this.fishes[0].x - this.x) / 20;
+	        this.speedY = (this.fishes[0].y - this.y) / 20;
 	      } else {
 	        this.speedX = (0, _utils.randomInt)(2, 4) * (0, _utils.randomSign)();
 	        this.speedY = (0, _utils.randomInt)(2, 4) * (0, _utils.randomSign)();
@@ -233,12 +234,13 @@
 	  }, {
 	    key: 'isFishNearby',
 	    value: function isFishNearby() {
-	      return this.fish && (0, _utils.diff)(this.fish.x, this.x) < 20 && (0, _utils.diff)(this.fish.y, this.y) < 20;
+	      return this.fishes[0] && (0, _utils.diff)(this.fishes[0].x, this.x) < 20 && (0, _utils.diff)(this.fishes[0].y, this.y) < 20;
 	    }
 	  }, {
 	    key: 'eatFish',
 	    value: function eatFish() {
-	      this.fish = this.fish.die();
+	      this.fishes[0].die();
+	      this.fishes.shift();
 	      this.size += 2;
 	    }
 	  }]);

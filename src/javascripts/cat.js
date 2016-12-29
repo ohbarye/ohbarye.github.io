@@ -12,6 +12,8 @@ export default class Cat {
     this.x = randomInt(10, this.wrapper.offsetWidth - 20);
     this.y = randomInt(10, this.wrapper.offsetHeight - 20);
 
+    this.fishes = [];
+
     this.changePace();
 
     this.img.onload = () => {
@@ -20,15 +22,16 @@ export default class Cat {
   }
 
   setFish(fish) {
-    if (this.fish) { return }
-    this.fish = fish;
-    this.changePace();
+    this.fishes.push(fish);
+    if (this.fishes.length == 1) {
+      this.changePace();
+    }
   }
 
   changePace() {
-    if (this.fish) {
-      this.speedX = (this.fish.x - this.x) / 10;
-      this.speedY = (this.fish.y - this.y) / 10;
+    if (this.fishes.length != 0) {
+      this.speedX = (this.fishes[0].x - this.x) / 20;
+      this.speedY = (this.fishes[0].y - this.y) / 20;
     } else {
       this.speedX = randomInt(2, 4) * randomSign();
       this.speedY = randomInt(2, 4) * randomSign();
@@ -58,13 +61,14 @@ export default class Cat {
   }
 
   isFishNearby() {
-    return this.fish
-      && (diff(this.fish.x, this.x) < 20)
-      && (diff(this.fish.y, this.y) < 20)
+    return this.fishes[0]
+      && (diff(this.fishes[0].x, this.x) < 20)
+      && (diff(this.fishes[0].y, this.y) < 20)
   }
 
   eatFish() {
-    this.fish = this.fish.die();
+    this.fishes[0].die();
+    this.fishes.shift();
     this.size += 2;
   }
 }
