@@ -52,9 +52,8 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	window.onload = function onLoad() {
-	  var controller = new _controller2.default();
-	  controller.start();
+	window.onload = function () {
+	  return new _controller2.default().start();
 	};
 
 /***/ },
@@ -84,13 +83,13 @@
 
 	var _utils = __webpack_require__(5);
 
+	var _cat = __webpack_require__(7);
+
+	var _cat2 = _interopRequireDefault(_cat);
+
 	var _fish = __webpack_require__(6);
 
 	var _fish2 = _interopRequireDefault(_fish);
-
-	var _cat = __webpack_require__(1);
-
-	var _cat2 = _interopRequireDefault(_cat);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -104,103 +103,27 @@
 	    if (!this.canvas.getContext) {
 	      return;
 	    }
-	    this.wrapper = document.getElementById('canvas-wrapper');
-	    this.context = this.canvas.getContext('2d');
 
+	    this.context = this.canvas.getContext('2d');
+	    this.wrapper = document.getElementById('canvas-wrapper');
 	    this.canvas.setAttribute('width', this.wrapper.offsetWidth);
 	    this.canvas.setAttribute('height', this.wrapper.offsetHeight);
-
-	    this.speedX;
-	    this.speedY;
-	    this.catSize = 32;
-	    this.positionX = (0, _utils.getRandomInt)(10, 200);
-	    this.positionY = (0, _utils.getRandomInt)(10, 50);
-	    this.catImg = new Image();
-	    this.catImg.src = _cat2.default;
-
-	    this.fish;
-
-	    this.changeSpeed(2, 4);
 	  }
 
 	  _createClass(Controller, [{
-	    key: 'changeSpeed',
-	    value: function changeSpeed(from, to) {
-	      this.speedX = this.randomSpeed(from, to);
-	      this.speedY = this.randomSpeed(from, to);
-	    }
-	  }, {
-	    key: 'randomSpeed',
-	    value: function randomSpeed(from, to) {
-	      return (0, _utils.getRandomInt)(from, to) * (0, _utils.sign)();
-	    }
-	  }, {
 	    key: 'start',
 	    value: function start() {
 	      var _this = this;
 
-	      if (!this.canvas.getContext) {
-	        return;
-	      }
-
-	      this.positionX = (0, _utils.getRandomInt)(10, this.wrapper.offsetWidth - 20);
-	      this.positionY = (0, _utils.getRandomInt)(10, this.wrapper.offsetHeight - 20);
-
-	      this.catImg.onload = function () {
-	        setInterval(_this.draw.bind(_this), 30);
+	      this.cat = new _cat2.default(this.wrapper, this.context);
+	      this.wrapper.onclick = function (e) {
+	        return _this.putFish(e);
 	      };
-
-	      this.wrapper.addEventListener('click', function (e) {
-	        if (_this.fish) {
-	          return;
-	        }
-
-	        _this.putFish(e);
-
-	        _this.speedX = (_this.fish.x - _this.positionX) / 10;
-	        _this.speedY = (_this.fish.y - _this.positionY) / 10;
-	      }, false);
 	    }
 	  }, {
 	    key: 'putFish',
 	    value: function putFish(e) {
-	      this.fish = new _fish2.default(e);
-	      this.context.drawImage(this.fish.img, this.fish.x, this.fish.y, this.fish.size, this.fish.size);
-	    }
-	  }, {
-	    key: 'removeFish',
-	    value: function removeFish(e) {
-	      this.context.clearRect(this.fish.x, this.fish.y, this.fish.size, this.fish.size);
-	      this.fish = null;
-	    }
-	  }, {
-	    key: 'draw',
-	    value: function draw() {
-	      if (this.fish && Math.abs(this.fish.x - this.positionX) < 20 && Math.abs(this.fish.y - this.positionY) < 20) {
-	        this.catSize += 2;
-	        this.removeFish();
-	        this.changeSpeed(2, 4);
-	      }
-
-	      this.context.globalCompositeOperation = "source-over";
-	      this.context.fillStyle = "rgba(8,8,12,.2)";
-	      this.context.globalCompositeOperation = "lighter";
-
-	      // Remove a previous cat
-	      this.context.clearRect(this.positionX, this.positionY, this.catSize, this.catSize);
-
-	      this.positionX += this.speedX;
-	      this.positionY += this.speedY;
-
-	      if (this.positionX < 0 || this.positionX > this.canvas.width) {
-	        this.speedX *= -1;
-	      }
-
-	      if (this.positionY < 0 || this.positionY > this.canvas.height) {
-	        this.speedY *= -1;
-	      }
-
-	      this.context.drawImage(this.catImg, this.positionX, this.positionY, this.catSize, this.catSize);
+	      this.cat.setFish(new _fish2.default(e, this.context));
 	    }
 	  }]);
 
@@ -218,14 +141,19 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.getRandomInt = getRandomInt;
-	exports.sign = sign;
-	function getRandomInt(min, max) {
+	exports.randomInt = randomInt;
+	exports.randomSign = randomSign;
+	exports.diff = diff;
+	function randomInt(min, max) {
 	  return Math.floor(Math.random() * (max - min + 1)) + min;
 	}
 
-	function sign() {
-	  return [1, -1][getRandomInt(0, 1)];
+	function randomSign() {
+	  return [1, -1][randomInt(0, 1)];
+	}
+
+	function diff(x, y) {
+	  return Math.abs(x - y);
 	}
 
 /***/ },
@@ -238,6 +166,8 @@
 	  value: true
 	});
 
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 	var _fish = __webpack_require__(2);
 
 	var _fish2 = _interopRequireDefault(_fish);
@@ -246,19 +176,139 @@
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	var Fish = function Fish(e) {
-	  _classCallCheck(this, Fish);
+	var Fish = function () {
+	  function Fish(e, context) {
+	    _classCallCheck(this, Fish);
 
-	  this.size = 32;
-	  this.img = new Image();
-	  this.img.src = _fish2.default;
+	    this.context = context;
+	    this.size = 32;
+	    this.img = new Image();
+	    this.img.src = _fish2.default;
 
-	  var rect = e.target.getBoundingClientRect();
-	  this.x = e.clientX - rect.left;
-	  this.y = e.clientY - rect.top;
-	};
+	    var rect = e.target.getBoundingClientRect();
+	    this.x = e.clientX - rect.left;
+	    this.y = e.clientY - rect.top;
+
+	    this.context.drawImage(this.img, this.x, this.y, this.size, this.size);
+	  }
+
+	  _createClass(Fish, [{
+	    key: 'die',
+	    value: function die() {
+	      this.context.clearRect(this.x, this.y, this.size, this.size);
+	      return null;
+	    }
+	  }]);
+
+	  return Fish;
+	}();
 
 	exports.default = Fish;
+
+/***/ },
+/* 7 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _utils = __webpack_require__(5);
+
+	var _cat = __webpack_require__(1);
+
+	var _cat2 = _interopRequireDefault(_cat);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var Cat = function () {
+	  function Cat(wrapper, context) {
+	    var _this = this;
+
+	    _classCallCheck(this, Cat);
+
+	    this.wrapper = wrapper;
+	    this.context = context;
+	    this.size = 32;
+	    this.img = new Image();
+	    this.img.src = _cat2.default;
+
+	    this.x = (0, _utils.randomInt)(10, this.wrapper.offsetWidth - 20);
+	    this.y = (0, _utils.randomInt)(10, this.wrapper.offsetHeight - 20);
+
+	    this.changePace();
+
+	    this.img.onload = function () {
+	      setInterval(_this.walk.bind(_this), 30);
+	    };
+	  }
+
+	  _createClass(Cat, [{
+	    key: 'setFish',
+	    value: function setFish(fish) {
+	      if (this.fish) {
+	        return;
+	      }
+	      this.fish = fish;
+	      this.changePace();
+	    }
+	  }, {
+	    key: 'changePace',
+	    value: function changePace() {
+	      if (this.fish) {
+	        this.speedX = (this.fish.x - this.x) / 10;
+	        this.speedY = (this.fish.y - this.y) / 10;
+	      } else {
+	        this.speedX = (0, _utils.randomInt)(2, 4) * (0, _utils.randomSign)();
+	        this.speedY = (0, _utils.randomInt)(2, 4) * (0, _utils.randomSign)();
+	      }
+	    }
+	  }, {
+	    key: 'walk',
+	    value: function walk() {
+	      if (this.isFishNearby()) {
+	        this.eatFish();
+	        this.changePace();
+	      }
+
+	      this.context.clearRect(this.x, this.y, this.size, this.size);
+
+	      this.x += this.speedX;
+	      this.y += this.speedY;
+
+	      if (this.x < 0 || this.x > this.wrapper.offsetWidth) {
+	        this.speedX *= -1;
+	      }
+
+	      if (this.y < 0 || this.y > this.wrapper.offsetHeight) {
+	        this.speedY *= -1;
+	      }
+
+	      this.context.drawImage(this.img, this.x, this.y, this.size, this.size);
+	    }
+	  }, {
+	    key: 'isFishNearby',
+	    value: function isFishNearby() {
+	      return this.fish && (0, _utils.diff)(this.fish.x, this.x) < 20 && (0, _utils.diff)(this.fish.y, this.y) < 20;
+	    }
+	  }, {
+	    key: 'eatFish',
+	    value: function eatFish() {
+	      this.fish = this.fish.die();
+	      this.size += 2;
+	    }
+	  }]);
+
+	  return Cat;
+	}();
+
+	exports.default = Cat;
 
 /***/ }
 /******/ ]);
