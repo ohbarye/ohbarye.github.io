@@ -1,25 +1,26 @@
 import { getRandomInt, sign } from './utils'
+import Fish from './fish'
 import cat2 from '../images/cat2.png';
-import fish from '../images/fish.png';
 
 export default class Controller {
   constructor() {
+    this.canvas = document.getElementById('my-canvas');
+    if (!this.canvas.getContext) { return }
+    this.wrapper = document.getElementById('canvas-wrapper');
+    this.context = this.canvas.getContext('2d');
+
+    this.canvas.setAttribute('width', this.wrapper.offsetWidth);
+    this.canvas.setAttribute('height', this.wrapper.offsetHeight);
+
     this.speedX;
     this.speedY;
-    this.color;
-    this.canvas = document.getElementById('my-canvas');
-    this.context;
-    this.imgSize = 32;
-    this.catSize = this.imgSize;
+    this.catSize = 32;
     this.positionX = getRandomInt(10, 200);
     this.positionY = getRandomInt(10, 50);
     this.catImg = new Image();
     this.catImg.src = cat2;
-    this.fishImg = new Image();
-    this.fishImg.src = fish;
-    this.fishExist = false;
-    this.fishX;
-    this.fishY;
+
+    this.fish;
 
     this.changeSpeed(2, 4);
   }
@@ -34,47 +35,39 @@ export default class Controller {
   }
 
   start() {
-    if (this.canvas.getContext) {
-      const wrapper = document.getElementById('canvas-wrapper');
-      this.canvas.setAttribute('width', wrapper.offsetWidth);
-      this.canvas.setAttribute('height', wrapper.offsetHeight);
+    if (!this.canvas.getContext) { return }
 
-      this.context = this.canvas.getContext('2d');
+    this.positionX = getRandomInt(10, this.wrapper.offsetWidth - 20);
+    this.positionY = getRandomInt(10, this.wrapper.offsetHeight - 20);
 
-      this.positionX = getRandomInt(10, wrapper.offsetWidth - 20);
-      this.positionY = getRandomInt(10, wrapper.offsetHeight - 20);
-
-      this.catImg.onload = () => {
-        setInterval(this.draw.bind(this), 30);
-      }
-
-      this.fishImg.onload = () => {
-        wrapper.addEventListener('click', (e) => {
-          if (this.fishExist) {
-            return
-          }
-
-          this.fishExist = true;
-          var rect = e.target.getBoundingClientRect();
-          this.fishX = e.clientX - rect.left;
-          this.fishY = e.clientY - rect.top;
-
-          this.context.drawImage(this.fishImg, this.fishX, this.fishY, this.imgSize, this.imgSize);
-
-          this.speedX = (this.fishX - this.positionX) / 10;
-          this.speedY = (this.fishY - this.positionY) / 10;
-        }, false);
-      }
+    this.catImg.onload = () => {
+      setInterval(this.draw.bind(this), 30);
     }
+
+    this.wrapper.addEventListener('click', (e) => {
+      if (this.fish) { return }
+
+      this.putFish(e);
+
+      this.speedX = (this.fish.x - this.positionX) / 10;
+      this.speedY = (this.fish.y - this.positionY) / 10;
+    }, false);
+  }
+
+  putFish(e) {
+    this.fish = new Fish(e);
+    this.context.drawImage(this.fish.img, this.fish.x, this.fish.y, this.fish.size, this.fish.size);
+  }
+
+  removeFish(e) {
+    this.context.clearRect(this.fish.x, this.fish.y, this.fish.size, this.fish.size);
+    this.fish = null;
   }
 
   draw() {
-    if (this.fishExist && (Math.abs(this.fishX - this.positionX) < this.imgSize) && (Math.abs(this.fishY - this.positionY) < this.imgSize)) {
-      this.context.clearRect(this.fishX, this.fishY, this.imgSize, this.imgSize);
-      this.fishExist = false;
-      this.fishX = undefined;
-      this.fishY = undefined;
-      this.catSize += 4;
+    if (this.fish && (Math.abs(this.fish.x - this.positionX) < 20) && (Math.abs(this.fish.y - this.positionY) < 20)) {
+      this.catSize += 2;
+      this.removeFish();
       this.changeSpeed(2, 4);
     }
 
