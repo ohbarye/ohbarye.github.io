@@ -14,9 +14,11 @@
   "author": "ohbarye <over.rye@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "awesome-typescript-loader": "^3.4.1",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
+    "typescript": "^2.6.2",
     "url-loader": "^0.6.2",
     "webpack": "^3.10.0"
   }

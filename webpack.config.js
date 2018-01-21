@@ -1,20 +1,25 @@
 module.exports = {
-  entry: './src/javascripts/index.js',
+  entry: './src/javascripts/index.ts',
   output: {
     path: __dirname + '/build/javascripts',
     filename: 'bundle.js'
   },
   module: {
-    loaders: [
+    rules: [
       {
-        test: /\.js$/,
-        exclude: /node_modules/, 
-        loader: "babel-loader"
+        test: /\.ts$/,
+        exclude: /node_modules/,
+        use: 'awesome-typescript-loader'
       },
       {
         test: /\.(jpg|png)$/,
         loader: 'url-loader'
       },
+    ]
+  },
+  resolve: {
+    extensions: [
+      '.ts'
     ]
   }
 };

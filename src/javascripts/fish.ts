@@ -1,10 +1,16 @@
+// @ts-ignore
 import fish from '../images/fish.png';
 
 export default class Fish {
-  constructor(e, context) {
-    this.context = context;
-    this.size = 32;
-    this.img = new Image();
+  private x: number;
+  private y: number;
+
+  constructor(
+    private e: any,
+    private context: CanvasRenderingContext2D,
+    private size = 32,
+    private img = new Image()) {
+
     this.img.src = fish;
 
     const rect = e.target.getBoundingClientRect();
@@ -14,8 +20,7 @@ export default class Fish {
     this.context.drawImage(this.img, this.x, this.y, this.size, this.size);
   }
 
-  die() {
+  public die(): void {
     this.context.clearRect(this.x, this.y, this.size, this.size);
-    return null;
   }
 }
