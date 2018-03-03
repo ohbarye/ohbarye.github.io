@@ -1,6 +1,6 @@
 import { randomInt, randomSign, diff } from './utils'
 // @ts-ignore
-import cat2 from '../images/cat2.png';
+import cat2Png from '../images/cat2.png';
 
 export default class Cat {
   private x: number;
@@ -20,7 +20,7 @@ export default class Cat {
 
     this.changePace();
 
-    this.img.src = cat2;
+    this.img.src = cat2Png;
     this.img.onload = () => {
       setInterval(this.walk.bind(this), 30);
     }
@@ -28,13 +28,13 @@ export default class Cat {
 
   public setTarget(target): void {
     this.targets.push(target);
-    if (this.targets.length == 1) {
+    if (this.targets.length === 1) {
       this.changePace();
     }
   }
 
   private changePace(): void {
-    if (this.targets.length != 0) {
+    if (this.targets.length !== 0) {
       this.speedX = (this.targets[0].x - this.x) / 20;
       this.speedY = (this.targets[0].y - this.y) / 20;
     } else {

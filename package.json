@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack --watch",
-    "build": "webpack"
+    "build": "webpack",
+    "lint": "tslint --project tsconfig.json",
+    "lint:fix": "tslint --fix --project tsconfig.json",
+    "precommit": "lint-staged",
+    "prepush": "yarn lint",
+    "pretty": "prettier --write 'src/javascripts/**/*.{ts}'"
   },
   "repository": {
     "url": "git@github.com:ohbarye/me.git",
@@ -18,8 +23,19 @@
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
+    "lint-staged": "^7.0.0",
+    "prettier": "^1.11.1",
+    "tslint": "^5.9.1",
+    "tslint-config-airbnb": "^5.7.0",
+    "tslint-config-prettier": "^1.9.0",
     "typescript": "^2.6.2",
     "url-loader": "^0.6.2",
     "webpack": "^3.10.0"
+  },
+  "lint-staged": {
+    "src/javascripts/**/*.{ts}": [
+      "yarn pretty",
+      "git add"
+    ]
   }
 }

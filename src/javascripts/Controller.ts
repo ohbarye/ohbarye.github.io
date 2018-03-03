@@ -1,5 +1,5 @@
-import Cat from './cat'
-import Fish from './fish'
+import Cat from './Cat'
+import Fish from './Fish'
 
 export default class Controller {
   canvas: HTMLCanvasElement;

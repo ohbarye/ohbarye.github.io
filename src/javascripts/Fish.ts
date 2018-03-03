@@ -1,5 +1,5 @@
 // @ts-ignore
-import fish from '../images/fish.png';
+import fishPng from '../images/fish.png';
 
 export default class Fish {
   private x: number;
@@ -11,7 +11,7 @@ export default class Fish {
     private size = 32,
     private img = new Image()) {
 
-    this.img.src = fish;
+    this.img.src = fishPng;
 
     const rect = (<HTMLElement>e.target).getBoundingClientRect();
     this.x = e.clientX - rect.left;

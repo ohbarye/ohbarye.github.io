@@ -1,3 +1,3 @@
-import Controller from './controller';
+import Controller from './Controller';
 
 window.onload = () => (new Controller).start();
