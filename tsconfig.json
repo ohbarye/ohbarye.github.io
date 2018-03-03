@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
+    "noImplicitReturns": true,
     "sourceMap": false,
+    "strict": true,
     "target": "es5",
     "module": "es2015"
   }

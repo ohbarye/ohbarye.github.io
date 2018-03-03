@@ -1,4 +1,5 @@
 import { randomInt, randomSign, diff } from './utils';
+import Fish from './Fish';
 // @ts-ignore
 import cat2Png from '../images/cat2.png';
 
@@ -13,7 +14,7 @@ export default class Cat {
     private context: CanvasRenderingContext2D,
     private size = 32,
     private img = new Image(),
-    private targets = [],
+    private targets: Array<Fish> = [],
   ) {
     this.x = randomInt(10, this.wrapper.offsetWidth - 20);
     this.y = randomInt(10, this.wrapper.offsetHeight - 20);
@@ -26,7 +27,7 @@ export default class Cat {
     };
   }
 
-  public setTarget(target): void {
+  public setTarget(target: Fish): void {
     this.targets.push(target);
     if (this.targets.length === 1) {
       this.changePace();
