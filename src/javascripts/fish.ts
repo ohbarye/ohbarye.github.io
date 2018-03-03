@@ -6,14 +6,14 @@ export default class Fish {
   private y: number;
 
   constructor(
-    private e: any,
+    private e: MouseEvent,
     private context: CanvasRenderingContext2D,
     private size = 32,
     private img = new Image()) {
 
     this.img.src = fish;
 
-    const rect = e.target.getBoundingClientRect();
+    const rect = (<HTMLElement>e.target).getBoundingClientRect();
     this.x = e.clientX - rect.left;
     this.y = e.clientY - rect.top;
 
