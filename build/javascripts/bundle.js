@@ -69,9 +69,9 @@
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__controller__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Controller__ = __webpack_require__(1);
 
-window.onload = function () { return (new __WEBPACK_IMPORTED_MODULE_0__controller__["a" /* default */]).start(); };
+window.onload = function () { return new __WEBPACK_IMPORTED_MODULE_0__Controller__["a" /* default */]().start(); };
 
 
 /***/ }),
@@ -79,16 +79,15 @@ window.onload = function () { return (new __WEBPACK_IMPORTED_MODULE_0__controlle
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cat__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__fish__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Cat__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Fish__ = __webpack_require__(5);
 
 
 var Controller = /** @class */ (function () {
     function Controller() {
         this.canvas = document.getElementById('my-canvas');
-        if (!this.canvas.getContext) {
+        if (!this.canvas.getContext)
             return;
-        }
         this.context = this.canvas.getContext('2d');
         this.wrapper = document.getElementById('canvas-wrapper');
         this.canvas.setAttribute('width', "" + this.wrapper.offsetWidth);
@@ -96,11 +95,11 @@ var Controller = /** @class */ (function () {
     }
     Controller.prototype.start = function () {
         var _this = this;
-        this.cat = new __WEBPACK_IMPORTED_MODULE_0__cat__["a" /* default */](this.wrapper, this.context);
+        this.cat = new __WEBPACK_IMPORTED_MODULE_0__Cat__["a" /* default */](this.wrapper, this.context);
         this.wrapper.onclick = function (e) { return _this.putFish(e); };
     };
     Controller.prototype.putFish = function (e) {
-        var newFish = new __WEBPACK_IMPORTED_MODULE_1__fish__["a" /* default */](e, this.context);
+        var newFish = new __WEBPACK_IMPORTED_MODULE_1__Fish__["a" /* default */](e, this.context);
         this.cat.setTarget(newFish);
     };
     return Controller;
@@ -140,12 +139,12 @@ var Cat = /** @class */ (function () {
     }
     Cat.prototype.setTarget = function (target) {
         this.targets.push(target);
-        if (this.targets.length == 1) {
+        if (this.targets.length === 1) {
             this.changePace();
         }
     };
     Cat.prototype.changePace = function () {
-        if (this.targets.length != 0) {
+        if (this.targets.length !== 0) {
             this.speedX = (this.targets[0].x - this.x) / 20;
             this.speedY = (this.targets[0].y - this.y) / 20;
         }
@@ -171,9 +170,9 @@ var Cat = /** @class */ (function () {
         this.context.drawImage(this.img, this.x, this.y, this.size, this.size);
     };
     Cat.prototype.isFishNearby = function () {
-        return this.targets[0]
-            && (Object(__WEBPACK_IMPORTED_MODULE_0__utils__["a" /* diff */])(this.targets[0].x, this.x) < 20)
-            && (Object(__WEBPACK_IMPORTED_MODULE_0__utils__["a" /* diff */])(this.targets[0].y, this.y) < 20);
+        return (this.targets[0] &&
+            Object(__WEBPACK_IMPORTED_MODULE_0__utils__["a" /* diff */])(this.targets[0].x, this.x) < 20 &&
+            Object(__WEBPACK_IMPORTED_MODULE_0__utils__["a" /* diff */])(this.targets[0].y, this.y) < 20);
     };
     Cat.prototype.eatFish = function () {
         this.targets[0].die();
