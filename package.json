@@ -10,7 +10,7 @@
     "lint:fix": "tslint --fix --project tsconfig.json",
     "precommit": "lint-staged",
     "prepush": "yarn lint",
-    "pretty": "prettier --write 'src/javascripts/**/*.{ts}'"
+    "pretty": "prettier --write 'src/javascripts/**/*.ts'"
   },
   "repository": {
     "url": "git@github.com:ohbarye/me.git",
@@ -33,7 +33,7 @@
     "webpack": "^3.10.0"
   },
   "lint-staged": {
-    "src/javascripts/**/*.{ts}": [
+    "src/javascripts/**/*.ts": [
       "yarn pretty",
       "git add"
     ]
