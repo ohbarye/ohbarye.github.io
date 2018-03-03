@@ -60,222 +60,149 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__controller__ = __webpack_require__(1);
 
+window.onload = function () { return (new __WEBPACK_IMPORTED_MODULE_0__controller__["a" /* default */]).start(); };
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.randomInt = randomInt;
-exports.randomSign = randomSign;
-exports.diff = diff;
-function randomInt(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-function randomSign() {
-  return [1, -1][randomInt(0, 1)];
-}
-
-function diff(x, y) {
-  return Math.abs(x - y);
-}
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cat__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__fish__ = __webpack_require__(5);
 
 
-var _controller = __webpack_require__(2);
+var Controller = /** @class */ (function () {
+    function Controller() {
+        this.canvas = document.getElementById('my-canvas');
+        if (!this.canvas.getContext) {
+            return;
+        }
+        this.context = this.canvas.getContext('2d');
+        this.wrapper = document.getElementById('canvas-wrapper');
+        this.canvas.setAttribute('width', "" + this.wrapper.offsetWidth);
+        this.canvas.setAttribute('height', "" + this.wrapper.offsetHeight);
+    }
+    Controller.prototype.start = function () {
+        var _this = this;
+        this.cat = new __WEBPACK_IMPORTED_MODULE_0__cat__["a" /* default */](this.wrapper, this.context);
+        this.wrapper.onclick = function (e) { return _this.putFish(e); };
+    };
+    Controller.prototype.putFish = function (e) {
+        var newFish = new __WEBPACK_IMPORTED_MODULE_1__fish__["a" /* default */](e, this.context);
+        this.cat.setTarget(newFish);
+    };
+    return Controller;
+}());
+/* harmony default export */ __webpack_exports__["a"] = (Controller);
 
-var _controller2 = _interopRequireDefault(_controller);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-window.onload = function () {
-  return new _controller2.default().start();
-};
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__images_cat2_png__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__images_cat2_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__images_cat2_png__);
 
+// @ts-ignore
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _utils = __webpack_require__(0);
-
-var _cat = __webpack_require__(3);
-
-var _cat2 = _interopRequireDefault(_cat);
-
-var _fish = __webpack_require__(5);
-
-var _fish2 = _interopRequireDefault(_fish);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var Controller = function () {
-  function Controller() {
-    _classCallCheck(this, Controller);
-
-    this.canvas = document.getElementById('my-canvas');
-    if (!this.canvas.getContext) {
-      return;
+var Cat = /** @class */ (function () {
+    function Cat(wrapper, context, size, img, targets) {
+        if (size === void 0) { size = 32; }
+        if (img === void 0) { img = new Image(); }
+        if (targets === void 0) { targets = []; }
+        var _this = this;
+        this.wrapper = wrapper;
+        this.context = context;
+        this.size = size;
+        this.img = img;
+        this.targets = targets;
+        this.x = Object(__WEBPACK_IMPORTED_MODULE_0__utils__["b" /* randomInt */])(10, this.wrapper.offsetWidth - 20);
+        this.y = Object(__WEBPACK_IMPORTED_MODULE_0__utils__["b" /* randomInt */])(10, this.wrapper.offsetHeight - 20);
+        this.changePace();
+        this.img.src = __WEBPACK_IMPORTED_MODULE_1__images_cat2_png___default.a;
+        this.img.onload = function () {
+            setInterval(_this.walk.bind(_this), 30);
+        };
     }
+    Cat.prototype.setTarget = function (target) {
+        this.targets.push(target);
+        if (this.targets.length == 1) {
+            this.changePace();
+        }
+    };
+    Cat.prototype.changePace = function () {
+        if (this.targets.length != 0) {
+            this.speedX = (this.targets[0].x - this.x) / 20;
+            this.speedY = (this.targets[0].y - this.y) / 20;
+        }
+        else {
+            this.speedX = Object(__WEBPACK_IMPORTED_MODULE_0__utils__["b" /* randomInt */])(2, 4) * Object(__WEBPACK_IMPORTED_MODULE_0__utils__["c" /* randomSign */])();
+            this.speedY = Object(__WEBPACK_IMPORTED_MODULE_0__utils__["b" /* randomInt */])(2, 4) * Object(__WEBPACK_IMPORTED_MODULE_0__utils__["c" /* randomSign */])();
+        }
+    };
+    Cat.prototype.walk = function () {
+        if (this.isFishNearby()) {
+            this.eatFish();
+            this.changePace();
+        }
+        this.context.clearRect(this.x, this.y, this.size, this.size);
+        this.x += this.speedX;
+        this.y += this.speedY;
+        if (this.x < 0 || this.x > this.wrapper.offsetWidth) {
+            this.speedX *= -1;
+        }
+        if (this.y < 0 || this.y > this.wrapper.offsetHeight) {
+            this.speedY *= -1;
+        }
+        this.context.drawImage(this.img, this.x, this.y, this.size, this.size);
+    };
+    Cat.prototype.isFishNearby = function () {
+        return this.targets[0]
+            && (Object(__WEBPACK_IMPORTED_MODULE_0__utils__["a" /* diff */])(this.targets[0].x, this.x) < 20)
+            && (Object(__WEBPACK_IMPORTED_MODULE_0__utils__["a" /* diff */])(this.targets[0].y, this.y) < 20);
+    };
+    Cat.prototype.eatFish = function () {
+        this.targets[0].die();
+        this.targets.shift();
+        this.size += 2;
+    };
+    return Cat;
+}());
+/* harmony default export */ __webpack_exports__["a"] = (Cat);
 
-    this.context = this.canvas.getContext('2d');
-    this.wrapper = document.getElementById('canvas-wrapper');
-    this.canvas.setAttribute('width', this.wrapper.offsetWidth);
-    this.canvas.setAttribute('height', this.wrapper.offsetHeight);
-  }
-
-  _createClass(Controller, [{
-    key: 'start',
-    value: function start() {
-      var _this = this;
-
-      this.cat = new _cat2.default(this.wrapper, this.context);
-      this.wrapper.onclick = function (e) {
-        return _this.putFish(e);
-      };
-    }
-  }, {
-    key: 'putFish',
-    value: function putFish(e) {
-      this.cat.setFish(new _fish2.default(e, this.context));
-    }
-  }]);
-
-  return Controller;
-}();
-
-exports.default = Controller;
 
 /***/ }),
 /* 3 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (immutable) */ __webpack_exports__["b"] = randomInt;
+/* harmony export (immutable) */ __webpack_exports__["c"] = randomSign;
+/* harmony export (immutable) */ __webpack_exports__["a"] = diff;
+function randomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+function randomSign() {
+    return [1, -1][randomInt(0, 1)];
+}
+function diff(x, y) {
+    return Math.abs(x - y);
+}
 
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _utils = __webpack_require__(0);
-
-var _cat = __webpack_require__(4);
-
-var _cat2 = _interopRequireDefault(_cat);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var Cat = function () {
-  function Cat(wrapper, context) {
-    var _this = this;
-
-    _classCallCheck(this, Cat);
-
-    this.wrapper = wrapper;
-    this.context = context;
-    this.size = 32;
-    this.img = new Image();
-    this.img.src = _cat2.default;
-
-    this.x = (0, _utils.randomInt)(10, this.wrapper.offsetWidth - 20);
-    this.y = (0, _utils.randomInt)(10, this.wrapper.offsetHeight - 20);
-
-    this.fishes = [];
-
-    this.changePace();
-
-    this.img.onload = function () {
-      setInterval(_this.walk.bind(_this), 30);
-    };
-  }
-
-  _createClass(Cat, [{
-    key: 'setFish',
-    value: function setFish(fish) {
-      this.fishes.push(fish);
-      if (this.fishes.length == 1) {
-        this.changePace();
-      }
-    }
-  }, {
-    key: 'changePace',
-    value: function changePace() {
-      if (this.fishes.length != 0) {
-        this.speedX = (this.fishes[0].x - this.x) / 20;
-        this.speedY = (this.fishes[0].y - this.y) / 20;
-      } else {
-        this.speedX = (0, _utils.randomInt)(2, 4) * (0, _utils.randomSign)();
-        this.speedY = (0, _utils.randomInt)(2, 4) * (0, _utils.randomSign)();
-      }
-    }
-  }, {
-    key: 'walk',
-    value: function walk() {
-      if (this.isFishNearby()) {
-        this.eatFish();
-        this.changePace();
-      }
-
-      this.context.clearRect(this.x, this.y, this.size, this.size);
-
-      this.x += this.speedX;
-      this.y += this.speedY;
-
-      if (this.x < 0 || this.x > this.wrapper.offsetWidth) {
-        this.speedX *= -1;
-      }
-
-      if (this.y < 0 || this.y > this.wrapper.offsetHeight) {
-        this.speedY *= -1;
-      }
-
-      this.context.drawImage(this.img, this.x, this.y, this.size, this.size);
-    }
-  }, {
-    key: 'isFishNearby',
-    value: function isFishNearby() {
-      return this.fishes[0] && (0, _utils.diff)(this.fishes[0].x, this.x) < 20 && (0, _utils.diff)(this.fishes[0].y, this.y) < 20;
-    }
-  }, {
-    key: 'eatFish',
-    value: function eatFish() {
-      this.fishes[0].die();
-      this.fishes.shift();
-      this.size += 2;
-    }
-  }]);
-
-  return Cat;
-}();
-
-exports.default = Cat;
 
 /***/ }),
 /* 4 */
@@ -285,53 +212,34 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAYAAACL
 
 /***/ }),
 /* 5 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__images_fish_png__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__images_fish_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__images_fish_png__);
+// @ts-ignore
 
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _fish = __webpack_require__(6);
-
-var _fish2 = _interopRequireDefault(_fish);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var Fish = function () {
-  function Fish(e, context) {
-    _classCallCheck(this, Fish);
-
-    this.context = context;
-    this.size = 32;
-    this.img = new Image();
-    this.img.src = _fish2.default;
-
-    var rect = e.target.getBoundingClientRect();
-    this.x = e.clientX - rect.left;
-    this.y = e.clientY - rect.top;
-
-    this.context.drawImage(this.img, this.x, this.y, this.size, this.size);
-  }
-
-  _createClass(Fish, [{
-    key: 'die',
-    value: function die() {
-      this.context.clearRect(this.x, this.y, this.size, this.size);
-      return null;
+var Fish = /** @class */ (function () {
+    function Fish(e, context, size, img) {
+        if (size === void 0) { size = 32; }
+        if (img === void 0) { img = new Image(); }
+        this.e = e;
+        this.context = context;
+        this.size = size;
+        this.img = img;
+        this.img.src = __WEBPACK_IMPORTED_MODULE_0__images_fish_png___default.a;
+        var rect = e.target.getBoundingClientRect();
+        this.x = e.clientX - rect.left;
+        this.y = e.clientY - rect.top;
+        this.context.drawImage(this.img, this.x, this.y, this.size, this.size);
     }
-  }]);
+    Fish.prototype.die = function () {
+        this.context.clearRect(this.x, this.y, this.size, this.size);
+    };
+    return Fish;
+}());
+/* harmony default export */ __webpack_exports__["a"] = (Fish);
 
-  return Fish;
-}();
-
-exports.default = Fish;
 
 /***/ }),
 /* 6 */

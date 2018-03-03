@@ -1,44 +1,49 @@
 import { randomInt, randomSign, diff } from './utils'
+// @ts-ignore
 import cat2 from '../images/cat2.png';
 
 export default class Cat {
-  constructor(wrapper, context) {
-    this.wrapper = wrapper;
-    this.context = context;
-    this.size = 32;
-    this.img = new Image();
-    this.img.src = cat2;
+  private x: number;
+  private y: number;
+  private speedX: number;
+  private speedY: number;
+
+  constructor(
+    private wrapper: HTMLDivElement,
+    private context: CanvasRenderingContext2D,
+    private size = 32,
+    private img = new Image(),
+    private targets = []) {
 
     this.x = randomInt(10, this.wrapper.offsetWidth - 20);
     this.y = randomInt(10, this.wrapper.offsetHeight - 20);
 
-    this.fishes = [];
-
     this.changePace();
 
+    this.img.src = cat2;
     this.img.onload = () => {
       setInterval(this.walk.bind(this), 30);
     }
   }
 
-  setFish(fish) {
-    this.fishes.push(fish);
-    if (this.fishes.length == 1) {
+  public setTarget(target): void {
+    this.targets.push(target);
+    if (this.targets.length == 1) {
       this.changePace();
     }
   }
 
-  changePace() {
-    if (this.fishes.length != 0) {
-      this.speedX = (this.fishes[0].x - this.x) / 20;
-      this.speedY = (this.fishes[0].y - this.y) / 20;
+  private changePace(): void {
+    if (this.targets.length != 0) {
+      this.speedX = (this.targets[0].x - this.x) / 20;
+      this.speedY = (this.targets[0].y - this.y) / 20;
     } else {
       this.speedX = randomInt(2, 4) * randomSign();
       this.speedY = randomInt(2, 4) * randomSign();
     }
   }
   
-  walk() {
+  private walk(): void {
     if (this.isFishNearby()) {
       this.eatFish();
       this.changePace();
@@ -60,15 +65,15 @@ export default class Cat {
     this.context.drawImage(this.img, this.x, this.y, this.size, this.size);
   }
 
-  isFishNearby() {
-    return this.fishes[0]
-      && (diff(this.fishes[0].x, this.x) < 20)
-      && (diff(this.fishes[0].y, this.y) < 20)
+  private isFishNearby(): boolean {
+    return this.targets[0]
+      && (diff(this.targets[0].x, this.x) < 20)
+      && (diff(this.targets[0].y, this.y) < 20)
   }
 
-  eatFish() {
-    this.fishes[0].die();
-    this.fishes.shift();
+  private eatFish(): void {
+    this.targets[0].die();
+    this.targets.shift();
     this.size += 2;
   }
 }
