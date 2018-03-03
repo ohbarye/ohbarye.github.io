@@ -1,4 +1,4 @@
-import { randomInt, randomSign, diff } from './utils'
+import { randomInt, randomSign, diff } from './utils';
 // @ts-ignore
 import cat2Png from '../images/cat2.png';
 
@@ -13,8 +13,8 @@ export default class Cat {
     private context: CanvasRenderingContext2D,
     private size = 32,
     private img = new Image(),
-    private targets = []) {
-
+    private targets = [],
+  ) {
     this.x = randomInt(10, this.wrapper.offsetWidth - 20);
     this.y = randomInt(10, this.wrapper.offsetHeight - 20);
 
@@ -23,7 +23,7 @@ export default class Cat {
     this.img.src = cat2Png;
     this.img.onload = () => {
       setInterval(this.walk.bind(this), 30);
-    }
+    };
   }
 
   public setTarget(target): void {
@@ -42,7 +42,7 @@ export default class Cat {
       this.speedY = randomInt(2, 4) * randomSign();
     }
   }
-  
+
   private walk(): void {
     if (this.isFishNearby()) {
       this.eatFish();
@@ -66,9 +66,11 @@ export default class Cat {
   }
 
   private isFishNearby(): boolean {
-    return this.targets[0]
-      && (diff(this.targets[0].x, this.x) < 20)
-      && (diff(this.targets[0].y, this.y) < 20)
+    return (
+      this.targets[0] &&
+      diff(this.targets[0].x, this.x) < 20 &&
+      diff(this.targets[0].y, this.y) < 20
+    );
   }
 
   private eatFish(): void {

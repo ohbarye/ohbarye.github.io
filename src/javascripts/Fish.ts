@@ -9,8 +9,8 @@ export default class Fish {
     private e: MouseEvent,
     private context: CanvasRenderingContext2D,
     private size = 32,
-    private img = new Image()) {
-
+    private img = new Image(),
+  ) {
     this.img.src = fishPng;
 
     const rect = (<HTMLElement>e.target).getBoundingClientRect();
