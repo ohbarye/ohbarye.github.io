@@ -2,8 +2,8 @@
 import fishPng from '../images/fish.png';
 
 export default class Fish {
-  private x: number;
-  private y: number;
+  public x: number;
+  public y: number;
 
   constructor(
     private e: MouseEvent,
