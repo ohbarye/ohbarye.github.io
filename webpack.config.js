@@ -15,11 +15,20 @@ module.exports = {
         test: /\.(jpg|png)$/,
         loader: 'url-loader'
       },
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader'
+        ]
+      },
     ]
   },
   resolve: {
     extensions: [
-      '.ts'
+      '.ts',
+      '.js'
     ]
   }
 };

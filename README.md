@@ -7,21 +7,7 @@
 ## Development
 
 ```sh
-$ git clone git@github.com:ohbarye/me.git
-
+$ git clone git@github.com:ohbarye/me.git && cd me
+$ yarn && yarn start
 $ open index.html
 ```
-
-### JavaScript
-
-```sh
-$ yarn
-$ webpack --watch
-```
-### CSS
-
-```sh
-$ bi
-$ compass watch
-```
-

@@ -20,8 +20,12 @@
   "license": "MIT",
   "devDependencies": {
     "awesome-typescript-loader": "^3.4.1",
+    "css-loader": "^0.28.11",
     "lint-staged": "^7.0.0",
+    "node-sass": "^4.7.2",
     "prettier": "^1.11.1",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
     "tslint": "^5.9.1",
     "tslint-config-airbnb": "^5.7.0",
     "tslint-config-prettier": "^1.9.0",
