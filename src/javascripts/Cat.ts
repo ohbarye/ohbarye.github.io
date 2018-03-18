@@ -14,10 +14,12 @@ export default class Cat {
     private context: CanvasRenderingContext2D,
     private size = 32,
     private img = new Image(),
-    private targets: Array<Fish> = [],
+    private targets: Fish[] = [],
   ) {
     this.x = randomInt(10, this.wrapper.offsetWidth - 20);
     this.y = randomInt(10, this.wrapper.offsetHeight - 20);
+    this.speedX = this.randomSpeed;
+    this.speedY = this.randomSpeed;
 
     this.changePace();
 
@@ -39,8 +41,8 @@ export default class Cat {
       this.speedX = (this.targets[0].x - this.x) / 20;
       this.speedY = (this.targets[0].y - this.y) / 20;
     } else {
-      this.speedX = randomInt(2, 4) * randomSign();
-      this.speedY = randomInt(2, 4) * randomSign();
+      this.speedX = this.randomSpeed;
+      this.speedY = this.randomSpeed;
     }
   }
 
@@ -78,5 +80,9 @@ export default class Cat {
     this.targets[0].die();
     this.targets.shift();
     this.size += 2;
+  }
+
+  private get randomSpeed() {
+    return randomInt(2, 4) * randomSign();
   }
 }

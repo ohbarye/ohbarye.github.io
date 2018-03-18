@@ -2,28 +2,26 @@ import Cat from './Cat';
 import Fish from './Fish';
 
 export default class Controller {
-  private canvas: HTMLCanvasElement;
   private context: CanvasRenderingContext2D;
-  private wrapper: HTMLDivElement;
   private cat: Cat;
 
-  constructor() {
-    this.canvas = <HTMLCanvasElement>document.getElementById('my-canvas');
-    if (!this.canvas.getContext) return;
+  static start(canvas: HTMLCanvasElement, wrapper: HTMLDivElement): void {
+    new Controller(canvas, wrapper).start();
+  }
 
-    this.context = <CanvasRenderingContext2D>this.canvas.getContext('2d');
-    this.wrapper = <HTMLDivElement>document.getElementById('canvas-wrapper');
-    this.canvas.setAttribute('width', `${this.wrapper.offsetWidth}`);
-    this.canvas.setAttribute('height', `${this.wrapper.offsetHeight}`);
+  constructor(canvas: HTMLCanvasElement, private wrapper: HTMLDivElement) {
+    this.context = <CanvasRenderingContext2D>canvas.getContext('2d');
+    canvas.setAttribute('width', `${wrapper.offsetWidth}`);
+    canvas.setAttribute('height', `${wrapper.offsetHeight}`);
+    this.cat = new Cat(wrapper, this.context);
   }
 
   public start(): void {
-    this.cat = new Cat(this.wrapper, this.context);
     this.wrapper.onclick = e => this.putFish(e);
   }
 
   private putFish(e: MouseEvent): void {
-    const newFish: Fish = new Fish(e, this.context);
+    const newFish = new Fish(e, this.context);
     this.cat.setTarget(newFish);
   }
 }
