@@ -11,13 +11,15 @@ export default class Fish {
     private size = 32,
     private img = new Image(),
   ) {
-    this.img.src = fishPng;
-
     const rect = (<HTMLElement>e.target).getBoundingClientRect();
     this.x = e.clientX - rect.left;
     this.y = e.clientY - rect.top;
 
-    this.context.drawImage(this.img, this.x, this.y, this.size, this.size);
+    this.img.onload = () => {
+      this.context.drawImage(this.img, this.x, this.y, this.size, this.size);
+    };
+
+    this.img.src = fishPng;
   }
 
   public die(): void {
