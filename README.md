@@ -5,7 +5,7 @@
 ## Development
 
 ```sh
-$ git clone git@github.com:ohbarye/me.git && cd me
+$ git clone https://github.com/ohbarye/ohbarye.github.io.git && cd ohbarye.github.io
 $ yarn && yarn start
 $ open index.html
 ```
