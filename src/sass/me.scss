@@ -1,19 +1,21 @@
-@mixin gradient-top-lighten($color:#666, $lighten:10%){
+@mixin gradient-top-lighten($color: #666, $lighten: 10%) {
   background-color: $color;
   @include filter-gradient(lighten($color, $lighten), $color, vertical);
-  @include background-image(linear-gradient(lighten($color, $lighten) 0%, $color 100%));
+  @include background-image(
+    linear-gradient(lighten($color, $lighten) 0%, $color 100%)
+  );
 }
 
-@mixin border-with-shadow(){
-  border-top: 1px solid rgba(0, 0, 0, .1);
-  border-bottom: 1px solid rgba(0, 0, 0, .1);
-  border-left: 1px solid rgba(0, 0, 0, .1);
-  border-right: 1px solid rgba(0, 0, 0, .1);
+@mixin border-with-shadow() {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
   @include box-shadow(
-                  rgba(255, 255, 255, .1) 0 1px 0 inset,
-                  rgba(255, 255, 255, .1) 0 1px 0,
-                  rgba(255, 255, 255, .1) -1px 0 0,
-                  rgba(255, 255, 255, .1) -1px 0 0 inset
+    rgba(255, 255, 255, 0.1) 0 1px 0 inset,
+    rgba(255, 255, 255, 0.1) 0 1px 0,
+    rgba(255, 255, 255, 0.1) -1px 0 0,
+    rgba(255, 255, 255, 0.1) -1px 0 0 inset
   );
 }
 
@@ -21,7 +23,8 @@ html {
   height: 100%;
 
   body {
-    font-family: 'Lato', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN',
+      'Hiragino Sans', Meiryo, sans-serif;
     height: 100%;
     margin: 0;
 
@@ -43,10 +46,10 @@ html {
     #content-wrapper {
       border-radius: 6px;
       position: absolute;
-      background-color: rgba(#fff, .9);
+      background-color: rgba(#fff, 0.9);
       text-shadow: -1px 1px 0 rgba(255, 255, 255, 1);
       text-align: center;
-      top: 20%;
+      top: 10%;
       left: 50%;
       width: 320px;
       margin-left: -160px;
@@ -54,24 +57,24 @@ html {
       padding-bottom: 16px;
 
       h1 {
-        font-family: 'Lato', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;
         letter-spacing: 8px;
       }
 
       h2 {
         color: #777;
         font-weight: normal;
-        font-size: 15px;
-        letter-spacing: .12em;
+        font-size: 16px;
+        letter-spacing: 0.12em;
         margin-bottom: 30px;
       }
 
-      h1, h2 {
+      h1,
+      h2 {
         position: relative;
       }
 
       p {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 2em;
         margin: 0;
         letter-spacing: 2px;
@@ -79,10 +82,10 @@ html {
         a {
           color: #999;
           text-decoration: none;
-          transition: color .2s ease;
+          transition: color 0.2s ease;
 
           &:hover {
-            color: #0080FF;
+            color: #0080ff;
           }
         }
       }
