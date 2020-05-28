@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack --watch",
-    "build": "webpack",
+    "build": "webpack && yarn build-cv-ja && yarn build-cv-en",
+    "build-cv-ja": "pandoc -f markdown -t html --template=./.pandoc/templates/cv-template.html --toc --toc-depth=2 ./cv-ja/cv-ja.md > ./cv-ja/index.html",
+    "build-cv-en": "pandoc -f markdown -t html --template=./.pandoc/templates/cv-template.html --toc --toc-depth=2 ./cv-en/cv-en.md > ./cv-en/index.html",
     "lint": "tslint --project tsconfig.json",
     "lint:fix": "tslint --fix --project tsconfig.json",
     "precommit": "lint-staged",
