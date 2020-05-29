@@ -17,7 +17,7 @@ export default class Controller {
   }
 
   public start(): void {
-    this.wrapper.onclick = e => this.putFish(e);
+    this.wrapper.onclick = (e) => this.putFish(e);
   }
 
   private putFish(e: MouseEvent): void {
