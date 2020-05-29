@@ -6,8 +6,8 @@
   "scripts": {
     "start": "webpack --watch",
     "build": "webpack && yarn build-cv-ja && yarn build-cv-en",
-    "build-cv-ja": "pandoc -f markdown -t html --template=./.pandoc/templates/cv-template.html --toc --toc-depth=2 ./ja/cv/cv-ja.md > ./ja/cv/index.html",
-    "build-cv-en": "pandoc -f markdown -t html --template=./.pandoc/templates/cv-template.html --toc --toc-depth=2 ./en/cv/cv-en.md > ./en/cv/index.html",
+    "build-cv-ja": "pandoc -f markdown -t html --section-divs --template=./.pandoc/templates/cv-template.html --toc --toc-depth=2 ./ja/cv/cv-ja.md > ./ja/cv/index.html",
+    "build-cv-en": "pandoc -f markdown -t html --section-divs --template=./.pandoc/templates/cv-template.html --toc --toc-depth=2 ./en/cv/cv-en.md > ./en/cv/index.html",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "precommit": "lint-staged",
