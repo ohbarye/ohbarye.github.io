@@ -23,7 +23,7 @@
   "devDependencies": {
     "awesome-typescript-loader": "^3.5.0",
     "css-loader": "^0.28.11",
-    "lint-staged": "^7.0.0",
+    "lint-staged": "^10.2.6",
     "node-sass": "^4.7.2",
     "prettier": "^1.11.1",
     "sass-loader": "^6.0.7",
