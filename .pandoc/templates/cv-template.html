@@ -709,7 +709,9 @@ $endfor$
 }
 
 .markdown-body h1,
-.markdown-body h2 {
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4 {
   padding-bottom: .3em;
   border-bottom: 1px solid #eaecef;
 }
@@ -1042,7 +1044,21 @@ $endfor$
   left: 0;
   background-color: #0c2846;
   overflow-x: hidden;
-  padding-top: 20px;
+  padding-top: 16px;
+}
+
+.sidenav .profile-icon {
+  margin-left: 16px;
+  margin-bottom: 8px;
+  width: 96px;
+}
+
+.sidenav .profile-icon a {
+  padding: 0px;
+}
+
+.sidenav .profile-icon img {
+  border-radius: 50%;
 }
 
 .sidenav ul {
@@ -1132,6 +1148,11 @@ $endif$
 $endif$
 $if(toc)$
 <nav id="$idprefix$TOC" class="sidenav">
+  <div class="profile-icon">
+  <a href="https://ohbarye.github.io">
+    <img src="https://pbs.twimg.com/profile_images/1032582385127190528/ICCDVqLR_x96.jpg" />
+  </a>
+  </div>
 $toc$
 </nav>
 $endif$

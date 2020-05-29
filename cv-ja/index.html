@@ -689,7 +689,9 @@
 }
 
 .markdown-body h1,
-.markdown-body h2 {
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4 {
   padding-bottom: .3em;
   border-bottom: 1px solid #eaecef;
 }
@@ -1022,7 +1024,21 @@
   left: 0;
   background-color: #0c2846;
   overflow-x: hidden;
-  padding-top: 20px;
+  padding-top: 16px;
+}
+
+.sidenav .profile-icon {
+  margin-left: 16px;
+  margin-bottom: 8px;
+  width: 96px;
+}
+
+.sidenav .profile-icon a {
+  padding: 0px;
+}
+
+.sidenav .profile-icon img {
+  border-radius: 50%;
 }
 
 .sidenav ul {
@@ -1091,6 +1107,11 @@
 <h1 class="title">Masato Ohba (ohbarye) CV</h1>
 </header>
 <nav id="TOC" class="sidenav">
+  <div class="profile-icon">
+  <a href="https://ohbarye.github.io">
+    <img src="https://pbs.twimg.com/profile_images/1032582385127190528/ICCDVqLR_x96.jpg" />
+  </a>
+  </div>
 <ul>
 <li><a href="#基本情報と連絡先">基本情報と連絡先</a></li>
 <li><a href="#職務要約">職務要約</a></li>
@@ -1149,7 +1170,8 @@
 <li>Protocols: HTTP (REST), GraphQL<code>*</code></li>
 <li>Development framework: Agile, Scrum, Waterfall<code>*</code></li>
 </ul>
-<p><strong>Bold</strong> indicates core skills. <code>*</code> indicates either lack of production use or keeping away from the technology for several years.</p>
+<p><strong>太字</strong> はコアなスキルを表現します。</p>
+<p><code>*</code> は実務経験のないものか、実務経験はあっても数年以上離れているスキルを表現します。</p>
 <h3 id="長所-強み">長所 / 強み</h3>
 <h4 id="operation-performance-を意識した設計実装">Operation, Performance を意識した設計・実装</h4>
 <p>ビジネスの要求を一時的に満たすだけでなく、パフォーマンス・計算量・将来にわたるデータ増加を意識した設計や実装の経験があります。加えて、運用中に生じた問題についてのパフォーマンスチューニングを行なってきました。</p>
@@ -1304,7 +1326,7 @@
 </ul>
 <h4 id="登録導線リニューアル">登録導線リニューアル</h4>
 <p>BtoC の学習サービスにおいて最も重要な獲得の時期に向けた EFO (Entry Form Optimization) プロジェクトです。</p>
-<p>当時のチームにて扱うフロントエンドの大部分は MPA であり、登録導線は Rails の View と jQuery で実装されていました。リッチな体験が要求されるシーンであったためWebpacker を用いてRailsフロントエンドの一部で React を導入しました。</p>
+<p>当時のチームにて扱うフロントエンドの大部分は MPA であり、登録導線は Rails の View と jQuery で実装されていました。リッチな体験が要求されるシーンであったため Webpacker を用いて Rails フロントエンドの一部で React を導入しました。</p>
 <p>同時期でなくリリース前後の比較になってしまったが登録導線の CVR が有意に向上し、事業成果に直結する取り組みとなりました。</p>
 <p><a href="https://speakerdeck.com/ohbarye/level-up-front-end-skills-for-rails-developer">Meguro.rb にて取り組みの内容を発表</a>しました。</p>
 <ul>

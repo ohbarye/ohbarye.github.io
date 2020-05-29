@@ -41,8 +41,9 @@ Web backend を強みの中心に置きつつ、自社サービスと client wor
 - Protocols: HTTP (REST), GraphQL`*`
 - Development framework: Agile, Scrum, Waterfall`*`
 
-**Bold** indicates core skills.
-`*` indicates either lack of production use or keeping away from the technology for several years.
+**太字** はコアなスキルを表現します。
+
+`*` は実務経験のないものか、実務経験はあっても数年以上離れているスキルを表現します。
 
 ### 長所 / 強み
 
@@ -154,7 +155,7 @@ React Native 製 iOS/Android の業務用 internal アプリを PWA にてリニ
 
 BtoC の学習サービスにおいて最も重要な獲得の時期に向けた EFO (Entry Form Optimization) プロジェクトです。
 
-当時のチームにて扱うフロントエンドの大部分は MPA であり、登録導線は Rails の View と jQuery で実装されていました。リッチな体験が要求されるシーンであったためWebpacker を用いてRailsフロントエンドの一部で React を導入しました。
+当時のチームにて扱うフロントエンドの大部分は MPA であり、登録導線は Rails の View と jQuery で実装されていました。リッチな体験が要求されるシーンであったため Webpacker を用いて Rails フロントエンドの一部で React を導入しました。
 
 同時期でなくリリース前後の比較になってしまったが登録導線の CVR が有意に向上し、事業成果に直結する取り組みとなりました。
 
@@ -309,7 +310,7 @@ Nodefest 2018 では[同サービスに関する発表](<(https://speakerdeck.co
 ### ブログ
 
 - 個人 [https://ohbarye.hatenablog.jp/](https://ohbarye.hatenablog.jp/)
-    - [人気順の記事一覧](https://b.hatena.ne.jp/entrylist?url=https%3A%2F%2Fohbarye.hatenablog.jp%2F&sort=count)
+  - [人気順の記事一覧](https://b.hatena.ne.jp/entrylist?url=https%3A%2F%2Fohbarye.hatenablog.jp%2F&sort=count)
 - 個人 (英語) [https://dev.to/ohbarye](https://dev.to/ohbarye)
 
 #### 企業ブログへの寄稿
