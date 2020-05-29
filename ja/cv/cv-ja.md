@@ -15,7 +15,7 @@ pagetitle: Masato Ohba (ohbarye) CV
 | ---------- | ------------------------------------------------------ |
 | Name       | Masato Ohba (大庭 直人)                                |
 | ID         | `ohbarye`                                              |
-| Email      | over.rye+jh [at] gmail.com  |
+| Email      | over.rye+jh [at] gmail.com                             |
 | Entrypoint | [https://ohbarye.github.io](https://ohbarye.github.io) |
 
 ## 職務要約
@@ -30,7 +30,7 @@ Web backend を強みの中心に置きつつ、自社サービスと client wor
 
 ## スキル
 
-- Language: **Ruby** (2.3~), **TypeScript** (3.4~), JavaScript (ES2015~), CoffeeScript`*` (1.x), Java`*` (6~8), Python (2.x)`*`, OCaml (4.10) `*`
+- Language: **Ruby** (2.3~), **TypeScript** (3.4~), JavaScript (ES2015~), CoffeeScript`*` (1.x), Java`*` (6~8), Python (2.x, 3.7)`*`, OCaml (4.10) `*`
 - Frontend: **React** (16.x~), Redux (3.x~), Backbone.js`*`, Marionette.js`*`, jQuery`*` (1.x~), React Native (0.5x), Webpack
 - Backend: **Ruby on Rails** (4.2~5.1), Node.js`*`, OpenAPI (3.x)
 - Testing: **RSpec**, Capybara, minitest, Jest, Cypress, sinon, chai, mocha
@@ -157,7 +157,7 @@ BtoC の学習サービスにおいて最も重要な獲得の時期に向けた
 
 当時のチームにて扱うフロントエンドの大部分は MPA であり、登録導線は Rails の View と jQuery で実装されていました。リッチな体験が要求されるシーンであったため Webpacker を用いて Rails フロントエンドの一部で React を導入しました。
 
-同時期でなくリリース前後の比較になってしまったが登録導線の CVR が有意に向上し、事業成果に直結する取り組みとなりました。
+同時期でなくリリース前後の比較ではありますが登録導線の CVR が有意に向上し、事業成果に直結する取り組みとなりました。
 
 [Meguro.rb にて取り組みの内容を発表](https://speakerdeck.com/ohbarye/level-up-front-end-skills-for-rails-developer)しました。
 
@@ -170,7 +170,7 @@ BtoC の学習サービスにおいて最も重要な獲得の時期に向けた
 
 #### Upgrade grape gem
 
-社内で最も大きい Rails の API server では grape という gem を使っているが、この gem が導入時 2015 年の v0.12.0 から更新されていなかったのでアップグレードしました。
+社内で最も大きい Rails の API server では [grape](https://github.com/ruby-grape/grape) という gem を使っていましたが、この gem が 2015 年の導入時の v0.12.0 から更新されていなかったのでアップグレードしました。
 
 Rails upgrade 等に比べて情報が少なく、依存している周辺 library が dead であるために迂回策を用意するなどの工夫が必要でした。minor version (~v0.19) を少しずつ上げながら最終的に当時の最新の v1.0.1 まで upgrade できました。
 
@@ -185,7 +185,7 @@ Rails upgrade 等に比べて情報が少なく、依存している周辺 libra
 
 #### キャリア決済廃止検討
 
-手数料が高く運用コストも高いキャリア決済を廃止する際にどれぐらいのインパクトがあるのかを検証するプロジェクトです。
+手数料が高く運用コストも高いキャリア決済を廃止する際に、どれぐらい事業へのインパクトがあるのかを検証するプロジェクトです。
 
 Optimizely という SaaS を用い、エンジニアによる開発やテスト実施の手間を極力抑えつつ A/B testing の実践と定量データの収集ができました。
 
@@ -284,24 +284,60 @@ Optimizely という SaaS を用い、エンジニアによる開発やテスト
 
 ### Personal projects
 
-#### Goofi (2018-08~)
+#### Goofi
 
-OSS への貢献をより簡便にするためのツールです。OSS 活動を始めたい初心者にとって最大の壁が「貢献対象を探すこと」だと考え、コントリビューションが推奨される repository と issue をリストアップする Web サービス[Goofi](https://goofi.now.sh/)を作りました。(repository: [https://github.com/ohbarye/goofi](https://github.com/ohbarye/goofi))
+OSS への貢献をより簡便にするためのツールです。OSS 活動を始めたい初心者にとって最大の壁が「貢献対象を探すこと」だと考え、コントリビューションが推奨される repository と issue をリストアップする Web サービス[Goofi](https://goofi.now.sh/)を作りました。
 
 Nodefest 2018 では[同サービスに関する発表](<(https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-final)>)を行いました。
 
 2020 年 1 月に[GitHub が公式の類似機能を公開した](https://github.blog/2020-01-22-browse-good-first-issues-to-start-contributing-to-open-source/)ので役目を終えそうですが、課題設定が正しかったことが追認された心持ちです。
 
+- 時期: 2018-08~
+- repository: [https://github.com/ohbarye/goofi](https://github.com/ohbarye/goofi)
 - 使用技術: Node.js 13.x, TypeScript 3.8, Next.js 9.1, GraphQL (client), Now.sh v1~2 (現 Versel), GitHub API v4
 
-#### Review bot (2017-08~)
+#### Review bot
 
 チーム開発でのレビューを促進させる Slack bot です。
-指定した条件にマッチする pull requests 一覧を Slack に投稿します。(repository: [https://github.com/ohbarye/review-waiting-list-bot](https://github.com/ohbarye/review-waiting-list-bot))
+指定した条件にマッチする pull requests 一覧を Slack に投稿します。
 
 2019 年 6 月に GitHub が買収した[Pull Panda](https://pullpanda.com/)に類似していますが商用で有料だったためか、この bot を fork して利用していただける企業が数社ありました。
 
+- 時期: 2017-08~
+- repository: [https://github.com/ohbarye/review-waiting-list-bot](https://github.com/ohbarye/review-waiting-list-bot)
 - 使用技術: Node.js 8.x, GraphQL (client) Slack API, GitHub API v3~4, Heroku
+
+#### React Use Kana
+
+漢字を入力するとふりがなが自動入力されるフォームを作成するためのライブラリです。jQuery で同機能を実現するものや、React の古めのバージョンに対応する類似ライブラリはありましたが、React hooks を利用したライブラリは見つからなかったため自作しました。
+
+- 時期: 2019
+- repository: [https://github.com/ohbarye/react-use-kana](https://github.com/ohbarye/react-use-kana)
+- 使用技術: React 16.9, TypeScript 3.8.3
+
+#### String Pixelater
+
+文字を N \* N dots の 2 次元配列に変換するライブラリです。当時[Processing](https://processing.org/)にハマっており、Generative Art を作る過程で実装しました。
+
+- 時期: 2018
+- repository: [https://github.com/ohbarye/string-pixelater](https://github.com/ohbarye/string-pixelater)
+- 使用技術: TypeScript 3.6.4, rollup 1.23
+
+#### Automaildoc
+
+RSpec によるテスト実行時にメール文面をプレビューできる HTML を自動生成するライブラリです。
+
+- 時期: 2017
+- repository: [https://github.com/ohbarye/automaildoc](https://github.com/ohbarye/automaildoc)
+- 使用技術: Ruby 2.4, RSpec 3
+
+#### Markdown Server
+
+Markdown で記述された文書を HTML で配信する Web サーバを簡易に構築できるライブラリです。Python の学習のために自作しました。
+
+- 時期: 2015-08
+- repository: [https://github.com/ohbarye/markdown-server](https://github.com/ohbarye/markdown-server)
+- 使用技術: Python 3.7, bottle 0.12
 
 ## Public output
 
@@ -325,7 +361,16 @@ Nodefest 2018 では[同サービスに関する発表](<(https://speakerdeck.co
 
 ### プレゼンテーション
 
-- [https://speakerdeck.com/ohbarye](https://speakerdeck.com/ohbarye)
+[https://speakerdeck.com/ohbarye](https://speakerdeck.com/ohbarye) からいくつか抜粋します。
+
+- [Migration from React Native to PWA](https://speakerdeck.com/ohbarye/migration-from-react-native-to-pwa) (JSConf JP 2019)
+- [プロダクトの「負債」を「機能」と呼び直すために](https://speakerdeck.com/ohbarye/proof-of-value-with-ab-testing) (Regional Scrum Gathering Tokyo 2019)
+- [貢献できる OSS の見つけ方 -完結編-](https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-final) (NodeFest JP 2018)
+- [決済のトランザクション管理術](https://speakerdeck.com/ohbarye/how-to-manage-payment-transaction) (Meguro.rb#19)
+- [サブスクリプションサービスにおける In-App Purchase 再考](https://speakerdeck.com/ohbarye/rethink-in-app-purchase-on-subscription-services) (iOSDC Japan 2018)
+- [Quipper が実践する 定量データに基づく意思決定と開発](https://speakerdeck.com/ohbarye/fact-based-decision-making-and-development-by-quipper) (Rails developer Meetup 2018 Day 3 Extreme)
+- [エンジニアも気にしたい色のアクセシビリティ ](https://speakerdeck.com/ohbarye/color-accessibility-that-engineers-should-care) (Roppongi.js#3)
+- [フロントエンドのレベル上げ](https://speakerdeck.com/ohbarye/level-up-front-end-skills-for-rails-developer) (Meguro.rb#15)
 
 ### OSS 活動
 

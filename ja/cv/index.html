@@ -1171,7 +1171,7 @@
 <section id="スキル" class="level2">
 <h2>スキル</h2>
 <ul>
-<li>Language: <strong>Ruby</strong> (2.3~), <strong>TypeScript</strong> (3.4~), JavaScript (ES2015~), CoffeeScript<code>*</code> (1.x), Java<code>*</code> (6~8), Python (2.x)<code>*</code>, OCaml (4.10) <code>*</code></li>
+<li>Language: <strong>Ruby</strong> (2.3~), <strong>TypeScript</strong> (3.4~), JavaScript (ES2015~), CoffeeScript<code>*</code> (1.x), Java<code>*</code> (6~8), Python (2.x, 3.7)<code>*</code>, OCaml (4.10) <code>*</code></li>
 <li>Frontend: <strong>React</strong> (16.x~), Redux (3.x~), Backbone.js<code>*</code>, Marionette.js<code>*</code>, jQuery<code>*</code> (1.x~), React Native (0.5x), Webpack</li>
 <li>Backend: <strong>Ruby on Rails</strong> (4.2~5.1), Node.js<code>*</code>, OpenAPI (3.x)</li>
 <li>Testing: <strong>RSpec</strong>, Capybara, minitest, Jest, Cypress, sinon, chai, mocha</li>
@@ -1361,7 +1361,7 @@
 <h4>登録導線リニューアル</h4>
 <p>BtoC の学習サービスにおいて最も重要な獲得の時期に向けた EFO (Entry Form Optimization) プロジェクトです。</p>
 <p>当時のチームにて扱うフロントエンドの大部分は MPA であり、登録導線は Rails の View と jQuery で実装されていました。リッチな体験が要求されるシーンであったため Webpacker を用いて Rails フロントエンドの一部で React を導入しました。</p>
-<p>同時期でなくリリース前後の比較になってしまったが登録導線の CVR が有意に向上し、事業成果に直結する取り組みとなりました。</p>
+<p>同時期でなくリリース前後の比較ではありますが登録導線の CVR が有意に向上し、事業成果に直結する取り組みとなりました。</p>
 <p><a href="https://speakerdeck.com/ohbarye/level-up-front-end-skills-for-rails-developer">Meguro.rb にて取り組みの内容を発表</a>しました。</p>
 <ul>
 <li>期間: 2018-03</li>
@@ -1378,7 +1378,7 @@
 </section>
 <section id="upgrade-grape-gem" class="level4">
 <h4>Upgrade grape gem</h4>
-<p>社内で最も大きい Rails の API server では grape という gem を使っているが、この gem が導入時 2015 年の v0.12.0 から更新されていなかったのでアップグレードしました。</p>
+<p>社内で最も大きい Rails の API server では <a href="https://github.com/ruby-grape/grape">grape</a> という gem を使っていましたが、この gem が 2015 年の導入時の v0.12.0 から更新されていなかったのでアップグレードしました。</p>
 <p>Rails upgrade 等に比べて情報が少なく、依存している周辺 library が dead であるために迂回策を用意するなどの工夫が必要でした。minor version (~v0.19) を少しずつ上げながら最終的に当時の最新の v1.0.1 まで upgrade できました。</p>
 <p>余談ながら、この約 1 年後 2018 年 12 月に NewRelic で同 Rails アプリケーションのメトリクスが取れないという問題が起きました。これは NewRelic agent 側の問題だったため本体に<a href="https://github.com/newrelic/rpm/pull/293">パッチ</a>を投げて解決しました。</p>
 <ul>
@@ -1396,7 +1396,7 @@
 </section>
 <section id="キャリア決済廃止検討" class="level4">
 <h4>キャリア決済廃止検討</h4>
-<p>手数料が高く運用コストも高いキャリア決済を廃止する際にどれぐらいのインパクトがあるのかを検証するプロジェクトです。</p>
+<p>手数料が高く運用コストも高いキャリア決済を廃止する際に、どれぐらい事業へのインパクトがあるのかを検証するプロジェクトです。</p>
 <p>Optimizely という SaaS を用い、エンジニアによる開発やテスト実施の手間を極力抑えつつ A/B testing の実践と定量データの収集ができました。</p>
 <p>この取組については<a href="https://quipper.hatenablog.com/entry/2018/05/31/080000">ブログ記事</a>を執筆し、<a href="https://speakerdeck.com/ohbarye/fact-based-decision-making-and-development-by-quipper">Rails Developer Meetup 2018 Day 3</a>や<a href="https://speakerdeck.com/ohbarye/proof-of-value-with-ab-testing">Regional Scrum Gathering Tokyo 2019</a>といったイベントでの登壇発表も行いました。</p>
 <ul>
@@ -1512,21 +1512,61 @@
 </section>
 <section id="personal-projects" class="level3">
 <h3>Personal projects</h3>
-<section id="goofi-2018-08" class="level4">
-<h4>Goofi (2018-08~)</h4>
-<p>OSS への貢献をより簡便にするためのツールです。OSS 活動を始めたい初心者にとって最大の壁が「貢献対象を探すこと」だと考え、コントリビューションが推奨される repository と issue をリストアップする Web サービス<a href="https://goofi.now.sh/">Goofi</a>を作りました。(repository: <a href="https://github.com/ohbarye/goofi" class="uri">https://github.com/ohbarye/goofi</a>)</p>
+<section id="goofi" class="level4">
+<h4>Goofi</h4>
+<p>OSS への貢献をより簡便にするためのツールです。OSS 活動を始めたい初心者にとって最大の壁が「貢献対象を探すこと」だと考え、コントリビューションが推奨される repository と issue をリストアップする Web サービス<a href="https://goofi.now.sh/">Goofi</a>を作りました。</p>
 <p>Nodefest 2018 では<a href="(https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-final)">同サービスに関する発表</a>を行いました。</p>
 <p>2020 年 1 月に<a href="https://github.blog/2020-01-22-browse-good-first-issues-to-start-contributing-to-open-source/">GitHub が公式の類似機能を公開した</a>ので役目を終えそうですが、課題設定が正しかったことが追認された心持ちです。</p>
 <ul>
+<li>時期: 2018-08~</li>
+<li>repository: <a href="https://github.com/ohbarye/goofi" class="uri">https://github.com/ohbarye/goofi</a></li>
 <li>使用技術: Node.js 13.x, TypeScript 3.8, Next.js 9.1, GraphQL (client), Now.sh v1~2 (現 Versel), GitHub API v4</li>
 </ul>
 </section>
-<section id="review-bot-2017-08" class="level4">
-<h4>Review bot (2017-08~)</h4>
-<p>チーム開発でのレビューを促進させる Slack bot です。 指定した条件にマッチする pull requests 一覧を Slack に投稿します。(repository: <a href="https://github.com/ohbarye/review-waiting-list-bot" class="uri">https://github.com/ohbarye/review-waiting-list-bot</a>)</p>
+<section id="review-bot" class="level4">
+<h4>Review bot</h4>
+<p>チーム開発でのレビューを促進させる Slack bot です。 指定した条件にマッチする pull requests 一覧を Slack に投稿します。</p>
 <p>2019 年 6 月に GitHub が買収した<a href="https://pullpanda.com/">Pull Panda</a>に類似していますが商用で有料だったためか、この bot を fork して利用していただける企業が数社ありました。</p>
 <ul>
+<li>時期: 2017-08~</li>
+<li>repository: <a href="https://github.com/ohbarye/review-waiting-list-bot" class="uri">https://github.com/ohbarye/review-waiting-list-bot</a></li>
 <li>使用技術: Node.js 8.x, GraphQL (client) Slack API, GitHub API v3~4, Heroku</li>
+</ul>
+</section>
+<section id="react-use-kana" class="level4">
+<h4>React Use Kana</h4>
+<p>漢字を入力するとふりがなが自動入力されるフォームを作成するためのライブラリです。jQuery で同機能を実現するものや、React の古めのバージョンに対応する類似ライブラリはありましたが、React hooks を利用したライブラリは見つからなかったため自作しました。</p>
+<ul>
+<li>時期: 2019</li>
+<li>repository: <a href="https://github.com/ohbarye/react-use-kana" class="uri">https://github.com/ohbarye/react-use-kana</a></li>
+<li>使用技術: React 16.9, TypeScript 3.8.3</li>
+</ul>
+</section>
+<section id="string-pixelater" class="level4">
+<h4>String Pixelater</h4>
+<p>文字を N * N dots の 2 次元配列に変換するライブラリです。当時<a href="https://processing.org/">Processing</a>にハマっており、Generative Art を作る過程で実装しました。</p>
+<ul>
+<li>時期: 2018</li>
+<li>repository: <a href="https://github.com/ohbarye/string-pixelater" class="uri">https://github.com/ohbarye/string-pixelater</a></li>
+<li>使用技術: TypeScript 3.6.4, rollup 1.23</li>
+</ul>
+</section>
+<section id="automaildoc" class="level4">
+<h4>Automaildoc</h4>
+<p>RSpec によるテスト実行時にメール文面をプレビューできる HTML を自動生成するライブラリです。</p>
+<ul>
+<li>時期: 2017</li>
+<li>repository: <a href="https://github.com/ohbarye/automaildoc" class="uri">https://github.com/ohbarye/automaildoc</a></li>
+<li>使用技術: Ruby 2.4, RSpec 3</li>
+</ul>
+</section>
+<section id="markdown-server" class="level4">
+<h4>Markdown Server</h4>
+<p>Markdown で記述された文書を HTML で配信する Web サーバを簡易に構築できるライブラリです。Python の学習のために自作しました。</p>
+<ul>
+<li>時期: 2015-08</li>
+<li>repository: <a href="https://github.com/ohbarye/markdown-server" class="uri">https://github.com/ohbarye/markdown-server</a></li>
+<li>使用技術: Python 3.7, bottle 0.12</li>
 </ul>
 </section>
 </section>
@@ -1558,8 +1598,16 @@
 </section>
 <section id="プレゼンテーション" class="level3">
 <h3>プレゼンテーション</h3>
+<p><a href="https://speakerdeck.com/ohbarye" class="uri">https://speakerdeck.com/ohbarye</a> からいくつか抜粋します。</p>
 <ul>
-<li><a href="https://speakerdeck.com/ohbarye" class="uri">https://speakerdeck.com/ohbarye</a></li>
+<li><a href="https://speakerdeck.com/ohbarye/migration-from-react-native-to-pwa">Migration from React Native to PWA</a> (JSConf JP 2019)</li>
+<li><a href="https://speakerdeck.com/ohbarye/proof-of-value-with-ab-testing">プロダクトの「負債」を「機能」と呼び直すために</a> (Regional Scrum Gathering Tokyo 2019)</li>
+<li><a href="https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-final">貢献できる OSS の見つけ方 -完結編-</a> (NodeFest JP 2018)</li>
+<li><a href="https://speakerdeck.com/ohbarye/how-to-manage-payment-transaction">決済のトランザクション管理術</a> (Meguro.rb#19)</li>
+<li><a href="https://speakerdeck.com/ohbarye/rethink-in-app-purchase-on-subscription-services">サブスクリプションサービスにおける In-App Purchase 再考</a> (iOSDC Japan 2018)</li>
+<li><a href="https://speakerdeck.com/ohbarye/fact-based-decision-making-and-development-by-quipper">Quipper が実践する 定量データに基づく意思決定と開発</a> (Rails developer Meetup 2018 Day 3 Extreme)</li>
+<li><a href="https://speakerdeck.com/ohbarye/color-accessibility-that-engineers-should-care">エンジニアも気にしたい色のアクセシビリティ</a> (Roppongi.js#3)</li>
+<li><a href="https://speakerdeck.com/ohbarye/level-up-front-end-skills-for-rails-developer">フロントエンドのレベル上げ</a> (Meguro.rb#15)</li>
 </ul>
 </section>
 <section id="oss-活動" class="level3">
