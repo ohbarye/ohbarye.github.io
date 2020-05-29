@@ -246,7 +246,7 @@ Optimizely という SaaS を用い、エンジニアによる開発やテスト
 
 登録導線、外部システムとデータをやりとりする連携バッチ、生徒管理機能、自動宿題配信機能などを私は担当しました。当時の技術スタックである Rails, Backbone.js, Marionette.js, MongoDB のいずれも過去に経験がなかったのでキャッチアップしながら短納期で成果を上げることができました。
 
-本プロジェクトに関するプレスリリース: http://www.recruit-mp.co.jp/news/release/2016/0225_2893.html
+本プロジェクトに関するプレスリリース: [http://www.recruit-mp.co.jp/news/release/2016/0225_2893.html](http://www.recruit-mp.co.jp/news/release/2016/0225_2893.html)
 
 - 時期: 2015-09~2016-02
 - チーム構成
