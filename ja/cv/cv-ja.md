@@ -15,7 +15,7 @@ pagetitle: Masato Ohba (ohbarye) CV
 | ---------- | ------------------------------------------------------ |
 | Name       | Masato Ohba (大庭 直人)                                |
 | ID         | `ohbarye`                                              |
-| Email      | [over.rye+jh@gmail.com](mailto:over.rye+jh@gmail.com)  |
+| Email      | over.rye+jh [at] gmail.com  |
 | Entrypoint | [https://ohbarye.github.io](https://ohbarye.github.io) |
 
 ## 職務要約
