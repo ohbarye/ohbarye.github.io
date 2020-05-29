@@ -6,6 +6,7 @@ module.exports = {
     path: __dirname + '/build/javascripts',
     filename: 'bundle.js',
   },
+  mode: 'production',
   module: {
     rules: [
       {
