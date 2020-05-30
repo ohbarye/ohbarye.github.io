@@ -10,6 +10,8 @@ pagetitle: Masato Ohba (ohbarye) CV
 
 Last updated: 2020.05.30
 
+Japanese version: [https://ohbarye.github.io/ja/cv/](https://ohbarye.github.io/ja/cv/)
+
 ## Contact
 
 | key        | value                                                  |
