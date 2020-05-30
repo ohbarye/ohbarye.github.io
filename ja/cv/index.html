@@ -1334,54 +1334,89 @@
 <h4>Code cleanup</h4>
 <p>複数プロダクトでコードを共用していた monorepo を fork し、dead code が大量に発生しました。その dead code の掃除が全体の開発体験に関わると考え、退職前の最後の仕事としてほぼ独力で提案から実行まで行いました。</p>
 <p>約 3 週間で 400,000 行のコードを削除するに至り、Rails の利用されていない model の削減では数を 390 から 281 に減らすことができました。稼働中のシステムに大きく手を入れたものの顧客に影響を及ぼすような障害を起こすことなく完遂しました。</p>
-<ul>
-<li>期間: 2020-03</li>
-<li>チーム構成
-<ul>
-<li>規模: 1 名 (自分のみ)</li>
-<li>役割: すべて</li>
-</ul></li>
-<li>利用技術・ツール
-<ul>
-<li>Rails, React, Redux, TypeScript (削除対象)</li>
-<li>NewRelic, BigQuery (機能の利用状況調査)</li>
-</ul></li>
-</ul>
+<table>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 10%" />
+<col style="width: 3%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>期間</th>
+<th>チーム構成</th>
+<th>役割</th>
+<th>利用技術、ツール</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2020-03</td>
+<td>1 名 (Web×1)</td>
+<td>Web</td>
+<td>Ruby, Rails, React, Redux, TypeScript (削除対象)<br />NewRelic, BigQuery (機能の利用状況調査)</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="migration-from-react-native-to-pwa" class="level4">
 <h4>Migration from React Native to PWA</h4>
 <p>React Native 製 iOS/Android の業務用 internal アプリを PWA にてリニューアルするプロジェクトです。主にプロジェクトの立ち上げとバックエンドを担当しました。（リニューアル時に UI/UX を刷新したため、バックエンドにも変更が必要でした）</p>
 <p>プロジェクト以前に API に関する仕様を共有する仕組みがなかったため、OpenAPI による API specification の記述をし、共有のための土台の整備も行いました。自動テストと Staging 環境においてのみ動作する Rack middleware を活用し、Specification 違反を検知する仕組みも導入しています。（詳細は<a href="https://ohbarye.hatenablog.jp/entry/2020/04/29/open-api-specification-for-existing-restish-api-endpoints">ブログ記事</a>にも書きました）</p>
 <p>また、プロジェクトの総括を<a href="https://speakerdeck.com/ohbarye/migration-from-react-native-to-pwa">JSConf 2019 にて発表</a>しました。</p>
-<ul>
-<li>期間: 2019-07~2019-09</li>
-<li>チーム構成
-<ul>
-<li>規模: 6 名 (PdM×1、デザイナー ×2、iOS×1、フロントエンド ×1、バックエンド ×1)</li>
-<li>役割: バックエンドエンジニア</li>
-</ul></li>
-<li>利用技術・ツール
-<ul>
-<li>Rails 5.0, React 16.12, Redux 4.0, TypeScript 3.7, Cypress</li>
-</ul></li>
-</ul>
+<table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 36%" />
+<col style="width: 4%" />
+<col style="width: 48%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>期間</th>
+<th>チーム構成</th>
+<th>役割</th>
+<th>利用技術、ツール</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2019-07~2019-09</td>
+<td>6 名 (PdM×1, Designer×2, iOS×1, Frontend×1, Backend×1)</td>
+<td>Backend</td>
+<td>Ruby, Rails 5.0, RSpec, React 16.12, Redux 4.0, TypeScript 3.7, Cypress</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="中学生向けコーチングサービス開発" class="level4">
 <h4>中学生向けコーチングサービス開発</h4>
 <p>新規メンバーが大半の 10 名超、かつ半年を超える規模である不確実性の大きいプロジェクトにおいて、スクラム・モブプロ・1-on-1 等々のプラクティスを導入・実践することによりにリリースすることができました。また、定量的評価が難しいものの、メンバーの成長・定着にも繋がりました。</p>
 <p>本プロジェクトの詳細は『<a href="https://quipper.hatenablog.com/entry/2019/06/27/how-to-defeat-uncertainty">新メンバーが多い大型プロジェクトでの不確実性との戦い方</a>』にまとめています。</p>
-<ul>
-<li>期間: 2018-08~2019-03</li>
-<li>チーム構成
-<ul>
-<li>規模: 12 名 (PdM×1、デザイナー ×1、iOS×1、Android×1、Web エンジニア ×8)</li>
-<li>役割: Web エンジニア、スクラムマスター</li>
-</ul></li>
-<li>利用技術・ツール
-<ul>
-<li>Rails, React, Redux, TypeScript, React Native</li>
-</ul></li>
-</ul>
+<table>
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 32%" />
+<col style="width: 10%" />
+<col style="width: 47%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>期間</th>
+<th>チーム構成</th>
+<th>役割</th>
+<th>利用技術、ツール</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2018-08~2019-03</td>
+<td>12 名 (PdM×1、Designer×1、iOS×1、Android×1、Web×8)</td>
+<td>Web, Scrum master</td>
+<td>Ruby, Rails, React, RSpec, Capybara, Redux, TypeScript, Jest, React Native</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="登録導線リニューアル" class="level4">
 <h4>登録導線リニューアル</h4>
@@ -1389,60 +1424,81 @@
 <p>当時のチームにて扱うフロントエンドの大部分は MPA であり、登録導線は Rails の View と jQuery で実装されていました。リッチな体験が要求されるシーンであったため Webpacker を用いて Rails フロントエンドの一部で React を導入しました。</p>
 <p>同時期でなくリリース前後の比較ではありますが登録導線の CVR が有意に向上し、事業成果に直結する取り組みとなりました。</p>
 <p><a href="https://speakerdeck.com/ohbarye/level-up-front-end-skills-for-rails-developer">Meguro.rb にて取り組みの内容を発表</a>しました。</p>
-<ul>
-<li>期間: 2018-03</li>
-<li>チーム構成
-<ul>
-<li>規模: 3 名 (PdM×1、デザイナー ×1、Web エンジニア ×1)</li>
-<li>役割: Web エンジニア</li>
-</ul></li>
-<li>利用技術・ツール
-<ul>
-<li>Rails, React, Redux, TypeScript, Webpacker</li>
-</ul></li>
-</ul>
+<table>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 28%" />
+<col style="width: 3%" />
+<col style="width: 60%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>期間</th>
+<th>チーム構成</th>
+<th>役割</th>
+<th>利用技術、ツール</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2018-03</td>
+<td>3 名 (PdM×1, Designer×1, Web×1)</td>
+<td>Web</td>
+<td>Ruby, Rails, React, RSpec, Capybara, Redux, TypeScript, Webpacker</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="upgrade-grape-gem" class="level4">
 <h4>Upgrade grape gem</h4>
 <p>社内で最も大きい Rails の API server では <a href="https://github.com/ruby-grape/grape">grape</a> という gem を使っていましたが、この gem が 2015 年の導入時の v0.12.0 から更新されていなかったのでアップグレードしました。</p>
 <p>Rails upgrade 等に比べて情報が少なく、依存している周辺 library が dead であるために迂回策を用意するなどの工夫が必要でした。minor version (~v0.19) を少しずつ上げながら最終的に当時の最新の v1.0.1 まで upgrade できました。</p>
 <p>余談ながら、この約 1 年後 2018 年 12 月に NewRelic で同 Rails アプリケーションのメトリクスが取れないという問題が起きました。これは NewRelic agent 側の問題だったため本体に<a href="https://github.com/newrelic/rpm/pull/293">パッチ</a>を投げて解決しました。</p>
-<ul>
-<li>期間: 2017-10~2017-12</li>
-<li>チーム構成
-<ul>
-<li>規模: 1 名 (自分のみ)</li>
-<li>役割: Web エンジニア</li>
-</ul></li>
-<li>利用技術・ツール
-<ul>
-<li>Rails 4.2, Ruby 2.4, grape</li>
-</ul></li>
-</ul>
+<table>
+<thead>
+<tr class="header">
+<th>期間</th>
+<th>チーム構成</th>
+<th>役割</th>
+<th>利用技術、ツール</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2017-10~2017-12</td>
+<td>1 名 (Web×1)</td>
+<td>Web</td>
+<td>Rails 4.2, Ruby 2.4, RSpec, grape</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="キャリア決済廃止検討" class="level4">
 <h4>キャリア決済廃止検討</h4>
 <p>手数料が高く運用コストも高いキャリア決済を廃止する際に、どれぐらい事業へのインパクトがあるのかを検証するプロジェクトです。</p>
 <p>Optimizely という SaaS を用い、エンジニアによる開発やテスト実施の手間を極力抑えつつ A/B testing の実践と定量データの収集ができました。</p>
 <p>この取組については<a href="https://quipper.hatenablog.com/entry/2018/05/31/080000">ブログ記事</a>を執筆し、<a href="https://speakerdeck.com/ohbarye/fact-based-decision-making-and-development-by-quipper">Rails Developer Meetup 2018 Day 3</a>や<a href="https://speakerdeck.com/ohbarye/proof-of-value-with-ab-testing">Regional Scrum Gathering Tokyo 2019</a>といったイベントでの登壇発表も行いました。</p>
-<ul>
-<li>時期: 2017-10</li>
-<li>チーム構成
-<ul>
-<li>規模: 2 名 (PdM×1、Web エンジニア ×1)</li>
-<li>役割: Web エンジニア</li>
-</ul></li>
-<li>利用技術・ツール
-<ul>
-<li>Rails 4.2, Ruby 2.4, Optimizely</li>
-</ul></li>
-</ul>
+<table>
+<thead>
+<tr class="header">
+<th>期間</th>
+<th>チーム構成</th>
+<th>役割</th>
+<th>利用技術、ツール</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2017-10</td>
+<td>2 名 (PdM×1, Web×1)</td>
+<td>Web</td>
+<td>Rails 4.2, Ruby 2.4, jQuery, Optimizely</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="採用活動" class="level4">
 <h4>採用活動</h4>
-<ul>
-<li>時期: 2016-07~2020-03</li>
-</ul>
 <p>書類選考・一次・コードテスト・二次・カジュアル面談・リファラルランチ・リファラルディナーへの主体的な参加を始めとし、全面的に貢献しました。</p>
 <ul>
 <li>Job description の執筆
@@ -1470,24 +1526,60 @@
 <li><a href="https://quipper.hatenablog.com/entry/2020/04/02/effective-offboarding">オフボーディング</a></li>
 </ul></li>
 </ul>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 19%" />
+<col style="width: 4%" />
+<col style="width: 59%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>期間</th>
+<th>チーム構成</th>
+<th>役割</th>
+<th>利用技術、ツール</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2016-07~2020-03</td>
+<td>4~10 名 (Web×4~10)</td>
+<td>Web</td>
+<td>Rails, Ruby, minitest, React, TypeScript (作問にて使用)</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="in-app-purchase-機能実装" class="level4">
 <h4>In-App Purchase 機能実装</h4>
 <p>当時、iOS アプリ内での課金は買い切りしか提供していなかったが売上が芳しく無く、クレカ等と同じように自動更新（Auto-renewable）による決済機能を提供したいというニーズがあったために機能を実装しました。</p>
 <p>サーバサイドの API と、subscription status を確認するバッチ処理を実装しました。その過程でサーバサイドで利用している AppStore API client library の <a href="https://github.com/nomad/venice">venice</a> が自動更新の形式に対応していなかったと気づいたため、自前で実装し、<a href="https://github.com/nomad/venice/pull/30">pull request</a>を送りました。（同 OSS はどうやら手が足りていないようなのでそのあとも<a href="https://github.com/nomad/venice/pulls?q=is%3Apr+author%3Aohbarye+is%3Aclosed">何度か contribution</a>しました）</p>
 <p>このあとの運用も含めて In-App Purchase のサーバサイドに関する知見が得られたので<a href="https://speakerdeck.com/ohbarye/rethink-in-app-purchase-on-subscription-services">iOSDC 2018 で登壇発表</a>を行いました。</p>
-<ul>
-<li>時期: 2016-04~2016-06</li>
-<li>チーム構成
-<ul>
-<li>規模: 3 名 (PdM×1、iOS×1、Web エンジニア ×1)</li>
-<li>役割: Web エンジニア</li>
-</ul></li>
-<li>利用技術・ツール
-<ul>
-<li>Rails 4.2, Ruby 2.3</li>
-</ul></li>
-</ul>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 29%" />
+<col style="width: 4%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>期間</th>
+<th>チーム構成</th>
+<th>役割</th>
+<th>利用技術、ツール</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2016-04~2016-06</td>
+<td>3 名 (PdM×1、iOS×1、Web×1)</td>
+<td>Web</td>
+<td>Rails 4.2, Ruby 2.3, RSpec, venice, AppStore</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="受験サプリ移管プロジェクト" class="level4">
 <h4>受験サプリ移管プロジェクト</h4>
@@ -1495,18 +1587,30 @@
 <p>技術的に高度なことはあまりなかったかもしれませんが、元々 Java で数年と数億円をかけて開発・運用されたプロダクトを半年でフルスクラッチで実装するという狂気がありました。</p>
 <p>登録導線、外部システムとデータをやりとりする連携バッチ、生徒管理機能、自動宿題配信機能などを私は担当しました。当時の技術スタックである Rails, Backbone.js, Marionette.js, MongoDB のいずれも過去に経験がなかったのでキャッチアップしながら短納期で成果を上げることができました。</p>
 <p>本プロジェクトに関するプレスリリース: <a href="http://www.recruit-mp.co.jp/news/release/2016/0225_2893.html" class="uri">http://www.recruit-mp.co.jp/news/release/2016/0225_2893.html</a></p>
-<ul>
-<li>時期: 2015-09~2016-02</li>
-<li>チーム構成
-<ul>
-<li>規模: 10 名 (PdM×1、iOS×2、Android×2、Web エンジニア ×5)</li>
-<li>役割: Web エンジニア</li>
-</ul></li>
-<li>利用技術・ツール
-<ul>
-<li>Rails 4.2, Ruby 2.3</li>
-</ul></li>
-</ul>
+<table>
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 32%" />
+<col style="width: 2%" />
+<col style="width: 54%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>期間</th>
+<th>チーム構成</th>
+<th>役割</th>
+<th>利用技術、ツール</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2015-09~2016-02</td>
+<td>10 名 (PdM×1、iOS×2、Android×2、Web エンジニア ×5)</td>
+<td>Web</td>
+<td>Rails 4.2, Ruby 2.3, RSpec, Capybara, Backbone.js, Marionette.js, Sion, Mocha, Chai</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="その他" class="level4">
 <h4>その他</h4>

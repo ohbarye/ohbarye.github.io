@@ -123,13 +123,9 @@ Web backend を強みの中心に置きつつ、自社サービスと client wor
 
 約 3 週間で 400,000 行のコードを削除するに至り、Rails の利用されていない model の削減では数を 390 から 281 に減らすことができました。稼働中のシステムに大きく手を入れたものの顧客に影響を及ぼすような障害を起こすことなく完遂しました。
 
-- 期間: 2020-03
-- チーム構成
-  - 規模: 1 名 (自分のみ)
-  - 役割: すべて
-- 利用技術・ツール
-  - Rails, React, Redux, TypeScript (削除対象)
-  - NewRelic, BigQuery (機能の利用状況調査)
+| 期間    | チーム構成   | 役割 | 利用技術、ツール                                                                              |
+| ------- | ------------ | ---- | --------------------------------------------------------------------------------------------- |
+| 2020-03 | 1 名 (Web×1) | Web  | Ruby, Rails, React, Redux, TypeScript (削除対象)<br />NewRelic, BigQuery (機能の利用状況調査) |
 
 #### Migration from React Native to PWA
 
@@ -139,12 +135,9 @@ React Native 製 iOS/Android の業務用 internal アプリを PWA にてリニ
 
 また、プロジェクトの総括を[JSConf 2019 にて発表](https://speakerdeck.com/ohbarye/migration-from-react-native-to-pwa)しました。
 
-- 期間: 2019-07~2019-09
-- チーム構成
-  - 規模: 6 名 (PdM×1、デザイナー ×2、iOS×1、フロントエンド ×1、バックエンド ×1)
-  - 役割: バックエンドエンジニア
-- 利用技術・ツール
-  - Rails 5.0, React 16.12, Redux 4.0, TypeScript 3.7, Cypress
+| 期間            | チーム構成                                             | 役割    | 利用技術、ツール                                                        |
+| --------------- | ------------------------------------------------------ | ------- | ----------------------------------------------------------------------- |
+| 2019-07~2019-09 | 6 名 (PdM×1, Designer×2, iOS×1, Frontend×1, Backend×1) | Backend | Ruby, Rails 5.0, RSpec, React 16.12, Redux 4.0, TypeScript 3.7, Cypress |
 
 #### 中学生向けコーチングサービス開発
 
@@ -152,12 +145,9 @@ React Native 製 iOS/Android の業務用 internal アプリを PWA にてリニ
 
 本プロジェクトの詳細は『[新メンバーが多い大型プロジェクトでの不確実性との戦い方](https://quipper.hatenablog.com/entry/2019/06/27/how-to-defeat-uncertainty)』にまとめています。
 
-- 期間: 2018-08~2019-03
-- チーム構成
-  - 規模: 12 名 (PdM×1、デザイナー ×1、iOS×1、Android×1、Web エンジニア ×8)
-  - 役割: Web エンジニア、スクラムマスター
-- 利用技術・ツール
-  - Rails, React, Redux, TypeScript, React Native
+| 期間            | チーム構成                                         | 役割              | 利用技術、ツール                                                           |
+| --------------- | -------------------------------------------------- | ----------------- | -------------------------------------------------------------------------- |
+| 2018-08~2019-03 | 12 名 (PdM×1、Designer×1、iOS×1、Android×1、Web×8) | Web, Scrum master | Ruby, Rails, React, RSpec, Capybara, Redux, TypeScript, Jest, React Native |
 
 #### 登録導線リニューアル
 
@@ -169,12 +159,9 @@ BtoC の学習サービスにおいて最も重要な獲得の時期に向けた
 
 [Meguro.rb にて取り組みの内容を発表](https://speakerdeck.com/ohbarye/level-up-front-end-skills-for-rails-developer)しました。
 
-- 期間: 2018-03
-- チーム構成
-  - 規模: 3 名 (PdM×1、デザイナー ×1、Web エンジニア ×1)
-  - 役割: Web エンジニア
-- 利用技術・ツール
-  - Rails, React, Redux, TypeScript, Webpacker
+| 期間    | チーム構成                      | 役割 | 利用技術、ツール                                                  |
+| ------- | ------------------------------- | ---- | ----------------------------------------------------------------- |
+| 2018-03 | 3 名 (PdM×1, Designer×1, Web×1) | Web  | Ruby, Rails, React, RSpec, Capybara, Redux, TypeScript, Webpacker |
 
 #### Upgrade grape gem
 
@@ -184,12 +171,9 @@ Rails upgrade 等に比べて情報が少なく、依存している周辺 libra
 
 余談ながら、この約 1 年後 2018 年 12 月に NewRelic で同 Rails アプリケーションのメトリクスが取れないという問題が起きました。これは NewRelic agent 側の問題だったため本体に[パッチ](https://github.com/newrelic/rpm/pull/293)を投げて解決しました。
 
-- 期間: 2017-10~2017-12
-- チーム構成
-  - 規模: 1 名 (自分のみ)
-  - 役割: Web エンジニア
-- 利用技術・ツール
-  - Rails 4.2, Ruby 2.4, grape
+| 期間            | チーム構成   | 役割 | 利用技術、ツール                  |
+| --------------- | ------------ | ---- | --------------------------------- |
+| 2017-10~2017-12 | 1 名 (Web×1) | Web  | Rails 4.2, Ruby 2.4, RSpec, grape |
 
 #### キャリア決済廃止検討
 
@@ -199,16 +183,11 @@ Optimizely という SaaS を用い、エンジニアによる開発やテスト
 
 この取組については[ブログ記事](https://quipper.hatenablog.com/entry/2018/05/31/080000)を執筆し、[Rails Developer Meetup 2018 Day 3](https://speakerdeck.com/ohbarye/fact-based-decision-making-and-development-by-quipper)や[Regional Scrum Gathering Tokyo 2019](https://speakerdeck.com/ohbarye/proof-of-value-with-ab-testing)といったイベントでの登壇発表も行いました。
 
-- 時期: 2017-10
-- チーム構成
-  - 規模: 2 名 (PdM×1、Web エンジニア ×1)
-  - 役割: Web エンジニア
-- 利用技術・ツール
-  - Rails 4.2, Ruby 2.4, Optimizely
+| 期間    | チーム構成          | 役割 | 利用技術、ツール                        |
+| ------- | ------------------- | ---- | --------------------------------------- |
+| 2017-10 | 2 名 (PdM×1, Web×1) | Web  | Rails 4.2, Ruby 2.4, jQuery, Optimizely |
 
 #### 採用活動
-
-- 時期: 2016-07~2020-03
 
 書類選考・一次・コードテスト・二次・カジュアル面談・リファラルランチ・リファラルディナーへの主体的な参加を始めとし、全面的に貢献しました。
 
@@ -231,6 +210,10 @@ Optimizely という SaaS を用い、エンジニアによる開発やテスト
   - [卒業生と在職者の交流会の開催](https://quipper.hatenablog.com/entry/2018/12/28/yet-quipper-moves)
   - [オフボーディング](https://quipper.hatenablog.com/entry/2020/04/02/effective-offboarding)
 
+| 期間            | チーム構成         | 役割 | 利用技術、ツール                                        |
+| --------------- | ------------------ | ---- | ------------------------------------------------------- |
+| 2016-07~2020-03 | 4~10 名 (Web×4~10) | Web  | Rails, Ruby, minitest, React, TypeScript (作問にて使用) |
+
 #### In-App Purchase 機能実装
 
 当時、iOS アプリ内での課金は買い切りしか提供していなかったが売上が芳しく無く、クレカ等と同じように自動更新（Auto-renewable）による決済機能を提供したいというニーズがあったために機能を実装しました。
@@ -239,12 +222,9 @@ Optimizely という SaaS を用い、エンジニアによる開発やテスト
 
 このあとの運用も含めて In-App Purchase のサーバサイドに関する知見が得られたので[iOSDC 2018 で登壇発表](https://speakerdeck.com/ohbarye/rethink-in-app-purchase-on-subscription-services)を行いました。
 
-- 時期: 2016-04~2016-06
-- チーム構成
-  - 規模: 3 名 (PdM×1、iOS×1、Web エンジニア ×1)
-  - 役割: Web エンジニア
-- 利用技術・ツール
-  - Rails 4.2, Ruby 2.3
+| 期間            | チーム構成                 | 役割 | 利用技術、ツール                             |
+| --------------- | -------------------------- | ---- | -------------------------------------------- |
+| 2016-04~2016-06 | 3 名 (PdM×1、iOS×1、Web×1) | Web  | Rails 4.2, Ruby 2.3, RSpec, venice, AppStore |
 
 #### 受験サプリ移管プロジェクト
 
@@ -256,12 +236,9 @@ Optimizely という SaaS を用い、エンジニアによる開発やテスト
 
 本プロジェクトに関するプレスリリース: [http://www.recruit-mp.co.jp/news/release/2016/0225_2893.html](http://www.recruit-mp.co.jp/news/release/2016/0225_2893.html)
 
-- 時期: 2015-09~2016-02
-- チーム構成
-  - 規模: 10 名 (PdM×1、iOS×2、Android×2、Web エンジニア ×5)
-  - 役割: Web エンジニア
-- 利用技術・ツール
-  - Rails 4.2, Ruby 2.3
+| 期間            | チーム構成                                         | 役割 | 利用技術、ツール                                                                    |
+| --------------- | -------------------------------------------------- | ---- | ----------------------------------------------------------------------------------- |
+| 2015-09~2016-02 | 10 名 (PdM×1、iOS×2、Android×2、Web エンジニア ×5) | Web  | Rails 4.2, Ruby 2.3, RSpec, Capybara, Backbone.js, Marionette.js, Sion, Mocha, Chai |
 
 #### その他
 
