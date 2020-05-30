@@ -1090,6 +1090,27 @@
   fill: #dddddd;
 }
 
+.sidenav .balloon {
+  position: relative;
+  display: inline-block;
+  max-width: 300px;
+  margin-left: 16px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  padding: 8px 16px;
+  background: #dddddd;
+  text-align: left;
+  border-radius: 16px;
+}
+
+.sidenav .balloon::after {
+  content: '';
+  border: 16px solid transparent;
+  border-bottom-color: #dddddd;
+  position: absolute;
+  top: -26px;
+  left: 26px;
+}
 
 @media (min-width: 481px) {
   .markdown-body {
@@ -1103,43 +1124,6 @@
   }
 }
 
-.balloon-set-box {
-  display: flex;
-  flex-wrap: wrap;
-  position: absolute;
-  bottom: 16px;
-  margin-left: -4px;
-}
-.balloon-set-box.left {
-  flex-direction: row;
-}
-.balloon {
-  position: relative;
-  display: inline-block;
-  max-width: 300px;
-  margin-left: 8px;
-  margin-top: 12px;
-  height: 32px;
-  padding: 4px 16px;
-  background: #dddddd;
-  text-align: left;
-  border-radius: 12px;
-}
-.balloon::after {
-  content: '';
-  border: 16px solid transparent;
-  border-right-color: #dddddd;
-  position: absolute;
-  top: 0;
-}
-.left .balloon::after { /* 左側からの三角の位置 */
-  left: -22px;
-}
-
-.balloon-set-box svg {
-  width: 36px;
-  fill: #dddddd;
-}
 </style>
 
   </style>
@@ -1182,6 +1166,9 @@
       <img src="../../src/images/profile-icon.jpg" />
     </a>
   </div>
+  <div class="balloon">
+    I'm between jobs
+  </div>
 <ul>
 <li><a href="#contact">Contact</a></li>
 <li><a href="#summary">Summary</a></li>
@@ -1193,16 +1180,13 @@
 <li><a href="#honors-awards">Honors &amp; Awards</a></li>
 <li><a href="#interests">Interests</a></li>
 </ul>
-<div class="balloon-set-box left">
-  <div class="icon-box">
-  <a href="https://github.com/ohbarye/ohbarye.github.io">
-    <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation">
-      <path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path>
-    </svg>
-  </a>
+  <div class="github-icon">
+    <a href="https://github.com/ohbarye/ohbarye.github.io">
+      <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+        <path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path>
+      </svg>
+    </a>
   </div>
-  <div class="balloon">Between jobs</div>
-</div>
 </nav>
 <p>Last updated: 2020.05.30</p>
 <p>Japanese version: <a href="https://ohbarye.github.io/ja/cv/" class="uri">https://ohbarye.github.io/ja/cv/</a></p>
