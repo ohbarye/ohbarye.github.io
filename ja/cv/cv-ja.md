@@ -273,65 +273,6 @@ Optimizely という SaaS を用い、エンジニアによる開発やテスト
 - Web Server: Apache + Tomcat
 - DB: Oracle Database 11g
 
-### Personal Projects
-
-趣味の開発や、学習の過程での成果物です。
-
-#### Goofi
-
-OSS への貢献をより簡便にするためのツールです。OSS 活動を始めたい初心者にとって最大の壁が「貢献対象を探すこと」だと考え、コントリビューションが推奨される repository と issue をリストアップする Web サービス[Goofi](https://goofi.now.sh/)を作りました。
-
-Nodefest 2018 では[同サービスに関する発表](<(https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-final)>)を行いました。
-
-2020 年 1 月に[GitHub が公式の類似機能を公開した](https://github.blog/2020-01-22-browse-good-first-issues-to-start-contributing-to-open-source/)ので役目を終えそうですが、課題設定が正しかったことが追認された心持ちです。
-
-- 時期: 2018.08~
-- repository: [https://github.com/ohbarye/goofi](https://github.com/ohbarye/goofi)
-- 使用技術: Node.js 13.x, TypeScript 3.8, Next.js 9.1, GraphQL (client), Now.sh v1~2 (現 Versel), GitHub API v4
-
-#### Review bot
-
-チーム開発でのレビューを促進させる Slack bot です。
-指定した条件にマッチする pull requests 一覧を Slack に投稿します。
-
-2019 年 6 月に GitHub が買収した[Pull Panda](https://pullpanda.com/)に類似していますが商用で有料だったためか、この bot を fork して利用していただける企業が数社ありました。
-
-- 時期: 2017.08~
-- repository: [https://github.com/ohbarye/review-waiting-list-bot](https://github.com/ohbarye/review-waiting-list-bot)
-- 使用技術: Node.js 8.x, GraphQL (client) Slack API, GitHub API v3~4, Heroku
-
-#### React Use Kana
-
-漢字を入力するとふりがなが自動入力されるフォームを作成するためのライブラリです。jQuery で同機能を実現するものや、React の古めのバージョンに対応する類似ライブラリはありましたが、React hooks を利用したライブラリは見つからなかったため自作しました。
-
-- 時期: 2019
-- repository: [https://github.com/ohbarye/react-use-kana](https://github.com/ohbarye/react-use-kana)
-- 使用技術: React 16.9, TypeScript 3.8.3
-
-#### String Pixelater
-
-文字を N \* N dots の 2 次元配列に変換するライブラリです。当時[Processing](https://processing.org/)にハマっており、Generative Art を作る過程で実装しました。
-
-- 時期: 2018
-- repository: [https://github.com/ohbarye/string-pixelater](https://github.com/ohbarye/string-pixelater)
-- 使用技術: TypeScript 3.6.4, rollup 1.23
-
-#### Automaildoc
-
-RSpec によるテスト実行時にメール文面をプレビューできる HTML を自動生成するライブラリです。
-
-- 時期: 2017
-- repository: [https://github.com/ohbarye/automaildoc](https://github.com/ohbarye/automaildoc)
-- 使用技術: Ruby 2.4, RSpec 3
-
-#### Markdown Server
-
-Markdown で記述された文書を HTML で配信する Web サーバを簡易に構築できるライブラリです。Python の学習のために自作しました。
-
-- 時期: 2015.08
-- repository: [https://github.com/ohbarye/markdown-server](https://github.com/ohbarye/markdown-server)
-- 使用技術: Python 3.7, bottle 0.12
-
 ## Public Output
 
 [https://lapras.com/public/AVL0ALR](https://lapras.com/public/AVL0ALR) に概ね集約されています。
@@ -393,6 +334,65 @@ Markdown で記述された文書を HTML で配信する Web サーバを簡易
 - Meguro.rb
   - 役割: メンバー、ホスト
   - 地域 Ruby コミュニティの 1 つである Meguro.rb の運営スタッフとして、イベント開催のホストを 2 度行いました
+
+### Personal Projects
+
+趣味の開発や、学習の過程での成果物です。
+
+#### Goofi
+
+OSS への貢献をより簡便にするためのツールです。OSS 活動を始めたい初心者にとって最大の壁が「貢献対象を探すこと」だと考え、コントリビューションが推奨される repository と issue をリストアップする Web サービス[Goofi](https://goofi.now.sh/)を作りました。
+
+Nodefest 2018 では[同サービスに関する発表](<(https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-final)>)を行いました。
+
+2020 年 1 月に[GitHub が公式の類似機能を公開した](https://github.blog/2020-01-22-browse-good-first-issues-to-start-contributing-to-open-source/)ので役目を終えそうですが、課題設定が正しかったことが追認された心持ちです。
+
+| 時期     | Repository                                                           | 利用技術、ツール                                                                                    |
+| -------- | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| 2020.08~ | [https://github.com/ohbarye/goofi](https://github.com/ohbarye/goofi) | Node.js 13.x, TypeScript 3.8, Next.js 9.1, GraphQL (client), Now.sh v1~2 (現 Versel), GitHub API v4 |
+
+#### React Use Kana
+
+漢字を入力するとふりがなが自動入力されるフォームを作成するためのライブラリです。jQuery で同機能を実現するものや、React の古めのバージョンに対応する類似ライブラリはありましたが、React hooks を利用したライブラリは見つからなかったため自作しました。
+
+| 時期 | Repository                                                                             | 利用技術、ツール             |
+| ---- | -------------------------------------------------------------------------------------- | ---------------------------- |
+| 2019 | [https://github.com/ohbarye/react-use-kana](https://github.com/ohbarye/react-use-kana) | React 16.9, TypeScript 3.8.3 |
+
+#### String Pixelater
+
+文字を N \* N dots の 2 次元配列に変換するライブラリです。当時[Processing](https://processing.org/)にハマっており、Generative Art を作る過程で実装しました。
+
+| 時期 | Repository                                                                                 | 利用技術、ツール              |
+| ---- | ------------------------------------------------------------------------------------------ | ----------------------------- |
+| 2018 | [https://github.com/ohbarye/string-pixelater](https://github.com/ohbarye/string-pixelater) | TypeScript 3.6.4, rollup 1.23 |
+
+#### Review bot
+
+チーム開発でのレビューを促進させる Slack bot です。
+指定した条件にマッチする pull requests 一覧を Slack に投稿します。
+
+2019 年 6 月に GitHub が買収した[Pull Panda](https://pullpanda.com/)に類似していますが商用で有料だったためか、この bot を fork して利用していただける企業が数社ありました。
+
+| 時期     | Repository                                                                                               | 利用技術、ツール                                                 |
+| -------- | -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| 2017.08~ | [https://github.com/ohbarye/review-waiting-list-bot](https://github.com/ohbarye/review-waiting-list-bot) | Node.js 8.x, GraphQL (client) Slack API, GitHub API v3~4, Heroku |
+
+#### Automaildoc
+
+RSpec によるテスト実行時にメール文面をプレビューできる HTML を自動生成するライブラリです。
+
+| 時期 | Repository                                                                       | 利用技術、ツール  |
+| ---- | -------------------------------------------------------------------------------- | ----------------- |
+| 2017 | [https://github.com/ohbarye/automaildoc](https://github.com/ohbarye/automaildoc) | Ruby 2.4, RSpec 3 |
+
+#### Markdown Server
+
+Markdown で記述された文書を HTML で配信する Web サーバを簡易に構築できるライブラリです。Python の学習のために自作しました。
+
+| 時期 | Repository                                                                               | 利用技術、ツール        |
+| ---- | ---------------------------------------------------------------------------------------- | ----------------------- |
+| 2015 | [https://github.com/ohbarye/markdown-server](https://github.com/ohbarye/markdown-server) | Python 3.7, bottle 0.12 |
 
 ## 学歴
 
