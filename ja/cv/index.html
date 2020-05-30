@@ -1283,7 +1283,7 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="#code-cleanup">Code cleanup</a></td>
+<td><a href="#code-cleanup">Code Cleanup</a></td>
 <td>2020.03</td>
 <td>腕力</td>
 </tr>
@@ -1350,7 +1350,7 @@
 </tbody>
 </table>
 <section id="code-cleanup" class="level4">
-<h4>Code cleanup</h4>
+<h4>Code Cleanup</h4>
 <p>複数プロダクトでコードを共用していた monorepo を fork し、dead code が大量に発生しました。その dead code の掃除が全体の開発体験に関わると考え、退職前の最後の仕事としてほぼ独力で提案から実行まで行いました。</p>
 <p>約 3 週間で 400,000 行のコードを削除するに至り、Rails の利用されていない model の削減では数を 390 から 281 に減らすことができました。稼働中のシステムに大きく手を入れたものの顧客に影響を及ぼすような障害を起こすことなく完遂しました。</p>
 <table>
@@ -1572,8 +1572,8 @@
 </section>
 <section id="in-app-purchase-機能実装" class="level4">
 <h4>In-App Purchase 機能実装</h4>
-<p>当時、iOS アプリ内での課金は買い切りしか提供していなかったが売上が芳しく無く、クレカ等と同じように自動更新（Auto-renewable）による決済機能を提供したいというニーズがあったために機能を実装しました。</p>
-<p>サーバサイドの API と、subscription status を確認するバッチ処理を実装しました。その過程でサーバサイドで利用している AppStore API client library の <a href="https://github.com/nomad/venice">venice</a> が自動更新の形式に対応していなかったと気づいたため、自前で実装し、<a href="https://github.com/nomad/venice/pull/30">pull request</a>を送りました。（同 OSS はどうやら手が足りていないようなのでそのあとも<a href="https://github.com/nomad/venice/pulls?q=is%3Apr+author%3Aohbarye+is%3Aclosed">何度か contribution</a>しました）</p>
+<p>当時、iOS アプリ内での課金手段として買い切りを提供していたものの売上が芳しく無く、クレカ等と同じように自動更新（Auto-renewable）による決済機能を提供したいというニーズがありました。</p>
+<p>私はサーバサイドの API と、subscription status を確認するバッチ処理を実装しました。その過程でサーバサイドで利用している AppStore API client library の <a href="https://github.com/nomad/venice">venice</a> が自動更新の形式に対応していなかったと気づいたため、自前で実装し、<a href="https://github.com/nomad/venice/pull/30">pull request</a>を送りました。（同 OSS はどうやら手が足りていないようなのでそのあとも<a href="https://github.com/nomad/venice/pulls?q=is%3Apr+author%3Aohbarye+is%3Aclosed">何度か contribution</a>しました）</p>
 <p>このあとの運用も含めて In-App Purchase のサーバサイドに関する知見が得られたので<a href="https://speakerdeck.com/ohbarye/rethink-in-app-purchase-on-subscription-services">iOSDC 2018 で登壇発表</a>を行いました。</p>
 <table>
 <colgroup>
@@ -1708,7 +1708,7 @@
 <li>New Relic Ruby agent の gem <code>newrelic_rpm</code> が grape v1.2.0+ に対応していなかったので対応した<a href="https://github.com/newrelic/rpm/pull/293">pull request</a></li>
 <li>その他 Node.js, yarn, Ruby などのメジャー OSS にもわずかながらパッチを送った経験あり</li>
 </ul></li>
-<li>tools
+<li>Tools
 <ul>
 <li><a href="https://github.com/ohbarye/goofi">goofi</a></li>
 <li><a href="https://github.com/ohbarye/review-waiting-list-bot">review-waiting-list-bot</a></li>
@@ -1748,7 +1748,7 @@
 <section id="goofi" class="level4">
 <h4>Goofi</h4>
 <p>OSS への貢献をより簡便にするためのツールです。OSS 活動を始めたい初心者にとって最大の壁が「貢献対象を探すこと」だと考え、コントリビューションが推奨される repository と issue をリストアップする Web サービス<a href="https://goofi.now.sh/">Goofi</a>を作りました。</p>
-<p>Nodefest 2018 では<a href="(https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-final)">同サービスに関する発表</a>を行いました。</p>
+<p>Nodefest 2018 では<a href="https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-final">同サービスに関する発表</a>を行いました。</p>
 <p>2020 年 1 月に<a href="https://github.blog/2020-01-22-browse-good-first-issues-to-start-contributing-to-open-source/">GitHub が公式の類似機能を公開した</a>ので役目を終えそうですが、課題設定が正しかったことが追認された心持ちです。</p>
 <table>
 <colgroup>

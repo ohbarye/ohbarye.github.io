@@ -108,20 +108,20 @@ I am motivated to learn in areas where I have no experience. I think it's possib
 
 Under the umbrella of the Study Supplements brand, there are courses for elementary, junior high, and high schools, English for working adults, and forSchool for schools and municipalities. Some of the projects I was involved in are listed below.
 
-| Title                                                                                                                | Period          | Appeal Points                                     |
-| -------------------------------------------------------------------------------------------------------------------- | --------------- | ------------------------------------------------- |
-| [Code cleanup](#code-cleanup)                                                                                        | 2020.03         | Toughness to remove huge amount of codes          |
-| Price Change                                                                                                         | 2019.10~2020.01 | Payment systems, complex business logics          |
-| [Migration from React Native to PWA](#migration-from-react-native-to-pwa)                                            | 2019.07~2019.09 | Technology selection, paying back technology debt |
-| [Develop Coaching Service for Junior High School Students](#develop-coaching-service-for-junio-high-school-students) | 2018.08~2019.03 | 9 people x 7 months project management / Scrum    |
-| [Entry Form Renewal](#entry-form-renewal)                                                                            | 2018.03         | Technology selection、EFO                         |
-| [Upgrade grape gem](#Upgrade-grape-gem)                                                                              | 2017.10~2017.12 | Paying back technical debt, OSS                   |  | [Research to Abolish Payment Method](#research-to-abolish-payment-method) | 2017.10 | A/B testing、Data driven decision making |
-| Develop Coaching Service for High School Students                                                                    | 2016.12~2017.02 | Short term development                            |
-| Benkyo Sapuri Migration                                                                                              | 2016.06~2016.12 | Short term development                            |
-| [Hiring](#hiring)                                                                                                    | 2016.07~2020.03 | Organization design                               |
-| [Develope In-App Purchase for iOS](#develope-in-app-purchase-for-ios)                                                | 2016.04~2016.06 | Payment systems, OSS                              |
-| [Jyuken Sapuri Migration](#jyuken-sapuri-migration)                                                                  | 2015.09~2016.02 | Short term development, catch-up tech stacks      |
-| [Other Activities](#other-activities)                                                                                | -               | Continuous improvement                            |
+| Title                                                                                                                 | Period          | Appeal Points                                     |
+| --------------------------------------------------------------------------------------------------------------------- | --------------- | ------------------------------------------------- |
+| [Code cleanup](#code-cleanup)                                                                                         | 2020.03         | Toughness to remove huge amount of codes          |
+| Price Change                                                                                                          | 2019.10~2020.01 | Payment systems, complex business logics          |
+| [Migration from React Native to PWA](#migration-from-react-native-to-pwa)                                             | 2019.07~2019.09 | Technology selection, paying back technology debt |
+| [Develop Coaching Service for Junior High School Students](#develop-coaching-service-for-junior-high-school-students) | 2018.08~2019.03 | 9 people x 7 months project management / Scrum    |
+| [Entry Form Renewal](#entry-form-renewal)                                                                             | 2018.03         | Technology selection、EFO                         |
+| [Upgrade grape gem](#upgrade-grape-gem)                                                                               | 2017.10~2017.12 | Paying back technical debt, OSS                   |  | [Research to Abolish Payment Method](#research-to-abolish-payment-method) | 2017.10 | A/B testing、Data driven decision making |
+| Develop Coaching Service for High School Students                                                                     | 2016.12~2017.02 | Short term development                            |
+| Benkyo Sapuri Migration                                                                                               | 2016.06~2016.12 | Short term development                            |
+| [Hiring](#hiring)                                                                                                     | 2016.07~2020.03 | Organization design                               |
+| [Develope In-App Purchase for iOS](#develope-in-app-purchase-for-ios)                                                 | 2016.04~2016.06 | Payment systems, OSS                              |
+| [Jyuken Sapuri Migration](#jyuken-sapuri-migration)                                                                   | 2015.09~2016.02 | Short term development, catch-up tech stacks      |
+| [Other Activities](#other-activities)                                                                                 | -               | Continuous improvement                            |
 
 #### Code Cleanup
 
@@ -180,169 +180,201 @@ As an aside, about a year after this, in December 2018, I had an issue with NewR
 | --------------- | --------- | ---- | --------------------------------- |
 | 2017.10~2017.12 | 1 (Web×1) | Web  | Rails 4.2, Ruby 2.4, RSpec, grape |
 
-#### キャリア決済廃止検討
+#### Research to Abolish Payment Method
 
-手数料が高く運用コストも高いキャリア決済を廃止する際にどれぐらいのインパクトがあるのかを検証するプロジェクトです。
+This project examines how much of an impact it will have on the business when it abolishes carrier payments, which have high fees and operating costs.
 
-Optimizely という SaaS を用い、エンジニアによる開発やテスト実施の手間を極力抑えつつ A/B testing の実践と定量データの収集ができました。
+Using Optimizely SaaS, we were able to practice A/B testing and collect quantitative data while minimizing the amount of development and testing done by engineers.
 
-この取組については[ブログ記事](https://quipper.hatenablog.com/entry/2018/05/31/080000)を執筆し、[Rails Developer Meetup 2018 Day 3](https://speakerdeck.com/ohbarye/fact-based-decision-making-and-development-by-quipper)や[Regional Scrum Gathering Tokyo 2019](https://speakerdeck.com/ohbarye/proof-of-value-with-ab-testing)といったイベントでの登壇発表も行いました。
+I've written a [blog post](https://quipper.hatenablog.com/entry/2018/05/31/080000) about this effort, and we've presented at events such as [Rails Developer Meetup 2018 Day 3](https://speakerdeck.com/ohbarye/fact-based-decision-making-and-development-by-quipper) and [Regional Scrum Gathering Tokyo 2019](https://speakerdeck.com/ohbarye/proof-of-value-with-ab-testing).
 
-- 時期: 2017.10
-- チーム構成
-  - 規模: 2 名 (PdM×1、Web エンジニア ×1)
-  - 役割: Web エンジニア
-- 利用技術・ツール
-  - Rails 4.2, Ruby 2.4, Optimizely
+| Period  | Team             | Role | Tech stacks, tools                      |
+| ------- | ---------------- | ---- | --------------------------------------- |
+| 2017.10 | 2 (PdM×1, Web×1) | Web  | Rails 4.2, Ruby 2.4, jQuery, Optimizely |
 
-#### 採用活動
+#### Hiring
 
-- 時期: 2016.07~2020.03
+I made a full contribution, including document screening, first round, code testing, second round, casual interviews, and proactive participation in the referral lunch and referral dinner.
 
-書類選考・一次・コードテスト・二次・カジュアル面談・リファラルランチ・リファラルディナーへの主体的な参加を始めとし、全面的に貢献しました。
+- Wrote job descriptions
+- Introduced and polished structured interviews
+- [Designed code test](https://quipper.hatenablog.com/entry/2018/10/09/coding_test)
+- Designed technical interviews
+- Published an interview guide
+- Community activities
+  - [StudySapuri Meetup #1](https://quipper.hatenablog.com/entry/2018/07/20/172946)
 
-- Job description の執筆
-  - HR やエージェントと連携しつつ作成
-  - 採用状況の変化に合わせて 2 度書き直しました
-- 構造化面接の採用・実践・型化
-- [コードテストの設計と実装](https://quipper.hatenablog.com/entry/2018/10/09/coding_test)
-- 技術面接の設計と実装
-- 面接ガイドの公開
-- コミュニティ活動
-  - [スタディサプリミートアップ第一回の運営](https://quipper.hatenablog.com/entry/2018/07/20/172946)
+I also engaged in the following activities, which are closely related to our recruitment activities.
 
-また、採用活動と地続きである以下の活動にも取り組みました。
+- Onboarding
+- Wrote blog posts summarizing the findings of the above activities
+  - [Casual interviews](https://quipper.hatenablog.com/entry/2020/02/05/casual-interview-in-quipper)
+  - [Interview guide](https://quipper.hatenablog.com/entry/2018/09/01/interview-guide)
+  - [Alumni meetup](https://quipper.hatenablog.com/entry/2018/12/28/yet-quipper-moves)
+  - [Offboarding](https://quipper.hatenablog.com/entry/2020/04/02/effective-offboarding)
 
-- オンボーディング
-- 上記活動に関する知見をまとめたブログ記事の執筆
-  - [カジュアル面談](https://quipper.hatenablog.com/entry/2020/02/05/casual-interview-in-quipper)
-  - [面接ガイドの公開](https://quipper.hatenablog.com/entry/2018/09/01/interview-guide)
-  - [卒業生と在職者の交流会の開催](https://quipper.hatenablog.com/entry/2018/12/28/yet-quipper-moves)
-  - [オフボーディング](https://quipper.hatenablog.com/entry/2020/04/02/effective-offboarding)
+| Period          | Team            | Role | Tech stacks, tools                                         |
+| --------------- | --------------- | ---- | ---------------------------------------------------------- |
+| 2016.07~2020.03 | 4~10 (Web×4~10) | Web  | Rails, Ruby, minitest, React, TypeScript (For coding test) |
 
-#### In-App Purchase 機能実装
+#### Develope In-App Purchase for iOS
 
-当時、iOS アプリ内での課金は買い切りしか提供していなかったが売上が芳しく無く、クレカ等と同じように自動更新（Auto-renewable）による決済機能を提供したいというニーズがあったために機能を実装しました。
+Our service was offering outright purchase feature within iOS app, but sales were not good, and there was a need to provide an auto-renewable payment function like credit cards.
 
-サーバサイドの API と、subscription status を確認するバッチ処理を実装しました。その過程でサーバサイドで利用している AppStore API client library の [venice](https://github.com/nomad/venice) が自動更新の形式に対応していなかったと気づいたため、自前で実装し、[pull request](https://github.com/nomad/venice/pull/30)を送りました。（同 OSS はどうやら手が足りていないようなのでそのあとも[何度か contribution](https://github.com/nomad/venice/pulls?q=is%3Apr+author%3Aohbarye+is%3Aclosed)しました）
+I implemented server-side APIs and a batch process to check subscription statuses. During the development, I realized that [venice](https://github.com/nomad/venice), AppStore API client library used on the server side, didn't support the automatic renewal, so I implemented it myself and sent a [pull request](https://github.com/nomad/venice/pull/30). (The OSS is apparently short-handed, so I did [several contributions](https://github.com/nomad/venice/pulls?q=is%3Apr+author%3Aohbarye+is%3Aclosed) even after that.)
 
-このあとの運用も含めて In-App Purchase のサーバサイドに関する知見が得られたので[iOSDC 2018 で登壇発表](https://speakerdeck.com/ohbarye/rethink-in-app-purchase-on-subscription-services)を行いました。
+I gave a [presentation at iOSDC 2018](https://speakerdeck.com/ohbarye/rethink-in-app-purchase-on-subscription-services) about the server side implementation of In-App Purchase, including the operation for that.
 
-- 時期: 2016.04~2016.06
-- チーム構成
-  - 規模: 3 名 (PdM×1、iOS×1、Web エンジニア ×1)
-  - 役割: Web エンジニア
-- 利用技術・ツール
-  - Rails 4.2, Ruby 2.3
+| Period          | Team                    | Role | Tech stacks, tools                           |
+| --------------- | ----------------------- | ---- | -------------------------------------------- |
+| 2016.04~2016.06 | 3 (PdM×1、iOS×1、Web×1) | Web  | Rails 4.2, Ruby 2.3, RSpec, venice, AppStore |
 
-#### 受験サプリ移管プロジェクト
+#### Jyuken Sapuri Migration
 
-リクルートマーケティングパートナーズが運用していた「受験サプリ」というプロダクトを Quipper のコードベース上に載せ替え、「スタディサプリ」としてリブランディングするプロジェクトです。
+This is a project to rebrand the "Jyuken Sapuri" (Learning platform for high school students that our parent compary had used to run) on Quipper's codebase as a "StudySapuri".
 
-技術的に高度なことはあまりなかったかもしれませんが、元々 Java で数年と数億円をかけて開発・運用されたプロダクトを半年でフルスクラッチで実装するという狂気がありました。
+There were not many technical difficulties, but it was insane project. We had to build a system that had originally been developed and operated for several years from scratch in six months.
 
-登録導線、外部システムとデータをやりとりする連携バッチ、生徒管理機能、自動宿題配信機能などを私は担当しました。当時の技術スタックである Rails, Backbone.js, Marionette.js, MongoDB のいずれも過去に経験がなかったのでキャッチアップしながら短納期で成果を上げることができました。
+I was in charge of a registration flow, batches to exchange data with external systems, student management functions for teachers, and automated homework delivery functions. Although I had none of experiences of tech stacks used in this project in the past, I was able to catch up in a short period and to finish my tasks.
 
-本プロジェクトに関するプレスリリース: [http://www.recruit-mp.co.jp/news/release/2016/0225_2893.html](http://www.recruit-mp.co.jp/news/release/2016/0225_2893.html)
+Press release on this project: [http://www.recruit-mp.co.jp/news/release/2016/0225_2893.html](http://www.recruit-mp.co.jp/news/release/2016/0225_2893.html)
 
-- 時期: 2015.09~2016.02
-- チーム構成
-  - 規模: 10 名 (PdM×1、iOS×2、Android×2、Web エンジニア ×5)
-  - 役割: Web エンジニア
-- 利用技術・ツール
-  - Rails 4.2, Ruby 2.3
+| Period          | Team                                            | Role | Tech stacks, tools                                                                  |
+| --------------- | ----------------------------------------------- | ---- | ----------------------------------------------------------------------------------- |
+| 2015.09~2016.02 | 10 (PdM×1、iOS×2、Android×2、Web エンジニア ×5) | Web  | Rails 4.2, Ruby 2.3, RSpec, Capybara, Backbone.js, Marionette.js, Sion, Mocha, Chai |
 
-#### その他
+#### Other Activities
 
-その他、定常的・突発的に行なった業務を以下に記します。
+The followings are other regular and spot tasks I've addressed.
 
-- [協調しあう文化づくり](https://quipper.hatenablog.com/entry/2018/11/14/working-out-loud)
-- [社内留学の推進](https://quipper.hatenablog.com/entry/2019/07/02/114507)
-- 開発効率向上に関するツールの開発・導入 ([kpt-bot](https://github.com/ohbarye/kpt-bot), [review-bot](https://github.com/ohbarye/review-waiting-list-bot), [Pull Panda](https://pullpanda.com/))
+- [Creating a Collaborative Culture](https://quipper.hatenablog.com/entry/2018/11/14/working-out-loud)
+- [Promote in-house study abroad](https://quipper.hatenablog.com/entry/2019/07/02/114507)
+- Introduce tools to improve development efficiency ([kpt-bot](https://github.com/ohbarye/kpt-bot), [review-bot](https://github.com/ohbarye/review-waiting-list-bot), [Pull Panda](https://pullpanda.com/))
 - Dependencies upgrade with [dependabot](https://dependabot.com/)
 - Release manager
-- Quipper School / Video、スタディサプリのリリース分離
-- 健康促進のための懸垂台の導入
-- 読書会・勉強会の運営 (Real World HTTP, SRE 本 etc.)
-- 社内図書館の発案と実践
+- Quipper School / Video, study supplements release separation
+- Introduction of a pull-up machine
+- Organizing reading and study groups (Real World HTTP, SRE books, etc.)
 
 ### SCSK Corporation (2012.04 ~ 2015.08) 3 yrs 5mos
 
-[SCSK](https://www.scsk.jp/)は住友商事子会社の大手 SIer です。
+[SCSK](https://www.scsk.jp/) is a Japanese big information technology services company.
 
-私はシステムエンジニアとして不動産業界向けの業務システム開発に携わっていました。複雑な要件のデータモデル設計・帳票出力プログラムの作成・Web アプリケーションやバッチ処理の開発を通じてソフトウェア開発の基礎を学びました。
-
-2014 年以降は基本設計・テスト設計・運用・進行管理・ベンダーマネジメントが業務の大半を占めました。
+I was a member of a department developing some enterprise systems for real estate companies which needs better property management solutions. I've developed web applications for the purpose.
 
 - Web backend: Java6, Seasar2 (an open source web application framework)
 - Web frontend: jQuery
 - Web Server: Apache + Tomcat
 - DB: Oracle Database 11g
 
-### Personal projects
-
-#### Goofi (2018.08~)
-
-OSS への貢献をより簡便にするためのツールです。OSS 活動を始めたい初心者にとって最大の壁が「貢献対象を探すこと」だと考え、コントリビューションが推奨される repository と issue をリストアップする Web サービス[Goofi](https://goofi.now.sh/)を作りました。(repository: [https://github.com/ohbarye/goofi](https://github.com/ohbarye/goofi))
-
-Nodefest 2018 では[同サービスに関する発表](<(https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-final)>)を行いました。
-
-2020 年 1 月に[GitHub が公式の類似機能を公開した](https://github.blog/2020-01-22-browse-good-first-issues-to-start-contributing-to-open-source/)ので役目を終えそうですが、課題設定が正しかったことが追認された心持ちです。
-
-- 使用技術: Node.js 13.x, TypeScript 3.8, Next.js 9.1, GraphQL (client), Now.sh v1~2 (現 Versel), GitHub API v4
-
-#### Review bot (2017.08~)
-
-チーム開発でのレビューを促進させる Slack bot です。
-指定した条件にマッチする pull requests 一覧を Slack に投稿します。(repository: [https://github.com/ohbarye/review-waiting-list-bot](https://github.com/ohbarye/review-waiting-list-bot))
-
-2019 年 6 月に GitHub が買収した[Pull Panda](https://pullpanda.com/)に類似していますが商用で有料だったためか、この bot を fork して利用していただける企業が数社ありました。
-
-- 使用技術: Node.js 8.x, GraphQL (client) Slack API, GitHub API v3~4, Heroku
-
-## Public output
-
-[https://lapras.com/public/AVL0ALR](https://lapras.com/public/AVL0ALR) に概ね集約されています。
+## Public Output
 
 ### Blogs
 
-- 個人 [https://ohbarye.hatenablog.jp/](https://ohbarye.hatenablog.jp/)
-- 個人 (英語) [https://dev.to/ohbarye](https://dev.to/ohbarye)
+- Personal (Japanese) [https://ohbarye.hatenablog.jp/](https://ohbarye.hatenablog.jp/)
+- Personal (English) [https://dev.to/ohbarye](https://dev.to/ohbarye)
 - 会社 [https://quipper.hatenablog.com/search?q=ohbarye](https://quipper.hatenablog.com/search?q=ohbarye)
 
 ### Presentations
 
-- [https://speakerdeck.com/ohbarye](https://speakerdeck.com/ohbarye)
+Here are a few excerpts from [https://speakerdeck.com/ohbarye](https://speakerdeck.com/ohbarye). All of them are in Japanese.
 
-### OSS
+- [Migration from React Native to PWA](https://speakerdeck.com/ohbarye/migration-from-react-native-to-pwa) (JSConf JP 2019)
+- [Verify Hypothesis with A/B Testing](https://speakerdeck.com/ohbarye/proof-of-value-with-ab-testing) (Regional Scrum Gathering Tokyo 2019)
+- [How to Find Good First Issues](https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-final) (NodeFest JP 2018)
+- [How to Manage Payment Transactions](https://speakerdeck.com/ohbarye/how-to-manage-payment-transaction) (Meguro.rb#19)
+- [Rethink In-App Purchase on Subscription Services](https://speakerdeck.com/ohbarye/rethink-in-app-purchase-on-subscription-services) (iOSDC Japan 2018)
+- [Fact-based Decision Making and Development](https://speakerdeck.com/ohbarye/fact-based-decision-making-and-development-by-quipper) (Rails developer Meetup 2018 Day 3 Extreme)
+- [Color Accessibility, which Engineers Should Care](https://speakerdeck.com/ohbarye/color-accessibility-that-engineers-should-care) (Roppongi.js#3)
+- [Level up Frontend Skills for Rais Developer](https://speakerdeck.com/ohbarye/level-up-front-end-skills-for-rails-developer) (Meguro.rb#15)
 
-- Pull requests to OSS ([pull requests 一覧](https://github.com/pulls?q=is%3Apr+author%3Aohbarye+archived%3Afalse+-user%3Aohbarye+))
-  - AppStore の In-App purchase 用 API クライアント gem `venice` が Auto-Renewable (自動更新) に対応していなかったのでその機能を自ら開発した[pull request](https://github.com/nomad/venice/pull/30)
-  - New Relic Ruby agent の gem `newrelic_rpm` が grape v1.2.0+ に対応していなかったので対応した[pull request](https://github.com/newrelic/rpm/pull/293)
-  - その他 Node.js, yarn, Ruby などのメジャー OSS にもわずかながらパッチを送った経験あり
-- tools
+### OSS Activities
+
+- Pull requests to OSS ([pull requests list](https://github.com/pulls?q=is%3Apr+author%3Aohbarye+archived%3Afalse+-user%3Aohbarye+))
+  - An API client gem `venice` of AppStore for In-App purchase didn't support Auto-Renewable, so I developed the feature by myself [pull request](https://github.com/nomad/venice/pull/30).
+  - A gem `newrelic_rpm` of New Relic Ruby agent was not compatible with grape v1.2.0+, so I fixed with this [pull request](https://github.com/newrelic/rpm/pull/293).
+  - I have also sent patches to major OSS such as Node.js, yarn, Ruby, etc.
+- Tools
   - [goofi](https://github.com/ohbarye/goofi)
   - [review-waiting-list-bot](https://github.com/ohbarye/review-waiting-list-bot)
   - [kpt-bot](https://github.com/ohbarye/kpt-bot)
   - [markdown-server](https://github.com/ohbarye/markdown-server)
-- [published gems](https://rubygems.org/profiles/ohbarye)
-- [published npm packages](https://www.npmjs.com/~ohbarye)
+- [Published gems](https://rubygems.org/profiles/ohbarye)
+- [Published npm packages](https://www.npmjs.com/~ohbarye)
 
-### Community activities
+### Community Activities
 
 - [Engineering Manager Meetup](https://engineering-manager-meetup.connpass.com/)
   - Role: Meetup organizer
-  - 日本ではいまだ母数の少ない Engineering Manager という position についての情報共有を目的としたコミュニティです
-  - トータルで 500 人以上が参加しました
-  - 約 1.5 年にわたり独力で運営してきました
-  - 現在はコミュニティでの運用にシフトしようと動いているところです
+  - The purpose of this community is to share knowledge about engineering management, which is still not widely available in Japan.
+  - In total, more than 500 people participated in the event.
+  - I've been running it on my own for about 1.5 years.
+  - I handed over the community management to the community.
 - [EOF2019](https://eof2019.peatix.com/)
   - Role: core member
   - The very first festival that puts "Engineering Management" on the theme in Japan.
-  - OST セッションの開催を担当
-- Meguro.rb
+  - Organize the OST session.
+- Meguro.rb (Ruby regional community)
   - Role: member
-  - 地域 Ruby コミュニティの 1 つである Meguro.rb の運営スタッフとして、イベント開催のホストを 2 度行いました
+  - As an administrative staff member of Meguro.rb, one of the local Ruby communities, I hosted the event twice.
+
+### Personal Projects
+
+These are artifacts of my personal projects.
+
+#### Goofi
+
+It is a tool to make contribution to OSS easier. I thought that the biggest obstacle for beginners who want to start OSS contributions is to find the target of contribution, so I created a web service [Goofi](https://goofi.now.sh/) to list repositories and issues to which contribution is recommended.
+
+At Nodefest 2018, I [made a presentation about the service](https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-final).
+
+In January 2020, [GitHub has published an official feature](https://github.blog/2020-01-22-browse-good-first-issues-to-start-contributing-to-open-source/) similar to Googi, then I took it as, "My recognition of the problem was right.
+
+| Period   | Repository                                                           | Tech stacks, tools                                                                                  |
+| -------- | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| 2020.08~ | [https://github.com/ohbarye/goofi](https://github.com/ohbarye/goofi) | Node.js 13.x, TypeScript 3.8, Next.js 9.1, GraphQL (client), Now.sh v1~2 (現 Vercel), GitHub API v4 |
+
+#### React Use Kana
+
+This is a library to create a form that automatically inputs furigana when you type kanji. there are some libraries that have the same function with jQuery and similar libraries for older versions of React, but I couldn't find a library that uses React hooks, so I made my own.
+
+| Period | Repository                                                                             | Tech stacks, tools           |
+| ------ | -------------------------------------------------------------------------------------- | ---------------------------- |
+| 2019   | [https://github.com/ohbarye/react-use-kana](https://github.com/ohbarye/react-use-kana) | React 16.9, TypeScript 3.8.3 |
+
+#### String Pixelater
+
+A library that converts a character to a two-dimensional array of N \* N dots. I was addicted to [Processing](https://processing.org/) at the time and implemented it through the process of creating Generative Art.
+
+| Period | Repository                                                                                 | Tech stacks, tools            |
+| ------ | ------------------------------------------------------------------------------------------ | ----------------------------- |
+| 2018   | [https://github.com/ohbarye/string-pixelater](https://github.com/ohbarye/string-pixelater) | TypeScript 3.6.4, rollup 1.23 |
+
+#### Review bot
+
+It's a Slack bot that encourages reviews in team development. It posts a list of pull requests to Slack that match specified conditions.
+
+It's similar to [Pull Panda](https://pullpanda.com/), acquired by GitHub in June 2019. But my bot was forked by some companies for their internal use, that's probably because Pull Panda was not free.
+
+| Period   | Repository                                                                                               | Tech stacks, tools                                               |
+| -------- | -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| 2017.08~ | [https://github.com/ohbarye/review-waiting-list-bot](https://github.com/ohbarye/review-waiting-list-bot) | Node.js 8.x, GraphQL (client) Slack API, GitHub API v3~4, Heroku |
+
+#### Automaildoc
+
+This is a library that automatically generates HTML to preview email text when running tests with RSpec.
+
+| Period | Repository                                                                       | Tech stacks, tools |
+| ------ | -------------------------------------------------------------------------------- | ------------------ |
+| 2017   | [https://github.com/ohbarye/automaildoc](https://github.com/ohbarye/automaildoc) | Ruby 2.4, RSpec 3  |
+
+#### Markdown Server
+
+This is a library that can build a web server to deliver Markdown documents as HTML. I made this for learning Python.
+
+| Period | Repository                                                                               | Tech stacks, tools      |
+| ------ | ---------------------------------------------------------------------------------------- | ----------------------- |
+| 2015   | [https://github.com/ohbarye/markdown-server](https://github.com/ohbarye/markdown-server) | Python 3.7, bottle 0.12 |
 
 ## Education
 
@@ -374,7 +406,7 @@ By 2020, I have developed the technical skills required in the field of software
   - Google Code Jam 2020
     - Passed Qualification Round
 - Computer system
-  - [WIP] 『[The Elements of Computing Systems: Building a Modern Computer from First Principles](https://www.amazon.com/dp/0262640686)』 (a.k.a. Nand to Tetris) [https://github.com/ohbarye/nand2tetris](https://github.com/ohbarye/nand2tetris)
+  - [WIP] "[The Elements of Computing Systems: Building a Modern Computer from First Principles](https://www.amazon.com/dp/0262640686)" (a.k.a. Nand to Tetris) [https://github.com/ohbarye/nand2tetris](https://github.com/ohbarye/nand2tetris)
     - I'm building an assembler, VM translator, and a compiler in OCaml.
 - Algorithms
   - Mastered [Princeton University Algorithms Part 1](https://www.coursera.org/learn/algorithms-part1) in Coursera

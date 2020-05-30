@@ -110,7 +110,7 @@ Web backend を強みの中心に置きつつ、自社サービスとクライ�
 
 | タイトル                                                                  | 期間            | 語れるポイント                                         |
 | ------------------------------------------------------------------------- | --------------- | ------------------------------------------------------ |
-| [Code cleanup](#code-cleanup)                                             | 2020.03         | 腕力                                                   |
+| [Code Cleanup](#code-cleanup)                                             | 2020.03         | 腕力                                                   |
 | 価格変更対応                                                              | 2019.10~2020.01 | 複雑な要件の設計・実装                                 |
 | [Migration from React Native to PWA](#migration-from-react-native-to-pwa) | 2019.07~2019.09 | 技術選定、技術的負債返却                               |
 | [中学生向けコーチングサービス開発](#中学生向けコーチングサービス開発)     | 2018.08~2019.03 | 9 名 × 7 ヶ月規模のプロジェクトマネジメント / スクラム |
@@ -124,7 +124,7 @@ Web backend を強みの中心に置きつつ、自社サービスとクライ�
 | [受験サプリ移管プロジェクト](#受験サプリ移管プロジェクト)                 | 2015.09~2016.02 | 短納期開発、新規技術の習得                             |
 | [その他](#その他)                                                         | -               | 地道な改善活動                                         |
 
-#### Code cleanup
+#### Code Cleanup
 
 複数プロダクトでコードを共用していた monorepo を fork し、dead code が大量に発生しました。その dead code の掃除が全体の開発体験に関わると考え、退職前の最後の仕事としてほぼ独力で提案から実行まで行いました。
 
@@ -223,9 +223,9 @@ Optimizely という SaaS を用い、エンジニアによる開発やテスト
 
 #### In-App Purchase 機能実装
 
-当時、iOS アプリ内での課金は買い切りしか提供していなかったが売上が芳しく無く、クレカ等と同じように自動更新（Auto-renewable）による決済機能を提供したいというニーズがあったために機能を実装しました。
+当時、iOS アプリ内での課金手段として買い切りを提供していたものの売上が芳しく無く、クレカ等と同じように自動更新（Auto-renewable）による決済機能を提供したいというニーズがありました。
 
-サーバサイドの API と、subscription status を確認するバッチ処理を実装しました。その過程でサーバサイドで利用している AppStore API client library の [venice](https://github.com/nomad/venice) が自動更新の形式に対応していなかったと気づいたため、自前で実装し、[pull request](https://github.com/nomad/venice/pull/30)を送りました。（同 OSS はどうやら手が足りていないようなのでそのあとも[何度か contribution](https://github.com/nomad/venice/pulls?q=is%3Apr+author%3Aohbarye+is%3Aclosed)しました）
+私はサーバサイドの API と、subscription status を確認するバッチ処理を実装しました。その過程でサーバサイドで利用している AppStore API client library の [venice](https://github.com/nomad/venice) が自動更新の形式に対応していなかったと気づいたため、自前で実装し、[pull request](https://github.com/nomad/venice/pull/30)を送りました。（同 OSS はどうやら手が足りていないようなのでそのあとも[何度か contribution](https://github.com/nomad/venice/pulls?q=is%3Apr+author%3Aohbarye+is%3Aclosed)しました）
 
 このあとの運用も含めて In-App Purchase のサーバサイドに関する知見が得られたので[iOSDC 2018 で登壇発表](https://speakerdeck.com/ohbarye/rethink-in-app-purchase-on-subscription-services)を行いました。
 
@@ -304,7 +304,7 @@ Optimizely という SaaS を用い、エンジニアによる開発やテスト
 - [決済のトランザクション管理術](https://speakerdeck.com/ohbarye/how-to-manage-payment-transaction) (Meguro.rb#19)
 - [サブスクリプションサービスにおける In-App Purchase 再考](https://speakerdeck.com/ohbarye/rethink-in-app-purchase-on-subscription-services) (iOSDC Japan 2018)
 - [Quipper が実践する 定量データに基づく意思決定と開発](https://speakerdeck.com/ohbarye/fact-based-decision-making-and-development-by-quipper) (Rails developer Meetup 2018 Day 3 Extreme)
-- [エンジニアも気にしたい色のアクセシビリティ ](https://speakerdeck.com/ohbarye/color-accessibility-that-engineers-should-care) (Roppongi.js#3)
+- [エンジニアも気にしたい色のアクセシビリティ](https://speakerdeck.com/ohbarye/color-accessibility-that-engineers-should-care) (Roppongi.js#3)
 - [フロントエンドのレベル上げ](https://speakerdeck.com/ohbarye/level-up-front-end-skills-for-rails-developer) (Meguro.rb#15)
 
 ### OSS 活動
@@ -313,7 +313,7 @@ Optimizely という SaaS を用い、エンジニアによる開発やテスト
   - AppStore の In-App purchase 用 API クライアント gem `venice` が Auto-Renewable (自動更新) に対応していなかったのでその機能を自ら開発した[pull request](https://github.com/nomad/venice/pull/30)
   - New Relic Ruby agent の gem `newrelic_rpm` が grape v1.2.0+ に対応していなかったので対応した[pull request](https://github.com/newrelic/rpm/pull/293)
   - その他 Node.js, yarn, Ruby などのメジャー OSS にもわずかながらパッチを送った経験あり
-- tools
+- Tools
   - [goofi](https://github.com/ohbarye/goofi)
   - [review-waiting-list-bot](https://github.com/ohbarye/review-waiting-list-bot)
   - [kpt-bot](https://github.com/ohbarye/kpt-bot)
@@ -344,7 +344,7 @@ Optimizely という SaaS を用い、エンジニアによる開発やテスト
 
 OSS への貢献をより簡便にするためのツールです。OSS 活動を始めたい初心者にとって最大の壁が「貢献対象を探すこと」だと考え、コントリビューションが推奨される repository と issue をリストアップする Web サービス[Goofi](https://goofi.now.sh/)を作りました。
 
-Nodefest 2018 では[同サービスに関する発表](<(https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-final)>)を行いました。
+Nodefest 2018 では[同サービスに関する発表](https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-final)を行いました。
 
 2020 年 1 月に[GitHub が公式の類似機能を公開した](https://github.blog/2020-01-22-browse-good-first-issues-to-start-contributing-to-open-source/)ので役目を終えそうですが、課題設定が正しかったことが追認された心持ちです。
 
