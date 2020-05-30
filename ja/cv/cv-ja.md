@@ -41,7 +41,7 @@ Web backend を強みの中心に置きつつ、自社サービスとクライ�
 - Database
   - MongoDB (3.2~3.6), Redis, PostgreSQL (9.5)
 - Infrastructure
-  - AWS, Docker, Kubernetes, Heroku`*`, Deis`*`, Netlify`*`, Versel`*`
+  - AWS, Docker, Kubernetes, Heroku`*`, Deis`*`, Netlify`*`, Vercel`*`
 - Communication tools
   - GitHub, ZenHub, Slack
 - SaaS
@@ -349,7 +349,7 @@ Nodefest 2018 では[同サービスに関する発表](<(https://speakerdeck.co
 
 | 時期     | Repository                                                           | 利用技術、ツール                                                                                    |
 | -------- | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| 2020.08~ | [https://github.com/ohbarye/goofi](https://github.com/ohbarye/goofi) | Node.js 13.x, TypeScript 3.8, Next.js 9.1, GraphQL (client), Now.sh v1~2 (現 Versel), GitHub API v4 |
+| 2020.08~ | [https://github.com/ohbarye/goofi](https://github.com/ohbarye/goofi) | Node.js 13.x, TypeScript 3.8, Next.js 9.1, GraphQL (client), Now.sh v1~2 (現 Vercel), GitHub API v4 |
 
 #### React Use Kana
 
