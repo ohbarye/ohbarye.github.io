@@ -7,7 +7,7 @@ output:
 pagetitle: Masato Ohba (ohbarye) CV
 ---
 
-最終更新日: 2020-05-28
+最終更新日: 2020.05.28
 
 ## 基本情報と連絡先
 
@@ -20,7 +20,7 @@ pagetitle: Masato Ohba (ohbarye) CV
 
 ## 職務要約
 
-Web backend を強みの中心に置きつつ、自社サービスと client work 両方のフルサイクル開発の経験があります。適時コミュニケーションを取りつつ行う要求・要件定義を始めとし、チームでの開発から運用までの全体を担うことができます。
+Web backend を強みの中心に置きつつ、自社サービスとクライアントワーク両方のフルサイクル開発の経験があります。適時コミュニケーションを取りつつ行う要求・要件定義を始めとし、チームでの開発から運用までの全体のリードを担うことができます。
 
 登録導線やリテンション施策などの System of Engagement 領域、リッチな体験が求められるサービスの Web frontend においては React による SPA, MPA の開発を行なってきました。
 
@@ -65,7 +65,7 @@ Web backend を強みの中心に置きつつ、自社サービスと client wor
 
 現代においては特筆すべきことではありませんが、業務においては OSS を利用しています。技術選定の際には利便性やトレンドの最大瞬間風速だけでなくチームとして feasible な技術かどうか？を中心に検討し、並んで持続性や disposability を検討します。チームの生産性を優先した結果として保守的な選択をすることが多いです。製品の依存するライブラリ等については dependabot のような SaaS を活用しつつ dependencies の定期的なアップグレードも行なってきました。
 
-また、開発するプロダクトと OSS は地続きであると考えています。必要な機能がなければ自ら開発したりパッチを送ったり、bug や regression に気づいたら直す振る舞いを心がけています。（後述する「Personal projects」欄、「Public Output」欄においても OSS contribution に関する内容を記述しています）
+また、開発するプロダクトと OSS は地続きであると考えています。必要な機能がなければ自ら開発したりパッチを送ったり、bug や regression に気づいたら直す振る舞いを心がけています。（後述する[Personal Projects](#personal-projects)欄、[Public Output](#public-output)欄にても OSS contribution に関する内容を記述しています）
 
 #### チーム志向
 
@@ -78,6 +78,12 @@ Web backend を強みの中心に置きつつ、自社サービスと client wor
 エンジニア数が 20~60 名規模の組織における Engineering Manager として、組織設計・チーム設計・採用活動・教育・オンボーディング・文化づくり・コミュニティ活動等々に関する実績と知見があります。
 
 チーム・組織規模が大きくなる中で生じる課題はその組織において初めて経験される類のものが多く、明確に真因の特定と優先度判断とアサインを行わないと放置され歪みが拡大することがしばしばあります。組織課題のそうした特性を知ったうえで対応してきた経験は、自身の役割がメンバーであれマネジャーであれ、同規模 ± 数十名のチーム・組織でも活かせると考えます。
+
+#### アウトプット志向
+
+趣味や業務を通じて調べたこと・学んだことをまとめてアウトプットすることを心がけています。アウトプットを意識した思索や試行を繰り返すことによって抽象化・共通化のスキルを磨けるだけでなく、課題の発見から解決までの総合力を高められると考えています。
+
+登壇発表・プレゼンテーションの類は得意ではありませんが、その機会を通じて学ぶことや得られるフィードバックがあるため、可能な範囲で挑戦しています。実績については[Public Output](#public-output)欄をご参照ください。
 
 ### 経験のないこと
 
@@ -95,7 +101,7 @@ Web backend を強みの中心に置きつつ、自社サービスと client wor
 
 ## 職務経歴
 
-### Quipper Limited (2015-09 ~ 2020-05) 4 yrs 8mos
+### Quipper Limited (2015.09 ~ 2020.05) 4 yrs 8mos
 
 [Quipper](https://www.quipper.com/)は BtoC, BtoB 両方の教育事業を営む企業です。日本国外には Quipper School, Quipper Video を、日本国内においては[スタディサプリ](https://studysapuri.jp/)の開発・運用を行っています。
 
@@ -103,18 +109,18 @@ Web backend を強みの中心に置きつつ、自社サービスと client wor
 
 | タイトル                                                                  | 期間            | 語れるポイント                                         |
 | ------------------------------------------------------------------------- | --------------- | ------------------------------------------------------ |
-| [Code cleanup](#code-cleanup)                                             | 2020-03         | 腕力                                                   |
-| 価格変更対応                                                              | 2019-10~2020-01 | 複雑な要件の設計・実装                                 |
-| [Migration from React Native to PWA](#migration-from-react-native-to-pwa) | 2019-07~2019-09 | 技術選定、技術的負債返却                               |
-| [中学生向けコーチングサービス開発](#中学生向けコーチングサービス開発)     | 2018-08~2019-03 | 9 名 × 7 ヶ月規模のプロジェクトマネジメント / スクラム |
-| [登録導線リニューアル](#登録導線リニューアル)                             | 2018-03         | 技術選定、EFO                                          |
-| [Upgrade grape gem](#upgrade-grape-gem)                                   | 2017-10~2017-12 | 技術的負債返却、OSS                                    |
-| [キャリア決済廃止検討](#キャリア決済廃止検討)                             | 2017-10         | A/B テスト、Data driven な意思決定                     |
-| 高校生向けコーチングサービス開発                                          | 2016-12~2017-02 | 短納期開発                                             |
-| 勉強サプリ移管プロジェクト                                                | 2016-06~2016-12 | 短納期開発                                             |
-| [採用活動](#採用活動)                                                     | 2016-07~2020-03 | 組織づくり                                             |
-| [In-App Purchase 機能実装](#in-app-purchase-機能実装)                     | 2016-04~2016-06 | 決済機能開発、OSS                                      |
-| [受験サプリ移管プロジェクト](#受験サプリ移管プロジェクト)                 | 2015-09~2016-02 | 短納期開発、新規技術の習得                             |
+| [Code cleanup](#code-cleanup)                                             | 2020.03         | 腕力                                                   |
+| 価格変更対応                                                              | 2019.10~2020.01 | 複雑な要件の設計・実装                                 |
+| [Migration from React Native to PWA](#migration-from-react-native-to-pwa) | 2019.07~2019.09 | 技術選定、技術的負債返却                               |
+| [中学生向けコーチングサービス開発](#中学生向けコーチングサービス開発)     | 2018.08~2019.03 | 9 名 × 7 ヶ月規模のプロジェクトマネジメント / スクラム |
+| [登録導線リニューアル](#登録導線リニューアル)                             | 2018.03         | 技術選定、EFO                                          |
+| [Upgrade grape gem](#upgrade-grape-gem)                                   | 2017.10~2017.12 | 技術的負債返却、OSS                                    |
+| [キャリア決済廃止検討](#キャリア決済廃止検討)                             | 2017.10         | A/B テスト、Data driven な意思決定                     |
+| 高校生向けコーチングサービス開発                                          | 2016.12~2017.02 | 短納期開発                                             |
+| 勉強サプリ移管プロジェクト                                                | 2016.06~2016.12 | 短納期開発                                             |
+| [採用活動](#採用活動)                                                     | 2016.07~2020.03 | 組織づくり                                             |
+| [In-App Purchase 機能実装](#in-app-purchase-機能実装)                     | 2016.04~2016.06 | 決済機能開発、OSS                                      |
+| [受験サプリ移管プロジェクト](#受験サプリ移管プロジェクト)                 | 2015.09~2016.02 | 短納期開発、新規技術の習得                             |
 | [その他](#その他)                                                         | -               | 地道な改善活動                                         |
 
 #### Code cleanup
@@ -125,7 +131,7 @@ Web backend を強みの中心に置きつつ、自社サービスと client wor
 
 | 期間    | チーム構成   | 役割 | 利用技術、ツール                                                                              |
 | ------- | ------------ | ---- | --------------------------------------------------------------------------------------------- |
-| 2020-03 | 1 名 (Web×1) | Web  | Ruby, Rails, React, Redux, TypeScript (削除対象)<br />NewRelic, BigQuery (機能の利用状況調査) |
+| 2020.03 | 1 名 (Web×1) | Web  | Ruby, Rails, React, Redux, TypeScript (削除対象)<br />NewRelic, BigQuery (機能の利用状況調査) |
 
 #### Migration from React Native to PWA
 
@@ -137,7 +143,7 @@ React Native 製 iOS/Android の業務用 internal アプリを PWA にてリニ
 
 | 期間            | チーム構成                                             | 役割    | 利用技術、ツール                                                        |
 | --------------- | ------------------------------------------------------ | ------- | ----------------------------------------------------------------------- |
-| 2019-07~2019-09 | 6 名 (PdM×1, Designer×2, iOS×1, Frontend×1, Backend×1) | Backend | Ruby, Rails 5.0, RSpec, React 16.12, Redux 4.0, TypeScript 3.7, Cypress |
+| 2019.07~2019.09 | 6 名 (PdM×1, Designer×2, iOS×1, Frontend×1, Backend×1) | Backend | Ruby, Rails 5.0, RSpec, React 16.12, Redux 4.0, TypeScript 3.7, Cypress |
 
 #### 中学生向けコーチングサービス開発
 
@@ -147,7 +153,7 @@ React Native 製 iOS/Android の業務用 internal アプリを PWA にてリニ
 
 | 期間            | チーム構成                                         | 役割              | 利用技術、ツール                                                           |
 | --------------- | -------------------------------------------------- | ----------------- | -------------------------------------------------------------------------- |
-| 2018-08~2019-03 | 12 名 (PdM×1、Designer×1、iOS×1、Android×1、Web×8) | Web, Scrum master | Ruby, Rails, React, RSpec, Capybara, Redux, TypeScript, Jest, React Native |
+| 2018.08~2019.03 | 12 名 (PdM×1、Designer×1、iOS×1、Android×1、Web×8) | Web, Scrum master | Ruby, Rails, React, RSpec, Capybara, Redux, TypeScript, Jest, React Native |
 
 #### 登録導線リニューアル
 
@@ -161,7 +167,7 @@ BtoC の学習サービスにおいて最も重要な獲得の時期に向けた
 
 | 期間    | チーム構成                      | 役割 | 利用技術、ツール                                                  |
 | ------- | ------------------------------- | ---- | ----------------------------------------------------------------- |
-| 2018-03 | 3 名 (PdM×1, Designer×1, Web×1) | Web  | Ruby, Rails, React, RSpec, Capybara, Redux, TypeScript, Webpacker |
+| 2018.03 | 3 名 (PdM×1, Designer×1, Web×1) | Web  | Ruby, Rails, React, RSpec, Capybara, Redux, TypeScript, Webpacker |
 
 #### Upgrade grape gem
 
@@ -173,7 +179,7 @@ Rails upgrade 等に比べて情報が少なく、依存している周辺 libra
 
 | 期間            | チーム構成   | 役割 | 利用技術、ツール                  |
 | --------------- | ------------ | ---- | --------------------------------- |
-| 2017-10~2017-12 | 1 名 (Web×1) | Web  | Rails 4.2, Ruby 2.4, RSpec, grape |
+| 2017.10~2017.12 | 1 名 (Web×1) | Web  | Rails 4.2, Ruby 2.4, RSpec, grape |
 
 #### キャリア決済廃止検討
 
@@ -185,7 +191,7 @@ Optimizely という SaaS を用い、エンジニアによる開発やテスト
 
 | 期間    | チーム構成          | 役割 | 利用技術、ツール                        |
 | ------- | ------------------- | ---- | --------------------------------------- |
-| 2017-10 | 2 名 (PdM×1, Web×1) | Web  | Rails 4.2, Ruby 2.4, jQuery, Optimizely |
+| 2017.10 | 2 名 (PdM×1, Web×1) | Web  | Rails 4.2, Ruby 2.4, jQuery, Optimizely |
 
 #### 採用活動
 
@@ -212,7 +218,7 @@ Optimizely という SaaS を用い、エンジニアによる開発やテスト
 
 | 期間            | チーム構成         | 役割 | 利用技術、ツール                                        |
 | --------------- | ------------------ | ---- | ------------------------------------------------------- |
-| 2016-07~2020-03 | 4~10 名 (Web×4~10) | Web  | Rails, Ruby, minitest, React, TypeScript (作問にて使用) |
+| 2016.07~2020.03 | 4~10 名 (Web×4~10) | Web  | Rails, Ruby, minitest, React, TypeScript (作問にて使用) |
 
 #### In-App Purchase 機能実装
 
@@ -224,7 +230,7 @@ Optimizely という SaaS を用い、エンジニアによる開発やテスト
 
 | 期間            | チーム構成                 | 役割 | 利用技術、ツール                             |
 | --------------- | -------------------------- | ---- | -------------------------------------------- |
-| 2016-04~2016-06 | 3 名 (PdM×1、iOS×1、Web×1) | Web  | Rails 4.2, Ruby 2.3, RSpec, venice, AppStore |
+| 2016.04~2016.06 | 3 名 (PdM×1、iOS×1、Web×1) | Web  | Rails 4.2, Ruby 2.3, RSpec, venice, AppStore |
 
 #### 受験サプリ移管プロジェクト
 
@@ -238,7 +244,7 @@ Optimizely という SaaS を用い、エンジニアによる開発やテスト
 
 | 期間            | チーム構成                                         | 役割 | 利用技術、ツール                                                                    |
 | --------------- | -------------------------------------------------- | ---- | ----------------------------------------------------------------------------------- |
-| 2015-09~2016-02 | 10 名 (PdM×1、iOS×2、Android×2、Web エンジニア ×5) | Web  | Rails 4.2, Ruby 2.3, RSpec, Capybara, Backbone.js, Marionette.js, Sion, Mocha, Chai |
+| 2015.09~2016.02 | 10 名 (PdM×1、iOS×2、Android×2、Web エンジニア ×5) | Web  | Rails 4.2, Ruby 2.3, RSpec, Capybara, Backbone.js, Marionette.js, Sion, Mocha, Chai |
 
 #### その他
 
@@ -254,7 +260,7 @@ Optimizely という SaaS を用い、エンジニアによる開発やテスト
 - 読書会・勉強会の運営 (Real World HTTP, SRE 本 etc.)
 - 社内図書館の発案と実践
 
-### SCSK Corporation (2012-04 ~ 2015-08) 3 yrs 5mos
+### SCSK Corporation (2012.04 ~ 2015.08) 3 yrs 5mos
 
 [SCSK](https://www.scsk.jp/)は住友商事子会社の大手 SIer です。
 
@@ -267,7 +273,9 @@ Optimizely という SaaS を用い、エンジニアによる開発やテスト
 - Web Server: Apache + Tomcat
 - DB: Oracle Database 11g
 
-### Personal projects
+### Personal Projects
+
+趣味の開発や、学習の過程での成果物です。
 
 #### Goofi
 
@@ -277,7 +285,7 @@ Nodefest 2018 では[同サービスに関する発表](<(https://speakerdeck.co
 
 2020 年 1 月に[GitHub が公式の類似機能を公開した](https://github.blog/2020-01-22-browse-good-first-issues-to-start-contributing-to-open-source/)ので役目を終えそうですが、課題設定が正しかったことが追認された心持ちです。
 
-- 時期: 2018-08~
+- 時期: 2018.08~
 - repository: [https://github.com/ohbarye/goofi](https://github.com/ohbarye/goofi)
 - 使用技術: Node.js 13.x, TypeScript 3.8, Next.js 9.1, GraphQL (client), Now.sh v1~2 (現 Versel), GitHub API v4
 
@@ -288,7 +296,7 @@ Nodefest 2018 では[同サービスに関する発表](<(https://speakerdeck.co
 
 2019 年 6 月に GitHub が買収した[Pull Panda](https://pullpanda.com/)に類似していますが商用で有料だったためか、この bot を fork して利用していただける企業が数社ありました。
 
-- 時期: 2017-08~
+- 時期: 2017.08~
 - repository: [https://github.com/ohbarye/review-waiting-list-bot](https://github.com/ohbarye/review-waiting-list-bot)
 - 使用技術: Node.js 8.x, GraphQL (client) Slack API, GitHub API v3~4, Heroku
 
@@ -320,11 +328,11 @@ RSpec によるテスト実行時にメール文面をプレビューできる H
 
 Markdown で記述された文書を HTML で配信する Web サーバを簡易に構築できるライブラリです。Python の学習のために自作しました。
 
-- 時期: 2015-08
+- 時期: 2015.08
 - repository: [https://github.com/ohbarye/markdown-server](https://github.com/ohbarye/markdown-server)
 - 使用技術: Python 3.7, bottle 0.12
 
-## Public output
+## Public Output
 
 [https://lapras.com/public/AVL0ALR](https://lapras.com/public/AVL0ALR) に概ね集約されています。
 
@@ -393,20 +401,20 @@ Markdown で記述された文書を HTML で配信する Web サーバを簡易
 ## 資格
 
 - IPA
-  - (2014-06) データベーススペシャリスト
-  - (2012-12) 応用情報処理技術者
-  - (2012-06) 基本情報処理技術者
+  - (2014.06) データベーススペシャリスト
+  - (2012.12) 応用情報処理技術者
+  - (2012.06) 基本情報処理技術者
 - English
-  - (2013-02) TOEIC 720
+  - (2013.02) TOEIC 720
 - Others
-  - (2010-12) 貸金業務取扱主任者
-  - (2012-03) 教職課程履修完了
+  - (2010.12) 貸金業務取扱主任者
+  - (2012.03) 教職課程履修完了
     - 教員免許申請資格はあるが未申請のため資格は未取得
 
 ## 受賞歴
 
-- (2016-04) MVP2016 in Quipper
-- (2015-03) Champion in hackathon conducted by SCSK OSS promotion office
+- (2016.04) MVP2016 in Quipper
+- (2015.03) Champion in hackathon conducted by SCSK OSS promotion office
 
 ## 興味 / 関心
 
