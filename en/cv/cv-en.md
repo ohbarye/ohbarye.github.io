@@ -8,9 +8,9 @@ output:
 pagetitle: Masato Ohba (ohbarye) CV
 ---
 
-Last updated: 2020-05-21
+Last updated: 2020.05.30
 
-## 基本情報と連絡先
+## Contact
 
 | key        | value                                                  |
 | ---------- | ------------------------------------------------------ |
@@ -21,168 +21,164 @@ Last updated: 2020-05-21
 
 ## Summary
 
-Web backend を強みの中心に置きつつ、自社サービスと client work 両方のフルサイクル開発の経験があります。適時コミュニケーションを取りつつ行う要求・要件定義を始めとし、チームでの開発から運用までの全体を担うことができます。
+The core of my strength is web backend. I have experience in full cycle development for both in-house development and client work. I can be the overall lead in the team from development to operation, starting with the requirements and requirements definition, which is done with timely communication.
 
-決済機能や社内システムなど System of Record 領域において求められる複雑なビジネスロジックに関して、質・速度・堅牢さを意識した開発が得意です。
+I have been developing SPA and MPA with React in the System of Engagement area such as registration leads and retention measures, and in the Web frontend area for services that require rich experiences.
 
-登録導線やリテンション施策などの System of Engagement 領域、リッチな体験が求められるサービスの Web frontend においては React による SPA, MPA の開発を行なってきました。
+I can develop complex business logic required in the System of Record field, such as payment functions and internal systems, with quality, speed and robustness in mind.
 
-また、エンジニア数が 20~60 名規模の組織における Engineering Manager を務め、チーム設計・プロジェクトマネジメント・採用活動・コーポレートブランディング・文化づくり・コミュニティ活動等々に関する実績と知見があります。
+I also served as engineering manager for an organization with 20-60 engineers. As a result, I have a proven track record and knowledge of team design, project management, recruitment, corporate branding, culture building, community activities, and more.
 
 ## Skills
 
-- Language: **Ruby** (2.3~), **TypeScript** (3.4~), JavaScript (ES2015~), CoffeeScript`*` (1.x), Java`*` (6~8), Python (2.x)`*`, OCaml (4.10) `*`
-- Frontend: **React** (16.x~), Redux (3.x~), Backbone.js`*`, Marionette.js`*`, jQuery`*` (1.x~), React Native (0.5x), Webpack
-- Backend: **Ruby on Rails** (4.2~5.1), Node.js`*`, OpenAPI (3.x)
-- Testing: **RSpec**, Capybara, minitest, Jest, Cypress, sinon, chai, mocha
-- Database: MongoDB (3.2~3.6), Redis, PostgreSQL (9.5)
-- Infrastructure: AWS, Docker, Kubernetes, Heroku`*`, Deis`*`, Netlify`*`, Versel`*`
-- Communication tools: GitHub, ZenHub, Slack
-- SaaS: CircleCI, TravisCI`*`, NewRelic, Google BigQuery, Google Cloud Logging (Stackdriver Logging), Treasure Data, Datadog, TravisCI`*`
-- Protocols: HTTP (REST), GraphQL`*`
-- Development framework: Agile, Scrum, Waterfall`*`
+- Language
+  - **Ruby** (2.3~), **TypeScript** (3.4~), JavaScript (ES2015~), Java`*` (~8), Python (~3.7)`*`, OCaml `*`
+- Frontend
+  - **React** (16.x~), Redux (3.x~), Backbone.js`*`, jQuery`*` (1.x~), React Native (0.5x), Webpack
+- Backend
+  - **Ruby on Rails** (4.2~5.1), Node.js`*`, OpenAPI (3.0), REST, GraphQL`*`
+- Testing
+  - **RSpec**, Capybara, minitest, Jest, Cypress, Sinon, Chai, Mocha
+- Database
+  - MongoDB (3.2~3.6), Redis, PostgreSQL (9.5)
+- Infrastructure
+  - AWS, Docker, Kubernetes, Heroku`*`, Deis`*`, Netlify`*`, Vercel`*`
+- Communication tools
+  - GitHub, ZenHub, Slack
+- SaaS
+  - CircleCI, TravisCI`*`, NewRelic, Google BigQuery, Treasure Data, Datadog
+- Development framework
+  - Agile, Scrum, Waterfall`*`
 
 **Bold** indicates core skills.
-`*` indicates either lack of production use or keeping away from the technology for several years.
 
-### Strong points
+`*` denotes a skill that has no work experience, or has work experience but is more than a few years away.
 
-#### Operation, Performance を意識した設計・実装
+### Strength
 
-ビジネスの要求を一時的に満たすだけでなく、パフォーマンス・計算量・将来にわたるデータ増加を意識した設計や実装の経験があります。加えて、運用中に生じた問題についてのパフォーマンスチューニングを行なってきました。
+#### Design and implementation in consideration of operation and performance
 
-バッチの冪等性・リトライ、決済におけるデータの整合性、開発した機能がどのように運用されるか。これらを意識した設計・開発・レビューに自信があります。
+I have experience in designing and implementing designs that not only temporarily meet business requirements, but are also aware of performance, computational complexity, and data growth over time. In addition, I have performed performance tuning for problems that happened during the operation.
 
-#### OSS を活用、改善する技術力
+Batch processing, retry, data integrity in payment systems, and how developed functions to be operated. I'm confident in designing, developing and reviewing in consideration of these.
 
-現代においては特筆すべきことではありませんが、業務においては OSS を利用しています。技術選定の際には利便性やトレンドの最大瞬間風速だけでなくチームとして feasible な技術かどうか？を中心に検討し、並んで持続性や disposability を検討します。dependabot のような SaaS を活用しつつ dependencies の定期的なアップグレードも行なってきました。
+#### Leverage and improve OSS
 
-また、開発するプロダクトと OSS は地続きであると考えています。必要な機能がなければ自ら開発したりパッチを送ったり、bug や regression に気づいたら直す振る舞いを是としています。（後述する[Personal projects](#Personal-projects)欄、[OSS](#OSS)欄においても OSS contribution に関する内容を記述しています）
+Although it's nothing special in this day and age, I use OSS in work. When I select a technology, I focus on whether the technology is feasible as a team, as well as convenience and trends, and I also consider sustainability and disposability. I often make conservative choices as a result of prioritizing the productivity of a team. I've been using SaaS like dependabot for libraries that my product depends on, and I've been upgrading the dependencies periodically
 
-#### チーム志向
+In addition, I believe that products I develop and OSS are connected to each other. If OSS doesn't have a necessary feature, I try to develop it by myself, send patches, and fix bugs and regressions when I notice them. (OSS contribution by me is also described in the [Personal Projects](#personal-projects) and [Public Output](#public-output) sections below.
 
-チームとして成果を上げることに強い関心があり、協働が生まれる仕組みづくりや文化の醸成を行ってきました。また、マネジャーとしてチームメンバー間の信頼関係の構築・強み・弱み・指向性・事業特性などの変数を考慮してチーム編成を決定した経験もあります。
+#### Team-oriented
 
-プロセスに問題があったとき、「ゴールを明確にする」「説明責任を果たす」「オーバーワークを防ぐ」ためにスクラムを導入し、スクラムマスターの役割を担ったこともあります。
+I have a keen interest in achieving results as a team and have worked to create mechanisms and foster a culture where collaboration can occur. As a manager, I also have experience of determining team assignments by considering variables such as strengths, weaknesses, orientation, and business characteristics.
 
-#### ~100 名規模のエンジニア組織における課題解決
+In the past, when my team has had process issues, I have implemented Scrum to "clarify goals", "be accountable", and "prevent overwork", and I have even taken on the role of a scrum master.
 
-エンジニア数が 20~60 名規模の組織における Engineering Manager として、組織設計・チーム設計・採用活動・教育・オンボーディング・文化づくり・コミュニティ活動等々に関する実績と知見があります。
+#### Problem solving in engineering organizations of up to 60 people
 
-チーム・組織規模が大きくなる中で生じる課題はその組織において初めて経験される類のものが多く、明確に真因の特定と優先度判断とアサインを行わないと放置され歪みが拡大することがしばしばあります。組織課題のそうした特性を知ったうえで対応してきた経験は、自身の役割がメンバーであれマネジャーであれ、同規模 ± 数十名のチーム・組織でも活かせると考えます。
+As an Engineering Manager in an organization with 20-60 engineers, I have experience in organizational design, team design, recruiting, mentoring, onboarding, culture building, and community activities.
 
-### Weak points
+Issues that arise when a team or organization grows in size are often the first ones experienced in that organization. Therefore, without clear identification of the true cause and prioritization and assignment, it is often left unchecked and distortions are magnified. I believe that my experience in knowing and dealing with these characteristics of organizational issues can be applied to teams and organizations of the same size or dozens of people, whether my role is as a member or manager.
 
-モノリシックなアプリケーションをバックエンドとするプロダクト開発や数名〜20 名弱のチームにおいては上記のような強みを発揮できますが、以下の経験については乏しい、または全く経験がありません。
+#### Output-oriented
 
-- Microservices、分散処理
-- 大規模トラフィックへの対応
-- モバイルアプリ開発
-- Cloud services (AWS, GCP, Azure etc.) を活用したアーキテクチャ設計や構成管理 (Terraform, Ansible etc.)
-- ミドルウェアの技術選定、運用、チューニング
-- ハードウェア、組み込みソフトウェア関連
-- 20 名を超える大規模チームでの開発
+I try to summarize what I've researched and learned through my hobbies and work and output it. Repeating output-conscious contemplation and trials can hone my skills in abstraction and commonalization. Moreover, I believe that it is possible to enhance the overall ability to find and solve problems.
 
-経験のない領域を学ぶ意欲はあり、業務上必要な技術に関するキャッチアップは過去に行なってきたように可能と思いますが、業務開始直後に初速を出すのは難しいと考えます。
+I'm not very good at having presentations. However, I challenge it as possible as I can for feedbacks I'd get and thing I'd learn through those opportunities. Please refer to the [Public Output](#public-output) section for the results.
 
-## 職務経歴
+### Weakness / I've never done that before.
 
-### Quipper Limited (2015-09 ~ 2020-05) 4 yrs 8mos
+I can play to the above strengths in product development with monolithic applications on the backend and in teams of a few to 20 engineers, but I have little or no experience with the followings.
 
-[Quipper](https://www.quipper.com/)は BtoC, BtoB 両方の教育事業を営む企業です。日本国外には Quipper School, Quipper Video を、日本国内においては[スタディサプリ](https://studysapuri.jp/)の開発・運用を行っています。
+- Microservices, distributed systems
+- Huge scale traffic
+- Mobile App Development
+- Architecture design and infrastructure as code (Terraform, Ansible, etc.), and using Cloud services (AWS, GCP, Azure, etc.)
+- Selection, operation, and tuning of middlewares.
+- Hardware and embedded software
+- Development in a large team of over 20 people
 
-スタディサプリブランド傘下には小中高大講座、社会人向けの ENGLISH、学校・自治体向けの forSchool 等が存在し、私は主に BtoC のスタディサプリ小中高大講座の開発・運用に携わりました。関わった Projects のうちいくつかを以下に記します。
+I am motivated to learn in areas where I have no experience. I think it's possible because I've done some catch-up in the past on the technology needed for the job.
 
-| タイトル                                                                  | 期間            | 語れるポイント                         |
-| ------------------------------------------------------------------------- | --------------- | -------------------------------------- |
-| [Code cleanup](#Code-cleanup)                                             | 2020-03         | 腕力                                   |
-| 価格変更対応                                                              | 2019-10~2020-01 | 複雑な要件の設計・実装                 |
-| [Migration from React Native to PWA](#Migration-from-React-Native-to-PWA) | 2019-07~2019-09 | 技術選定、技術的負債返却               |
-| [中学生向けコーチングサービス開発](#中学生向けコーチングサービス開発)     | 2018-08~2019-03 | 相対的に大型プロジェクトのマネジメント |
-| [登録導線リニューアル](#登録導線リニューアル)                             | 2018-03         | 技術選定、EFO                          |
-| [Upgrade grape gem](#Upgrade-grape-gem)                                   | 2017-10~2017-12 | 技術的負債返却、OSS                    |
-| [キャリア決済廃止検討](#キャリア決済廃止検討)                             | 2017-10         | A/B テスト、Data driven な意思決定     |
-| 高校生向けコーチングサービス開発                                          | 2016-12~2017-02 | 短納期開発                             |
-| 勉強サプリ移管プロジェクト                                                | 2016-06~2016-12 | 短納期開発                             |
-| [採用活動](#採用活動)                                                     | 2016-07~2020-03 | 組織づくり                             |
-| [In-App Purchase 機能実装](#In-App-Purchase機能実装)                      | 2016-04~2016-06 | 決済機能開発、OSS                      |
-| [受験サプリ移管プロジェクト](#受験サプリ移管プロジェクト)                 | 2015-09~2016-02 | 短納期開発、新規技術の習得             |
-| [その他](#その他)                                                         | -               | 地道な改善活動                         |
+## Work Experience
 
-#### Code cleanup
+### Quipper Limited (2015.09 ~ 2020.05) 4 yrs 8mos
 
-複数プロダクトでコードを共用していた monorepo を fork し、dead code が大量に発生しました。その dead code の掃除が全体の開発体験に関わると考え、退職前の最後の仕事としてほぼ独力で提案から実行まで行いました。
+[Quipper](https://www.quipper.com/) is a company that operates both B to C and B to B education businesses. We develop and operate Quipper School and Quipper Video outside of Japan, and [StudySuppli](https://studysapuri.jp/) in Japan.
 
-約 3 週間で 400,000 行のコードを削除するに至り、Rails の利用されていない model の削減では数を 390 から 281 に減らすことができました。稼働中のシステムに大きく手を入れたものの顧客に影響を及ぼすような障害を起こすことなく完遂しました。
+Under the umbrella of the Study Supplements brand, there are courses for elementary, junior high, and high schools, English for working adults, and forSchool for schools and municipalities. Some of the projects I was involved in are listed below.
 
-- 期間: 2020-03
-- チーム構成
-  - 規模: 1 名 (自分のみ)
-  - 役割: すべて
-- 利用技術・ツール
-  - Rails, React, Redux, TypeScript (削除対象)
-  - NewRelic, BigQuery (機能の利用状況調査)
+| Title                                                                                                                | Period          | Appeal Points                                     |
+| -------------------------------------------------------------------------------------------------------------------- | --------------- | ------------------------------------------------- |
+| [Code cleanup](#code-cleanup)                                                                                        | 2020.03         | Toughness to remove huge amount of codes          |
+| Price Change                                                                                                         | 2019.10~2020.01 | Payment systems, complex business logics          |
+| [Migration from React Native to PWA](#migration-from-react-native-to-pwa)                                            | 2019.07~2019.09 | Technology selection, paying back technology debt |
+| [Develop Coaching Service for Junior High School Students](#develop-coaching-service-for-junio-high-school-students) | 2018.08~2019.03 | 9 people x 7 months project management / Scrum    |
+| [Entry Form Renewal](#entry-form-renewal)                                                                            | 2018.03         | Technology selection、EFO                         |
+| [Upgrade grape gem](#Upgrade-grape-gem)                                                                              | 2017.10~2017.12 | Paying back technical debt, OSS                   |  | [Research to Abolish Payment Method](#research-to-abolish-payment-method) | 2017.10 | A/B testing、Data driven decision making |
+| Develop Coaching Service for High School Students                                                                    | 2016.12~2017.02 | Short term development                            |
+| Benkyo Sapuri Migration                                                                                              | 2016.06~2016.12 | Short term development                            |
+| [Hiring](#hiring)                                                                                                    | 2016.07~2020.03 | Organization design                               |
+| [Develope In-App Purchase for iOS](#develope-in-app-purchase-for-ios)                                                | 2016.04~2016.06 | Payment systems, OSS                              |
+| [Jyuken Sapuri Migration](#jyuken-sapuri-migration)                                                                  | 2015.09~2016.02 | Short term development, catch-up tech stacks      |
+| [Other Activities](#other-activities)                                                                                | -               | Continuous improvement                            |
+
+#### Code Cleanup
+
+Because out team's monorepo, which used to share code across multiple products, has been forked, a lot of our code base got unused. I thought that cleaning up those dead codes would bring better development experience, so I almost single-handedly suggested and executed code cleanup.
+
+It took about three weeks to remove 400,000 lines of code, and the removal of unused models in Rails was able to reduce the number from 390 to 281. I made significant changes to the system in operation, but completed them without causing a failure that would affect the end-users.
+
+| Period  | Team      | Role | Tech stacks, tools                                                                                |
+| ------- | --------- | ---- | ------------------------------------------------------------------------------------------------- |
+| 2020.03 | 1 (Web×1) | Web  | Ruby, Rails, React, Redux, TypeScript (Deletion Targets)<br />NewRelic, BigQuery (Usage research) |
 
 #### Migration from React Native to PWA
 
-React Native 製 iOS/Android の業務用 internal アプリを PWA にてリニューアルするプロジェクトです。主にプロジェクトの立ち上げとバックエンドを担当しました。（リニューアル時に UI/UX を刷新したため、バックエンドにも変更が必要でした）
+This project is a renewal of an iOS/Android business internal app made by React Native with PWA. I was primarily responsible for the launch and backend of the project. (The UI/UX was revamped at the time of the relaunch, so the backend had to be changed as well.)
 
-プロジェクト以前に API に関する仕様を共有する仕組みがなかったため、OpenAPI による API specification の記述をし、共有のための土台の整備も行いました。自動テストと Staging 環境においてのみ動作する Rack middleware を活用し、Specification 違反を検知する仕組みも導入しています。（詳細は[ブログ記事](https://ohbarye.hatenablog.jp/entry/2020/04/29/open-api-specification-for-existing-restish-api-endpoints)にも書きました）
+Since there was no mechanism to share the API specification before the project, I wrote the API specification using OpenAPI and laid the groundwork for sharing it. And leveraging Rack middleware, which only works in an automated testing and staging environment, I also put in place a mechanism to detect specification violations. (I wrote more about it in a [blog post](https://ohbarye.hatenablog.jp/entry/2020/04/29/open-api-specification-for-existing-restish-api-endpoints).)
 
-また、プロジェクトの総括を[JSConf 2019 にて発表](https://speakerdeck.com/ohbarye/migration-from-react-native-to-pwa)しました。
+I also [made a presentation at JSConf 2019](https://speakerdeck.com/ohbarye/migration-from-react-native-to-pwa) as a recap of this project.
 
-- 期間: 2019-07~2019-09
-- チーム構成
-  - 規模: 6 名 (PdM×1、デザイナー ×2、iOS×1、フロントエンド ×1、バックエンド ×1)
-  - 役割: バックエンドエンジニア
-- 利用技術・ツール
-  - Rails 5.0, React 16.12, Redux 4.0, TypeScript 3.7, Cypress
+| Period          | Team                                                | Role    | Tech stacks, tools                                                      |
+| --------------- | --------------------------------------------------- | ------- | ----------------------------------------------------------------------- |
+| 2019.07~2019.09 | 6 (PdM×1, Designer×2, iOS×1, Frontend×1, Backend×1) | Backend | Ruby, Rails 5.0, RSpec, React 16.12, Redux 4.0, TypeScript 3.7, Cypress |
 
-#### 中学生向けコーチングサービス開発
+#### Develop Coaching Service for Junior High School Students
 
-新規メンバーが大半の 10 名超、かつ半年を超える規模である不確実性の大きいプロジェクトにおいて、スクラム・モブプロ・1-on-1 等々のプラクティスを導入・実践することによりにリリースすることができました。また、定量的評価が難しいものの、メンバーの成長・定着にも繋がりました。
+In a highly uncertain project with over 10 new members in the majority and a size of over six months, I was able to release it by implementing and practicing practices such as Scrum, MobPro, 1-on-1, etc. And while it's difficult to quantitatively evaluate it, it has led to the growth and retention of our members.
 
-本プロジェクトの詳細は『[新メンバーが多い大型プロジェクトでの不確実性との戦い方](https://quipper.hatenablog.com/entry/2019/06/27/how-to-defeat-uncertainty)』にまとめています。
+I have summarized the details of this project in "[How to Combat Uncertainty in a Large Project with Many New Members]" (https://quipper.hatenablog.com/entry/2019/06/27/how-to-defeat-uncertainty).
 
-- 期間: 2018-08~2019-03
-- チーム構成
-  - 規模: 12 名 (PdM×1、デザイナー ×1、iOS×1、Android×1、Web エンジニア ×8)
-  - 役割: Web エンジニア、スクラムマスター
-- 利用技術・ツール
-  - Rails, React, Redux, TypeScript, React Native
+| Period          | Team                                            | Role              | Tech stacks, tools                                                         |
+| --------------- | ----------------------------------------------- | ----------------- | -------------------------------------------------------------------------- |
+| 2018.08~2019.03 | 12 (PdM×1、Designer×1、iOS×1、Android×1、Web×8) | Web, Scrum master | Ruby, Rails, React, RSpec, Capybara, Redux, TypeScript, Jest, React Native |
 
-#### 登録導線リニューアル
+#### Entry Form Renewal
 
-BtoC の学習サービスにおいて最も重要な獲得の時期に向けた EFO (Entry Form Optimization) プロジェクトです。
+It is an EFO (Entry Form Optimization) project for the most important acquisition period in BtoC learning services.
 
-- フロントエンド、バックエンドの両方を 1 名で担当
-- 当時のチームにて扱うフロントエンドの大部分は MPA であり、登録導線は Rails の View と jQuery で実装されていた
-- Webpacker と React を導入
-- 同時期でなくリリース前後の比較になってしまったが登録導線の CVR が向上した
+- I was responsible for both the front end and back end.
+- At that time, the majority of the team's front-end work was MPA, and the entry form was implemented in Rails View and jQuery.
+- I selected Webpacker and React.
+- CVR of registration has been improved.
 
-[Meguro.rb にて取り組みの内容を発表](https://speakerdeck.com/ohbarye/level-up-front-end-skills-for-rails-developer)しました。
-
-- 期間: 2018-03
-- チーム構成
-  - 規模: 3 名 (PdM×1、デザイナー ×1、Web エンジニア ×1)
-  - 役割: Web エンジニア
-- 利用技術・ツール
-  - Rails, React, Redux, TypeScript, Webpacker
+| Period  | Team                         | Role | Tech stacks, tools                                                |
+| ------- | ---------------------------- | ---- | ----------------------------------------------------------------- |
+| 2018.03 | 3 (PdM×1, Designer×1, Web×1) | Web  | Ruby, Rails, React, RSpec, Capybara, Redux, TypeScript, Webpacker |
 
 #### Upgrade grape gem
 
-社内で最も大きい Rails の API server では grape という gem を使っているが、この gem が導入時 2015 年の v0.12.0 から更新されていなかったのでアップグレードしました。
+The biggest Rails API server in my company had been using a gem named grape, but the API hadn't been updated since v0.12.0 in 2015 when it was introduced, so I upgraded it.
 
-Rails upgrade 等に比べて情報が少なく、依存している周辺 library が dead であるために迂回策を用意するなどの工夫が必要でした。minor version (~v0.19) を少しずつ上げながら最終的に当時の最新の v1.0.1 まで upgrade できました。
+Compared to Rails upgrade, there is less information, and dependent libraries are sometimes dead, so I had to prepare a workaround to write a patch. Finally, I was able to upgrade to the latest version v1.0.1 at that time by gradually increasing the minor version (~v0.19).
 
-余談ながら、この約 1 年後 2018 年 12 月に NewRelic で同 Rails アプリケーションのメトリクスが取れないという問題が起きました。これは NewRelic agent 側の問題だったため本体に[パッチ](https://github.com/newrelic/rpm/pull/293)を投げて解決しました。
+As an aside, about a year after this, in December 2018, I had an issue with NewRelic not being able to get metrics for the Rails API. This was a problem on the NewRelic agent side, so I sent a [patch](https://github.com/newrelic/rpm/pull/293) to the upstream to solve it.
 
-- 期間: 2017-10~2017-12
-- チーム構成
-  - 規模: 1 名 (自分のみ)
-  - 役割: Web エンジニア
-- 利用技術・ツール
-  - Rails 4.2, Ruby 2.4, grape
+| Period          | Team      | Role | Tech stacks, tools                |
+| --------------- | --------- | ---- | --------------------------------- |
+| 2017.10~2017.12 | 1 (Web×1) | Web  | Rails 4.2, Ruby 2.4, RSpec, grape |
 
 #### キャリア決済廃止検討
 
@@ -192,7 +188,7 @@ Optimizely という SaaS を用い、エンジニアによる開発やテスト
 
 この取組については[ブログ記事](https://quipper.hatenablog.com/entry/2018/05/31/080000)を執筆し、[Rails Developer Meetup 2018 Day 3](https://speakerdeck.com/ohbarye/fact-based-decision-making-and-development-by-quipper)や[Regional Scrum Gathering Tokyo 2019](https://speakerdeck.com/ohbarye/proof-of-value-with-ab-testing)といったイベントでの登壇発表も行いました。
 
-- 時期: 2017-10
+- 時期: 2017.10
 - チーム構成
   - 規模: 2 名 (PdM×1、Web エンジニア ×1)
   - 役割: Web エンジニア
@@ -201,7 +197,7 @@ Optimizely という SaaS を用い、エンジニアによる開発やテスト
 
 #### 採用活動
 
-- 時期: 2016-07~2020-03
+- 時期: 2016.07~2020.03
 
 書類選考・一次・コードテスト・二次・カジュアル面談・リファラルランチ・リファラルディナーへの主体的な参加を始めとし、全面的に貢献しました。
 
@@ -232,7 +228,7 @@ Optimizely という SaaS を用い、エンジニアによる開発やテスト
 
 このあとの運用も含めて In-App Purchase のサーバサイドに関する知見が得られたので[iOSDC 2018 で登壇発表](https://speakerdeck.com/ohbarye/rethink-in-app-purchase-on-subscription-services)を行いました。
 
-- 時期: 2016-04~2016-06
+- 時期: 2016.04~2016.06
 - チーム構成
   - 規模: 3 名 (PdM×1、iOS×1、Web エンジニア ×1)
   - 役割: Web エンジニア
@@ -249,7 +245,7 @@ Optimizely という SaaS を用い、エンジニアによる開発やテスト
 
 本プロジェクトに関するプレスリリース: [http://www.recruit-mp.co.jp/news/release/2016/0225_2893.html](http://www.recruit-mp.co.jp/news/release/2016/0225_2893.html)
 
-- 時期: 2015-09~2016-02
+- 時期: 2015.09~2016.02
 - チーム構成
   - 規模: 10 名 (PdM×1、iOS×2、Android×2、Web エンジニア ×5)
   - 役割: Web エンジニア
@@ -270,7 +266,7 @@ Optimizely という SaaS を用い、エンジニアによる開発やテスト
 - 読書会・勉強会の運営 (Real World HTTP, SRE 本 etc.)
 - 社内図書館の発案と実践
 
-### SCSK Corporation (2012-04 ~ 2015-08) 3 yrs 5mos
+### SCSK Corporation (2012.04 ~ 2015.08) 3 yrs 5mos
 
 [SCSK](https://www.scsk.jp/)は住友商事子会社の大手 SIer です。
 
@@ -285,7 +281,7 @@ Optimizely という SaaS を用い、エンジニアによる開発やテスト
 
 ### Personal projects
 
-#### Goofi (2018-08~)
+#### Goofi (2018.08~)
 
 OSS への貢献をより簡便にするためのツールです。OSS 活動を始めたい初心者にとって最大の壁が「貢献対象を探すこと」だと考え、コントリビューションが推奨される repository と issue をリストアップする Web サービス[Goofi](https://goofi.now.sh/)を作りました。(repository: [https://github.com/ohbarye/goofi](https://github.com/ohbarye/goofi))
 
@@ -295,7 +291,7 @@ Nodefest 2018 では[同サービスに関する発表](<(https://speakerdeck.co
 
 - 使用技術: Node.js 13.x, TypeScript 3.8, Next.js 9.1, GraphQL (client), Now.sh v1~2 (現 Versel), GitHub API v4
 
-#### Review bot (2017-08~)
+#### Review bot (2017.08~)
 
 チーム開発でのレビューを促進させる Slack bot です。
 指定した条件にマッチする pull requests 一覧を Slack に投稿します。(repository: [https://github.com/ohbarye/review-waiting-list-bot](https://github.com/ohbarye/review-waiting-list-bot))
@@ -354,35 +350,34 @@ Nodefest 2018 では[同サービスに関する発表](<(https://speakerdeck.co
 
 ## Qualifications
 
-- IPA
-  - (2014-06) データベーススペシャリスト
-  - (2012-12) 応用情報処理技術者
-  - (2012-06) 基本情報処理技術者
+- Information-technology Promotion Agency, Japan
+  - (2014.06) Database Specialist
+  - (2012.12) Applied Information Technology Engineer
+  - (2012.06) Fundamental Information Technology Engineer
 - English
-  - (2013-02) TOEIC 720
+  - (2013.02) TOEIC 720
 - Others
-  - (2010-12) 貸金業務取扱主任者
-  - (2012-03) 教職課程履修完了
-    - 教員免許申請資格はあるが未申請のため資格は未取得
+  - (2010.12) Chief of Money Lending Operations
+  - (2012.03) Mastered Teacher Training Course
 
 ## Honors & Awards
 
-- (2016-04) MVP2016 in Quipper
-- (2015-03) Champion in hackathon conducted by SCSK OSS promotion office
+- (2016.04) MVP2016 in Quipper
+- (2015.03) Champion in hackathon conducted by SCSK OSS promotion office
 
 ## Interests
 
-2020 年まではソフトウェア工学の分野、特に事業会社の Web サービス開発のうちアプリケーションレイヤーの開発で求められる技術力を業務でも趣味でも伸ばしてきました。今後はコンピュータサイエンス全般やアルゴリズム、低レイヤーやミドルウェアの学習を通じてソフトウェアに関する理解を全般的に深めていきたいと考えています。
+By 2020, I have developed the technical skills required in the field of software engineering, especially in the application layer of web services development. In the future, I hope to deepen my general understanding of software through learning about whole computer science, algorithms, low layers and middleware in particular.
 
 - Competitive programming
-  - AtCoder 緑 [https://atcoder.jp/users/ohbarye](https://atcoder.jp/users/ohbarye)
+  - AtCoder green [https://atcoder.jp/users/ohbarye](https://atcoder.jp/users/ohbarye)
   - Google Code Jam 2020
     - Passed Qualification Round
 - Computer system
-  - [WIP] 『[コンピュータシステムの理論と実装](https://www.oreilly.co.jp/books/9784873117126/)』 (a.k.a. Nand to Tetris) の実践 [https://github.com/ohbarye/nand2tetris](https://github.com/ohbarye/nand2tetris)
-    - アセンブラ、VM 変換器、コンパイラを OCaml で実装中
+  - [WIP] 『[The Elements of Computing Systems: Building a Modern Computer from First Principles](https://www.amazon.com/dp/0262640686)』 (a.k.a. Nand to Tetris) [https://github.com/ohbarye/nand2tetris](https://github.com/ohbarye/nand2tetris)
+    - I'm building an assembler, VM translator, and a compiler in OCaml.
 - Algorithms
-  - Coursera: [Princeton University Algorithms Part 1](https://www.coursera.org/learn/algorithms-part1) 修了
+  - Mastered [Princeton University Algorithms Part 1](https://www.coursera.org/learn/algorithms-part1) in Coursera
 - Database
-  - [C 言語で SQLite のクローンを作るチュートリアル](https://ohbarye.hatenablog.jp/entry/2020/04/17/sqlite-clone-db-tutorial)
-- Self note [https://scrapbox.io/ohbarye/](https://scrapbox.io/ohbarye/)
+  - [SQLite clone DB tutorial](https://ohbarye.hatenablog.jp/entry/2020/04/17/sqlite-clone-db-tutorial) (Japanese)
+- My study note [https://scrapbox.io/ohbarye/](https://scrapbox.io/ohbarye/)

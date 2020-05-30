@@ -8,7 +8,7 @@ output:
 pagetitle: Masato Ohba (ohbarye) CV
 ---
 
-最終更新日: 2020.05.28
+最終更新日: 2020.05.30
 
 ## 基本情報と連絡先
 

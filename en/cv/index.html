@@ -1134,10 +1134,10 @@
     </a>
   </div>
 <ul>
-<li><a href="#基本情報と連絡先">基本情報と連絡先</a></li>
+<li><a href="#contact">Contact</a></li>
 <li><a href="#summary">Summary</a></li>
 <li><a href="#skills">Skills</a></li>
-<li><a href="#職務経歴">職務経歴</a></li>
+<li><a href="#work-experience">Work Experience</a></li>
 <li><a href="#public-output">Public output</a></li>
 <li><a href="#education">Education</a></li>
 <li><a href="#qualifications">Qualifications</a></li>
@@ -1145,9 +1145,9 @@
 <li><a href="#interests">Interests</a></li>
 </ul>
 </nav>
-<p>Last updated: 2020-05-21</p>
-<section id="基本情報と連絡先" class="level2">
-<h2>基本情報と連絡先</h2>
+<p>Last updated: 2020.05.30</p>
+<section id="contact" class="level2">
+<h2>Contact</h2>
 <table>
 <thead>
 <tr class="header">
@@ -1177,239 +1177,323 @@
 </section>
 <section id="summary" class="level2">
 <h2>Summary</h2>
-<p>Web backend を強みの中心に置きつつ、自社サービスと client work 両方のフルサイクル開発の経験があります。適時コミュニケーションを取りつつ行う要求・要件定義を始めとし、チームでの開発から運用までの全体を担うことができます。</p>
-<p>決済機能や社内システムなど System of Record 領域において求められる複雑なビジネスロジックに関して、質・速度・堅牢さを意識した開発が得意です。</p>
-<p>登録導線やリテンション施策などの System of Engagement 領域、リッチな体験が求められるサービスの Web frontend においては React による SPA, MPA の開発を行なってきました。</p>
-<p>また、エンジニア数が 20~60 名規模の組織における Engineering Manager を務め、チーム設計・プロジェクトマネジメント・採用活動・コーポレートブランディング・文化づくり・コミュニティ活動等々に関する実績と知見があります。</p>
+<p>The core of my strength is web backend. I have experience in full cycle development for both in-house development and client work. I can be the overall lead in the team from development to operation, starting with the requirements and requirements definition, which is done with timely communication.</p>
+<p>I have been developing SPA and MPA with React in the System of Engagement area such as registration leads and retention measures, and in the Web frontend area for services that require rich experiences.</p>
+<p>I can develop complex business logic required in the System of Record field, such as payment functions and internal systems, with quality, speed and robustness in mind.</p>
+<p>I also served as engineering manager for an organization with 20-60 engineers. As a result, I have a proven track record and knowledge of team design, project management, recruitment, corporate branding, culture building, community activities, and more.</p>
 </section>
 <section id="skills" class="level2">
 <h2>Skills</h2>
 <ul>
-<li>Language: <strong>Ruby</strong> (2.3~), <strong>TypeScript</strong> (3.4~), JavaScript (ES2015~), CoffeeScript<code>*</code> (1.x), Java<code>*</code> (6~8), Python (2.x)<code>*</code>, OCaml (4.10) <code>*</code></li>
-<li>Frontend: <strong>React</strong> (16.x~), Redux (3.x~), Backbone.js<code>*</code>, Marionette.js<code>*</code>, jQuery<code>*</code> (1.x~), React Native (0.5x), Webpack</li>
-<li>Backend: <strong>Ruby on Rails</strong> (4.2~5.1), Node.js<code>*</code>, OpenAPI (3.x)</li>
-<li>Testing: <strong>RSpec</strong>, Capybara, minitest, Jest, Cypress, sinon, chai, mocha</li>
-<li>Database: MongoDB (3.2~3.6), Redis, PostgreSQL (9.5)</li>
-<li>Infrastructure: AWS, Docker, Kubernetes, Heroku<code>*</code>, Deis<code>*</code>, Netlify<code>*</code>, Versel<code>*</code></li>
-<li>Communication tools: GitHub, ZenHub, Slack</li>
-<li>SaaS: CircleCI, TravisCI<code>*</code>, NewRelic, Google BigQuery, Google Cloud Logging (Stackdriver Logging), Treasure Data, Datadog, TravisCI<code>*</code></li>
-<li>Protocols: HTTP (REST), GraphQL<code>*</code></li>
-<li>Development framework: Agile, Scrum, Waterfall<code>*</code></li>
-</ul>
-<p><strong>Bold</strong> indicates core skills. <code>*</code> indicates either lack of production use or keeping away from the technology for several years.</p>
-<section id="strong-points" class="level3">
-<h3>Strong points</h3>
-<section id="operation-performance-を意識した設計実装" class="level4">
-<h4>Operation, Performance を意識した設計・実装</h4>
-<p>ビジネスの要求を一時的に満たすだけでなく、パフォーマンス・計算量・将来にわたるデータ増加を意識した設計や実装の経験があります。加えて、運用中に生じた問題についてのパフォーマンスチューニングを行なってきました。</p>
-<p>バッチの冪等性・リトライ、決済におけるデータの整合性、開発した機能がどのように運用されるか。これらを意識した設計・開発・レビューに自信があります。</p>
-</section>
-<section id="oss-を活用改善する技術力" class="level4">
-<h4>OSS を活用、改善する技術力</h4>
-<p>現代においては特筆すべきことではありませんが、業務においては OSS を利用しています。技術選定の際には利便性やトレンドの最大瞬間風速だけでなくチームとして feasible な技術かどうか？を中心に検討し、並んで持続性や disposability を検討します。dependabot のような SaaS を活用しつつ dependencies の定期的なアップグレードも行なってきました。</p>
-<p>また、開発するプロダクトと OSS は地続きであると考えています。必要な機能がなければ自ら開発したりパッチを送ったり、bug や regression に気づいたら直す振る舞いを是としています。（後述する<a href="#Personal-projects">Personal projects</a>欄、<a href="#OSS">OSS</a>欄においても OSS contribution に関する内容を記述しています）</p>
-</section>
-<section id="チーム志向" class="level4">
-<h4>チーム志向</h4>
-<p>チームとして成果を上げることに強い関心があり、協働が生まれる仕組みづくりや文化の醸成を行ってきました。また、マネジャーとしてチームメンバー間の信頼関係の構築・強み・弱み・指向性・事業特性などの変数を考慮してチーム編成を決定した経験もあります。</p>
-<p>プロセスに問題があったとき、「ゴールを明確にする」「説明責任を果たす」「オーバーワークを防ぐ」ためにスクラムを導入し、スクラムマスターの役割を担ったこともあります。</p>
-</section>
-<section id="名規模のエンジニア組織における課題解決" class="level4">
-<h4>~100 名規模のエンジニア組織における課題解決</h4>
-<p>エンジニア数が 20~60 名規模の組織における Engineering Manager として、組織設計・チーム設計・採用活動・教育・オンボーディング・文化づくり・コミュニティ活動等々に関する実績と知見があります。</p>
-<p>チーム・組織規模が大きくなる中で生じる課題はその組織において初めて経験される類のものが多く、明確に真因の特定と優先度判断とアサインを行わないと放置され歪みが拡大することがしばしばあります。組織課題のそうした特性を知ったうえで対応してきた経験は、自身の役割がメンバーであれマネジャーであれ、同規模 ± 数十名のチーム・組織でも活かせると考えます。</p>
-</section>
-</section>
-<section id="weak-points" class="level3">
-<h3>Weak points</h3>
-<p>モノリシックなアプリケーションをバックエンドとするプロダクト開発や数名〜20 名弱のチームにおいては上記のような強みを発揮できますが、以下の経験については乏しい、または全く経験がありません。</p>
+<li>Language
 <ul>
-<li>Microservices、分散処理</li>
-<li>大規模トラフィックへの対応</li>
-<li>モバイルアプリ開発</li>
-<li>Cloud services (AWS, GCP, Azure etc.) を活用したアーキテクチャ設計や構成管理 (Terraform, Ansible etc.)</li>
-<li>ミドルウェアの技術選定、運用、チューニング</li>
-<li>ハードウェア、組み込みソフトウェア関連</li>
-<li>20 名を超える大規模チームでの開発</li>
+<li><strong>Ruby</strong> (2.3~), <strong>TypeScript</strong> (3.4~), JavaScript (ES2015~), Java<code>*</code> (~8), Python (~3.7)<code>*</code>, OCaml <code>*</code></li>
+</ul></li>
+<li>Frontend
+<ul>
+<li><strong>React</strong> (16.x~), Redux (3.x~), Backbone.js<code>*</code>, jQuery<code>*</code> (1.x~), React Native (0.5x), Webpack</li>
+</ul></li>
+<li>Backend
+<ul>
+<li><strong>Ruby on Rails</strong> (4.2~5.1), Node.js<code>*</code>, OpenAPI (3.0), REST, GraphQL<code>*</code></li>
+</ul></li>
+<li>Testing
+<ul>
+<li><strong>RSpec</strong>, Capybara, minitest, Jest, Cypress, Sinon, Chai, Mocha</li>
+</ul></li>
+<li>Database
+<ul>
+<li>MongoDB (3.2~3.6), Redis, PostgreSQL (9.5)</li>
+</ul></li>
+<li>Infrastructure
+<ul>
+<li>AWS, Docker, Kubernetes, Heroku<code>*</code>, Deis<code>*</code>, Netlify<code>*</code>, Vercel<code>*</code></li>
+</ul></li>
+<li>Communication tools
+<ul>
+<li>GitHub, ZenHub, Slack</li>
+</ul></li>
+<li>SaaS
+<ul>
+<li>CircleCI, TravisCI<code>*</code>, NewRelic, Google BigQuery, Treasure Data, Datadog</li>
+</ul></li>
+<li>Development framework
+<ul>
+<li>Agile, Scrum, Waterfall<code>*</code></li>
+</ul></li>
 </ul>
-<p>経験のない領域を学ぶ意欲はあり、業務上必要な技術に関するキャッチアップは過去に行なってきたように可能と思いますが、業務開始直後に初速を出すのは難しいと考えます。</p>
+<p><strong>Bold</strong> indicates core skills.</p>
+<p><code>*</code> denotes a skill that has no work experience, or has work experience but is more than a few years away.</p>
+<section id="strength" class="level3">
+<h3>Strength</h3>
+<section id="design-and-implementation-in-consideration-of-operation-and-performance" class="level4">
+<h4>Design and implementation in consideration of operation and performance</h4>
+<p>I have experience in designing and implementing designs that not only temporarily meet business requirements, but are also aware of performance, computational complexity, and data growth over time. In addition, I have performed performance tuning for problems that happened during the operation.</p>
+<p>Batch processing, retry, data integrity in payment systems, and how developed functions to be operated. I’m confident in designing, developing and reviewing in consideration of these.</p>
+</section>
+<section id="leverage-and-improve-oss" class="level4">
+<h4>Leverage and improve OSS</h4>
+<p>Although it’s nothing special in this day and age, I use OSS in work. When I select a technology, I focus on whether the technology is feasible as a team, as well as convenience and trends, and I also consider sustainability and disposability. I often make conservative choices as a result of prioritizing the productivity of a team. I’ve been using SaaS like dependabot for libraries that my product depends on, and I’ve been upgrading the dependencies periodically</p>
+<p>In addition, I believe that products I develop and OSS are connected to each other. If OSS doesn’t have a necessary feature, I try to develop it by myself, send patches, and fix bugs and regressions when I notice them. (OSS contribution by me is also described in the <a href="#personal-projects">Personal Projects</a> and <a href="#public-output">Public Output</a> sections below.</p>
+</section>
+<section id="team-oriented" class="level4">
+<h4>Team-oriented</h4>
+<p>I have a keen interest in achieving results as a team and have worked to create mechanisms and foster a culture where collaboration can occur. As a manager, I also have experience of determining team assignments by considering variables such as strengths, weaknesses, orientation, and business characteristics.</p>
+<p>In the past, when my team has had process issues, I have implemented Scrum to “clarify goals”, “be accountable”, and “prevent overwork”, and I have even taken on the role of a scrum master.</p>
+</section>
+<section id="problem-solving-in-engineering-organizations-of-up-to-60-people" class="level4">
+<h4>Problem solving in engineering organizations of up to 60 people</h4>
+<p>As an Engineering Manager in an organization with 20-60 engineers, I have experience in organizational design, team design, recruiting, mentoring, onboarding, culture building, and community activities.</p>
+<p>Issues that arise when a team or organization grows in size are often the first ones experienced in that organization. Therefore, without clear identification of the true cause and prioritization and assignment, it is often left unchecked and distortions are magnified. I believe that my experience in knowing and dealing with these characteristics of organizational issues can be applied to teams and organizations of the same size or dozens of people, whether my role is as a member or manager.</p>
+</section>
+<section id="output-oriented" class="level4">
+<h4>Output-oriented</h4>
+<p>I try to summarize what I’ve researched and learned through my hobbies and work and output it. Repeating output-conscious contemplation and trials can hone my skills in abstraction and commonalization. Moreover, I believe that it is possible to enhance the overall ability to find and solve problems.</p>
+<p>I’m not very good at having presentations. However, I challenge it as possible as I can for feedbacks I’d get and thing I’d learn through those opportunities. Please refer to the <a href="#public-output">Public Output</a> section for the results.</p>
 </section>
 </section>
-<section id="職務経歴" class="level2">
-<h2>職務経歴</h2>
-<section id="quipper-limited-2015-09-2020-05-4-yrs-8mos" class="level3">
-<h3>Quipper Limited (2015-09 ~ 2020-05) 4 yrs 8mos</h3>
-<p><a href="https://www.quipper.com/">Quipper</a>は BtoC, BtoB 両方の教育事業を営む企業です。日本国外には Quipper School, Quipper Video を、日本国内においては<a href="https://studysapuri.jp/">スタディサプリ</a>の開発・運用を行っています。</p>
-<p>スタディサプリブランド傘下には小中高大講座、社会人向けの ENGLISH、学校・自治体向けの forSchool 等が存在し、私は主に BtoC のスタディサプリ小中高大講座の開発・運用に携わりました。関わった Projects のうちいくつかを以下に記します。</p>
+<section id="weakness-ive-never-done-that-before." class="level3">
+<h3>Weakness / I’ve never done that before.</h3>
+<p>I can play to the above strengths in product development with monolithic applications on the backend and in teams of a few to 20 engineers, but I have little or no experience with the followings.</p>
+<ul>
+<li>Microservices, distributed systems</li>
+<li>Huge scale traffic</li>
+<li>Mobile App Development</li>
+<li>Architecture design and infrastructure as code (Terraform, Ansible, etc.), and using Cloud services (AWS, GCP, Azure, etc.)</li>
+<li>Selection, operation, and tuning of middlewares.</li>
+<li>Hardware and embedded software</li>
+<li>Development in a large team of over 20 people</li>
+</ul>
+<p>I am motivated to learn in areas where I have no experience. I think it’s possible because I’ve done some catch-up in the past on the technology needed for the job.</p>
+</section>
+</section>
+<section id="work-experience" class="level2">
+<h2>Work Experience</h2>
+<section id="quipper-limited-2015.09-2020.05-4-yrs-8mos" class="level3">
+<h3>Quipper Limited (2015.09 ~ 2020.05) 4 yrs 8mos</h3>
+<p><a href="https://www.quipper.com/">Quipper</a> is a company that operates both B to C and B to B education businesses. We develop and operate Quipper School and Quipper Video outside of Japan, and <a href="https://studysapuri.jp/">StudySuppli</a> in Japan.</p>
+<p>Under the umbrella of the Study Supplements brand, there are courses for elementary, junior high, and high schools, English for working adults, and forSchool for schools and municipalities. Some of the projects I was involved in are listed below.</p>
 <table>
+<colgroup>
+<col style="width: 64%" />
+<col style="width: 8%" />
+<col style="width: 27%" />
+</colgroup>
 <thead>
 <tr class="header">
-<th>タイトル</th>
-<th>期間</th>
-<th>語れるポイント</th>
+<th>Title</th>
+<th>Period</th>
+<th>Appeal Points</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="#Code-cleanup">Code cleanup</a></td>
-<td>2020-03</td>
-<td>腕力</td>
+<td><a href="#code-cleanup">Code cleanup</a></td>
+<td>2020.03</td>
+<td>Toughness to remove huge amount of codes</td>
 </tr>
 <tr class="even">
-<td>価格変更対応</td>
-<td>2019-10~2020-01</td>
-<td>複雑な要件の設計・実装</td>
+<td>Price Change</td>
+<td>2019.10~2020.01</td>
+<td>Payment systems, complex business logics</td>
 </tr>
 <tr class="odd">
-<td><a href="#Migration-from-React-Native-to-PWA">Migration from React Native to PWA</a></td>
-<td>2019-07~2019-09</td>
-<td>技術選定、技術的負債返却</td>
+<td><a href="#migration-from-react-native-to-pwa">Migration from React Native to PWA</a></td>
+<td>2019.07~2019.09</td>
+<td>Technology selection, paying back technology debt</td>
 </tr>
 <tr class="even">
-<td><a href="#中学生向けコーチングサービス開発">中学生向けコーチングサービス開発</a></td>
-<td>2018-08~2019-03</td>
-<td>相対的に大型プロジェクトのマネジメント</td>
+<td><a href="#develop-coaching-service-for-junio-high-school-students">Develop Coaching Service for Junior High School Students</a></td>
+<td>2018.08~2019.03</td>
+<td>9 people x 7 months project management / Scrum</td>
 </tr>
 <tr class="odd">
-<td><a href="#登録導線リニューアル">登録導線リニューアル</a></td>
-<td>2018-03</td>
-<td>技術選定、EFO</td>
+<td><a href="#entry-form-renewal">Entry Form Renewal</a></td>
+<td>2018.03</td>
+<td>Technology selection、EFO</td>
 </tr>
 <tr class="even">
 <td><a href="#Upgrade-grape-gem">Upgrade grape gem</a></td>
-<td>2017-10~2017-12</td>
-<td>技術的負債返却、OSS</td>
+<td>2017.10~2017.12</td>
+<td>Paying back technical debt, OSS</td>
 </tr>
 <tr class="odd">
-<td><a href="#キャリア決済廃止検討">キャリア決済廃止検討</a></td>
-<td>2017-10</td>
-<td>A/B テスト、Data driven な意思決定</td>
+<td>Develop Coaching Service for High School Students</td>
+<td>2016.12~2017.02</td>
+<td>Short term development</td>
 </tr>
 <tr class="even">
-<td>高校生向けコーチングサービス開発</td>
-<td>2016-12~2017-02</td>
-<td>短納期開発</td>
+<td>Benkyo Sapuri Migration</td>
+<td>2016.06~2016.12</td>
+<td>Short term development</td>
 </tr>
 <tr class="odd">
-<td>勉強サプリ移管プロジェクト</td>
-<td>2016-06~2016-12</td>
-<td>短納期開発</td>
+<td><a href="#hiring">Hiring</a></td>
+<td>2016.07~2020.03</td>
+<td>Organization design</td>
 </tr>
 <tr class="even">
-<td><a href="#採用活動">採用活動</a></td>
-<td>2016-07~2020-03</td>
-<td>組織づくり</td>
+<td><a href="#develope-in-app-purchase-for-ios">Develope In-App Purchase for iOS</a></td>
+<td>2016.04~2016.06</td>
+<td>Payment systems, OSS</td>
 </tr>
 <tr class="odd">
-<td><a href="#In-App-Purchase機能実装">In-App Purchase 機能実装</a></td>
-<td>2016-04~2016-06</td>
-<td>決済機能開発、OSS</td>
+<td><a href="#jyuken-sapuri-migration">Jyuken Sapuri Migration</a></td>
+<td>2015.09~2016.02</td>
+<td>Short term development, catch-up tech stacks</td>
 </tr>
 <tr class="even">
-<td><a href="#受験サプリ移管プロジェクト">受験サプリ移管プロジェクト</a></td>
-<td>2015-09~2016-02</td>
-<td>短納期開発、新規技術の習得</td>
-</tr>
-<tr class="odd">
-<td><a href="#その他">その他</a></td>
+<td><a href="#other-activities">Other Activities</a></td>
 <td>-</td>
-<td>地道な改善活動</td>
+<td>Continuous improvement</td>
 </tr>
 </tbody>
 </table>
 <section id="code-cleanup" class="level4">
-<h4>Code cleanup</h4>
-<p>複数プロダクトでコードを共用していた monorepo を fork し、dead code が大量に発生しました。その dead code の掃除が全体の開発体験に関わると考え、退職前の最後の仕事としてほぼ独力で提案から実行まで行いました。</p>
-<p>約 3 週間で 400,000 行のコードを削除するに至り、Rails の利用されていない model の削減では数を 390 から 281 に減らすことができました。稼働中のシステムに大きく手を入れたものの顧客に影響を及ぼすような障害を起こすことなく完遂しました。</p>
-<ul>
-<li>期間: 2020-03</li>
-<li>チーム構成
-<ul>
-<li>規模: 1 名 (自分のみ)</li>
-<li>役割: すべて</li>
-</ul></li>
-<li>利用技術・ツール
-<ul>
-<li>Rails, React, Redux, TypeScript (削除対象)</li>
-<li>NewRelic, BigQuery (機能の利用状況調査)</li>
-</ul></li>
-</ul>
+<h4>Code Cleanup</h4>
+<p>Because out team’s monorepo, which used to share code across multiple products, has been forked, a lot of our code base got unused. I thought that cleaning up those dead codes would bring better development experience, so I almost single-handedly suggested and executed code cleanup.</p>
+<p>It took about three weeks to remove 400,000 lines of code, and the removal of unused models in Rails was able to reduce the number from 390 to 281. I made significant changes to the system in operation, but completed them without causing a failure that would affect the end-users.</p>
+<table>
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 7%" />
+<col style="width: 3%" />
+<col style="width: 82%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Period</th>
+<th>Team</th>
+<th>Role</th>
+<th>Tech stacks, tools</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2020.03</td>
+<td>1 (Web×1)</td>
+<td>Web</td>
+<td>Ruby, Rails, React, Redux, TypeScript (Deletion Targets)<br />NewRelic, BigQuery (Usage research)</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="migration-from-react-native-to-pwa" class="level4">
 <h4>Migration from React Native to PWA</h4>
-<p>React Native 製 iOS/Android の業務用 internal アプリを PWA にてリニューアルするプロジェクトです。主にプロジェクトの立ち上げとバックエンドを担当しました。（リニューアル時に UI/UX を刷新したため、バックエンドにも変更が必要でした）</p>
-<p>プロジェクト以前に API に関する仕様を共有する仕組みがなかったため、OpenAPI による API specification の記述をし、共有のための土台の整備も行いました。自動テストと Staging 環境においてのみ動作する Rack middleware を活用し、Specification 違反を検知する仕組みも導入しています。（詳細は<a href="https://ohbarye.hatenablog.jp/entry/2020/04/29/open-api-specification-for-existing-restish-api-endpoints">ブログ記事</a>にも書きました）</p>
-<p>また、プロジェクトの総括を<a href="https://speakerdeck.com/ohbarye/migration-from-react-native-to-pwa">JSConf 2019 にて発表</a>しました。</p>
-<ul>
-<li>期間: 2019-07~2019-09</li>
-<li>チーム構成
-<ul>
-<li>規模: 6 名 (PdM×1、デザイナー ×2、iOS×1、フロントエンド ×1、バックエンド ×1)</li>
-<li>役割: バックエンドエンジニア</li>
-</ul></li>
-<li>利用技術・ツール
-<ul>
-<li>Rails 5.0, React 16.12, Redux 4.0, TypeScript 3.7, Cypress</li>
-</ul></li>
-</ul>
+<p>This project is a renewal of an iOS/Android business internal app made by React Native with PWA. I was primarily responsible for the launch and backend of the project. (The UI/UX was revamped at the time of the relaunch, so the backend had to be changed as well.)</p>
+<p>Since there was no mechanism to share the API specification before the project, I wrote the API specification using OpenAPI and laid the groundwork for sharing it. And leveraging Rack middleware, which only works in an automated testing and staging environment, I also put in place a mechanism to detect specification violations. (I wrote more about it in a <a href="https://ohbarye.hatenablog.jp/entry/2020/04/29/open-api-specification-for-existing-restish-api-endpoints">blog post</a>.)</p>
+<p>I also <a href="https://speakerdeck.com/ohbarye/migration-from-react-native-to-pwa">made a presentation at JSConf 2019</a> as a recap of this project.</p>
+<table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 35%" />
+<col style="width: 4%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Period</th>
+<th>Team</th>
+<th>Role</th>
+<th>Tech stacks, tools</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2019.07~2019.09</td>
+<td>6 (PdM×1, Designer×2, iOS×1, Frontend×1, Backend×1)</td>
+<td>Backend</td>
+<td>Ruby, Rails 5.0, RSpec, React 16.12, Redux 4.0, TypeScript 3.7, Cypress</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="中学生向けコーチングサービス開発" class="level4">
-<h4>中学生向けコーチングサービス開発</h4>
-<p>新規メンバーが大半の 10 名超、かつ半年を超える規模である不確実性の大きいプロジェクトにおいて、スクラム・モブプロ・1-on-1 等々のプラクティスを導入・実践することによりにリリースすることができました。また、定量的評価が難しいものの、メンバーの成長・定着にも繋がりました。</p>
-<p>本プロジェクトの詳細は『<a href="https://quipper.hatenablog.com/entry/2019/06/27/how-to-defeat-uncertainty">新メンバーが多い大型プロジェクトでの不確実性との戦い方</a>』にまとめています。</p>
-<ul>
-<li>期間: 2018-08~2019-03</li>
-<li>チーム構成
-<ul>
-<li>規模: 12 名 (PdM×1、デザイナー ×1、iOS×1、Android×1、Web エンジニア ×8)</li>
-<li>役割: Web エンジニア、スクラムマスター</li>
-</ul></li>
-<li>利用技術・ツール
-<ul>
-<li>Rails, React, Redux, TypeScript, React Native</li>
-</ul></li>
-</ul>
+<section id="develop-coaching-service-for-junior-high-school-students" class="level4">
+<h4>Develop Coaching Service for Junior High School Students</h4>
+<p>In a highly uncertain project with over 10 new members in the majority and a size of over six months, I was able to release it by implementing and practicing practices such as Scrum, MobPro, 1-on-1, etc. And while it’s difficult to quantitatively evaluate it, it has led to the growth and retention of our members.</p>
+<p>I have summarized the details of this project in “[How to Combat Uncertainty in a Large Project with Many New Members]” (https://quipper.hatenablog.com/entry/2019/06/27/how-to-defeat-uncertainty).</p>
+<table>
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 30%" />
+<col style="width: 11%" />
+<col style="width: 48%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Period</th>
+<th>Team</th>
+<th>Role</th>
+<th>Tech stacks, tools</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2018.08~2019.03</td>
+<td>12 (PdM×1、Designer×1、iOS×1、Android×1、Web×8)</td>
+<td>Web, Scrum master</td>
+<td>Ruby, Rails, React, RSpec, Capybara, Redux, TypeScript, Jest, React Native</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="登録導線リニューアル" class="level4">
-<h4>登録導線リニューアル</h4>
-<p>BtoC の学習サービスにおいて最も重要な獲得の時期に向けた EFO (Entry Form Optimization) プロジェクトです。</p>
+<section id="entry-form-renewal" class="level4">
+<h4>Entry Form Renewal</h4>
+<p>It is an EFO (Entry Form Optimization) project for the most important acquisition period in BtoC learning services.</p>
 <ul>
-<li>フロントエンド、バックエンドの両方を 1 名で担当</li>
-<li>当時のチームにて扱うフロントエンドの大部分は MPA であり、登録導線は Rails の View と jQuery で実装されていた</li>
-<li>Webpacker と React を導入</li>
-<li>同時期でなくリリース前後の比較になってしまったが登録導線の CVR が向上した</li>
+<li>I was responsible for both the front end and back end.</li>
+<li>At that time, the majority of the team’s front-end work was MPA, and the entry form was implemented in Rails View and jQuery.</li>
+<li>I selected Webpacker and React.</li>
+<li>CVR of registration has been improved.</li>
 </ul>
-<p><a href="https://speakerdeck.com/ohbarye/level-up-front-end-skills-for-rails-developer">Meguro.rb にて取り組みの内容を発表</a>しました。</p>
-<ul>
-<li>期間: 2018-03</li>
-<li>チーム構成
-<ul>
-<li>規模: 3 名 (PdM×1、デザイナー ×1、Web エンジニア ×1)</li>
-<li>役割: Web エンジニア</li>
-</ul></li>
-<li>利用技術・ツール
-<ul>
-<li>Rails, React, Redux, TypeScript, Webpacker</li>
-</ul></li>
-</ul>
+<table>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 26%" />
+<col style="width: 3%" />
+<col style="width: 62%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Period</th>
+<th>Team</th>
+<th>Role</th>
+<th>Tech stacks, tools</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2018.03</td>
+<td>3 (PdM×1, Designer×1, Web×1)</td>
+<td>Web</td>
+<td>Ruby, Rails, React, RSpec, Capybara, Redux, TypeScript, Webpacker</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="upgrade-grape-gem" class="level4">
 <h4>Upgrade grape gem</h4>
-<p>社内で最も大きい Rails の API server では grape という gem を使っているが、この gem が導入時 2015 年の v0.12.0 から更新されていなかったのでアップグレードしました。</p>
-<p>Rails upgrade 等に比べて情報が少なく、依存している周辺 library が dead であるために迂回策を用意するなどの工夫が必要でした。minor version (~v0.19) を少しずつ上げながら最終的に当時の最新の v1.0.1 まで upgrade できました。</p>
-<p>余談ながら、この約 1 年後 2018 年 12 月に NewRelic で同 Rails アプリケーションのメトリクスが取れないという問題が起きました。これは NewRelic agent 側の問題だったため本体に<a href="https://github.com/newrelic/rpm/pull/293">パッチ</a>を投げて解決しました。</p>
-<ul>
-<li>期間: 2017-10~2017-12</li>
-<li>チーム構成
-<ul>
-<li>規模: 1 名 (自分のみ)</li>
-<li>役割: Web エンジニア</li>
-</ul></li>
-<li>利用技術・ツール
-<ul>
-<li>Rails 4.2, Ruby 2.4, grape</li>
-</ul></li>
-</ul>
+<p>The biggest Rails API server in my company had been using a gem named grape, but the API hadn’t been updated since v0.12.0 in 2015 when it was introduced, so I upgraded it.</p>
+<p>Compared to Rails upgrade, there is less information, and dependent libraries are sometimes dead, so I had to prepare a workaround to write a patch. Finally, I was able to upgrade to the latest version v1.0.1 at that time by gradually increasing the minor version (~v0.19).</p>
+<p>As an aside, about a year after this, in December 2018, I had an issue with NewRelic not being able to get metrics for the Rails API. This was a problem on the NewRelic agent side, so I sent a <a href="https://github.com/newrelic/rpm/pull/293">patch</a> to the upstream to solve it.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Period</th>
+<th>Team</th>
+<th>Role</th>
+<th>Tech stacks, tools</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2017.10~2017.12</td>
+<td>1 (Web×1)</td>
+<td>Web</td>
+<td>Rails 4.2, Ruby 2.4, RSpec, grape</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="キャリア決済廃止検討" class="level4">
 <h4>キャリア決済廃止検討</h4>
@@ -1417,7 +1501,7 @@
 <p>Optimizely という SaaS を用い、エンジニアによる開発やテスト実施の手間を極力抑えつつ A/B testing の実践と定量データの収集ができました。</p>
 <p>この取組については<a href="https://quipper.hatenablog.com/entry/2018/05/31/080000">ブログ記事</a>を執筆し、<a href="https://speakerdeck.com/ohbarye/fact-based-decision-making-and-development-by-quipper">Rails Developer Meetup 2018 Day 3</a>や<a href="https://speakerdeck.com/ohbarye/proof-of-value-with-ab-testing">Regional Scrum Gathering Tokyo 2019</a>といったイベントでの登壇発表も行いました。</p>
 <ul>
-<li>時期: 2017-10</li>
+<li>時期: 2017.10</li>
 <li>チーム構成
 <ul>
 <li>規模: 2 名 (PdM×1、Web エンジニア ×1)</li>
@@ -1432,7 +1516,7 @@
 <section id="採用活動" class="level4">
 <h4>採用活動</h4>
 <ul>
-<li>時期: 2016-07~2020-03</li>
+<li>時期: 2016.07~2020.03</li>
 </ul>
 <p>書類選考・一次・コードテスト・二次・カジュアル面談・リファラルランチ・リファラルディナーへの主体的な参加を始めとし、全面的に貢献しました。</p>
 <ul>
@@ -1468,7 +1552,7 @@
 <p>サーバサイドの API と、subscription status を確認するバッチ処理を実装しました。その過程でサーバサイドで利用している AppStore API client library の <a href="https://github.com/nomad/venice">venice</a> が自動更新の形式に対応していなかったと気づいたため、自前で実装し、<a href="https://github.com/nomad/venice/pull/30">pull request</a>を送りました。（同 OSS はどうやら手が足りていないようなのでそのあとも<a href="https://github.com/nomad/venice/pulls?q=is%3Apr+author%3Aohbarye+is%3Aclosed">何度か contribution</a>しました）</p>
 <p>このあとの運用も含めて In-App Purchase のサーバサイドに関する知見が得られたので<a href="https://speakerdeck.com/ohbarye/rethink-in-app-purchase-on-subscription-services">iOSDC 2018 で登壇発表</a>を行いました。</p>
 <ul>
-<li>時期: 2016-04~2016-06</li>
+<li>時期: 2016.04~2016.06</li>
 <li>チーム構成
 <ul>
 <li>規模: 3 名 (PdM×1、iOS×1、Web エンジニア ×1)</li>
@@ -1487,7 +1571,7 @@
 <p>登録導線、外部システムとデータをやりとりする連携バッチ、生徒管理機能、自動宿題配信機能などを私は担当しました。当時の技術スタックである Rails, Backbone.js, Marionette.js, MongoDB のいずれも過去に経験がなかったのでキャッチアップしながら短納期で成果を上げることができました。</p>
 <p>本プロジェクトに関するプレスリリース: <a href="http://www.recruit-mp.co.jp/news/release/2016/0225_2893.html" class="uri">http://www.recruit-mp.co.jp/news/release/2016/0225_2893.html</a></p>
 <ul>
-<li>時期: 2015-09~2016-02</li>
+<li>時期: 2015.09~2016.02</li>
 <li>チーム構成
 <ul>
 <li>規模: 10 名 (PdM×1、iOS×2、Android×2、Web エンジニア ×5)</li>
@@ -1515,8 +1599,8 @@
 </ul>
 </section>
 </section>
-<section id="scsk-corporation-2012-04-2015-08-3-yrs-5mos" class="level3">
-<h3>SCSK Corporation (2012-04 ~ 2015-08) 3 yrs 5mos</h3>
+<section id="scsk-corporation-2012.04-2015.08-3-yrs-5mos" class="level3">
+<h3>SCSK Corporation (2012.04 ~ 2015.08) 3 yrs 5mos</h3>
 <p><a href="https://www.scsk.jp/">SCSK</a>は住友商事子会社の大手 SIer です。</p>
 <p>私はシステムエンジニアとして不動産業界向けの業務システム開発に携わっていました。複雑な要件のデータモデル設計・帳票出力プログラムの作成・Web アプリケーションやバッチ処理の開発を通じてソフトウェア開発の基礎を学びました。</p>
 <p>2014 年以降は基本設計・テスト設計・運用・進行管理・ベンダーマネジメントが業務の大半を占めました。</p>
@@ -1529,8 +1613,8 @@
 </section>
 <section id="personal-projects" class="level3">
 <h3>Personal projects</h3>
-<section id="goofi-2018-08" class="level4">
-<h4>Goofi (2018-08~)</h4>
+<section id="goofi-2018.08" class="level4">
+<h4>Goofi (2018.08~)</h4>
 <p>OSS への貢献をより簡便にするためのツールです。OSS 活動を始めたい初心者にとって最大の壁が「貢献対象を探すこと」だと考え、コントリビューションが推奨される repository と issue をリストアップする Web サービス<a href="https://goofi.now.sh/">Goofi</a>を作りました。(repository: <a href="https://github.com/ohbarye/goofi" class="uri">https://github.com/ohbarye/goofi</a>)</p>
 <p>Nodefest 2018 では<a href="(https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-final)">同サービスに関する発表</a>を行いました。</p>
 <p>2020 年 1 月に<a href="https://github.blog/2020-01-22-browse-good-first-issues-to-start-contributing-to-open-source/">GitHub が公式の類似機能を公開した</a>ので役目を終えそうですが、課題設定が正しかったことが追認された心持ちです。</p>
@@ -1538,8 +1622,8 @@
 <li>使用技術: Node.js 13.x, TypeScript 3.8, Next.js 9.1, GraphQL (client), Now.sh v1~2 (現 Versel), GitHub API v4</li>
 </ul>
 </section>
-<section id="review-bot-2017-08" class="level4">
-<h4>Review bot (2017-08~)</h4>
+<section id="review-bot-2017.08" class="level4">
+<h4>Review bot (2017.08~)</h4>
 <p>チーム開発でのレビューを促進させる Slack bot です。 指定した条件にマッチする pull requests 一覧を Slack に投稿します。(repository: <a href="https://github.com/ohbarye/review-waiting-list-bot" class="uri">https://github.com/ohbarye/review-waiting-list-bot</a>)</p>
 <p>2019 年 6 月に GitHub が買収した<a href="https://pullpanda.com/">Pull Panda</a>に類似していますが商用で有料だったためか、この bot を fork して利用していただける企業が数社ありました。</p>
 <ul>
@@ -1619,40 +1703,37 @@
 <section id="qualifications" class="level2">
 <h2>Qualifications</h2>
 <ul>
-<li>IPA
+<li>Information-technology Promotion Agency, Japan
 <ul>
-<li>(2014-06) データベーススペシャリスト</li>
-<li>(2012-12) 応用情報処理技術者</li>
-<li>(2012-06) 基本情報処理技術者</li>
+<li>(2014.06) Database Specialist</li>
+<li>(2012.12) Applied Information Technology Engineer</li>
+<li>(2012.06) Fundamental Information Technology Engineer</li>
 </ul></li>
 <li>English
 <ul>
-<li>(2013-02) TOEIC 720</li>
+<li>(2013.02) TOEIC 720</li>
 </ul></li>
 <li>Others
 <ul>
-<li>(2010-12) 貸金業務取扱主任者</li>
-<li>(2012-03) 教職課程履修完了
-<ul>
-<li>教員免許申請資格はあるが未申請のため資格は未取得</li>
-</ul></li>
+<li>(2010.12) Chief of Money Lending Operations</li>
+<li>(2012.03) Mastered Teacher Training Course</li>
 </ul></li>
 </ul>
 </section>
 <section id="honors-awards" class="level2">
 <h2>Honors &amp; Awards</h2>
 <ul>
-<li>(2016-04) MVP2016 in Quipper</li>
-<li>(2015-03) Champion in hackathon conducted by SCSK OSS promotion office</li>
+<li>(2016.04) MVP2016 in Quipper</li>
+<li>(2015.03) Champion in hackathon conducted by SCSK OSS promotion office</li>
 </ul>
 </section>
 <section id="interests" class="level2">
 <h2>Interests</h2>
-<p>2020 年まではソフトウェア工学の分野、特に事業会社の Web サービス開発のうちアプリケーションレイヤーの開発で求められる技術力を業務でも趣味でも伸ばしてきました。今後はコンピュータサイエンス全般やアルゴリズム、低レイヤーやミドルウェアの学習を通じてソフトウェアに関する理解を全般的に深めていきたいと考えています。</p>
+<p>By 2020, I have developed the technical skills required in the field of software engineering, especially in the application layer of web services development. In the future, I hope to deepen my general understanding of software through learning about whole computer science, algorithms, low layers and middleware in particular.</p>
 <ul>
 <li>Competitive programming
 <ul>
-<li>AtCoder 緑 <a href="https://atcoder.jp/users/ohbarye" class="uri">https://atcoder.jp/users/ohbarye</a></li>
+<li>AtCoder green <a href="https://atcoder.jp/users/ohbarye" class="uri">https://atcoder.jp/users/ohbarye</a></li>
 <li>Google Code Jam 2020
 <ul>
 <li>Passed Qualification Round</li>
@@ -1660,20 +1741,20 @@
 </ul></li>
 <li>Computer system
 <ul>
-<li>[WIP] 『<a href="https://www.oreilly.co.jp/books/9784873117126/">コンピュータシステムの理論と実装</a>』 (a.k.a. Nand to Tetris) の実践 <a href="https://github.com/ohbarye/nand2tetris" class="uri">https://github.com/ohbarye/nand2tetris</a>
+<li>[WIP] 『<a href="https://www.amazon.com/dp/0262640686">The Elements of Computing Systems: Building a Modern Computer from First Principles</a>』 (a.k.a. Nand to Tetris) <a href="https://github.com/ohbarye/nand2tetris" class="uri">https://github.com/ohbarye/nand2tetris</a>
 <ul>
-<li>アセンブラ、VM 変換器、コンパイラを OCaml で実装中</li>
+<li>I’m building an assembler, VM translator, and a compiler in OCaml.</li>
 </ul></li>
 </ul></li>
 <li>Algorithms
 <ul>
-<li>Coursera: <a href="https://www.coursera.org/learn/algorithms-part1">Princeton University Algorithms Part 1</a> 修了</li>
+<li>Mastered <a href="https://www.coursera.org/learn/algorithms-part1">Princeton University Algorithms Part 1</a> in Coursera</li>
 </ul></li>
 <li>Database
 <ul>
-<li><a href="https://ohbarye.hatenablog.jp/entry/2020/04/17/sqlite-clone-db-tutorial">C 言語で SQLite のクローンを作るチュートリアル</a></li>
+<li><a href="https://ohbarye.hatenablog.jp/entry/2020/04/17/sqlite-clone-db-tutorial">SQLite clone DB tutorial</a> (Japanese)</li>
 </ul></li>
-<li>Self note <a href="https://scrapbox.io/ohbarye/" class="uri">https://scrapbox.io/ohbarye/</a></li>
+<li>My study note <a href="https://scrapbox.io/ohbarye/" class="uri">https://scrapbox.io/ohbarye/</a></li>
 </ul>
 </section>
 
