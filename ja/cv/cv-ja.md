@@ -22,24 +22,32 @@ pagetitle: Masato Ohba (ohbarye) CV
 
 Web backend を強みの中心に置きつつ、自社サービスと client work 両方のフルサイクル開発の経験があります。適時コミュニケーションを取りつつ行う要求・要件定義を始めとし、チームでの開発から運用までの全体を担うことができます。
 
-決済機能や社内システムなど System of Record 領域において求められる複雑なビジネスロジックに関して、質・速度・堅牢さを意識した開発が得意です。
-
 登録導線やリテンション施策などの System of Engagement 領域、リッチな体験が求められるサービスの Web frontend においては React による SPA, MPA の開発を行なってきました。
+
+決済機能や社内システムなど System of Record 領域において求められる複雑なビジネスロジックについても、質・速度・堅牢さを意識した開発が可能です。
 
 また、エンジニア数が 20~60 名規模の組織における Engineering Manager を務め、チーム設計・プロジェクトマネジメント・採用活動・コーポレートブランディング・文化づくり・コミュニティ活動等々に関する実績と知見があります。
 
 ## スキル
 
-- Language: **Ruby** (2.3~), **TypeScript** (3.4~), JavaScript (ES2015~), CoffeeScript`*` (1.x), Java`*` (6~8), Python (2.x, 3.7)`*`, OCaml (4.10) `*`
-- Frontend: **React** (16.x~), Redux (3.x~), Backbone.js`*`, Marionette.js`*`, jQuery`*` (1.x~), React Native (0.5x), Webpack
-- Backend: **Ruby on Rails** (4.2~5.1), Node.js`*`, OpenAPI (3.x)
-- Testing: **RSpec**, Capybara, minitest, Jest, Cypress, sinon, chai, mocha
-- Database: MongoDB (3.2~3.6), Redis, PostgreSQL (9.5)
-- Infrastructure: AWS, Docker, Kubernetes, Heroku`*`, Deis`*`, Netlify`*`, Versel`*`
-- Communication tools: GitHub, ZenHub, Slack
-- SaaS: CircleCI, TravisCI`*`, NewRelic, Google BigQuery, Google Cloud Logging (Stackdriver Logging), Treasure Data, Datadog, TravisCI`*`
-- Protocols: HTTP (REST), GraphQL`*`
-- Development framework: Agile, Scrum, Waterfall`*`
+- Language
+  - **Ruby** (2.3~), **TypeScript** (3.4~), JavaScript (ES2015~), Java`*` (~8), Python (~3.7)`*`, OCaml `*`
+- Frontend
+  - **React** (16.x~), Redux (3.x~), Backbone.js`*`, jQuery`*` (1.x~), React Native (0.5x), Webpack
+- Backend
+  - **Ruby on Rails** (4.2~5.1), Node.js`*`, OpenAPI (3.0), REST, GraphQL`*`
+- Testing
+  - **RSpec**, Capybara, minitest, Jest, Cypress, Sinon, Chai, Mocha
+- Database
+  - MongoDB (3.2~3.6), Redis, PostgreSQL (9.5)
+- Infrastructure
+  - AWS, Docker, Kubernetes, Heroku`*`, Deis`*`, Netlify`*`, Versel`*`
+- Communication tools
+  - GitHub, ZenHub, Slack
+- SaaS
+  - CircleCI, TravisCI`*`, NewRelic, Google BigQuery, Treasure Data, Datadog
+- Development framework
+  - Agile, Scrum, Waterfall`*`
 
 **太字** はコアなスキルを表現します。
 
@@ -47,17 +55,17 @@ Web backend を強みの中心に置きつつ、自社サービスと client wor
 
 ### 長所 / 強み
 
-#### Operation, Performance を意識した設計・実装
+#### 運用、パフォーマンスを意識した設計・実装
 
 ビジネスの要求を一時的に満たすだけでなく、パフォーマンス・計算量・将来にわたるデータ増加を意識した設計や実装の経験があります。加えて、運用中に生じた問題についてのパフォーマンスチューニングを行なってきました。
 
-バッチの冪等性・リトライ、決済におけるデータの整合性、開発した機能がどのように運用されるか。これらを意識した設計・開発・レビューに自信があります。
+バッチの冪等性・リトライ処理。決済におけるデータの整合性。開発した機能がどのように運用されるか。これらを意識した設計・開発・レビューに自信があります。
 
 #### OSS を活用、改善する技術力
 
-現代においては特筆すべきことではありませんが、業務においては OSS を利用しています。技術選定の際には利便性やトレンドの最大瞬間風速だけでなくチームとして feasible な技術かどうか？を中心に検討し、並んで持続性や disposability を検討します。dependabot のような SaaS を活用しつつ dependencies の定期的なアップグレードも行なってきました。
+現代においては特筆すべきことではありませんが、業務においては OSS を利用しています。技術選定の際には利便性やトレンドの最大瞬間風速だけでなくチームとして feasible な技術かどうか？を中心に検討し、並んで持続性や disposability を検討します。チームの生産性を優先した結果として保守的な選択をすることが多いです。製品の依存するライブラリ等については dependabot のような SaaS を活用しつつ dependencies の定期的なアップグレードも行なってきました。
 
-また、開発するプロダクトと OSS は地続きであると考えています。必要な機能がなければ自ら開発したりパッチを送ったり、bug や regression に気づいたら直す振る舞いを是としています。（後述する「Personal projects」欄、「Public Output」欄においても OSS contribution に関する内容を記述しています）
+また、開発するプロダクトと OSS は地続きであると考えています。必要な機能がなければ自ら開発したりパッチを送ったり、bug や regression に気づいたら直す振る舞いを心がけています。（後述する「Personal projects」欄、「Public Output」欄においても OSS contribution に関する内容を記述しています）
 
 #### チーム志向
 
@@ -65,7 +73,7 @@ Web backend を強みの中心に置きつつ、自社サービスと client wor
 
 プロセスに問題があったとき、「ゴールを明確にする」「説明責任を果たす」「オーバーワークを防ぐ」ためにスクラムを導入し、スクラムマスターの役割を担ったこともあります。
 
-#### ~100 名規模のエンジニア組織における課題解決
+#### ~60 名規模のエンジニア組織における課題解決
 
 エンジニア数が 20~60 名規模の組織における Engineering Manager として、組織設計・チーム設計・採用活動・教育・オンボーディング・文化づくり・コミュニティ活動等々に関する実績と知見があります。
 
@@ -83,7 +91,7 @@ Web backend を強みの中心に置きつつ、自社サービスと client wor
 - ハードウェア、組み込みソフトウェア関連
 - 20 名を超える大規模チームでの開発
 
-経験のない領域を学ぶ意欲はあり、業務上必要な技術に関するキャッチアップは過去に行なってきたように可能と思いますが、業務開始直後に初速を出すのは難しいと考えます。
+経験のない領域を学ぶ意欲はあり、業務上必要な技術に関するキャッチアップは過去に行なってきたように可能だと考えていますが、業務開始直後に初速を出すのは難しいと考えます。
 
 ## 職務経歴
 
