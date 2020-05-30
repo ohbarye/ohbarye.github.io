@@ -1,5 +1,6 @@
 ---
 tags: job-hunting
+lang: en
 title: 'Masato Ohba (ohbarye) CV'
 output:
   html_document:
