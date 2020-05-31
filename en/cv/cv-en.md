@@ -24,13 +24,13 @@ Japanese version: [https://ohbarye.github.io/ja/cv/](https://ohbarye.github.io/j
 
 ## Summary
 
-The core of my strength is web backend. I have experience in full cycle development for both in-house development and client work. I can be the overall lead in the team from development to operation, starting with the requirements and requirements definition, which is done with timely communication.
+The core of my strength is web backend. I have experience in full-cycle development for both in-house development and client work. I can be the overall lead in the team from development to operation, starting with the requirements and requirements definition, which is done with timely communication.
 
-I have been developing SPA and MPA with React in the System of Engagement area such as registration leads and retention measures, and in the Web frontend area for services that require rich experiences.
+I have been developing SPA and MPA with React in the System of Engagement areas such as registration leads and retention measures, and in the Web frontend area for services that require rich experiences.
 
-I can develop complex business logic required in the System of Record field, such as payment functions and internal systems, with quality, speed and robustness in mind.
+I can develop complex business logic required in the System of Record fields, such as payment functions and internal systems, with quality, speed, and robustness in mind.
 
-I also served as engineering manager for an organization with 20-60 engineers. As a result, I have a proven track record and knowledge of team design, project management, recruitment, corporate branding, culture building, community activities, and more.
+I also served as an engineering manager for an organization with 20-60 engineers. As a result, I have a proven track record and knowledge of team design, project management, recruitment, corporate branding, culture building, community activities, and more.
 
 ## Skills
 
