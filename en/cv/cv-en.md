@@ -276,7 +276,16 @@ I was a member of a department developing some enterprise systems for real estat
 
 - Personal (Japanese) [https://ohbarye.hatenablog.jp/](https://ohbarye.hatenablog.jp/)
 - Personal (English) [https://dev.to/ohbarye](https://dev.to/ohbarye)
-- 会社 [https://quipper.hatenablog.com/search?q=ohbarye](https://quipper.hatenablog.com/search?q=ohbarye)
+
+#### Articles on Company's Blog
+
+- [Project Management Technique to Overcome Uncertainty](https://quipper.hatenablog.com/entry/2019/06/27/how-to-defeat-uncertainty)
+- [Working Out Loud -How to Make Collaborative Culture-](https://quipper.hatenablog.com/entry/2018/11/14/working-out-loud)
+- [Quipper Interview Guide is Published](https://quipper.hatenablog.com/entry/2018/09/01/interview-guide)
+- [カジュアル面談への扉](https://quipper.hatenablog.com/entry/2020/02/05/casual-interview-in-quipper)
+- [Fact-based Decision Making with A/B Testing](https://quipper.hatenablog.com/entry/2018/05/31/080000)
+- [Effective Onboarding](https://quipper.hatenablog.com/entry/2020/04/02/effective-offboarding)
+- [Timezone in Global Applications](https://quipper.hatenablog.com/entry/2016/12/05/090000)
 
 ### Presentations
 

@@ -283,7 +283,7 @@ Optimizely という SaaS を用い、エンジニアによる開発やテスト
 
 ### ブログ
 
-- 個人 [https://ohbarye.hatenablog.jp/](https://ohbarye.hatenablog.jp/)
+- 個人 (日本語) [https://ohbarye.hatenablog.jp/](https://ohbarye.hatenablog.jp/)
   - [人気順の記事一覧](https://b.hatena.ne.jp/entrylist?url=https%3A%2F%2Fohbarye.hatenablog.jp%2F&sort=count)
 - 個人 (英語) [https://dev.to/ohbarye](https://dev.to/ohbarye)
 
