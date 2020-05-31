@@ -6,6 +6,7 @@ output:
   html_document:
     toc: yes
 pagetitle: Masato Ohba (ohbarye) CV
+balloon_message: I'm between jobs
 ---
 
 Last updated: 2020.05.30
