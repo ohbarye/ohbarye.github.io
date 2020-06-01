@@ -242,9 +242,9 @@ I was in charge of a registration flow, batches to exchange data with external s
 
 Press release on this project: [http://www.recruit-mp.co.jp/news/release/2016/0225_2893.html](http://www.recruit-mp.co.jp/news/release/2016/0225_2893.html)
 
-| Period          | Team                                            | Role | Tech stacks, tools                                                                  |
-| --------------- | ----------------------------------------------- | ---- | ----------------------------------------------------------------------------------- |
-| 2015.09~2016.02 | 10 (PdM×1、iOS×2、Android×2、Web エンジニア ×5) | Web  | Rails 4.2, Ruby 2.3, RSpec, Capybara, Backbone.js, Marionette.js, Sion, Mocha, Chai |
+| Period          | Team                                | Role | Tech stacks, tools                                                                  |
+| --------------- | ----------------------------------- | ---- | ----------------------------------------------------------------------------------- |
+| 2015.09~2016.02 | 10 (PdM×1、iOS×2、Android×2、Web×5) | Web  | Rails 4.2, Ruby 2.3, RSpec, Capybara, Backbone.js, Marionette.js, Sion, Mocha, Chai |
 
 #### Other Activities
 
