@@ -9,7 +9,7 @@ pagetitle: Masato Ohba (ohbarye) CV
 balloon_message: 求職中
 ---
 
-最終更新日: 2020.05.30
+最終更新日: 2020.05.31
 
 English version: [https://ohbarye.github.io/en/cv/](https://ohbarye.github.io/en/cv/)
 
