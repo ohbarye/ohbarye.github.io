@@ -292,6 +292,7 @@ I was a member of a department developing some enterprise systems for real estat
 Here are a few excerpts from [https://speakerdeck.com/ohbarye](https://speakerdeck.com/ohbarye). All of them are in Japanese.
 
 - [Migration from React Native to PWA](https://speakerdeck.com/ohbarye/migration-from-react-native-to-pwa) (JSConf JP 2019)
+- [Lightning Talk Session Organizer](https://event.shoeisha.jp/devsumi/20190702/session/2091/) (Developers Summit 2019 Summer)
 - [Verify Hypothesis with A/B Testing](https://speakerdeck.com/ohbarye/proof-of-value-with-ab-testing) (Regional Scrum Gathering Tokyo 2019)
 - [How to Find Good First Issues](https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-final) (NodeFest JP 2018)
 - [How to Manage Payment Transactions](https://speakerdeck.com/ohbarye/how-to-manage-payment-transaction) (Meguro.rb#19)

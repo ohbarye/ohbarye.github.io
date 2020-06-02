@@ -299,9 +299,10 @@ Optimizely という SaaS を用い、エンジニアによる開発やテスト
 
 ### プレゼンテーション
 
-[https://speakerdeck.com/ohbarye](https://speakerdeck.com/ohbarye) からいくつか抜粋します。
+[https://speakerdeck.com/ohbarye](https://speakerdeck.com/ohbarye)に概ね集約されています。いくつか抜粋します。
 
 - [Migration from React Native to PWA](https://speakerdeck.com/ohbarye/migration-from-react-native-to-pwa) (JSConf JP 2019)
+- [Lightning Talk Session Organizer](https://event.shoeisha.jp/devsumi/20190702/session/2091/) (Developers Summit 2019 Summer)
 - [プロダクトの「負債」を「機能」と呼び直すために](https://speakerdeck.com/ohbarye/proof-of-value-with-ab-testing) (Regional Scrum Gathering Tokyo 2019)
 - [貢献できる OSS の見つけ方 -完結編-](https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-final) (NodeFest JP 2018)
 - [決済のトランザクション管理術](https://speakerdeck.com/ohbarye/how-to-manage-payment-transaction) (Meguro.rb#19)
