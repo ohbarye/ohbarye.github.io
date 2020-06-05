@@ -9,7 +9,7 @@ pagetitle: Masato Ohba (ohbarye) CV
 balloon_message: I'm between jobs
 ---
 
-Last updated: 2020.05.31
+Last updated: 2020.06.05
 
 Japanese version: [https://ohbarye.github.io/ja/cv/](https://ohbarye.github.io/ja/cv/)
 
@@ -395,6 +395,8 @@ This is a library that can build a web server to deliver Markdown documents as H
 
 ## Qualifications
 
+- AtCoder
+  - (2020.06) Practical Algorithm Skill Test, Advanced Beginner
 - Information-technology Promotion Agency, Japan
   - (2014.06) Database Specialist
   - (2012.12) Applied Information Technology Engineer

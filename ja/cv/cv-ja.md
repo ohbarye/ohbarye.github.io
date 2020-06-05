@@ -9,7 +9,7 @@ pagetitle: Masato Ohba (ohbarye) CV
 balloon_message: 求職中
 ---
 
-最終更新日: 2020.05.31
+最終更新日: 2020.06.05
 
 English version: [https://ohbarye.github.io/en/cv/](https://ohbarye.github.io/en/cv/)
 
@@ -405,6 +405,8 @@ Markdown で記述された文書を HTML で配信する Web サーバを簡易
 
 ## 資格
 
+- AtCoder
+  - (2020.06) アルゴリズム実技検定 初級
 - IPA
   - (2014.06) データベーススペシャリスト
   - (2012.12) 応用情報処理技術者
