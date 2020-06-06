@@ -1,0 +1,22 @@
+{
+  "name": "ohbarye.github.io",
+  "dockerComposeFile": ["docker-compose.extend.yml"],
+  "service": "dev",
+  "workspaceFolder": "/root/workspace",
+  "shutdownAction": "stopCompose",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/zsh"
+  },
+  "extensions": [
+    "CoenraadS.bracket-pair-colorizer-2",
+    "dbaeumer.vscode-eslint",
+    "donjayamanne.githistory",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "freebroccolo.reasonml",
+    "mechatroner.rainbow-csv",
+    "ms-vscode-remote.remote-containers",
+    "ms-vscode.vscode-typescript-tslint-plugin",
+    "vscodevim.vim"
+  ]
+}

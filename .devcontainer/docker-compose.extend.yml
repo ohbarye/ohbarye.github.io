@@ -1,0 +1,17 @@
+version: '3.4'
+services:
+  dev:
+    command: sleep infinity
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ..:/root/workspace
+      - ~/dotfiles:/root/dotfiles
+      - ~/.zshrc:/root/.zshrc
+      - ~/.zlogin:/root/.zlogin
+      - ~/.zlogout:/root/.zlogout
+      - ~/.zprofile:/root/.zprofile
+      - ~/.zshenv:/root/.zshenv
+      - ~/.gitignore_global:/root/.gitignore_global
+      - ~/.gitconfig:/root/.gitconfig
