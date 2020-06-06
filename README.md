@@ -21,3 +21,10 @@ $ yarn build
 ```
 
 Just push it to `origin/master` to publish.
+
+### Build with Docker
+
+```sh
+$ docker build . -t ohbarye.github.io-dev
+$ docker run --rm -it -v $PWD:/app -v node_modules:/app/node_modules ohbarye.github.io-dev
+```
