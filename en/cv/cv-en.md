@@ -404,8 +404,8 @@ This is a library that can build a web server to deliver Markdown documents as H
 - English
   - (2013.02) TOEIC 720
 - Others
-  - (2010.12) Chief of Money Lending Operations
   - (2012.03) Mastered Teacher Training Course
+  - (2010.12) Chief of Money Lending Operations
 
 ## Honors & Awards
 
