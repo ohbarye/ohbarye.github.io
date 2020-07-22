@@ -6,7 +6,7 @@ output:
   html_document:
     toc: yes
 pagetitle: Masato Ohba (ohbarye) CV
-balloon_message: 求職中
+balloon_message: Hi, I'm @ohbarye
 ---
 
 最終更新日: 2020.06.05
