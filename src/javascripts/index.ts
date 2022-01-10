@@ -1,13 +1,13 @@
-import Controller from './Controller';
 import '../sass/me.scss';
+import Controller from './Controller';
 
 window.onload = () => {
   const canvas = <HTMLCanvasElement>document.getElementById('my-canvas');
   const wrapper = <HTMLDivElement>document.getElementById('canvas-wrapper');
 
-  if (canvas.getContext && wrapper) {
+  try {
     Controller.start(canvas, wrapper);
-  } else {
+  } catch {
     console.log(
       "You're using an so obsolete browser that an extra content cannot appear.",
     );
