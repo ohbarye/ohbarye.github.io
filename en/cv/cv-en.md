@@ -107,7 +107,7 @@ I am motivated to learn in areas where I have no experience. I think it's possib
 
 ### SmartBank, Inc. (2020.08 ~ )
 
-[SmartBank, Inc.](https://smartbank.co.jp/) is a BtoC Fintech company that is categorized as a [challenger bank](https://en.wikipedia.org/wiki/Challenger_bank) like [Monzo](https://monzo.com/). The company is an "Issuer" that issues prepaid cards, and develops and operates a product named [B/43](https://b43.jp/) that visualizes and automates spending management in conjunction with payment with cards.
+[SmartBank, Inc.](https://smartbank.co.jp/) is a BtoC Fintech company that is categorized as a [challenger bank](https://en.wikipedia.org/wiki/Challenger_bank) like [Monzo](https://monzo.com/). The company is an "Issuer" that issues prepaid cards and develops and operates a product named [B/43](https://b43.jp/) that visualizes and automates spending management in conjunction with payment with cards.
 
 The main achievements of the company are described below.
 
@@ -115,9 +115,9 @@ The main achievements of the company are described below.
   - Withdrawal / Money transfer / Account by purpose / Joint account / Spending management
 - Developed an in-house system that performs the necessary work as an issuer.
   - Identity verification (eKYC) / Card delivery system
-- Developmed tools and systems for internal developers.
+- Developed tools and systems for internal developers.
   - Introduced [Feature Toggles](https://martinfowler.com/articles/feature-toggles.html) and separated development and release.
-  - Made APIs compatible with [Idempotency-Key Headers](https://brandur.org/fragments/idempotency-key-draft) and make it robust so that data can be protected even if multiple requests occur.
+  - Made our API server compatible with [Idempotency-Key Headers](https://brandur.org/fragments/idempotency-key-draft) and make it robust so that data can be protected even if multiple requests occur.
 - Contributed to development productivity.
   - Built CI/CD pipeline and speed up when any bottleneck appear.
   - Designed and built an automated deployment/release flow.
