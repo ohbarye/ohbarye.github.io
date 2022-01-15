@@ -9,7 +9,7 @@ pagetitle: Masato Ohba (ohbarye) CV
 balloon_message: Hi, I'm @ohbarye
 ---
 
-Last updated: 2020.06.05
+Last updated: 2022.01.16
 
 Japanese version: [https://ohbarye.github.io/ja/cv/](https://ohbarye.github.io/ja/cv/)
 
