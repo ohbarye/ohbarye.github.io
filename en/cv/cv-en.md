@@ -28,28 +28,28 @@ The core of my strength is web backend. I have experience in full-cycle developm
 
 I have been developing SPA and MPA with React in the System of Engagement areas such as registration leads and retention measures, and in the Web frontend area for services that require rich experiences.
 
-I can develop complex business logic required in the System of Record fields, such as payment functions and internal systems, with quality, speed, and robustness in mind.
+I can develop complex business logic required in the System of Record fields, such as payment systems and banking systems, with quality, speed, and robustness in mind.
 
 I also served as an engineering manager for an organization with 20-60 engineers. As a result, I have a proven track record and knowledge of team design, project management, recruitment, corporate branding, culture building, community activities, and more.
 
 ## Skills
 
 - Language
-  - **Ruby** (2.3~), **TypeScript** (3.4~), JavaScript (ES2015~), Java`*` (~8), Python (~3.7)`*`, OCaml `*`
+  - **Ruby** (2.3~3.x), **TypeScript** (3.4~4.x), Go (1.15~), JavaScript (ES2015~), Java`*` (~8), Python (~3.7)`*`, OCaml `*`
 - Frontend
-  - **React** (16.x~), Redux (3.x~), Backbone.js`*`, jQuery`*` (1.x~), React Native (0.5x), Webpack
+  - **React** (16.x~), React Admin, Webpack, Redux`*`, Backbone.js`*`, jQuery`*` (1.x~), React Native (0.5x)`*`
 - Backend
-  - **Ruby on Rails** (4.2~5.1), Node.js`*`, OpenAPI (3.0), REST, GraphQL`*`
+  - **Ruby on Rails** (4.2~6.1), Node.js`*`, OpenAPI (3.0), REST, GraphQL`*`
 - Testing
-  - **RSpec**, Capybara, minitest, Jest, Cypress, Sinon, Chai, Mocha
+  - **RSpec**, Capybara, minitest, Jest, React Testing Library, Cypress`*`, Sinon`*`, Chai`*`, Mocha`*`
 - Database
-  - MongoDB (3.2~3.6), Redis, PostgreSQL (9.5)
+  - MySQL (5.7), PostgreSQL (9.5), MongoDB (3.2~3.6)`*`, Redis
 - Infrastructure
-  - AWS, Docker, Kubernetes, Heroku`*`, Deis`*`, Netlify`*`, Vercel`*`
+  - AWS, Docker, Kubernetes`*`, Heroku`*`, Deis`*`, Netlify`*`, Vercel`*`
 - Communication tools
   - GitHub, ZenHub, Slack
 - SaaS
-  - CircleCI, TravisCI`*`, NewRelic, Google BigQuery, Treasure Data, Datadog
+  - GitHub Actions, CircleCI, Athena, NewRelic, Google BigQuery, Datadog`*`
 - Development framework
   - Agile, Scrum, Waterfall`*`
 
@@ -105,6 +105,25 @@ I am motivated to learn in areas where I have no experience. I think it's possib
 
 ## Work Experience
 
+### SmartBank, Inc. (2020.08 ~ )
+
+[SmartBank, Inc.](https://smartbank.co.jp/) is a BtoC Fintech company that is categorized as a [challenger bank](https://en.wikipedia.org/wiki/Challenger_bank) like [Monzo](https://monzo.com/). The company is an "Issuer" that issues prepaid cards, and develops and operates a product named [B/43](https://b43.jp/) that visualizes and automates spending management in conjunction with payment with cards.
+
+The main achievements of the company are described below.
+
+- Developed various features for users.
+  - Withdrawal / Money transfer / Account by purpose / Joint account / Spending management
+- Developed an in-house system that performs the necessary work as an issuer.
+  - Identity verification (eKYC) / Card delivery system
+- Developmed tools and systems for internal developers.
+  - Introduced [Feature Toggles](https://martinfowler.com/articles/feature-toggles.html) and separated development and release.
+  - Made APIs compatible with [Idempotency-Key Headers](https://brandur.org/fragments/idempotency-key-draft) and make it robust so that data can be protected even if multiple requests occur.
+- Contributed to development productivity.
+  - Built CI/CD pipeline and speed up when any bottleneck appear.
+  - Designed and built an automated deployment/release flow.
+  - Designed and built schema migration and data migration flow in production environment.
+- Contributed to recruitment activities.
+
 ### Quipper Limited (2015.09 ~ 2020.05) 4 yrs 8mos
 
 [Quipper](https://www.quipper.com/) is a company that operates both B to C and B to B education businesses. We develop and operate Quipper School and Quipper Video outside of Japan, and [StudySuppli](https://studysapuri.jp/) in Japan.
@@ -112,13 +131,13 @@ I am motivated to learn in areas where I have no experience. I think it's possib
 Under the umbrella of the Study Supplements brand, there are courses for elementary, junior high, and high schools, English for working adults, and forSchool for schools and municipalities. Some of the projects I was involved in are listed below.
 
 | Title                                                                                                                 | Period          | Appeal Points                                     |
-| --------------------------------------------------------------------------------------------------------------------- | --------------- | ------------------------------------------------- |
+| --------------------------------------------------------------------------------------------------------------------- | --------------- | ------------------------------------------------- | --- | ------------------------------------------------------------------------- | ------- | ---------------------------------------- |
 | [Code cleanup](#code-cleanup)                                                                                         | 2020.03         | Toughness to remove huge amount of codes          |
 | Price Change                                                                                                          | 2019.10~2020.01 | Payment systems, complex business logics          |
 | [Migration from React Native to PWA](#migration-from-react-native-to-pwa)                                             | 2019.07~2019.09 | Technology selection, paying back technology debt |
 | [Develop Coaching Service for Junior High School Students](#develop-coaching-service-for-junior-high-school-students) | 2018.08~2019.03 | 9 people x 7 months project management / Scrum    |
 | [Entry Form Renewal](#entry-form-renewal)                                                                             | 2018.03         | Technology selection、EFO                         |
-| [Upgrade grape gem](#upgrade-grape-gem)                                                                               | 2017.10~2017.12 | Paying back technical debt, OSS                   |  | [Research to Abolish Payment Method](#research-to-abolish-payment-method) | 2017.10 | A/B testing、Data driven decision making |
+| [Upgrade grape gem](#upgrade-grape-gem)                                                                               | 2017.10~2017.12 | Paying back technical debt, OSS                   |     | [Research to Abolish Payment Method](#research-to-abolish-payment-method) | 2017.10 | A/B testing、Data driven decision making |
 | Develop Coaching Service for High School Students                                                                     | 2016.12~2017.02 | Short term development                            |
 | Benkyo Sapuri Migration                                                                                               | 2016.06~2016.12 | Short term development                            |
 | [Hiring](#hiring)                                                                                                     | 2016.07~2020.03 | Organization design                               |
@@ -279,10 +298,12 @@ I was a member of a department developing some enterprise systems for real estat
 
 #### Articles on Company's Blog
 
+- [TracePoint Usage: Sentry Captures Local Variable](https://blog.smartbank.co.jp/entry/2021/11/25/sentry-ruby-meets-tracepoint)
+- [Retry with Idempotency-Key Header](https://blog.smartbank.co.jp/entry/2021/10/26/safe-retry-with-idempotency-key-header)
 - [Project Management Technique to Overcome Uncertainty](https://quipper.hatenablog.com/entry/2019/06/27/how-to-defeat-uncertainty)
 - [Working Out Loud -How to Make Collaborative Culture-](https://quipper.hatenablog.com/entry/2018/11/14/working-out-loud)
 - [Quipper Interview Guide is Published](https://quipper.hatenablog.com/entry/2018/09/01/interview-guide)
-- [カジュアル面談への扉](https://quipper.hatenablog.com/entry/2020/02/05/casual-interview-in-quipper)
+- [Introduction of Casual Interview](https://quipper.hatenablog.com/entry/2020/02/05/casual-interview-in-quipper)
 - [Fact-based Decision Making with A/B Testing](https://quipper.hatenablog.com/entry/2018/05/31/080000)
 - [Effective Onboarding](https://quipper.hatenablog.com/entry/2020/04/02/effective-offboarding)
 - [Timezone in Global Applications](https://quipper.hatenablog.com/entry/2016/12/05/090000)
@@ -291,6 +312,7 @@ I was a member of a department developing some enterprise systems for real estat
 
 Here are a few excerpts from [https://speakerdeck.com/ohbarye](https://speakerdeck.com/ohbarye). All of them are in Japanese.
 
+- [Safe Retry with Idempotency-Key Header](https://speakerdeck.com/ohbarye/safe-retry-with-idempotency-key-header)
 - [Migration from React Native to PWA](https://speakerdeck.com/ohbarye/migration-from-react-native-to-pwa) (JSConf JP 2019)
 - [Lightning Talk Session Organizer](https://event.shoeisha.jp/devsumi/20190702/session/2091/) (Developers Summit 2019 Summer)
 - [Verify Hypothesis with A/B Testing](https://speakerdeck.com/ohbarye/proof-of-value-with-ab-testing) (Regional Scrum Gathering Tokyo 2019)
@@ -421,8 +443,8 @@ By 2020, I have developed the technical skills required in the field of software
   - Google Code Jam 2020
     - Passed Qualification Round
 - Computer system
-  - [WIP] "[The Elements of Computing Systems: Building a Modern Computer from First Principles](https://www.amazon.com/dp/0262640686)" (a.k.a. Nand to Tetris) [https://github.com/ohbarye/nand2tetris](https://github.com/ohbarye/nand2tetris)
-    - I'm building an assembler, VM translator, and a compiler in OCaml.
+  - "[The Elements of Computing Systems: Building a Modern Computer from First Principles](https://www.amazon.com/dp/0262640686)" (a.k.a. Nand to Tetris) [https://github.com/ohbarye/nand2tetris](https://github.com/ohbarye/nand2tetris)
+    - Built an assembler, VM translator, and a compiler in OCaml and Ruby.
 - Algorithms
   - Mastered [Princeton University Algorithms Part 1](https://www.coursera.org/learn/algorithms-part1) in Coursera
 - Database

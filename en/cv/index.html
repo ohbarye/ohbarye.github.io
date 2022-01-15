@@ -1190,7 +1190,7 @@
   </div>
 </nav>
 <p>Last updated: 2020.06.05</p>
-<p>Japanese version: <a href="https://ohbarye.github.io/ja/cv/" class="uri">https://ohbarye.github.io/ja/cv/</a></p>
+<p>Japanese version: <a href="https://ohbarye.github.io/ja/cv/">https://ohbarye.github.io/ja/cv/</a></p>
 <section id="contact" class="level2">
 <h2>Contact</h2>
 <table>
@@ -1215,7 +1215,7 @@
 </tr>
 <tr class="even">
 <td>Entrypoint</td>
-<td><a href="https://ohbarye.github.io" class="uri">https://ohbarye.github.io</a></td>
+<td><a href="https://ohbarye.github.io">https://ohbarye.github.io</a></td>
 </tr>
 </tbody>
 </table>
@@ -1224,7 +1224,7 @@
 <h2>Summary</h2>
 <p>The core of my strength is web backend. I have experience in full-cycle development for both in-house development and client work. I can be the overall lead in the team from development to operation, starting with the requirements and requirements definition, which is done with timely communication.</p>
 <p>I have been developing SPA and MPA with React in the System of Engagement areas such as registration leads and retention measures, and in the Web frontend area for services that require rich experiences.</p>
-<p>I can develop complex business logic required in the System of Record fields, such as payment functions and internal systems, with quality, speed, and robustness in mind.</p>
+<p>I can develop complex business logic required in the System of Record fields, such as payment systems and banking systems, with quality, speed, and robustness in mind.</p>
 <p>I also served as an engineering manager for an organization with 20-60 engineers. As a result, I have a proven track record and knowledge of team design, project management, recruitment, corporate branding, culture building, community activities, and more.</p>
 </section>
 <section id="skills" class="level2">
@@ -1232,27 +1232,27 @@
 <ul>
 <li>Language
 <ul>
-<li><strong>Ruby</strong> (2.3~), <strong>TypeScript</strong> (3.4~), JavaScript (ES2015~), Java<code>*</code> (~8), Python (~3.7)<code>*</code>, OCaml <code>*</code></li>
+<li><strong>Ruby</strong> (2.3~3.x), <strong>TypeScript</strong> (3.4~4.x), Go (1.15~), JavaScript (ES2015~), Java<code>*</code> (~8), Python (~3.7)<code>*</code>, OCaml <code>*</code></li>
 </ul></li>
 <li>Frontend
 <ul>
-<li><strong>React</strong> (16.x~), Redux (3.x~), Backbone.js<code>*</code>, jQuery<code>*</code> (1.x~), React Native (0.5x), Webpack</li>
+<li><strong>React</strong> (16.x~), React Admin, Webpack, Redux<code>*</code>, Backbone.js<code>*</code>, jQuery<code>*</code> (1.x~), React Native (0.5x)<code>*</code></li>
 </ul></li>
 <li>Backend
 <ul>
-<li><strong>Ruby on Rails</strong> (4.2~5.1), Node.js<code>*</code>, OpenAPI (3.0), REST, GraphQL<code>*</code></li>
+<li><strong>Ruby on Rails</strong> (4.2~6.1), Node.js<code>*</code>, OpenAPI (3.0), REST, GraphQL<code>*</code></li>
 </ul></li>
 <li>Testing
 <ul>
-<li><strong>RSpec</strong>, Capybara, minitest, Jest, Cypress, Sinon, Chai, Mocha</li>
+<li><strong>RSpec</strong>, Capybara, minitest, Jest, React Testing Library, Cypress<code>*</code>, Sinon<code>*</code>, Chai<code>*</code>, Mocha<code>*</code></li>
 </ul></li>
 <li>Database
 <ul>
-<li>MongoDB (3.2~3.6), Redis, PostgreSQL (9.5)</li>
+<li>MySQL (5.7), PostgreSQL (9.5), MongoDB (3.2~3.6)<code>*</code>, Redis</li>
 </ul></li>
 <li>Infrastructure
 <ul>
-<li>AWS, Docker, Kubernetes, Heroku<code>*</code>, Deis<code>*</code>, Netlify<code>*</code>, Vercel<code>*</code></li>
+<li>AWS, Docker, Kubernetes<code>*</code>, Heroku<code>*</code>, Deis<code>*</code>, Netlify<code>*</code>, Vercel<code>*</code></li>
 </ul></li>
 <li>Communication tools
 <ul>
@@ -1260,7 +1260,7 @@
 </ul></li>
 <li>SaaS
 <ul>
-<li>CircleCI, TravisCI<code>*</code>, NewRelic, Google BigQuery, Treasure Data, Datadog</li>
+<li>GitHub Actions, CircleCI, Athena, NewRelic, Google BigQuery, Datadog<code>*</code></li>
 </ul></li>
 <li>Development framework
 <ul>
@@ -1314,21 +1314,56 @@
 </section>
 <section id="work-experience" class="level2">
 <h2>Work Experience</h2>
+<section id="smartbank-inc.-2020.08" class="level3">
+<h3>SmartBank, Inc. (2020.08 ~ )</h3>
+<p><a href="https://smartbank.co.jp/">SmartBank, Inc.</a> is a BtoC Fintech company that is categorized as a <a href="https://en.wikipedia.org/wiki/Challenger_bank">challenger bank</a> like <a href="https://monzo.com/">Monzo</a>. The company is an “Issuer” that issues prepaid cards, and develops and operates a product named <a href="https://b43.jp/">B/43</a> that visualizes and automates spending management in conjunction with payment with cards.</p>
+<p>The main achievements of the company are described below.</p>
+<ul>
+<li>Developed various features for users.
+<ul>
+<li>Withdrawal / Money transfer / Account by purpose / Joint account / Spending management</li>
+</ul></li>
+<li>Developed an in-house system that performs the necessary work as an issuer.
+<ul>
+<li>Identity verification (eKYC) / Card delivery system</li>
+</ul></li>
+<li>Developmed tools and systems for internal developers.
+<ul>
+<li>Introduced <a href="https://martinfowler.com/articles/feature-toggles.html">Feature Toggles</a> and separated development and release.</li>
+<li>Made APIs compatible with <a href="https://brandur.org/fragments/idempotency-key-draft">Idempotency-Key Headers</a> and make it robust so that data can be protected even if multiple requests occur.</li>
+</ul></li>
+<li>Contributed to development productivity.
+<ul>
+<li>Built CI/CD pipeline and speed up when any bottleneck appear.</li>
+<li>Designed and built an automated deployment/release flow.</li>
+<li>Designed and built schema migration and data migration flow in production environment.</li>
+</ul></li>
+<li>Contributed to recruitment activities.</li>
+</ul>
+</section>
 <section id="quipper-limited-2015.09-2020.05-4-yrs-8mos" class="level3">
 <h3>Quipper Limited (2015.09 ~ 2020.05) 4 yrs 8mos</h3>
 <p><a href="https://www.quipper.com/">Quipper</a> is a company that operates both B to C and B to B education businesses. We develop and operate Quipper School and Quipper Video outside of Japan, and <a href="https://studysapuri.jp/">StudySuppli</a> in Japan.</p>
 <p>Under the umbrella of the Study Supplements brand, there are courses for elementary, junior high, and high schools, English for working adults, and forSchool for schools and municipalities. Some of the projects I was involved in are listed below.</p>
 <table>
 <colgroup>
-<col style="width: 64%" />
-<col style="width: 8%" />
-<col style="width: 27%" />
+<col style="width: 38%" />
+<col style="width: 4%" />
+<col style="width: 16%" />
+<col style="width: 0%" />
+<col style="width: 24%" />
+<col style="width: 2%" />
+<col style="width: 13%" />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Title</th>
 <th>Period</th>
 <th>Appeal Points</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
 </tr>
 </thead>
 <tbody>
@@ -1336,61 +1371,109 @@
 <td><a href="#code-cleanup">Code cleanup</a></td>
 <td>2020.03</td>
 <td>Toughness to remove huge amount of codes</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="even">
 <td>Price Change</td>
 <td>2019.10~2020.01</td>
 <td>Payment systems, complex business logics</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="odd">
 <td><a href="#migration-from-react-native-to-pwa">Migration from React Native to PWA</a></td>
 <td>2019.07~2019.09</td>
 <td>Technology selection, paying back technology debt</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="even">
 <td><a href="#develop-coaching-service-for-junior-high-school-students">Develop Coaching Service for Junior High School Students</a></td>
 <td>2018.08~2019.03</td>
 <td>9 people x 7 months project management / Scrum</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="odd">
 <td><a href="#entry-form-renewal">Entry Form Renewal</a></td>
 <td>2018.03</td>
 <td>Technology selection、EFO</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="even">
 <td><a href="#upgrade-grape-gem">Upgrade grape gem</a></td>
 <td>2017.10~2017.12</td>
 <td>Paying back technical debt, OSS</td>
+<td></td>
+<td><a href="#research-to-abolish-payment-method">Research to Abolish Payment Method</a></td>
+<td>2017.10</td>
+<td>A/B testing、Data driven decision making</td>
 </tr>
 <tr class="odd">
 <td>Develop Coaching Service for High School Students</td>
 <td>2016.12~2017.02</td>
 <td>Short term development</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="even">
 <td>Benkyo Sapuri Migration</td>
 <td>2016.06~2016.12</td>
 <td>Short term development</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="odd">
 <td><a href="#hiring">Hiring</a></td>
 <td>2016.07~2020.03</td>
 <td>Organization design</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="even">
 <td><a href="#develope-in-app-purchase-for-ios">Develope In-App Purchase for iOS</a></td>
 <td>2016.04~2016.06</td>
 <td>Payment systems, OSS</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="odd">
 <td><a href="#jyuken-sapuri-migration">Jyuken Sapuri Migration</a></td>
 <td>2015.09~2016.02</td>
 <td>Short term development, catch-up tech stacks</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="even">
 <td><a href="#other-activities">Other Activities</a></td>
 <td>-</td>
 <td>Continuous improvement</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -1649,7 +1732,7 @@
 <p>This is a project to rebrand the “Jyuken Sapuri” (Learning platform for high school students that our parent compary had used to run) on Quipper’s codebase as a “StudySapuri”.</p>
 <p>There were not many technical difficulties, but it was insane project. We had to build a system that had originally been developed and operated for several years from scratch in six months.</p>
 <p>I was in charge of a registration flow, batches to exchange data with external systems, student management functions for teachers, and automated homework delivery functions. Although I had none of experiences of tech stacks used in this project in the past, I was able to catch up in a short period and to finish my tasks.</p>
-<p>Press release on this project: <a href="http://www.recruit-mp.co.jp/news/release/2016/0225_2893.html" class="uri">http://www.recruit-mp.co.jp/news/release/2016/0225_2893.html</a></p>
+<p>Press release on this project: <a href="http://www.recruit-mp.co.jp/news/release/2016/0225_2893.html">http://www.recruit-mp.co.jp/news/release/2016/0225_2893.html</a></p>
 <table>
 <colgroup>
 <col style="width: 10%" />
@@ -1707,16 +1790,18 @@
 <section id="blogs" class="level3">
 <h3>Blogs</h3>
 <ul>
-<li>Personal (Japanese) <a href="https://ohbarye.hatenablog.jp/" class="uri">https://ohbarye.hatenablog.jp/</a></li>
-<li>Personal (English) <a href="https://dev.to/ohbarye" class="uri">https://dev.to/ohbarye</a></li>
+<li>Personal (Japanese) <a href="https://ohbarye.hatenablog.jp/">https://ohbarye.hatenablog.jp/</a></li>
+<li>Personal (English) <a href="https://dev.to/ohbarye">https://dev.to/ohbarye</a></li>
 </ul>
 <section id="articles-on-companys-blog" class="level4">
 <h4>Articles on Company’s Blog</h4>
 <ul>
+<li><a href="https://blog.smartbank.co.jp/entry/2021/11/25/sentry-ruby-meets-tracepoint">TracePoint Usage: Sentry Captures Local Variable</a></li>
+<li><a href="https://blog.smartbank.co.jp/entry/2021/10/26/safe-retry-with-idempotency-key-header">Retry with Idempotency-Key Header</a></li>
 <li><a href="https://quipper.hatenablog.com/entry/2019/06/27/how-to-defeat-uncertainty">Project Management Technique to Overcome Uncertainty</a></li>
 <li><a href="https://quipper.hatenablog.com/entry/2018/11/14/working-out-loud">Working Out Loud -How to Make Collaborative Culture-</a></li>
 <li><a href="https://quipper.hatenablog.com/entry/2018/09/01/interview-guide">Quipper Interview Guide is Published</a></li>
-<li><a href="https://quipper.hatenablog.com/entry/2020/02/05/casual-interview-in-quipper">カジュアル面談への扉</a></li>
+<li><a href="https://quipper.hatenablog.com/entry/2020/02/05/casual-interview-in-quipper">Introduction of Casual Interview</a></li>
 <li><a href="https://quipper.hatenablog.com/entry/2018/05/31/080000">Fact-based Decision Making with A/B Testing</a></li>
 <li><a href="https://quipper.hatenablog.com/entry/2020/04/02/effective-offboarding">Effective Onboarding</a></li>
 <li><a href="https://quipper.hatenablog.com/entry/2016/12/05/090000">Timezone in Global Applications</a></li>
@@ -1725,8 +1810,9 @@
 </section>
 <section id="presentations" class="level3">
 <h3>Presentations</h3>
-<p>Here are a few excerpts from <a href="https://speakerdeck.com/ohbarye" class="uri">https://speakerdeck.com/ohbarye</a>. All of them are in Japanese.</p>
+<p>Here are a few excerpts from <a href="https://speakerdeck.com/ohbarye">https://speakerdeck.com/ohbarye</a>. All of them are in Japanese.</p>
 <ul>
+<li><a href="https://speakerdeck.com/ohbarye/safe-retry-with-idempotency-key-header">Safe Retry with Idempotency-Key Header</a></li>
 <li><a href="https://speakerdeck.com/ohbarye/migration-from-react-native-to-pwa">Migration from React Native to PWA</a> (JSConf JP 2019)</li>
 <li><a href="https://event.shoeisha.jp/devsumi/20190702/session/2091/">Lightning Talk Session Organizer</a> (Developers Summit 2019 Summer)</li>
 <li><a href="https://speakerdeck.com/ohbarye/proof-of-value-with-ab-testing">Verify Hypothesis with A/B Testing</a> (Regional Scrum Gathering Tokyo 2019)</li>
@@ -1789,7 +1875,7 @@
 <h4>Goofi</h4>
 <p>It is a tool to make contribution to OSS easier. I thought that the biggest obstacle for beginners who want to start OSS contributions is to find the target of contribution, so I created a web service <a href="https://goofi.now.sh/">Goofi</a> to list repositories and issues to which contribution is recommended.</p>
 <p>At Nodefest 2018, I <a href="https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-final">made a presentation about the service</a>.</p>
-<p>In January 2020, <a href="https://github.blog/2020-01-22-browse-good-first-issues-to-start-contributing-to-open-source/">GitHub has published an official feature</a> similar to Googi, then I took it as, &quot;My recognition of the problem was right.</p>
+<p>In January 2020, <a href="https://github.blog/2020-01-22-browse-good-first-issues-to-start-contributing-to-open-source/">GitHub has published an official feature</a> similar to Googi, then I took it as, “My recognition of the problem was right.</p>
 <table>
 <colgroup>
 <col style="width: 4%" />
@@ -1806,7 +1892,7 @@
 <tbody>
 <tr class="odd">
 <td>2020.08~</td>
-<td><a href="https://github.com/ohbarye/goofi" class="uri">https://github.com/ohbarye/goofi</a></td>
+<td><a href="https://github.com/ohbarye/goofi">https://github.com/ohbarye/goofi</a></td>
 <td>Node.js 13.x, TypeScript 3.8, Next.js 9.1, GraphQL (client), Now.sh v1~2 (現 Vercel), GitHub API v4</td>
 </tr>
 </tbody>
@@ -1831,7 +1917,7 @@
 <tbody>
 <tr class="odd">
 <td>2019</td>
-<td><a href="https://github.com/ohbarye/react-use-kana" class="uri">https://github.com/ohbarye/react-use-kana</a></td>
+<td><a href="https://github.com/ohbarye/react-use-kana">https://github.com/ohbarye/react-use-kana</a></td>
 <td>React 16.9, TypeScript 3.8.3</td>
 </tr>
 </tbody>
@@ -1856,7 +1942,7 @@
 <tbody>
 <tr class="odd">
 <td>2018</td>
-<td><a href="https://github.com/ohbarye/string-pixelater" class="uri">https://github.com/ohbarye/string-pixelater</a></td>
+<td><a href="https://github.com/ohbarye/string-pixelater">https://github.com/ohbarye/string-pixelater</a></td>
 <td>TypeScript 3.6.4, rollup 1.23</td>
 </tr>
 </tbody>
@@ -1882,7 +1968,7 @@
 <tbody>
 <tr class="odd">
 <td>2017.08~</td>
-<td><a href="https://github.com/ohbarye/review-waiting-list-bot" class="uri">https://github.com/ohbarye/review-waiting-list-bot</a></td>
+<td><a href="https://github.com/ohbarye/review-waiting-list-bot">https://github.com/ohbarye/review-waiting-list-bot</a></td>
 <td>Node.js 8.x, GraphQL (client) Slack API, GitHub API v3~4, Heroku</td>
 </tr>
 </tbody>
@@ -1902,7 +1988,7 @@
 <tbody>
 <tr class="odd">
 <td>2017</td>
-<td><a href="https://github.com/ohbarye/automaildoc" class="uri">https://github.com/ohbarye/automaildoc</a></td>
+<td><a href="https://github.com/ohbarye/automaildoc">https://github.com/ohbarye/automaildoc</a></td>
 <td>Ruby 2.4, RSpec 3</td>
 </tr>
 </tbody>
@@ -1922,7 +2008,7 @@
 <tbody>
 <tr class="odd">
 <td>2015</td>
-<td><a href="https://github.com/ohbarye/markdown-server" class="uri">https://github.com/ohbarye/markdown-server</a></td>
+<td><a href="https://github.com/ohbarye/markdown-server">https://github.com/ohbarye/markdown-server</a></td>
 <td>Python 3.7, bottle 0.12</td>
 </tr>
 </tbody>
@@ -1973,7 +2059,7 @@
 <ul>
 <li>Competitive programming
 <ul>
-<li>AtCoder green <a href="https://atcoder.jp/users/ohbarye" class="uri">https://atcoder.jp/users/ohbarye</a></li>
+<li>AtCoder green <a href="https://atcoder.jp/users/ohbarye">https://atcoder.jp/users/ohbarye</a></li>
 <li>Google Code Jam 2020
 <ul>
 <li>Passed Qualification Round</li>
@@ -1981,9 +2067,9 @@
 </ul></li>
 <li>Computer system
 <ul>
-<li>[WIP] “<a href="https://www.amazon.com/dp/0262640686">The Elements of Computing Systems: Building a Modern Computer from First Principles</a>” (a.k.a. Nand to Tetris) <a href="https://github.com/ohbarye/nand2tetris" class="uri">https://github.com/ohbarye/nand2tetris</a>
+<li>“<a href="https://www.amazon.com/dp/0262640686">The Elements of Computing Systems: Building a Modern Computer from First Principles</a>” (a.k.a. Nand to Tetris) <a href="https://github.com/ohbarye/nand2tetris">https://github.com/ohbarye/nand2tetris</a>
 <ul>
-<li>I’m building an assembler, VM translator, and a compiler in OCaml.</li>
+<li>Built an assembler, VM translator, and a compiler in OCaml and Ruby.</li>
 </ul></li>
 </ul></li>
 <li>Algorithms
@@ -1994,7 +2080,7 @@
 <ul>
 <li><a href="https://ohbarye.hatenablog.jp/entry/2020/04/17/sqlite-clone-db-tutorial">SQLite clone DB tutorial</a> (Japanese)</li>
 </ul></li>
-<li>My study note <a href="https://scrapbox.io/ohbarye/" class="uri">https://scrapbox.io/ohbarye/</a></li>
+<li>My study note <a href="https://scrapbox.io/ohbarye/">https://scrapbox.io/ohbarye/</a></li>
 </ul>
 </section>
 
