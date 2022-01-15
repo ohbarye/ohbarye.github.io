@@ -28,28 +28,28 @@ Web backend を強みの中心に置きつつ、自社サービスとクライ�
 
 登録導線やリテンション施策などの System of Engagement 領域、リッチな体験が求められるサービスの Web frontend においては React による SPA, MPA の開発を行なってきました。
 
-決済機能や社内システムなど System of Record 領域において求められる複雑なビジネスロジックについても、質・速度・堅牢さを意識した開発が可能です。
+決済や銀行システムなど System of Record 領域において求められる複雑なビジネスロジックについても、質・速度・堅牢さを意識した開発が可能です。
 
 また、エンジニア数が 20~60 名規模の組織における Engineering Manager を務め、チーム設計・プロジェクトマネジメント・採用活動・コーポレートブランディング・文化づくり・コミュニティ活動等々に関する実績と知見があります。
 
 ## スキル
 
 - Language
-  - **Ruby** (2.3~), **TypeScript** (3.4~), JavaScript (ES2015~), Java`*` (~8), Python (~3.7)`*`, OCaml `*`
+  - **Ruby** (2.3~3.x), **TypeScript** (3.4~4.x), Go (1.15~), JavaScript (ES2015~), Java`*` (~8), Python (~3.7)`*`, OCaml `*`
 - Frontend
-  - **React** (16.x~), Redux (3.x~), Backbone.js`*`, jQuery`*` (1.x~), React Native (0.5x), Webpack
+  - **React** (16.x~), React Admin, Webpack, Redux`*`, Backbone.js`*`, jQuery`*` (1.x~), React Native (0.5x)`*`
 - Backend
-  - **Ruby on Rails** (4.2~5.1), Node.js`*`, OpenAPI (3.0), REST, GraphQL`*`
+  - **Ruby on Rails** (4.2~6.1), Node.js`*`, OpenAPI (3.0), REST, GraphQL`*`
 - Testing
-  - **RSpec**, Capybara, minitest, Jest, Cypress, Sinon, Chai, Mocha
+  - **RSpec**, Capybara, minitest, Jest, React Testing Library, Cypress`*`, Sinon`*`, Chai`*`, Mocha`*`
 - Database
-  - MongoDB (3.2~3.6), Redis, PostgreSQL (9.5)
+  - MySQL (5.7), PostgreSQL (9.5), MongoDB (3.2~3.6)`*`, Redis
 - Infrastructure
-  - AWS, Docker, Kubernetes, Heroku`*`, Deis`*`, Netlify`*`, Vercel`*`
+  - AWS, Docker, Kubernetes`*`, Heroku`*`, Deis`*`, Netlify`*`, Vercel`*`
 - Communication tools
   - GitHub, ZenHub, Slack
 - SaaS
-  - CircleCI, TravisCI`*`, NewRelic, Google BigQuery, Treasure Data, Datadog
+  - GitHub Actions, CircleCI, Athena, NewRelic, Google BigQuery, Datadog`*`
 - Development framework
   - Agile, Scrum, Waterfall`*`
 
@@ -104,6 +104,25 @@ Web backend を強みの中心に置きつつ、自社サービスとクライ�
 経験のない領域を学ぶ意欲はあり、業務上必要な技術に関するキャッチアップは過去に行なってきたように可能だと考えていますが、業務開始直後に初速を出すのは難しいと考えます。
 
 ## 職務経歴
+
+### SmartBank, Inc. (2020.08 ~ )
+
+[SmartBank, Inc.](https://smartbank.co.jp/) は BtoC の Fintech company です。同社はプリペイドカードを発行するイシュアであり、カードでの決済と連動して支出管理を可視化・自動化する [B/43](https://b43.jp/) というプロダクトの開発・運用を行っています。
+
+同社における主要な成果を以下に記します。
+
+- 対ユーザー向けの各種機能の開発
+  - 出金 / 送金 / 目的別口座 / ペア口座 / 支出管理
+- イシュアとして必要な業務を行う社内システムの開発
+  - 本人確認 (eKYC) 機能 / カード配送機能
+- 開発者向けツール・機構の整備
+  - [Feature Toggles](https://martinfowler.com/articles/feature-toggles.html) を導入し、デプロイとリリースを分離
+  - API を [Idempotency-Key Headers](https://brandur.org/fragments/idempotency-key-draft) に対応させ、多重リクエストが発生してもデータを保護できるよう堅牢化
+- 開発生産性に寄与する活動
+  - CI/CD の整備・高速化
+  - デプロイフローの整備・自動化
+  - 本番環境でのスキーママイグレーション、データマイグレーションフローの整備
+- 採用活動への貢献
 
 ### Quipper Limited (2015.09 ~ 2020.05) 4 yrs 8mos
 
@@ -289,6 +308,8 @@ Optimizely という SaaS を用い、エンジニアによる開発やテスト
 
 #### 企業ブログへの寄稿
 
+- [TracePoint 活用事例: Sentry のローカル変数キャプチャ機能](https://blog.smartbank.co.jp/entry/2021/11/25/sentry-ruby-meets-tracepoint)
+- [Idempotency-Key Header を使ったリトライと、オンラインイベントの"Kaigi 感"](https://blog.smartbank.co.jp/entry/2021/10/26/safe-retry-with-idempotency-key-header)
 - [新メンバーが多い大型プロジェクトでの不確実性との戦い方](https://quipper.hatenablog.com/entry/2019/06/27/how-to-defeat-uncertainty)
 - [Working Out Loud 大声作業（しなさい）、チームメンバー同士でのトレーニング文化の醸成](https://quipper.hatenablog.com/entry/2018/11/14/working-out-loud)
 - [より良い面接を実現するために "Quipper 採用面接ガイド" を公開しました](https://quipper.hatenablog.com/entry/2018/09/01/interview-guide)
@@ -301,6 +322,7 @@ Optimizely という SaaS を用い、エンジニアによる開発やテスト
 
 [https://speakerdeck.com/ohbarye](https://speakerdeck.com/ohbarye)に概ね集約されています。いくつか抜粋します。
 
+- [Safe Retry with Idempotency-Key Header](https://speakerdeck.com/ohbarye/safe-retry-with-idempotency-key-header)
 - [Migration from React Native to PWA](https://speakerdeck.com/ohbarye/migration-from-react-native-to-pwa) (JSConf JP 2019)
 - [Lightning Talk Session Organizer](https://event.shoeisha.jp/devsumi/20190702/session/2091/) (Developers Summit 2019 Summer)
 - [プロダクトの「負債」を「機能」と呼び直すために](https://speakerdeck.com/ohbarye/proof-of-value-with-ab-testing) (Regional Scrum Gathering Tokyo 2019)
@@ -432,8 +454,8 @@ Markdown で記述された文書を HTML で配信する Web サーバを簡易
   - Google Code Jam 2020
     - 予選通過、Round 1 敗退
 - コンピュータアーキテクチャ
-  - [WIP] 『[コンピュータシステムの理論と実装](https://www.oreilly.co.jp/books/9784873117126/)』 (a.k.a. Nand to Tetris) の実践 [https://github.com/ohbarye/nand2tetris](https://github.com/ohbarye/nand2tetris)
-    - アセンブラ、VM 変換器、コンパイラを OCaml で実装中
+  - 『[コンピュータシステムの理論と実装](https://www.oreilly.co.jp/books/9784873117126/)』 (a.k.a. Nand to Tetris) の実践 [https://github.com/ohbarye/nand2tetris](https://github.com/ohbarye/nand2tetris)
+    - アセンブラ、VM 変換器、コンパイラを OCaml と Ruby で実装
 - データ構造とアルゴリズム
   - Coursera: [Princeton University Algorithms Part 1](https://www.coursera.org/learn/algorithms-part1) 修了
   - [『みんなのデータ構造』でデータ構造の基礎を学んだ](https://ohbarye.hatenablog.jp/entry/2020/05/10/open-data-structures)
