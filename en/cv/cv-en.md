@@ -131,13 +131,14 @@ The main achievements of the company are described below.
 Under the umbrella of the Study Supplements brand, there are courses for elementary, junior high, and high schools, English for working adults, and forSchool for schools and municipalities. Some of the projects I was involved in are listed below.
 
 | Title                                                                                                                 | Period          | Appeal Points                                     |
-| --------------------------------------------------------------------------------------------------------------------- | --------------- | ------------------------------------------------- | --- | ------------------------------------------------------------------------- | ------- | ---------------------------------------- |
+| --------------------------------------------------------------------------------------------------------------------- | --------------- | ------------------------------------------------- |
 | [Code cleanup](#code-cleanup)                                                                                         | 2020.03         | Toughness to remove huge amount of codes          |
 | Price Change                                                                                                          | 2019.10~2020.01 | Payment systems, complex business logics          |
 | [Migration from React Native to PWA](#migration-from-react-native-to-pwa)                                             | 2019.07~2019.09 | Technology selection, paying back technology debt |
 | [Develop Coaching Service for Junior High School Students](#develop-coaching-service-for-junior-high-school-students) | 2018.08~2019.03 | 9 people x 7 months project management / Scrum    |
 | [Entry Form Renewal](#entry-form-renewal)                                                                             | 2018.03         | Technology selection、EFO                         |
-| [Upgrade grape gem](#upgrade-grape-gem)                                                                               | 2017.10~2017.12 | Paying back technical debt, OSS                   |     | [Research to Abolish Payment Method](#research-to-abolish-payment-method) | 2017.10 | A/B testing、Data driven decision making |
+| [Upgrade grape gem](#upgrade-grape-gem)                                                                               | 2017.10~2017.12 | Paying back technical debt, OSS                   |
+| [Research to Abolish Payment Method](#research-to-abolish-payment-method)                                             | 2017.10         | A/B testing、Data driven decision making          |
 | Develop Coaching Service for High School Students                                                                     | 2016.12~2017.02 | Short term development                            |
 | Benkyo Sapuri Migration                                                                                               | 2016.06~2016.12 | Short term development                            |
 | [Hiring](#hiring)                                                                                                     | 2016.07~2020.03 | Organization design                               |
