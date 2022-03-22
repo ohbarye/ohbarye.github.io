@@ -6,7 +6,7 @@ export default class Fish {
   public y: number;
 
   constructor(
-    private e: MouseEvent,
+    e: MouseEvent,
     private context: CanvasRenderingContext2D,
     private size = 32,
     private img = new Image(),
