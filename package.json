@@ -24,7 +24,7 @@
   "author": "ohbarye <over.rye@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
     "@typescript-eslint/parser": "^5.24.0",
     "eslint": "^8.16.0",
     "eslint-config-prettier": "^8.5.0",
