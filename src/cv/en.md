@@ -9,7 +9,7 @@ pagetitle: Masato Ohba (ohbarye) CV
 balloon_message: Hi, I'm @ohbarye
 ---
 
-Last updated: 2022.01.16
+Last updated: 2023.08.06
 
 Japanese version: [https://ohbarye.github.io/ja/cv/](https://ohbarye.github.io/ja/cv/)
 
@@ -35,27 +35,25 @@ I also served as an engineering manager for an organization with 20-60 engineers
 ## Skills
 
 - Language
-  - **Ruby** (2.3~3.x), **TypeScript** (3.4~4.x), Go (1.15~), JavaScript (ES2015~), Java`*` (~8), Python (~3.7)`*`, OCaml `*`
+  - **Ruby** (2.3-3.x), **TypeScript** (3.4-5.x), Go (1.15-), JavaScript (ES2015-)
 - Frontend
-  - **React** (16.x~), React Admin, Webpack, Redux`*`, Backbone.js`*`, jQuery`*` (1.x~), React Native (0.5x)`*`
+  - **React** (16.x-), React Admin
 - Backend
-  - **Ruby on Rails** (4.2~6.1), Node.js`*`, OpenAPI (3.0), REST, GraphQL`*`
+  - **Ruby on Rails** (4.2-7.x), OpenAPI (3.x), REST
 - Testing
-  - **RSpec**, Capybara, minitest, Jest, React Testing Library, Cypress`*`, Sinon`*`, Chai`*`, Mocha`*`
+  - **RSpec**, Capybara, minitest, Jest, React Testing Library
 - Database
-  - MySQL (5.7), PostgreSQL (9.5), MongoDB (3.2~3.6)`*`, Redis
+  - MySQL (5.7-8.0), PostgreSQL (9.5-), MongoDB (3.2-3.6), Redis
 - Infrastructure
-  - AWS, Docker, Kubernetes`*`, Heroku`*`, Deis`*`, Netlify`*`, Vercel`*`
+  - AWS, Docker
 - Communication tools
   - GitHub, ZenHub, Slack
 - SaaS
-  - GitHub Actions, CircleCI, Athena, NewRelic, Google BigQuery, Datadog`*`
+  - GitHub Actions, CircleCI, Athena, NewRelic, Google BigQuery
 - Development framework
-  - Agile, Scrum, Waterfall`*`
+  - Agile, Scrum
 
 **Bold** indicates core skills.
-
-`*` denotes a skill that has no work experience, or has work experience but is more than a few years away.
 
 ### Strength
 
@@ -99,18 +97,23 @@ I can play to the above strengths in product development with monolithic applica
 - Architecture design and infrastructure as code (Terraform, Ansible, etc.), and using Cloud services (AWS, GCP, Azure, etc.)
 - Selection, operation, and tuning of middlewares.
 - Hardware and embedded software
-- Development in a large team of over 20 people
 
 I am motivated to learn in areas where I have no experience. I think it's possible because I've done some catch-up in the past on the technology needed for the job.
 
 ## Work Experience
 
-### SmartBank, Inc. (2020.08 ~ )
+### SmartBank, Inc. (2020.08 - )
 
 [SmartBank, Inc.](https://smartbank.co.jp/) is a BtoC Fintech company that is categorized as a [challenger bank](https://en.wikipedia.org/wiki/Challenger_bank) like [Monzo](https://monzo.com/). The company is an "Issuer" that issues prepaid cards and develops and operates a product named [B/43](https://b43.jp/) that visualizes and automates spending management in conjunction with payment with cards.
 
 The main achievements of the company are described below.
 
+- Launched a subscription service named [B/43 Plus](https://b43.jp/plus/).
+	- Defined system requirements through investigation on other platforms.
+	- Developed a subscription system from scratch.
+	- Gave an [presentation](https://speakerdeck.com/ohbarye/behind-the-scenes-engineering-a-subscription-service) about subscription system.
+- Developed 3-D Secure authentication.
+	- Gave an [presentation](https://speakerdeck.com/ohbarye/balance-security-and-usability-in-the-field-of-3d-secure) at Kaigi on Rails 2022.
 - Developed various features for users.
   - Withdrawal / Money transfer / Account by purpose / Joint account / Spending management
 - Developed an in-house system that performs the necessary work as an issuer.
@@ -122,9 +125,10 @@ The main achievements of the company are described below.
   - Built CI/CD pipeline and speed up when any bottleneck appear.
   - Designed and built an automated deployment/release flow.
   - Designed and built schema migration and data migration flow in production environment.
-- Contributed to recruitment activities.
+	- Migrated Delayed Job to SQS.
+- Contributed to recruitment activitie.
 
-### Quipper Limited (2015.09 ~ 2020.05) 4 yrs 8mos
+### Quipper Limited (2015.09 - 2020.05) 4 yrs 8mos
 
 [Quipper](https://www.quipper.com/) is a company that operates both B to C and B to B education businesses. We develop and operate Quipper School and Quipper Video outside of Japan, and [StudySuppli](https://studysapuri.jp/) in Japan.
 
@@ -133,17 +137,16 @@ Under the umbrella of the Study Supplements brand, there are courses for element
 | Title                                                                                                                 | Period          | Appeal Points                                     |
 | --------------------------------------------------------------------------------------------------------------------- | --------------- | ------------------------------------------------- |
 | [Code cleanup](#code-cleanup)                                                                                         | 2020.03         | Toughness to remove huge amount of codes          |
-| Price Change                                                                                                          | 2019.10~2020.01 | Payment systems, complex business logics          |
-| [Migration from React Native to PWA](#migration-from-react-native-to-pwa)                                             | 2019.07~2019.09 | Technology selection, paying back technology debt |
-| [Develop Coaching Service for Junior High School Students](#develop-coaching-service-for-junior-high-school-students) | 2018.08~2019.03 | 9 people x 7 months project management / Scrum    |
+| Price Change                                                                                                          | 2019.10-2020.01 | Payment systems, complex business logics          |
+| [Migration from React Native to PWA](#migration-from-react-native-to-pwa)                                             | 2019.07-2019.09 | Technology selection, paying back technology debt |
+| [Develop Coaching Service for Junior High School Students](#develop-coaching-service-for-junior-high-school-students) | 2018.08-2019.03 | 9 people x 7 months project management / Scrum    |
 | [Entry Form Renewal](#entry-form-renewal)                                                                             | 2018.03         | Technology selection、EFO                         |
-| [Upgrade grape gem](#upgrade-grape-gem)                                                                               | 2017.10~2017.12 | Paying back technical debt, OSS                   |
+| [Upgrade grape gem](#upgrade-grape-gem)                                                                               | 2017.10-2017.12 | Paying back technical debt, OSS                   |
 | [Research to Abolish Payment Method](#research-to-abolish-payment-method)                                             | 2017.10         | A/B testing、Data driven decision making          |
-| Develop Coaching Service for High School Students                                                                     | 2016.12~2017.02 | Short term development                            |
-| Benkyo Sapuri Migration                                                                                               | 2016.06~2016.12 | Short term development                            |
-| [Hiring](#hiring)                                                                                                     | 2016.07~2020.03 | Organization design                               |
-| [Develope In-App Purchase for iOS](#develope-in-app-purchase-for-ios)                                                 | 2016.04~2016.06 | Payment systems, OSS                              |
-| [Jyuken Sapuri Migration](#jyuken-sapuri-migration)                                                                   | 2015.09~2016.02 | Short term development, catch-up tech stacks      |
+| Develop Coaching Service for High School Students                                                                     | 2016.12-2017.02 | Short term development                            |
+| Benkyo Sapuri Migration                                                                                               | 2016.06-2016.12 | Short term development                            |
+| [Hiring](#hiring)                                                                                                     | 2016.07-2020.03 | Organization design                               |
+| [Develope In-App Purchase for iOS](#develope-in-app-purchase-for-ios)                                                 | 2016.04-2016.06 | Payment systems, OSS                              |
 | [Other Activities](#other-activities)                                                                                 | -               | Continuous improvement                            |
 
 #### Code Cleanup
@@ -166,7 +169,7 @@ I also [made a presentation at JSConf 2019](https://speakerdeck.com/ohbarye/migr
 
 | Period          | Team                                                | Role    | Tech stacks, tools                                                      |
 | --------------- | --------------------------------------------------- | ------- | ----------------------------------------------------------------------- |
-| 2019.07~2019.09 | 6 (PdM×1, Designer×2, iOS×1, Frontend×1, Backend×1) | Backend | Ruby, Rails 5.0, RSpec, React 16.12, Redux 4.0, TypeScript 3.7, Cypress |
+| 2019.07-2019.09 | 6 (PdM×1, Designer×2, iOS×1, Frontend×1, Backend×1) | Backend | Ruby, Rails 5.0, RSpec, React 16.12, Redux 4.0, TypeScript 3.7, Cypress |
 
 #### Develop Coaching Service for Junior High School Students
 
@@ -176,7 +179,7 @@ I have summarized the details of this project in "[How to Combat Uncertainty in 
 
 | Period          | Team                                            | Role              | Tech stacks, tools                                                         |
 | --------------- | ----------------------------------------------- | ----------------- | -------------------------------------------------------------------------- |
-| 2018.08~2019.03 | 12 (PdM×1、Designer×1、iOS×1、Android×1、Web×8) | Web, Scrum master | Ruby, Rails, React, RSpec, Capybara, Redux, TypeScript, Jest, React Native |
+| 2018.08-2019.03 | 12 (PdM×1、Designer×1、iOS×1、Android×1、Web×8) | Web, Scrum master | Ruby, Rails, React, RSpec, Capybara, Redux, TypeScript, Jest, React Native |
 
 #### Entry Form Renewal
 
@@ -195,13 +198,13 @@ It is an EFO (Entry Form Optimization) project for the most important acquisitio
 
 The biggest Rails API server in my company had been using a gem named grape, but the API hadn't been updated since v0.12.0 in 2015 when it was introduced, so I upgraded it.
 
-Compared to Rails upgrade, there is less information, and dependent libraries are sometimes dead, so I had to prepare a workaround to write a patch. Finally, I was able to upgrade to the latest version v1.0.1 at that time by gradually increasing the minor version (~v0.19).
+Compared to Rails upgrade, there is less information, and dependent libraries are sometimes dead, so I had to prepare a workaround to write a patch. Finally, I was able to upgrade to the latest version v1.0.1 at that time by gradually increasing the minor version (-v0.19).
 
 As an aside, about a year after this, in December 2018, I had an issue with NewRelic not being able to get metrics for the Rails API. This was a problem on the NewRelic agent side, so I sent a [patch](https://github.com/newrelic/rpm/pull/293) to the upstream to solve it.
 
 | Period          | Team      | Role | Tech stacks, tools                |
 | --------------- | --------- | ---- | --------------------------------- |
-| 2017.10~2017.12 | 1 (Web×1) | Web  | Rails 4.2, Ruby 2.4, RSpec, grape |
+| 2017.10-2017.12 | 1 (Web×1) | Web  | Rails 4.2, Ruby 2.4, RSpec, grape |
 
 #### Research to Abolish Payment Method
 
@@ -238,7 +241,7 @@ I also engaged in the following activities, which are closely related to our rec
 
 | Period          | Team            | Role | Tech stacks, tools                                         |
 | --------------- | --------------- | ---- | ---------------------------------------------------------- |
-| 2016.07~2020.03 | 4~10 (Web×4~10) | Web  | Rails, Ruby, minitest, React, TypeScript (For coding test) |
+| 2016.07-2020.03 | 4-10 (Web×4-10) | Web  | Rails, Ruby, minitest, React, TypeScript (For coding test) |
 
 #### Develope In-App Purchase for iOS
 
@@ -250,21 +253,7 @@ I gave a [presentation at iOSDC 2018](https://speakerdeck.com/ohbarye/rethink-in
 
 | Period          | Team                    | Role | Tech stacks, tools                           |
 | --------------- | ----------------------- | ---- | -------------------------------------------- |
-| 2016.04~2016.06 | 3 (PdM×1、iOS×1、Web×1) | Web  | Rails 4.2, Ruby 2.3, RSpec, venice, AppStore |
-
-#### Jyuken Sapuri Migration
-
-This is a project to rebrand the "Jyuken Sapuri" (Learning platform for high school students that our parent compary had used to run) on Quipper's codebase as a "StudySapuri".
-
-There were not many technical difficulties, but it was insane project. We had to build a system that had originally been developed and operated for several years from scratch in six months.
-
-I was in charge of a registration flow, batches to exchange data with external systems, student management functions for teachers, and automated homework delivery functions. Although I had none of experiences of tech stacks used in this project in the past, I was able to catch up in a short period and to finish my tasks.
-
-Press release on this project: [http://www.recruit-mp.co.jp/news/release/2016/0225_2893.html](http://www.recruit-mp.co.jp/news/release/2016/0225_2893.html)
-
-| Period          | Team                                | Role | Tech stacks, tools                                                                  |
-| --------------- | ----------------------------------- | ---- | ----------------------------------------------------------------------------------- |
-| 2015.09~2016.02 | 10 (PdM×1、iOS×2、Android×2、Web×5) | Web  | Rails 4.2, Ruby 2.3, RSpec, Capybara, Backbone.js, Marionette.js, Sion, Mocha, Chai |
+| 2016.04-2016.06 | 3 (PdM×1、iOS×1、Web×1) | Web  | Rails 4.2, Ruby 2.3, RSpec, venice, AppStore |
 
 #### Other Activities
 
@@ -279,7 +268,7 @@ The followings are other regular and spot tasks I've addressed.
 - Introduction of a pull-up machine
 - Organizing reading and study groups (Real World HTTP, SRE books, etc.)
 
-### SCSK Corporation (2012.04 ~ 2015.08) 3 yrs 5mos
+### SCSK Corporation (2012.04 - 2015.08) 3 yrs 5mos
 
 [SCSK](https://www.scsk.jp/) is a Japanese big information technology services company.
 
@@ -299,6 +288,13 @@ I was a member of a department developing some enterprise systems for real estat
 
 #### Articles on Company's Blog
 
+- [We're going to hold "B/43 Tech Talk -Fintech and Subscription Service-"](https://blog.smartbank.co.jp/entry/2023/07/21/b43-plus-inside-tech-talk)
+- [Rubocop auto-correction with reviewdog and Custom Formatter](https://blog.smartbank.co.jp/entry/2023/06/29/reviewdog-action-rubocop-suggestion-feature)
+- [ActionMailer::Base option pitfall](https://blog.smartbank.co.jp/entry/2023/06/05/action-mailer-config-pitfall)
+- [Enhance metadata with Rails generator](https://blog.smartbank.co.jp/entry/2023/04/04/rails-generator-for-metadata)
+- [Auto-merge Dependabot Pull Requests with GitHub App](https://blog.smartbank.co.jp/entry/2023/02/16/dependabot-auto-merge-with-github-app)
+- [3D Secure Introduction - How We Build and Operate](https://blog.smartbank.co.jp/entry/2022/11/11/3d-secure)
+- [Migrate CRA to Vite - We Got 190x times faster dev server](https://blog.smartbank.co.jp/entry/2022/04/25/create-react-app-to-vite)
 - [TracePoint Usage: Sentry Captures Local Variable](https://blog.smartbank.co.jp/entry/2021/11/25/sentry-ruby-meets-tracepoint)
 - [Retry with Idempotency-Key Header](https://blog.smartbank.co.jp/entry/2021/10/26/safe-retry-with-idempotency-key-header)
 - [Project Management Technique to Overcome Uncertainty](https://quipper.hatenablog.com/entry/2019/06/27/how-to-defeat-uncertainty)
@@ -313,7 +309,11 @@ I was a member of a department developing some enterprise systems for real estat
 
 Here are a few excerpts from [https://speakerdeck.com/ohbarye](https://speakerdeck.com/ohbarye). All of them are in Japanese.
 
-- [Safe Retry with Idempotency-Key Header](https://speakerdeck.com/ohbarye/safe-retry-with-idempotency-key-header)
+- [Behind the Scenes: Engineering a Subscription Service](https://speakerdeck.com/ohbarye/behind-the-scenes-engineering-a-subscription-service) (B/43 Techtalk)
+- [RuboCop Custom Formatter for Reviewdog Diagnostic Format](https://speakerdeck.com/ohbarye/rubocop-custom-formatter-for-reviewdog-diagnostic-format) (Gotanda.rb#53)
+- [Isolate out-of-DB side effects from transactions](https://speakerdeck.com/ohbarye/isolate-out-of-db-side-effects-from-transactions) (Gotanda.rb#52)
+- [Balance Security and Usability in the Field of 3D Secure](https://speakerdeck.com/ohbarye/balance-security-and-usability-in-the-field-of-3d-secure) (Kaigi on Rails 2022)
+- [Safe Retry with Idempotency-Key Header](https://speakerdeck.com/ohbarye/safe-retry-with-idempotency-key-header) (Kaigi on Rails 2021)
 - [Migration from React Native to PWA](https://speakerdeck.com/ohbarye/migration-from-react-native-to-pwa) (JSConf JP 2019)
 - [Lightning Talk Session Organizer](https://event.shoeisha.jp/devsumi/20190702/session/2091/) (Developers Summit 2019 Summer)
 - [Verify Hypothesis with A/B Testing](https://speakerdeck.com/ohbarye/proof-of-value-with-ab-testing) (Regional Scrum Gathering Tokyo 2019)
@@ -336,7 +336,7 @@ Here are a few excerpts from [https://speakerdeck.com/ohbarye](https://speakerde
   - [kpt-bot](https://github.com/ohbarye/kpt-bot)
   - [markdown-server](https://github.com/ohbarye/markdown-server)
 - [Published gems](https://rubygems.org/profiles/ohbarye)
-- [Published npm packages](https://www.npmjs.com/~ohbarye)
+- [Published npm packages](https://www.npmjs.com/-ohbarye)
 
 ### Community Activities
 
@@ -368,7 +368,7 @@ In January 2020, [GitHub has published an official feature](https://github.blog/
 
 | Period   | Repository                                                           | Tech stacks, tools                                                                                  |
 | -------- | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| 2020.08~ | [https://github.com/ohbarye/goofi](https://github.com/ohbarye/goofi) | Node.js 13.x, TypeScript 3.8, Next.js 9.1, GraphQL (client), Now.sh v1~2 (現 Vercel), GitHub API v4 |
+| 2020.08- | [https://github.com/ohbarye/goofi](https://github.com/ohbarye/goofi) | Node.js 13.x, TypeScript 3.8, Next.js 9.1, GraphQL (client), Now.sh v1-2 (現 Vercel), GitHub API v4 |
 
 #### React Use Kana
 
@@ -394,7 +394,7 @@ It's similar to [Pull Panda](https://pullpanda.com/), acquired by GitHub in June
 
 | Period   | Repository                                                                                               | Tech stacks, tools                                               |
 | -------- | -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| 2017.08~ | [https://github.com/ohbarye/review-waiting-list-bot](https://github.com/ohbarye/review-waiting-list-bot) | Node.js 8.x, GraphQL (client) Slack API, GitHub API v3~4, Heroku |
+| 2017.08- | [https://github.com/ohbarye/review-waiting-list-bot](https://github.com/ohbarye/review-waiting-list-bot) | Node.js 8.x, GraphQL (client) Slack API, GitHub API v3-4, Heroku |
 
 #### Automaildoc
 
@@ -424,16 +424,9 @@ This is a library that can build a web server to deliver Markdown documents as H
   - (2014.06) Database Specialist
   - (2012.12) Applied Information Technology Engineer
   - (2012.06) Fundamental Information Technology Engineer
-- English
-  - (2013.02) TOEIC 720
 - Others
   - (2012.03) Mastered Teacher Training Course
   - (2010.12) Chief of Money Lending Operations
-
-## Honors & Awards
-
-- (2016.04) MVP2016 in Quipper
-- (2015.03) Champion in hackathon conducted by SCSK OSS promotion office
 
 ## Interests
 
@@ -441,8 +434,6 @@ By 2020, I have developed the technical skills required in the field of software
 
 - Competitive programming
   - AtCoder green [https://atcoder.jp/users/ohbarye](https://atcoder.jp/users/ohbarye)
-  - Google Code Jam 2020
-    - Passed Qualification Round
 - Computer system
   - "[The Elements of Computing Systems: Building a Modern Computer from First Principles](https://www.amazon.com/dp/0262640686)" (a.k.a. Nand to Tetris) [https://github.com/ohbarye/nand2tetris](https://github.com/ohbarye/nand2tetris)
     - Built an assembler, VM translator, and a compiler in OCaml and Ruby.
