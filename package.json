@@ -40,5 +40,9 @@
       "yarn pretty",
       "git add"
     ]
+  },
+  "volta": {
+    "node": "22.12.0",
+    "yarn": "4.6.0"
   }
 }
