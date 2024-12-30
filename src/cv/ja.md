@@ -9,7 +9,7 @@ pagetitle: Masato Ohba (ohbarye) CV
 balloon_message: Hi, I'm @ohbarye
 ---
 
-最終更新日: 2023.08.06
+最終更新日: 2024-12-30
 
 English version: [https://ohbarye.github.io/en/cv/](https://ohbarye.github.io/en/cv/)
 
@@ -34,26 +34,11 @@ Web backend を強みの中心に置きつつ、自社サービスとクライ�
 
 ## スキル
 
-- Language
-  - **Ruby** (2.3-3.x), **TypeScript** (3.4-5.x), Go (1.15-), JavaScript (ES2015-)
-- Frontend
-  - **React** (16.x-), React Admin
-- Backend
-  - **Ruby on Rails** (4.2-7.x), OpenAPI (3.x), REST
-- Testing
-  - **RSpec**, Capybara, minitest, Jest, React Testing Library
-- Database
-  - MySQL (5.7-8.0), PostgreSQL (9.5-), MongoDB (3.2-3.6), Redis
-- Infrastructure
-  - AWS, Docker
-- Communication tools
-  - GitHub, ZenHub, Slack
-- SaaS
-  - GitHub Actions, CircleCI, Athena, NewRelic, Google BigQuery
-- Development framework
-  - Agile, Scrum
-
-**太字** はコアなスキルを表現します。
+- **Programming Languages**: Ruby, TypeScript, Go
+- **Frameworks & Libraries**: Ruby on Rails, React, React Admin
+- **Tools & Technologies**: Docker, Git, SQL, REST API, OpenAPI, MySQL, PostgreSQL, MongoDB
+- **Cloud Infrastructure & DevOps**: AWS, GitHub Actions, CircleCI, New Relic, Google BigQuery
+- **Soft Skills**: Team Collaboration, Agile Methodologies, Engineering Management, Scrum
 
 ### 長所 / 強み
 
@@ -86,19 +71,6 @@ Web backend を強みの中心に置きつつ、自社サービスとクライ�
 趣味や業務を通じて調べたこと・学んだことをまとめてアウトプットすることを心がけています。アウトプットを意識した思索や試行を繰り返すことによって抽象化・共通化のスキルを磨けるだけでなく、課題の発見から解決までの総合力を高められると考えています。
 
 登壇発表・プレゼンテーションの類は得意ではありませんが、その機会を通じて学ぶことや得られるフィードバックがあるため、可能な範囲で挑戦しています。実績については[Public Output](#public-output)欄をご参照ください。
-
-### 経験のないこと
-
-モノリシックなアプリケーションをバックエンドとするプロダクト開発や数名〜20 名弱のチームにおいては上記のような強みを発揮できますが、以下の経験については乏しい、または全く経験がありません。
-
-- Microservices、分散処理
-- 大規模トラフィックへの対応
-- モバイルアプリ開発
-- Cloud services (AWS, GCP, Azure etc.) を活用したアーキテクチャ設計や構成管理 (Terraform, Ansible etc.)
-- ミドルウェアの技術選定、運用、チューニング
-- ハードウェア、組み込みソフトウェア関連
-
-経験のない領域を学ぶ意欲はあり、業務上必要な技術に関するキャッチアップは過去に行なってきたように可能だと考えていますが、業務開始直後に初速を出すのは難しいと考えます。
 
 ## 職務経歴
 
@@ -435,7 +407,6 @@ Markdown で記述された文書を HTML で配信する Web サーバを簡易
   - (2012.12) 応用情報処理技術者
   - (2012.06) 基本情報処理技術者
 - Others
-  - (2012.03) 教職課程履修完了
   - (2010.12) 貸金業務取扱主任者
 
 ## 興味 / 関心

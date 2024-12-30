@@ -9,11 +9,11 @@ pagetitle: Masato Ohba (ohbarye) CV
 balloon_message: Hi, I'm @ohbarye
 ---
 
-Last updated: 2023.08.06
+Last updated: 2024-12-30
 
 Japanese version: [https://ohbarye.github.io/ja/cv/](https://ohbarye.github.io/ja/cv/)
 
-## Contact
+## Contact Information
 
 | key        | value                                                  |
 | ---------- | ------------------------------------------------------ |
@@ -34,26 +34,11 @@ I also served as an engineering manager for an organization with 20-60 engineers
 
 ## Skills
 
-- Language
-  - **Ruby** (2.3-3.x), **TypeScript** (3.4-5.x), Go (1.15-), JavaScript (ES2015-)
-- Frontend
-  - **React** (16.x-), React Admin
-- Backend
-  - **Ruby on Rails** (4.2-7.x), OpenAPI (3.x), REST
-- Testing
-  - **RSpec**, Capybara, minitest, Jest, React Testing Library
-- Database
-  - MySQL (5.7-8.0), PostgreSQL (9.5-), MongoDB (3.2-3.6), Redis
-- Infrastructure
-  - AWS, Docker
-- Communication tools
-  - GitHub, ZenHub, Slack
-- SaaS
-  - GitHub Actions, CircleCI, Athena, NewRelic, Google BigQuery
-- Development framework
-  - Agile, Scrum
-
-**Bold** indicates core skills.
+- **Programming Languages**: Ruby, TypeScript, Go
+- **Frameworks & Libraries**: Ruby on Rails, React, React Admin
+- **Tools & Technologies**: Docker, Git, SQL, REST API, OpenAPI, MySQL, PostgreSQL, MongoDB
+- **Cloud Infrastructure & DevOps**: AWS, GitHub Actions, CircleCI, New Relic, Google BigQuery
+- **Soft Skills**: Team Collaboration, Agile Methodologies, Engineering Management, Scrum
 
 ### Strength
 
@@ -86,19 +71,6 @@ Issues that arise when a team or organization grows in size are often the first 
 I try to summarize what I've researched and learned through my hobbies and work and output it. Repeating output-conscious contemplation and trials can hone my skills in abstraction and commonalization. Moreover, I believe that it is possible to enhance the overall ability to find and solve problems.
 
 I'm not very good at having presentations. However, I challenge it as possible as I can for feedbacks I'd get and thing I'd learn through those opportunities. Please refer to the [Public Output](#public-output) section for the results.
-
-### Weakness / I've never done that before.
-
-I can play to the above strengths in product development with monolithic applications on the backend and in teams of a few to 20 engineers, but I have little or no experience with the followings.
-
-- Microservices, distributed systems
-- Huge scale traffic
-- Mobile App Development
-- Architecture design and infrastructure as code (Terraform, Ansible, etc.), and using Cloud services (AWS, GCP, Azure, etc.)
-- Selection, operation, and tuning of middlewares.
-- Hardware and embedded software
-
-I am motivated to learn in areas where I have no experience. I think it's possible because I've done some catch-up in the past on the technology needed for the job.
 
 ## Work Experience
 
@@ -425,7 +397,6 @@ This is a library that can build a web server to deliver Markdown documents as H
   - (2012.12) Applied Information Technology Engineer
   - (2012.06) Fundamental Information Technology Engineer
 - Others
-  - (2012.03) Mastered Teacher Training Course
   - (2010.12) Chief of Money Lending Operations
 
 ## Interests
