@@ -24,6 +24,7 @@
   "author": "ohbarye <over.rye@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@biomejs/biome": "1.9.4",
     "@typescript-eslint/eslint-plugin": "^5.38.0",
     "@typescript-eslint/parser": "^5.24.0",
     "eslint": "^8.16.0",
