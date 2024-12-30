@@ -1,4 +1,3 @@
-// @ts-ignore
 import fishPng from '../images/fish.png';
 
 export default class Fish {

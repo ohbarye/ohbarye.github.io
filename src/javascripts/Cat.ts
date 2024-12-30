@@ -1,4 +1,3 @@
-// @ts-ignore
 import cat2Png from '../images/cat2.png';
 import type Fish from './Fish';
 import { diff, randomInt, randomSign } from './utils';
