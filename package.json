@@ -37,10 +37,7 @@
     "vite": "^6.0.6"
   },
   "lint-staged": {
-    "src/javascripts/**/*.ts": [
-      "yarn pretty",
-      "git add"
-    ]
+    "src/javascripts/**/*.ts": ["yarn pretty", "git add"]
   },
   "volta": {
     "node": "22.12.0",

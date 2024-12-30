@@ -9,7 +9,10 @@ export default class Controller {
     new Controller(canvas, wrapper).start();
   }
 
-  constructor(canvas: HTMLCanvasElement, private wrapper: HTMLDivElement) {
+  constructor(
+    canvas: HTMLCanvasElement,
+    private wrapper: HTMLDivElement,
+  ) {
     this.context = <CanvasRenderingContext2D>canvas.getContext('2d');
     canvas.setAttribute('width', `${wrapper.offsetWidth}`);
     canvas.setAttribute('height', `${wrapper.offsetHeight}`);
