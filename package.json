@@ -30,9 +30,7 @@
     "vite": "^6.0.6"
   },
   "lint-staged": {
-    "*": [
-      "biome check --no-errors-on-unmatched --files-ignore-unknown=true"
-    ]
+    "*": ["biome check --no-errors-on-unmatched --files-ignore-unknown=true"]
   },
   "volta": {
     "node": "22.12.0",
