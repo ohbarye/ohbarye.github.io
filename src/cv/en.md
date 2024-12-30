@@ -24,13 +24,11 @@ Japanese version: [https://ohbarye.github.io/ja/cv/](https://ohbarye.github.io/j
 
 ## Summary
 
-The core of my strength is web backend. I have experience in full-cycle development for both in-house development and client work. I can be the overall lead in the team from development to operation, starting with the requirements and requirements definition, which is done with timely communication.
+Software Engineer with extensive experience in full-cycle development, ranging from robust development of payment and banking systems with Ruby and Go to SPA/MPA development using React. My strengths lie in software design within System of Record domains and implementing solutions with a focus on performance and scalability. I actively contribute to the engineering community through OSS projects and technical presentations. (See [Personal Projects](#personal-projects), [Public Output](#public-output))
 
-I have been developing SPA and MPA with React in the System of Engagement areas such as registration leads and retention measures, and in the Web frontend area for services that require rich experiences.
+I have also served as an Engineering Manager in organizations of 20-60 engineers, gaining substantial experience and expertise in team design, project management, recruitment, corporate branding, culture building, and community activities.
 
-I can develop complex business logic required in the System of Record fields, such as payment systems and banking systems, with quality, speed, and robustness in mind.
-
-I also served as an engineering manager for an organization with 20-60 engineers. As a result, I have a proven track record and knowledge of team design, project management, recruitment, corporate branding, culture building, community activities, and more.
+My core strength is the ability to foster team technical growth while ensuring quality and robustness in mission-critical development, from batch processing idempotency to data consistency in payment systems.
 
 ## Skills
 
@@ -39,38 +37,6 @@ I also served as an engineering manager for an organization with 20-60 engineers
 - **Tools & Technologies**: Docker, Git, SQL, REST API, OpenAPI, MySQL, PostgreSQL, MongoDB
 - **Cloud Infrastructure & DevOps**: AWS, GitHub Actions, CircleCI, New Relic, Google BigQuery
 - **Soft Skills**: Team Collaboration, Agile Methodologies, Engineering Management, Scrum
-
-### Strength
-
-#### Design and implementation in consideration of operation and performance
-
-I have experience in designing and implementing designs that not only temporarily meet business requirements, but are also aware of performance, computational complexity, and data growth over time. In addition, I have performed performance tuning for problems that happened during the operation.
-
-Batch processing, retry, data integrity in payment systems, and how developed functions to be operated. I'm confident in designing, developing and reviewing in consideration of these.
-
-#### Leverage and improve OSS
-
-Although it's nothing special in this day and age, I use OSS in work. When I select a technology, I focus on whether the technology is feasible as a team, as well as convenience and trends, and I also consider sustainability and disposability. I often make conservative choices as a result of prioritizing the productivity of a team. I've been using SaaS like dependabot for libraries that my product depends on, and I've been upgrading the dependencies periodically
-
-In addition, I believe that products I develop and OSS are connected to each other. If OSS doesn't have a necessary feature, I try to develop it by myself, send patches, and fix bugs and regressions when I notice them. (OSS contribution by me is also described in the [Personal Projects](#personal-projects) and [Public Output](#public-output) sections below.
-
-#### Team-oriented
-
-I have a keen interest in achieving results as a team and have worked to create mechanisms and foster a culture where collaboration can occur. As a manager, I also have experience of determining team assignments by considering variables such as strengths, weaknesses, orientation, and business characteristics.
-
-In the past, when my team has had process issues, I have implemented Scrum to "clarify goals", "be accountable", and "prevent overwork", and I have even taken on the role of a scrum master.
-
-#### Problem solving in engineering organizations of up to 60 people
-
-As an Engineering Manager in an organization with 20-60 engineers, I have experience in organizational design, team design, recruiting, mentoring, onboarding, culture building, and community activities.
-
-Issues that arise when a team or organization grows in size are often the first ones experienced in that organization. Therefore, without clear identification of the true cause and prioritization and assignment, it is often left unchecked and distortions are magnified. I believe that my experience in knowing and dealing with these characteristics of organizational issues can be applied to teams and organizations of the same size or dozens of people, whether my role is as a member or manager.
-
-#### Output-oriented
-
-I try to summarize what I've researched and learned through my hobbies and work and output it. Repeating output-conscious contemplation and trials can hone my skills in abstraction and commonalization. Moreover, I believe that it is possible to enhance the overall ability to find and solve problems.
-
-I'm not very good at having presentations. However, I challenge it as possible as I can for feedbacks I'd get and thing I'd learn through those opportunities. Please refer to the [Public Output](#public-output) section for the results.
 
 ## Professional Experience
 
