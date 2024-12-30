@@ -74,188 +74,47 @@ Web backend を強みの中心に置きつつ、自社サービスとクライ�
 
 ## 職務経歴
 
-### SmartBank, Inc. (2020.08 - )
+### SmartBank, Inc.
+
+- Aug 2020 - Present: Senior Software Engineer
+- Oct 2023 - Present: Engineering Manager
 
 [SmartBank, Inc.](https://smartbank.co.jp/) は BtoC の Fintech company です。同社はプリペイドカードを発行するイシュアであり、カードでの決済と連動して支出管理を可視化・自動化する [B/43](https://b43.jp/) というプロダクトの開発・運用を行っています。
 
-同社における主要な成果を以下に記します。
+主要な成果:
 
-- サブスクリプションサービス[B/43プラス](https://b43.jp/plus/)の立ち上げ
-	- 他社プラットフォームの調査等を通じて仕様検討
-	- 課金機能を含む複数機能の開発、リリース後のグロース
-	- 課金機能については[発表](https://speakerdeck.com/ohbarye/behind-the-scenes-engineering-a-subscription-service)を参照
-- 3Dセキュア対応
-	- Kaigi on Rails 2022にて[発表](https://speakerdeck.com/ohbarye/balance-security-and-usability-in-the-field-of-3d-secure)を参照
-- 対ユーザー向けの各種機能の開発
-  - 出金 / 送金 / 目的別口座 / ペア口座 / 支出管理
-- イシュアとして必要な業務を行う社内システムの開発
-  - 本人確認 (eKYC) 機能 / カード配送機能
-- 開発者向けツール・機構の整備
-  - [Feature Toggles](https://martinfowler.com/articles/feature-toggles.html) を導入し、デプロイとリリースを分離
-  - API を [Idempotency-Key Headers](https://brandur.org/fragments/idempotency-key-draft) に対応させ、多重リクエストが発生してもデータを保護できるよう堅牢化
-- 開発生産性に寄与する活動
-  - CI/CD の整備・高速化
-  - デプロイフローの整備・自動化
-  - 本番環境でのスキーママイグレーション、データマイグレーションフローの整備
-	- Delayed JobからSQSへの移行
-- 採用広報・採用への貢献
+- **サブスクリプションサービスの開発** (2022年10月 -) : 外部SaaSに依存せずサブスクリプションサービスをゼロから開発。[社内イベント](https://speakerdeck.com/ohbarye/behind-the-scenes-engineering-a-subscription-service)にて発表。
+  - (2023年12月 - 2024年10月) 他金融機関からの支出データを取得する集計サービスを立ち上げ、サブスクリプション収益を増加。
+- **銀行システムの開発** (2020年8月 -) : 出金、送金、目的別口座、ペア口座、支出管理など、多岐にわたる機能を開発。
+  - (2021年11月 - 2022年6月) セキュアなカード決済のための3Dセキュア認証機能を開発。[Kaigi on Rails 2022](https://speakerdeck.com/ohbarye/balance-security-and-usability-in-the-field-of-3d-secure)にて発表。
+  - (2020年8月 - 2021年4月) カードイシュアとして必要な業務を行う社内システムとして、本人確認(eKYC)システムおよびカード配送システムを開発。
+- **開発者体験の改善** (2020年8月 -) : 社内開発者向けのツールやシステムを開発。
+  - [Feature Toggles](https://martinfowler.com/articles/feature-toggles.html)を導入し、開発とリリースを分離。
+  - APIサーバーを[Idempotency-Key Headers](https://brandur.org/fragments/idempotency-key-draft)に対応させ、多重リクエスト発生時もデータを保護できるよう堅牢化。
+  - 開発生産性の向上に貢献。具体的には、CI/CDパイプラインの構築、デプロイフローの自動化、スキーマ/データマイグレーションフローの整備、ジョブキューイングシステムのDelayed JobからSQSへの移行などを実施。
 
-### Quipper Limited (2015.09 - 2020.05) 4 yrs 8mos
+### Quipper Limited
+
+- Aug 2015 - May 2020: Software Engineer
+- Jun 2017 - May 2020: Engineering Manager
 
 [Quipper](https://www.quipper.com/)は BtoC, BtoB 両方の教育事業を営む企業です。日本国外には Quipper School, Quipper Video を、日本国内においては[スタディサプリ](https://studysapuri.jp/)の開発・運用を行っています。
 
-スタディサプリブランド傘下には小中高大講座、社会人向けの ENGLISH、学校・自治体向けの forSchool 等が存在し、私は主に BtoC のスタディサプリ小中高大講座の開発・運用に携わりました。関わった Projects のうちいくつかを以下に記します。
+主要な成果:
 
-| タイトル                                                                  | 期間            | 語れるポイント                                         |
-| ------------------------------------------------------------------------- | --------------- | ------------------------------------------------------ |
-| [Code Cleanup](#code-cleanup)                                             | 2020.03         | 腕力                                                   |
-| 価格変更対応                                                              | 2019.10-2020.01 | 複雑な要件の設計・実装                                 |
-| [Migration from React Native to PWA](#migration-from-react-native-to-pwa) | 2019.07-2019.09 | 技術選定、技術的負債返却                               |
-| [中学生向けコーチングサービス開発](#中学生向けコーチングサービス開発)     | 2018.08-2019.03 | 9 名 × 7 ヶ月規模のプロジェクトマネジメント / スクラム |
-| [登録導線リニューアル](#登録導線リニューアル)                             | 2018.03         | 技術選定、EFO                                          |
-| [Upgrade grape gem](#upgrade-grape-gem)                                   | 2017.10-2017.12 | 技術的負債返却、OSS                                    |
-| [キャリア決済廃止検討](#キャリア決済廃止検討)                             | 2017.10         | A/B テスト、Data driven な意思決定                     |
-| 高校生向けコーチングサービス開発                                          | 2016.12-2017.02 | 短納期開発                                             |
-| 勉強サプリ移管プロジェクト                                                | 2016.06-2016.12 | 短納期開発                                             |
-| [採用活動](#採用活動)                                                     | 2016.07-2020.03 | 組織づくり                                             |
-| [In-App Purchase 機能実装](#in-app-purchase-機能実装)                     | 2016.04-2016.06 | 決済機能開発、OSS                                      |
-| [その他](#その他)                                                         | -               | 地道な改善活動                                         |
+- **大規模コードクリーンアップ** (2020年3月) : プロダクション環境での障害ゼロで40万行のコード削除を主導し、Railsモデルを390から281に削減することで保守性を向上
+- **React NativeからPWAへの移行** (2019年7月-9月) : 社内業務アプリケーションのプラットフォーム移行を主導。[JSConf 2019](https://speakerdeck.com/ohbarye/migration-from-react-native-to-pwa)にて成果を発表
+- **決済システムの改善** : iOSアプリの自動更新サブスクリプション機能実装、A/Bテストを用いた決済手段の最適化。[iOSDC 2018](https://speakerdeck.com/ohbarye/rethink-in-app-purchase-on-subscription-services)、[Rails Developer Meetup 2018](https://speakerdeck.com/ohbarye/fact-based-decision-making-and-development-by-quipper)、[Regional Scrum Gathering Tokyo 2019](https://speakerdeck.com/ohbarye/proof-of-value-with-ab-testing)にて成果を発表
+- **中学生向けコーチングサービス開発** (2018年8月-2019年3月) : 不確実性の高いプロジェクトを12名のチームを率いてローンチ。モブプログラミングや1on1を通じてチームの生産性を向上
+- **登録フォームの刷新** (2018年3月) : レガシーシステムを刷新しつつ登録CVRを改善
+- **採用・組織設計** (2016年7月-2020年3月) : 採用活動の計画と実行、構造化面接を設計、オンボーディングプロセス改善
+  - [コーディングテスト設計](https://quipper.hatenablog.com/entry/2018/10/09/coding_test)、[スタディサプリMeetup #1の企画と開催](https://quipper.hatenablog.com/entry/2018/07/20/172946)。[効果的なオフボーディング](https://quipper.hatenablog.com/entry/2020/04/02/effective-offboarding)や[Working Out Loud](https://quipper.hatenablog.com/entry/2018/11/14/working-out-loud)などに関するブログ記事執筆
 
-#### Code Cleanup
+### SCSK Corporation
 
-複数プロダクトでコードを共用していた monorepo を fork し、dead code が大量に発生しました。その dead code の掃除が全体の開発体験に関わると考え、退職前の最後の仕事としてほぼ独力で提案から実行まで行いました。
+- Apr 2012 - Aug 2015: System Engineer
 
-約 3 週間で 400,000 行のコードを削除するに至り、Rails の利用されていない model の削減では数を 390 から 281 に減らすことができました。稼働中のシステムに大きく手を入れたものの顧客に影響を及ぼすような障害を起こすことなく完遂しました。
-
-| 期間    | チーム構成   | 役割 | 利用技術、ツール                                                                              |
-| ------- | ------------ | ---- | --------------------------------------------------------------------------------------------- |
-| 2020.03 | 1 名 (Web×1) | Web  | Ruby, Rails, React, Redux, TypeScript (削除対象)<br />NewRelic, BigQuery (機能の利用状況調査) |
-
-#### Migration from React Native to PWA
-
-React Native 製 iOS/Android の業務用 internal アプリを PWA にてリニューアルするプロジェクトです。主にプロジェクトの立ち上げとバックエンドを担当しました。（リニューアル時に UI/UX を刷新したため、バックエンドにも変更が必要でした）
-
-プロジェクト以前に API に関する仕様を共有する仕組みがなかったため、OpenAPI による API specification の記述をし、共有のための土台の整備も行いました。自動テストと Staging 環境においてのみ動作する Rack middleware を活用し、Specification 違反を検知する仕組みも導入しています。（詳細は[ブログ記事](https://ohbarye.hatenablog.jp/entry/2020/04/29/open-api-specification-for-existing-restish-api-endpoints)にも書きました）
-
-また、プロジェクトの総括を[JSConf 2019 にて発表](https://speakerdeck.com/ohbarye/migration-from-react-native-to-pwa)しました。
-
-| 期間            | チーム構成                                             | 役割    | 利用技術、ツール                                                        |
-| --------------- | ------------------------------------------------------ | ------- | ----------------------------------------------------------------------- |
-| 2019.07-2019.09 | 6 名 (PdM×1, Designer×2, iOS×1, Frontend×1, Backend×1) | Backend | Ruby, Rails 5.0, RSpec, React 16.12, Redux 4.0, TypeScript 3.7, Cypress |
-
-#### 中学生向けコーチングサービス開発
-
-新規メンバーが大半の 10 名超、かつ半年を超える規模である不確実性の大きいプロジェクトにおいて、スクラム・モブプロ・1-on-1 等々のプラクティスを導入・実践することによりにリリースすることができました。また、定量的評価が難しいものの、メンバーの成長・定着にも繋がりました。
-
-本プロジェクトの詳細は『[新メンバーが多い大型プロジェクトでの不確実性との戦い方](https://quipper.hatenablog.com/entry/2019/06/27/how-to-defeat-uncertainty)』にまとめています。
-
-| 期間            | チーム構成                                         | 役割              | 利用技術、ツール                                                           |
-| --------------- | -------------------------------------------------- | ----------------- | -------------------------------------------------------------------------- |
-| 2018.08-2019.03 | 12 名 (PdM×1、Designer×1、iOS×1、Android×1、Web×8) | Web, Scrum master | Ruby, Rails, React, RSpec, Capybara, Redux, TypeScript, Jest, React Native |
-
-#### 登録導線リニューアル
-
-BtoC の学習サービスにおいて最も重要な獲得の時期に向けた EFO (Entry Form Optimization) プロジェクトです。
-
-当時のチームにて扱うフロントエンドの大部分は MPA であり、登録導線は Rails の View と jQuery で実装されていました。リッチな体験が要求されるシーンであったため Webpacker を用いて Rails フロントエンドの一部で React を導入しました。
-
-同時期でなくリリース前後の比較ではありますが登録導線の CVR が有意に向上し、事業成果に直結する取り組みとなりました。
-
-[Meguro.rb にて取り組みの内容を発表](https://speakerdeck.com/ohbarye/level-up-front-end-skills-for-rails-developer)しました。
-
-| 期間    | チーム構成                      | 役割 | 利用技術、ツール                                                  |
-| ------- | ------------------------------- | ---- | ----------------------------------------------------------------- |
-| 2018.03 | 3 名 (PdM×1, Designer×1, Web×1) | Web  | Ruby, Rails, React, RSpec, Capybara, Redux, TypeScript, Webpacker |
-
-#### Upgrade grape gem
-
-社内で最も大きい Rails の API server では [grape](https://github.com/ruby-grape/grape) という gem を使っていましたが、この gem が 2015 年の導入時の v0.12.0 から更新されていなかったのでアップグレードしました。
-
-Rails upgrade 等に比べて情報が少なく、依存している周辺 library が dead であるために迂回策を用意するなどの工夫が必要でした。minor version (-v0.19) を少しずつ上げながら最終的に当時の最新の v1.0.1 まで upgrade できました。
-
-余談ながら、この約 1 年後 2018 年 12 月に NewRelic で同 Rails アプリケーションのメトリクスが取れないという問題が起きました。これは NewRelic agent 側の問題だったため本体に[パッチ](https://github.com/newrelic/rpm/pull/293)を投げて解決しました。
-
-| 期間            | チーム構成   | 役割 | 利用技術、ツール                  |
-| --------------- | ------------ | ---- | --------------------------------- |
-| 2017.10-2017.12 | 1 名 (Web×1) | Web  | Rails 4.2, Ruby 2.4, RSpec, grape |
-
-#### キャリア決済廃止検討
-
-手数料が高く運用コストも高いキャリア決済を廃止する際に、どれぐらい事業へのインパクトがあるのかを検証するプロジェクトです。
-
-Optimizely という SaaS を用い、エンジニアによる開発やテスト実施の手間を極力抑えつつ A/B testing の実践と定量データの収集ができました。
-
-この取組については[ブログ記事](https://quipper.hatenablog.com/entry/2018/05/31/080000)を執筆し、[Rails Developer Meetup 2018 Day 3](https://speakerdeck.com/ohbarye/fact-based-decision-making-and-development-by-quipper)や[Regional Scrum Gathering Tokyo 2019](https://speakerdeck.com/ohbarye/proof-of-value-with-ab-testing)といったイベントでの登壇発表も行いました。
-
-| 期間    | チーム構成          | 役割 | 利用技術、ツール                        |
-| ------- | ------------------- | ---- | --------------------------------------- |
-| 2017.10 | 2 名 (PdM×1, Web×1) | Web  | Rails 4.2, Ruby 2.4, jQuery, Optimizely |
-
-#### 採用活動
-
-書類選考・一次・コードテスト・二次・カジュアル面談・リファラルランチ・リファラルディナーへの主体的な参加を始めとし、全面的に貢献しました。
-
-- Job description の執筆
-  - HR やエージェントと連携しつつ作成
-  - 採用状況の変化に合わせて 2 度書き直しました
-- 構造化面接の採用・実践・型化
-- [コードテストの設計と実装](https://quipper.hatenablog.com/entry/2018/10/09/coding_test)
-- 技術面接の設計と実装
-- 面接ガイドの公開
-- コミュニティ活動
-  - [スタディサプリミートアップ第一回の運営](https://quipper.hatenablog.com/entry/2018/07/20/172946)
-
-また、採用活動と地続きである以下の活動にも取り組みました。
-
-- オンボーディング
-- 上記活動に関する知見をまとめたブログ記事の執筆
-  - [カジュアル面談](https://quipper.hatenablog.com/entry/2020/02/05/casual-interview-in-quipper)
-  - [面接ガイドの公開](https://quipper.hatenablog.com/entry/2018/09/01/interview-guide)
-  - [卒業生と在職者の交流会の開催](https://quipper.hatenablog.com/entry/2018/12/28/yet-quipper-moves)
-  - [オフボーディング](https://quipper.hatenablog.com/entry/2020/04/02/effective-offboarding)
-
-| 期間            | チーム構成         | 役割 | 利用技術、ツール                                        |
-| --------------- | ------------------ | ---- | ------------------------------------------------------- |
-| 2016.07-2020.03 | 4-10 名 (Web×4-10) | Web  | Rails, Ruby, minitest, React, TypeScript (作問にて使用) |
-
-#### In-App Purchase 機能実装
-
-当時、iOS アプリ内での課金手段として買い切りを提供していたものの売上が芳しく無く、クレカ等と同じように自動更新（Auto-renewable）による決済機能を提供したいというニーズがありました。
-
-私はサーバサイドの API と、subscription status を確認するバッチ処理を実装しました。その過程でサーバサイドで利用している AppStore API client library の [venice](https://github.com/nomad/venice) が自動更新の形式に対応していなかったと気づいたため、自前で実装し、[pull request](https://github.com/nomad/venice/pull/30)を送りました。（同 OSS はどうやら手が足りていないようなのでそのあとも[何度か contribution](https://github.com/nomad/venice/pulls?q=is%3Apr+author%3Aohbarye+is%3Aclosed)しました）
-
-このあとの運用も含めて In-App Purchase のサーバサイドに関する知見が得られたので[iOSDC 2018 で登壇発表](https://speakerdeck.com/ohbarye/rethink-in-app-purchase-on-subscription-services)を行いました。
-
-| 期間            | チーム構成                 | 役割 | 利用技術、ツール                             |
-| --------------- | -------------------------- | ---- | -------------------------------------------- |
-| 2016.04-2016.06 | 3 名 (PdM×1、iOS×1、Web×1) | Web  | Rails 4.2, Ruby 2.3, RSpec, venice, AppStore |
-
-#### その他
-
-その他、定常的・突発的に行なった業務を以下に記します。
-
-- [協調しあう文化づくり](https://quipper.hatenablog.com/entry/2018/11/14/working-out-loud)
-- [社内留学の推進](https://quipper.hatenablog.com/entry/2019/07/02/114507)
-- 開発効率向上に関するツールの開発・導入 ([kpt-bot](https://github.com/ohbarye/kpt-bot), [review-bot](https://github.com/ohbarye/review-waiting-list-bot), [Pull Panda](https://pullpanda.com/))
-- Dependencies upgrade with [dependabot](https://dependabot.com/)
-- Release manager
-- Quipper School / Video、スタディサプリのリリース分離
-- 健康促進のための懸垂台の導入
-- 読書会・勉強会の運営 (Real World HTTP, SRE 本 etc.)
-- 社内図書館の発案と実践
-
-### SCSK Corporation (2012.04 - 2015.08) 3 yrs 5mos
-
-[SCSK](https://www.scsk.jp/)は住友商事子会社の大手 SIer です。
-
-私はシステムエンジニアとして不動産業界向けの業務システム開発に携わっていました。複雑な要件のデータモデル設計・帳票出力プログラムの作成・Web アプリケーションやバッチ処理の開発を通じてソフトウェア開発の基礎を学びました。
-
-2014 年以降は基本設計・テスト設計・運用・進行管理・ベンダーマネジメントが業務の大半を占めました。
-
-- Web backend: Java6, Seasar2 (an open source web application framework)
-- Web frontend: jQuery
-- Web Server: Apache + Tomcat
-- DB: Oracle Database 11g
+[SCSK](https://www.scsk.jp/)は住友商事子会社の大手 SIer です。システムエンジニアとして不動産業界向けの業務システム開発に携わり、複雑な要件のデータモデル設計・帳票出力プログラムの作成・Web アプリケーションやバッチ処理の開発を通じてソフトウェア開発の基礎を学びました。
 
 ## Public Output
 
