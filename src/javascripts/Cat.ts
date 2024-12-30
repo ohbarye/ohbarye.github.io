@@ -1,7 +1,7 @@
-import { randomInt, randomSign, diff } from './utils';
-import Fish from './Fish';
 // @ts-ignore
 import cat2Png from '../images/cat2.png';
+import type Fish from './Fish';
+import { diff, randomInt, randomSign } from './utils';
 
 export default class Cat {
   private x: number;

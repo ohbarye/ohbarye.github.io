@@ -1,7 +1,7 @@
 {
-  "name": "ohbarye.me",
+  "name": "ohbarye.github.io",
   "version": "1.0.0",
-  "description": "ohbarye's profile",
+  "description": "ohbarye's profile page",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
@@ -11,34 +11,27 @@
     "cv-html-en": "pandoc -f markdown -t html --section-divs --template=./.pandoc/templates/cv-template.html --toc --toc-depth=2 ./src/cv/en.md > ./docs/en/cv/index.html",
     "cv-pdf-ja": "pandoc -f markdown -t html --section-divs --template=./.pandoc/templates/cv-template.html --toc --toc-depth=2 ./src/cv/ja.md -o  ./docs/ja/cv/CV_Masato_Ohba.pdf",
     "cv-pdf-en": "pandoc -f markdown -t html --section-divs --template=./.pandoc/templates/cv-template.html --toc --toc-depth=2 ./src/cv/en.md -o  ./docs/en/cv/CV_Masato_Ohba.pdf",
-    "lint": "eslint",
-    "lint:fix": "eslint --fix",
+    "lint": "biome check",
+    "lint:fix": "biome check --write",
     "precommit": "lint-staged",
-    "prepush": "yarn lint",
-    "pretty": "prettier --write 'src/javascripts/**/*.ts'"
+    "prepush": "yarn lint"
   },
   "repository": {
-    "url": "git@github.com:ohbarye/me.git",
+    "url": "https://github.com/ohbarye/ohbarye.github.io",
     "type": "git"
   },
   "author": "ohbarye <over.rye@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.38.0",
-    "@typescript-eslint/parser": "^5.24.0",
-    "eslint": "^8.16.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^5.2.1",
+    "@biomejs/biome": "1.9.4",
     "lint-staged": "^12.4.1",
-    "prettier": "^2.6.2",
     "sass": "^1.52.1",
     "typescript": "^5.7.2",
     "vite": "^6.0.6"
   },
   "lint-staged": {
-    "src/javascripts/**/*.ts": [
-      "yarn pretty",
-      "git add"
+    "*": [
+      "biome check --no-errors-on-unmatched --files-ignore-unknown=true"
     ]
   },
   "volta": {
