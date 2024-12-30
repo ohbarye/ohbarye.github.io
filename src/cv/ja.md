@@ -84,140 +84,52 @@ RubyやGoを用いた決済・銀行システムにおける堅牢な開発か�
 
 ## Public Output
 
-[https://lapras.com/public/AVL0ALR](https://lapras.com/public/AVL0ALR) に概ね集約されています。
+### OSS Activities
 
-### ブログ
+- [Pull requests list](https://github.com/pulls?q=is%3Apr+author%3Aohbarye+archived%3Afalse+-user%3Aohbarye+))
+- [Published Ruby gems](https://rubygems.org/profiles/ohbarye)
+  - **Property-Based Testing Tool** (2024) : [pbt](https://github.com/ohbarye/pbt)
+    - Presented at RubyKaigi 2024: [Unlocking Potential of Property Based Testing with Ractor](https://rubykaigi.org/2024/presentations/ohbarye.html).
+    - Show HN: [https://news.ycombinator.com/item?id=40441093](https://news.ycombinator.com/item?id=40441093)
+  - **Route Validator** (2020 - 2021) : [route_mechanic](https://github.com/ohbarye/route_mechanic)
+  - **Email previewer** (2017) : [automaildoc](https://github.com/ohbarye/automaildoc)
+- [Published npm packages](https://www.npmjs.com/-ohbarye)
+  - **React Library for Japanese Form** (2019) : [react-use-kana](https://github.com/ohbarye/react-use-kana)
+- Other OSS projects
+  - **OSS Finder for newbies** (2020) : [goofi](https://github.com/ohbarye/goofi) built with Next.js and GraphQL.
+    - At Nodefest 2018, I [made a presentation about the service](https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-final).
+  - **Slack Bots to Help Team Development** (2017 - 2020) : [review-waiting-list-bot](https://github.com/ohbarye/review-waiting-list-bot), [kpt-bot](https://github.com/ohbarye/kpt-bot)
 
-- 個人 (日本語) [https://ohbarye.hatenablog.jp/](https://ohbarye.hatenablog.jp/)
-  - [人気順の記事一覧](https://b.hatena.ne.jp/entrylist?url=https%3A%2F%2Fohbarye.hatenablog.jp%2F&sort=count)
-- 個人 (英語) [https://dev.to/ohbarye](https://dev.to/ohbarye)
+### Blogs
 
-#### 企業ブログへの寄稿
+- 個人ブログ
+  - Japanese: [https://ohbarye.hatenablog.jp/](https://ohbarye.hatenablog.jp/)
+  - English: [https://dev.to/ohbarye](https://dev.to/ohbarye)
+- 会社ブログ
+  - SmartBank Blog: [https://blog.smartbank.co.jp/archive/author/ohbarye](https://blog.smartbank.co.jp/archive/author/ohbarye)
+  - Quipper Blog: [https://quipper.hatenablog.com/archive/author/ohbarye](https://quipper.hatenablog.com/archive/author/ohbarye)
 
+### Presentations
 
-- [『B/43 Tech Talk 〜 Fintech×サブスクリプションサービス立ち上げの裏側〜』を開催します](https://blog.smartbank.co.jp/entry/2023/07/21/b43-plus-inside-tech-talk)
-- [reviewdog x Custom FormatterでRuboCopの自動修正を提案させるようにしました](https://blog.smartbank.co.jp/entry/2023/06/29/reviewdog-action-rubocop-suggestion-feature)
-- [ActionMailer::Baseのサブクラスで値を変更すると全てのMailerに反映されてしまう設定がある](https://blog.smartbank.co.jp/entry/2023/06/05/action-mailer-config-pitfall)
-- [データベースのメタデータ整備をRails generatorで楽にする工夫](https://blog.smartbank.co.jp/entry/2023/04/04/rails-generator-for-metadata)
-- [GitHub Appを使ってDependabotが作るpull requestを自動マージさせる](https://blog.smartbank.co.jp/entry/2023/02/16/dependabot-auto-merge-with-github-app)
-- [3Dセキュア入門 -B/43の3Dセキュア開発・運用の裏側-](https://blog.smartbank.co.jp/entry/2022/11/11/3d-secure)
-- [CRAからViteへ移行して190倍高速なdev server起動を得る](https://blog.smartbank.co.jp/entry/2022/04/25/create-react-app-to-vite)
-- [TracePoint 活用事例: Sentry のローカル変数キャプチャ機能](https://blog.smartbank.co.jp/entry/2021/11/25/sentry-ruby-meets-tracepoint)
-- [Idempotency-Key Header を使ったリトライと、オンラインイベントの"Kaigi 感"](https://blog.smartbank.co.jp/entry/2021/10/26/safe-retry-with-idempotency-key-header)
-- [新メンバーが多い大型プロジェクトでの不確実性との戦い方](https://quipper.hatenablog.com/entry/2019/06/27/how-to-defeat-uncertainty)
-- [Working Out Loud 大声作業（しなさい）、チームメンバー同士でのトレーニング文化の醸成](https://quipper.hatenablog.com/entry/2018/11/14/working-out-loud)
-- [より良い面接を実現するために "Quipper 採用面接ガイド" を公開しました](https://quipper.hatenablog.com/entry/2018/09/01/interview-guide)
-- [カジュアル面談への扉](https://quipper.hatenablog.com/entry/2020/02/05/casual-interview-in-quipper)
-- [プロダクトの「負債」を「機能」と呼び直す 〜A/B テストを用いた"価値"の定量化〜](https://quipper.hatenablog.com/entry/2018/05/31/080000)
-- [退職の作法、あるいはオフボーディング実践入門](https://quipper.hatenablog.com/entry/2020/04/02/effective-offboarding)
-- [グローバルサービスでのタイムゾーンとの向き合い方](https://quipper.hatenablog.com/entry/2016/12/05/090000)
+[https://speakerdeck.com/ohbarye](https://speakerdeck.com/ohbarye)に概ね集約されています。代表的なスライドをいくつか抜粋します。
 
-### プレゼンテーション
-
-[https://speakerdeck.com/ohbarye](https://speakerdeck.com/ohbarye)に概ね集約されています。いくつか抜粋します。
-
-- [サブスクリプションサービスをつくる時にエンジニアが考えること](https://speakerdeck.com/ohbarye/behind-the-scenes-engineering-a-subscription-service) (B/43 Techtalk)
-- [RuboCop Custom Formatter for Reviewdog Diagnostic Format](https://speakerdeck.com/ohbarye/rubocop-custom-formatter-for-reviewdog-diagnostic-format) (Gotanda.rb#53)
-- [DB外の副作用をトランザクションから分離しよう](https://speakerdeck.com/ohbarye/isolate-out-of-db-side-effects-from-transactions) (Gotanda.rb#52)
+- [Unlocking Potential of Property Based Testing with Ractor](https://speakerdeck.com/ohbarye/unlocking-potential-of-property-based-testing-with-ractor) (RubyKaigi 2024)
+- [Data Migration on Rails](https://speakerdeck.com/ohbarye/data-migration-on-rails) (Kaigi on Rails 2024)
+- [Behind the Scenes: Engineering a Subscription Service](https://speakerdeck.com/ohbarye/behind-the-scenes-engineering-a-subscription-service) (B/43 Techtalk 2023)
 - [Balance Security and Usability in the Field of 3D Secure](https://speakerdeck.com/ohbarye/balance-security-and-usability-in-the-field-of-3d-secure) (Kaigi on Rails 2022)
 - [Safe Retry with Idempotency-Key Header](https://speakerdeck.com/ohbarye/safe-retry-with-idempotency-key-header) (Kaigi on Rails 2021)
 - [Migration from React Native to PWA](https://speakerdeck.com/ohbarye/migration-from-react-native-to-pwa) (JSConf JP 2019)
-- [Lightning Talk Session Organizer](https://event.shoeisha.jp/devsumi/20190702/session/2091/) (Developers Summit 2019 Summer)
-- [プロダクトの「負債」を「機能」と呼び直すために](https://speakerdeck.com/ohbarye/proof-of-value-with-ab-testing) (Regional Scrum Gathering Tokyo 2019)
-- [貢献できる OSS の見つけ方 -完結編-](https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-final) (NodeFest JP 2018)
-- [決済のトランザクション管理術](https://speakerdeck.com/ohbarye/how-to-manage-payment-transaction) (Meguro.rb#19)
-- [サブスクリプションサービスにおける In-App Purchase 再考](https://speakerdeck.com/ohbarye/rethink-in-app-purchase-on-subscription-services) (iOSDC Japan 2018)
-- [Quipper が実践する 定量データに基づく意思決定と開発](https://speakerdeck.com/ohbarye/fact-based-decision-making-and-development-by-quipper) (Rails developer Meetup 2018 Day 3 Extreme)
-- [エンジニアも気にしたい色のアクセシビリティ](https://speakerdeck.com/ohbarye/color-accessibility-that-engineers-should-care) (Roppongi.js#3)
-- [フロントエンドのレベル上げ](https://speakerdeck.com/ohbarye/level-up-front-end-skills-for-rails-developer) (Meguro.rb#15)
+- [Verify Hypothesis with A/B Testing](https://speakerdeck.com/ohbarye/proof-of-value-with-ab-testing) (Regional Scrum Gathering Tokyo 2019)
+- [How to Find Good First Issues](https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-final) (NodeFest JP 2018)
+- [Rethink In-App Purchase on Subscription Services](https://speakerdeck.com/ohbarye/rethink-in-app-purchase-on-subscription-services) (iOSDC Japan 2018)
 
-### OSS 活動
-
-- Pull requests to OSS ([pull requests 一覧](https://github.com/pulls?q=is%3Apr+author%3Aohbarye+archived%3Afalse+-user%3Aohbarye+))
-  - AppStore の In-App purchase 用 API クライアント gem `venice` が Auto-Renewable (自動更新) に対応していなかったのでその機能を自ら開発した[pull request](https://github.com/nomad/venice/pull/30)
-  - New Relic Ruby agent の gem `newrelic_rpm` が grape v1.2.0+ に対応していなかったので対応した[pull request](https://github.com/newrelic/rpm/pull/293)
-  - その他 Node.js, yarn, Ruby などのメジャー OSS にもわずかながらパッチを送った経験あり
-- Tools
-  - [goofi](https://github.com/ohbarye/goofi)
-  - [review-waiting-list-bot](https://github.com/ohbarye/review-waiting-list-bot)
-  - [kpt-bot](https://github.com/ohbarye/kpt-bot)
-  - [markdown-server](https://github.com/ohbarye/markdown-server)
-- [公開している gems](https://rubygems.org/profiles/ohbarye)
-- [公開している npm packages](https://www.npmjs.com/-ohbarye)
-
-### コミュニティ活動
+### Community Activities
 
 - [Engineering Manager Meetup](https://engineering-manager-meetup.connpass.com/)
-  - 役割: オーガナイザー
-  - 日本ではいまだ母数の少ない Engineering Manager という position についての情報共有を目的としたコミュニティです
-  - 述べ 500 人以上が参加しました
-  - 約 1.5 年にわたり独力で運営し、2020 年 4 月よりコミュニティでの運用にシフトしました
+  - Role: Founder / Meetup Organizer
+  - 日本では母数の少ない Engineering Manager についての情報共有を目的としたコミュニティを立ち上げました。
 - [EOF2019](https://eof2019.peatix.com/)
-  - 役割: コアメンバー
-  - 日本ではあまり例のない「エンジニアリングマネジメント」をテーマに据えたフェスティバル
-  - OST セッションの開催を担当
-- Meguro.rb
-  - 役割: メンバー、ホスト
-  - 地域 Ruby コミュニティの 1 つである Meguro.rb の運営スタッフとして、イベント開催のホストを 2 度行いました
-
-### Personal Projects
-
-趣味の開発や、学習の過程での成果物です。
-
-#### Goofi
-
-OSS への貢献をより簡便にするためのツールです。OSS 活動を始めたい初心者にとって最大の壁が「貢献対象を探すこと」だと考え、コントリビューションが推奨される repository と issue をリストアップする Web サービス[Goofi](https://goofi.now.sh/)を作りました。
-
-Nodefest 2018 では[同サービスに関する発表](https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-final)を行いました。
-
-2020 年 1 月に[GitHub が公式の類似機能を公開した](https://github.blog/2020-01-22-browse-good-first-issues-to-start-contributing-to-open-source/)ので役目を終えそうですが、課題設定が正しかったことが追認された心持ちです。
-
-| 時期     | Repository                                                           | 利用技術、ツール                                                                                    |
-| -------- | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| 2020.08- | [https://github.com/ohbarye/goofi](https://github.com/ohbarye/goofi) | Node.js 13.x, TypeScript 3.8, Next.js 9.1, GraphQL (client), Now.sh v1-2 (現 Vercel), GitHub API v4 |
-
-#### React Use Kana
-
-漢字を入力するとふりがなが自動入力されるフォームを作成するためのライブラリです。jQuery で同機能を実現するものや、React の古めのバージョンに対応する類似ライブラリはありましたが、React hooks を利用したライブラリは見つからなかったため自作しました。
-
-| 時期 | Repository                                                                             | 利用技術、ツール             |
-| ---- | -------------------------------------------------------------------------------------- | ---------------------------- |
-| 2019 | [https://github.com/ohbarye/react-use-kana](https://github.com/ohbarye/react-use-kana) | React 16.9, TypeScript 3.8.3 |
-
-#### String Pixelater
-
-文字を N \* N dots の 2 次元配列に変換するライブラリです。当時[Processing](https://processing.org/)にハマっており、Generative Art を作る過程で実装しました。
-
-| 時期 | Repository                                                                                 | 利用技術、ツール              |
-| ---- | ------------------------------------------------------------------------------------------ | ----------------------------- |
-| 2018 | [https://github.com/ohbarye/string-pixelater](https://github.com/ohbarye/string-pixelater) | TypeScript 3.6.4, rollup 1.23 |
-
-#### Review bot
-
-チーム開発でのレビューを促進させる Slack bot です。
-指定した条件にマッチする pull requests 一覧を Slack に投稿します。
-
-2019 年 6 月に GitHub が買収した[Pull Panda](https://pullpanda.com/)に類似していますが商用で有料だったためか、この bot を fork して利用していただける企業が数社ありました。
-
-| 時期     | Repository                                                                                               | 利用技術、ツール                                                 |
-| -------- | -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| 2017.08- | [https://github.com/ohbarye/review-waiting-list-bot](https://github.com/ohbarye/review-waiting-list-bot) | Node.js 8.x, GraphQL (client) Slack API, GitHub API v3-4, Heroku |
-
-#### Automaildoc
-
-RSpec によるテスト実行時にメール文面をプレビューできる HTML を自動生成するライブラリです。
-
-| 時期 | Repository                                                                       | 利用技術、ツール  |
-| ---- | -------------------------------------------------------------------------------- | ----------------- |
-| 2017 | [https://github.com/ohbarye/automaildoc](https://github.com/ohbarye/automaildoc) | Ruby 2.4, RSpec 3 |
-
-#### Markdown Server
-
-Markdown で記述された文書を HTML で配信する Web サーバを簡易に構築できるライブラリです。Python の学習のために自作しました。
-
-| 時期 | Repository                                                                               | 利用技術、ツール        |
-| ---- | ---------------------------------------------------------------------------------------- | ----------------------- |
-| 2015 | [https://github.com/ohbarye/markdown-server](https://github.com/ohbarye/markdown-server) | Python 3.7, bottle 0.12 |
+  - Role: Core Staff
 
 ## 学歴
 
@@ -226,13 +138,13 @@ Markdown で記述された文書を HTML で配信する Web サーバを簡易
 ## 資格
 
 - AtCoder
-  - (2020.06) アルゴリズム実技検定 初級
+  - (2020年6月) アルゴリズム実技検定 初級
 - IPA
-  - (2014.06) データベーススペシャリスト
-  - (2012.12) 応用情報処理技術者
-  - (2012.06) 基本情報処理技術者
+  - (2014年6月) データベーススペシャリスト
+  - (2012年12月) 応用情報処理技術者
+  - (2012年6月) 基本情報処理技術者
 - Others
-  - (2010.12) 貸金業務取扱主任者
+  - (2010年12月) 貸金業務取扱主任者
 
 ## 興味 / 関心
 

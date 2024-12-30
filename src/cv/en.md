@@ -84,136 +84,53 @@ Achievements:
 
 ## Public Output
 
+### OSS Activities
+
+- [Pull requests list](https://github.com/pulls?q=is%3Apr+author%3Aohbarye+archived%3Afalse+-user%3Aohbarye+)) I have also sent patches to major OSS such as Node.js, yarn, Ruby, etc.
+- [Published Ruby gems](https://rubygems.org/profiles/ohbarye)
+  - **Property-Based Testing Tool** (2024) : [pbt](https://github.com/ohbarye/pbt)
+    - Presented at RubyKaigi 2024: [Unlocking Potential of Property Based Testing with Ractor](https://rubykaigi.org/2024/presentations/ohbarye.html).
+    - Show HN: [https://news.ycombinator.com/item?id=40441093](https://news.ycombinator.com/item?id=40441093)
+  - **Route Validator** (2020 - 2021) : [route_mechanic](https://github.com/ohbarye/route_mechanic)
+  - **Email previewer** (2017) : [automaildoc](https://github.com/ohbarye/automaildoc)
+- [Published npm packages](https://www.npmjs.com/-ohbarye)
+  - **React Library for Japanese Form** (2019) : [react-use-kana](https://github.com/ohbarye/react-use-kana)
+- Other OSS projects
+  - **OSS Finder for newbies** (2020) : [goofi](https://github.com/ohbarye/goofi) built with Next.js and GraphQL.
+    - At Nodefest 2018, I [made a presentation about the service](https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-final).
+  - **Slack Bots to Help Team Development** (2017 - 2020) : [review-waiting-list-bot](https://github.com/ohbarye/review-waiting-list-bot), [kpt-bot](https://github.com/ohbarye/kpt-bot)
+
 ### Blogs
 
-- Personal (Japanese) [https://ohbarye.hatenablog.jp/](https://ohbarye.hatenablog.jp/)
-- Personal (English) [https://dev.to/ohbarye](https://dev.to/ohbarye)
-
-#### Articles on Company's Blog
-
-- [We're going to hold "B/43 Tech Talk -Fintech and Subscription Service-"](https://blog.smartbank.co.jp/entry/2023/07/21/b43-plus-inside-tech-talk)
-- [Rubocop auto-correction with reviewdog and Custom Formatter](https://blog.smartbank.co.jp/entry/2023/06/29/reviewdog-action-rubocop-suggestion-feature)
-- [ActionMailer::Base option pitfall](https://blog.smartbank.co.jp/entry/2023/06/05/action-mailer-config-pitfall)
-- [Enhance metadata with Rails generator](https://blog.smartbank.co.jp/entry/2023/04/04/rails-generator-for-metadata)
-- [Auto-merge Dependabot Pull Requests with GitHub App](https://blog.smartbank.co.jp/entry/2023/02/16/dependabot-auto-merge-with-github-app)
-- [3D Secure Introduction - How We Build and Operate](https://blog.smartbank.co.jp/entry/2022/11/11/3d-secure)
-- [Migrate CRA to Vite - We Got 190x times faster dev server](https://blog.smartbank.co.jp/entry/2022/04/25/create-react-app-to-vite)
-- [TracePoint Usage: Sentry Captures Local Variable](https://blog.smartbank.co.jp/entry/2021/11/25/sentry-ruby-meets-tracepoint)
-- [Retry with Idempotency-Key Header](https://blog.smartbank.co.jp/entry/2021/10/26/safe-retry-with-idempotency-key-header)
-- [Project Management Technique to Overcome Uncertainty](https://quipper.hatenablog.com/entry/2019/06/27/how-to-defeat-uncertainty)
-- [Working Out Loud -How to Make Collaborative Culture-](https://quipper.hatenablog.com/entry/2018/11/14/working-out-loud)
-- [Quipper Interview Guide is Published](https://quipper.hatenablog.com/entry/2018/09/01/interview-guide)
-- [Introduction of Casual Interview](https://quipper.hatenablog.com/entry/2020/02/05/casual-interview-in-quipper)
-- [Fact-based Decision Making with A/B Testing](https://quipper.hatenablog.com/entry/2018/05/31/080000)
-- [Effective Onboarding](https://quipper.hatenablog.com/entry/2020/04/02/effective-offboarding)
-- [Timezone in Global Applications](https://quipper.hatenablog.com/entry/2016/12/05/090000)
+- Personal
+  - Japanese: [https://ohbarye.hatenablog.jp/](https://ohbarye.hatenablog.jp/)
+  - English: [https://dev.to/ohbarye](https://dev.to/ohbarye)
+- Company Blog
+  - SmartBank Blog: [https://blog.smartbank.co.jp/archive/author/ohbarye](https://blog.smartbank.co.jp/archive/author/ohbarye)
+  - Quipper Blog: [https://quipper.hatenablog.com/archive/author/ohbarye](https://quipper.hatenablog.com/archive/author/ohbarye)
 
 ### Presentations
 
 Here are a few excerpts from [https://speakerdeck.com/ohbarye](https://speakerdeck.com/ohbarye).
 
-- [Behind the Scenes: Engineering a Subscription Service](https://speakerdeck.com/ohbarye/behind-the-scenes-engineering-a-subscription-service) (B/43 Techtalk)
-- [RuboCop Custom Formatter for Reviewdog Diagnostic Format](https://speakerdeck.com/ohbarye/rubocop-custom-formatter-for-reviewdog-diagnostic-format) (Gotanda.rb#53)
-- [Isolate out-of-DB side effects from transactions](https://speakerdeck.com/ohbarye/isolate-out-of-db-side-effects-from-transactions) (Gotanda.rb#52)
+- [Unlocking Potential of Property Based Testing with Ractor](https://speakerdeck.com/ohbarye/unlocking-potential-of-property-based-testing-with-ractor) (RubyKaigi 2024)
+- [Data Migration on Rails](https://speakerdeck.com/ohbarye/data-migration-on-rails) (Kaigi on Rails 2024)
+- [Behind the Scenes: Engineering a Subscription Service](https://speakerdeck.com/ohbarye/behind-the-scenes-engineering-a-subscription-service) (B/43 Techtalk 2023)
 - [Balance Security and Usability in the Field of 3D Secure](https://speakerdeck.com/ohbarye/balance-security-and-usability-in-the-field-of-3d-secure) (Kaigi on Rails 2022)
 - [Safe Retry with Idempotency-Key Header](https://speakerdeck.com/ohbarye/safe-retry-with-idempotency-key-header) (Kaigi on Rails 2021)
 - [Migration from React Native to PWA](https://speakerdeck.com/ohbarye/migration-from-react-native-to-pwa) (JSConf JP 2019)
-- [Lightning Talk Session Organizer](https://event.shoeisha.jp/devsumi/20190702/session/2091/) (Developers Summit 2019 Summer)
 - [Verify Hypothesis with A/B Testing](https://speakerdeck.com/ohbarye/proof-of-value-with-ab-testing) (Regional Scrum Gathering Tokyo 2019)
 - [How to Find Good First Issues](https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-final) (NodeFest JP 2018)
-- [How to Manage Payment Transactions](https://speakerdeck.com/ohbarye/how-to-manage-payment-transaction) (Meguro.rb#19)
 - [Rethink In-App Purchase on Subscription Services](https://speakerdeck.com/ohbarye/rethink-in-app-purchase-on-subscription-services) (iOSDC Japan 2018)
-- [Fact-based Decision Making and Development](https://speakerdeck.com/ohbarye/fact-based-decision-making-and-development-by-quipper) (Rails developer Meetup 2018 Day 3 Extreme)
-- [Color Accessibility, which Engineers Should Care](https://speakerdeck.com/ohbarye/color-accessibility-that-engineers-should-care) (Roppongi.js#3)
-- [Level up Frontend Skills for Rais Developer](https://speakerdeck.com/ohbarye/level-up-front-end-skills-for-rails-developer) (Meguro.rb#15)
-
-### OSS Activities
-
-- Pull requests to OSS ([pull requests list](https://github.com/pulls?q=is%3Apr+author%3Aohbarye+archived%3Afalse+-user%3Aohbarye+))
-  - An API client gem `venice` of AppStore for In-App purchase didn't support Auto-Renewable, so I developed the feature by myself [pull request](https://github.com/nomad/venice/pull/30).
-  - A gem `newrelic_rpm` of New Relic Ruby agent was not compatible with grape v1.2.0+, so I fixed with this [pull request](https://github.com/newrelic/rpm/pull/293).
-  - I have also sent patches to major OSS such as Node.js, yarn, Ruby, etc.
-- Tools
-  - [goofi](https://github.com/ohbarye/goofi)
-  - [review-waiting-list-bot](https://github.com/ohbarye/review-waiting-list-bot)
-  - [kpt-bot](https://github.com/ohbarye/kpt-bot)
-  - [markdown-server](https://github.com/ohbarye/markdown-server)
-- [Published gems](https://rubygems.org/profiles/ohbarye)
-- [Published npm packages](https://www.npmjs.com/-ohbarye)
 
 ### Community Activities
 
 - [Engineering Manager Meetup](https://engineering-manager-meetup.connpass.com/)
-  - Role: Meetup organizer
-  - The purpose of this community is to share knowledge about engineering management, which is still not widely available in Japan.
-  - In total, more than 500 people participated in the event.
-  - I've been running it on my own for about 1.5 years.
-  - I handed over the community management to the community.
+  - Role: Founder / Meetup Organizer
+  - The purpose of this community is to share knowledge about engineering management, which is still not widely available in Japan. In total, more than 500 people participated in the event. I've been running it on my own for about 1.5 years. In 2020, I've handed over the community management to the community.
 - [EOF2019](https://eof2019.peatix.com/)
-  - Role: core member
-  - The very first festival that puts "Engineering Management" on the theme in Japan.
-  - Organize the OST session.
-- Meguro.rb (Ruby regional community)
-  - Role: member
-  - As an administrative staff member of Meguro.rb, one of the local Ruby communities, I hosted the event twice.
-
-### Personal Projects
-
-These are artifacts of my personal projects.
-
-#### Goofi
-
-It is a tool to make contribution to OSS easier. I thought that the biggest obstacle for beginners who want to start OSS contributions is to find the target of contribution, so I created a web service [Goofi](https://goofi.now.sh/) to list repositories and issues to which contribution is recommended.
-
-At Nodefest 2018, I [made a presentation about the service](https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-final).
-
-In January 2020, [GitHub has published an official feature](https://github.blog/2020-01-22-browse-good-first-issues-to-start-contributing-to-open-source/) similar to Googi, then I took it as, "My recognition of the problem was right.
-
-| Period   | Repository                                                           | Tech stacks, tools                                                                                  |
-| -------- | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| 2020.08- | [https://github.com/ohbarye/goofi](https://github.com/ohbarye/goofi) | Node.js 13.x, TypeScript 3.8, Next.js 9.1, GraphQL (client), Now.sh v1-2 (現 Vercel), GitHub API v4 |
-
-#### React Use Kana
-
-This is a library to create a form that automatically inputs furigana when you type kanji. there are some libraries that have the same function with jQuery and similar libraries for older versions of React, but I couldn't find a library that uses React hooks, so I made my own.
-
-| Period | Repository                                                                             | Tech stacks, tools           |
-| ------ | -------------------------------------------------------------------------------------- | ---------------------------- |
-| 2019   | [https://github.com/ohbarye/react-use-kana](https://github.com/ohbarye/react-use-kana) | React 16.9, TypeScript 3.8.3 |
-
-#### String Pixelater
-
-A library that converts a character to a two-dimensional array of N \* N dots. I was addicted to [Processing](https://processing.org/) at the time and implemented it through the process of creating Generative Art.
-
-| Period | Repository                                                                                 | Tech stacks, tools            |
-| ------ | ------------------------------------------------------------------------------------------ | ----------------------------- |
-| 2018   | [https://github.com/ohbarye/string-pixelater](https://github.com/ohbarye/string-pixelater) | TypeScript 3.6.4, rollup 1.23 |
-
-#### Review bot
-
-It's a Slack bot that encourages reviews in team development. It posts a list of pull requests to Slack that match specified conditions.
-
-It's similar to [Pull Panda](https://pullpanda.com/), acquired by GitHub in June 2019. But my bot was forked by some companies for their internal use, that's probably because Pull Panda was not free.
-
-| Period   | Repository                                                                                               | Tech stacks, tools                                               |
-| -------- | -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| 2017.08- | [https://github.com/ohbarye/review-waiting-list-bot](https://github.com/ohbarye/review-waiting-list-bot) | Node.js 8.x, GraphQL (client) Slack API, GitHub API v3-4, Heroku |
-
-#### Automaildoc
-
-This is a library that automatically generates HTML to preview email text when running tests with RSpec.
-
-| Period | Repository                                                                       | Tech stacks, tools |
-| ------ | -------------------------------------------------------------------------------- | ------------------ |
-| 2017   | [https://github.com/ohbarye/automaildoc](https://github.com/ohbarye/automaildoc) | Ruby 2.4, RSpec 3  |
-
-#### Markdown Server
-
-This is a library that can build a web server to deliver Markdown documents as HTML. I made this for learning Python.
-
-| Period | Repository                                                                               | Tech stacks, tools      |
-| ------ | ---------------------------------------------------------------------------------------- | ----------------------- |
-| 2015   | [https://github.com/ohbarye/markdown-server](https://github.com/ohbarye/markdown-server) | Python 3.7, bottle 0.12 |
+  - Role: Core Staff
+  - The very first festival that puts "Engineering Management" on the theme in Japan. I organized an OST session in the event.
 
 ## Education
 
@@ -222,17 +139,17 @@ This is a library that can build a web server to deliver Markdown documents as H
 ## Qualifications
 
 - AtCoder
-  - (2020.06) Practical Algorithm Skill Test, Advanced Beginner
+  - (Jun 2020) Practical Algorithm Skill Test, Advanced Beginner
 - Information-technology Promotion Agency, Japan
-  - (2014.06) Database Specialist
-  - (2012.12) Applied Information Technology Engineer
-  - (2012.06) Fundamental Information Technology Engineer
+  - (Jun 2014) Database Specialist
+  - (Dec 2012) Applied Information Technology Engineer
+  - (Jun 2012) Fundamental Information Technology Engineer
 - Others
-  - (2010.12) Chief of Money Lending Operations
+  - (Dec 2010) Chief of Money Lending Operations
 
 ## Interests
 
-By 2020, I have developed the technical skills required in the field of software engineering, especially in the application layer of web services development. In the future, I hope to deepen my general understanding of software through learning about whole computer science, algorithms, low layers and middleware in particular.
+I have developed the technical skills required in the field of software engineering, especially in the application layer of web services development. In the future, I hope to deepen my general understanding of software through learning about whole computer science, algorithms, low layers and middleware in particular.
 
 - Competitive programming
   - AtCoder green [https://atcoder.jp/users/ohbarye](https://atcoder.jp/users/ohbarye)
