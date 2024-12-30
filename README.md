@@ -12,6 +12,15 @@ $ yarn && yarn dev
 $ open http://localhost:3000
 ```
 
+### Lint / Format
+
+This project uses [Biome](https://biomejs.dev/).
+
+```sh
+$ yarn lint
+$ yarn lint:fix
+```
+
 ### Index page application
 
 It's a simple JavaScript application. The following command starts a dev server managed by Vite.
