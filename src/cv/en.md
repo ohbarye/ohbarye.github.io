@@ -39,20 +39,23 @@ My core strength is the ability to foster team technical growth while ensuring q
 - **Soft Skills**: Team Collaboration, Agile Methodologies, Engineering Management, Scrum
 
 ## Professional Experience
+The following achievements are further detailed through my technical presentations and blog posts. For additional information, please see the [Presentations](#presentations) and [Blogs](#blogs) sections below.
 
 ### SmartBank, Inc.
 
-- Aug 2020 - Present: Senior Software Engineer
-- Oct 2023 - Present: Engineering Manager
+| Period | Role |
+| --- | --- |
+| Aug 2020 - Present | Senior Software Engineer |
+| Oct 2023 - Present | Engineering Manager |
 
 [SmartBank, Inc.](https://smartbank.co.jp/) is a BtoC Fintech company that is categorized as a [challenger bank](https://en.wikipedia.org/wiki/Challenger_bank) like [Monzo](https://monzo.com/). The company is an "Issuer" that issues prepaid cards and develops and operates a product named [B/43](https://b43.jp/) that visualizes and automates spending management in conjunction with payment with cards.
 
 Achievements:
 
-- **Subscription Service Development** (Oct 2022 -) : Developed subscription service from scratch without using any external SaaS. Presented at a [company event](https://speakerdeck.com/ohbarye/behind-the-scenes-engineering-a-subscription-service).
+- **Subscription Service Development** (Oct 2022 -) : Developed subscription service from scratch without using any external SaaS.
   - (Dec 2023 - Oct 2024) Increased subscription revenue by launching an aggregation service that fetches spending data from other financial institutes.
 - **Banking System Development** (Aug 2020 -) : Developed various features like withdrawal, money transfer, account by purpose, joint account, pending management and etc.
-  - (Nov 2021 - Jun 2022) Developed 3-D Secure authentication for secure card payments. Presented at [Kaigi on Rails 2022](https://speakerdeck.com/ohbarye/balance-security-and-usability-in-the-field-of-3d-secure).
+  - (Nov 2021 - Jun 2022) Developed 3-D Secure authentication for secure card payments.
   - (Aug 2020 - Apr 2021) Developed an in-house identity verification system (known as eKYC) / Card delivery system that performs necessary works as a card issuer.
 - **Developer Experience Improvements** (Aug 2020 -) : Developed tools and systems for internal developers.
   - Introduced [Feature Toggles](https://martinfowler.com/articles/feature-toggles.html) and separated development and release.
@@ -61,16 +64,18 @@ Achievements:
 
 ### Quipper Limited
 
-- Aug 2015 - May 2020: Software Engineer
-- Jun 2017 - May 2020: Engineering Manager
+| Period | Role |
+| --- | --- |
+| Aug 2015 - May 2020 | Senior Software Engineer |
+| Jun 2017 - May 2020 | Engineering Manager |
 
 [Quipper](https://www.quipper.com/) is a company that operates both B to C and B to B education businesses. We develop and operate Quipper School and Quipper Video outside of Japan, and [StudySuppli](https://studysapuri.jp/) in Japan.
 
 Achievements:
 
 - **Large-scale Code Cleanup** (Mar 2020) : Led removal of 400,000 lines of code with zero production incidents, improved maintainability by reducing Rails models from 390 to 281.
-- **React Native to PWA Migration** (Jul - Sep 2019) : Led platform migration of internal business application. [Presented](https://speakerdeck.com/ohbarye/migration-from-react-native-to-pwa) at JSConf 2019.
-- **Payment System Improvements** : Implemented auto-renewable subscription feature for iOS app, and A/B tested payment method optimization. (Presented at[presentation at iOSDC 2018](https://speakerdeck.com/ohbarye/rethink-in-app-purchase-on-subscription-services), [Rails Developer Meetup 2018](https://speakerdeck.com/ohbarye/fact-based-decision-making-and-development-by-quipper) and [Regional Scrum Gathering Tokyo 2019](https://speakerdeck.com/ohbarye/proof-of-value-with-ab-testing))
+- **React Native to PWA Migration** (Jul - Sep 2019) : Led platform migration of internal business application.
+- **Payment System Improvements** : Implemented auto-renewable subscription feature for iOS app, and A/B tested payment method optimization.
 - **Junior High School Coaching Service Development** (Aug 2018 - Mar 2019) : Led 12-member team to successful launch of high-uncertainty project, enhancing team productivity through mob programming and 1-on-1s
 - **Entry Form Modernization** (Mar 2018) : Improved registration CVR through modernization of legacy system.
 - **Recruitment & Organization Design** (Jul 2016 - Mar 2020) : Led recruitment efforts, designed structured interviews, and improved onboarding process.
@@ -78,7 +83,9 @@ Achievements:
 
 ### SCSK Corporation
 
-- Apr 2012 - Aug 2015: System Engineer
+| Period | Role |
+| --- | --- |
+| Apr 2012 - Aug 2015 | System Engineer |
 
 [SCSK](https://www.scsk.jp/) is a Japanese big information technology services company. I was a member of a department developing some enterprise systems for real estate companies which needs better property management solutions. I've developed web applications for the purpose.
 
@@ -86,7 +93,7 @@ Achievements:
 
 ### OSS Activities
 
-- [Pull requests list](https://github.com/pulls?q=is%3Apr+author%3Aohbarye+archived%3Afalse+-user%3Aohbarye+)) I have also sent patches to major OSS such as Node.js, yarn, Ruby, etc.
+- [Pull requests list](https://github.com/pulls?q=is%3Apr+author%3Aohbarye+archived%3Afalse+-user%3Aohbarye+). I have also sent patches to major OSS such as Node.js, yarn, Ruby, etc.
 - [Published Ruby gems](https://rubygems.org/profiles/ohbarye)
   - **Property-Based Testing Tool** (2024) : [pbt](https://github.com/ohbarye/pbt)
     - Presented at RubyKaigi 2024: [Unlocking Potential of Property Based Testing with Ractor](https://rubykaigi.org/2024/presentations/ohbarye.html).

@@ -40,10 +40,14 @@ RubyやGoを用いた決済・銀行システムにおける堅牢な開発か�
 
 ## 職務経歴
 
+以下の成果の一部はブログや外部登壇を通じて詳しく説明しています。[プレゼンテーション](#プレゼンテーション)と[ブログ](#ブログ)もご参照ください。
+
 ### SmartBank, Inc.
 
-- Aug 2020 - Present: Senior Software Engineer
-- Oct 2023 - Present: Engineering Manager
+| 期間 | ロール |
+| --- | --- |
+| Aug 2020 - Present | Senior Software Engineer |
+| Oct 2023 - Present | Engineering Manager |
 
 [SmartBank, Inc.](https://smartbank.co.jp/) は BtoC の Fintech company です。同社はプリペイドカードを発行するイシュアであり、カードでの決済と連動して支出管理を可視化・自動化する [B/43](https://b43.jp/) というプロダクトの開発・運用を行っています。
 
@@ -61,8 +65,10 @@ RubyやGoを用いた決済・銀行システムにおける堅牢な開発か�
 
 ### Quipper Limited
 
-- Aug 2015 - May 2020: Software Engineer
-- Jun 2017 - May 2020: Engineering Manager
+| 期間 | ロール |
+| --- | --- |
+| Aug 2015 - May 2020 | Senior Software Engineer |
+| Jun 2017 - May 2020 | Engineering Manager |
 
 [Quipper](https://www.quipper.com/)は BtoC, BtoB 両方の教育事業を営む企業です。日本国外には Quipper School, Quipper Video を、日本国内においては[スタディサプリ](https://studysapuri.jp/)の開発・運用を行っています。
 
@@ -78,7 +84,9 @@ RubyやGoを用いた決済・銀行システムにおける堅牢な開発か�
 
 ### SCSK Corporation
 
-- Apr 2012 - Aug 2015: System Engineer
+| 期間 | ロール |
+| --- | --- |
+| Apr 2012 - Aug 2015 | System Engineer |
 
 [SCSK](https://www.scsk.jp/)は住友商事子会社の大手 SIer です。システムエンジニアとして不動産業界向けの業務システム開発に携わり、複雑な要件のデータモデル設計・帳票出力プログラムの作成・Web アプリケーションやバッチ処理の開発を通じてソフトウェア開発の基礎を学びました。
 
@@ -86,7 +94,7 @@ RubyやGoを用いた決済・銀行システムにおける堅牢な開発か�
 
 ### OSS Activities
 
-- [Pull requests list](https://github.com/pulls?q=is%3Apr+author%3Aohbarye+archived%3Afalse+-user%3Aohbarye+))
+- [Pull requests list](https://github.com/pulls?q=is%3Apr+author%3Aohbarye+archived%3Afalse+-user%3Aohbarye+)
 - [Published Ruby gems](https://rubygems.org/profiles/ohbarye)
   - **Property-Based Testing Tool** (2024) : [pbt](https://github.com/ohbarye/pbt)
     - Presented at RubyKaigi 2024: [Unlocking Potential of Property Based Testing with Ractor](https://rubykaigi.org/2024/presentations/ohbarye.html).

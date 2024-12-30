@@ -1190,7 +1190,7 @@ Output</a></li>
     </a>
   </div>
 </nav>
-<p>最終更新日: 2023.08.06</p>
+<p>最終更新日: 2024-12-30</p>
 <p>English version: <a
 href="https://ohbarye.github.io/en/cv/">https://ohbarye.github.io/en/cv/</a></p>
 <section id="基本情報と連絡先" class="level2">
@@ -1225,711 +1225,256 @@ href="https://ohbarye.github.io">https://ohbarye.github.io</a></td>
 </section>
 <section id="職務要約" class="level2">
 <h2>職務要約</h2>
-<p>Web backend
-を強みの中心に置きつつ、自社サービスとクライアントワーク両方のフルサイクル開発の経験があります。適時コミュニケーションを取りつつ行う要求・要件定義を始めとし、チームでの開発から運用までの全体のリードを担うことができます。</p>
-<p>登録導線やリテンション施策などの System of Engagement
-領域、リッチな体験が求められるサービスの Web frontend においては React
-による SPA, MPA の開発を行なってきました。</p>
-<p>決済や銀行システムなど System of Record
-領域において求められる複雑なビジネスロジックについても、質・速度・堅牢さを意識した開発が可能です。</p>
+<p>RubyやGoを用いた決済・銀行システムにおける堅牢な開発から React による
+SPA/MPA の開発まで、フルサイクル開発の経験を持つ Software Engineer
+です。特に System of Record
+領域におけるソフトウェア設計と、パフォーマンスやスケーラビリティを意識した設計・実装に強みがあります。OSS
+projects
+への積極的な貢献や技術登壇を通じて、エンジニアリングコミュニティへの還元も行っています。（See
+<a href="#personal-projects">Personal Projects</a>, <a
+href="#public-output">Public Output</a>)</p>
 <p>また、エンジニア数が 20-60 名規模の組織における Engineering Manager
 を務め、チーム設計・プロジェクトマネジメント・採用活動・コーポレートブランディング・文化づくり・コミュニティ活動等々に関する実績と知見があります。</p>
+<p>バッチ処理の冪等性から決済システムのデータ整合性まで、ミッションクリティカルな開発において必要とされる品質と堅牢性を担保しつつ、チームの技術的成長を促進できることが私の強みです。</p>
 </section>
 <section id="スキル" class="level2">
 <h2>スキル</h2>
 <ul>
-<li>Language
-<ul>
-<li><strong>Ruby</strong> (2.3-3.x), <strong>TypeScript</strong>
-(3.4-5.x), Go (1.15-), JavaScript (ES2015-)</li>
-</ul></li>
-<li>Frontend
-<ul>
-<li><strong>React</strong> (16.x-), React Admin</li>
-</ul></li>
-<li>Backend
-<ul>
-<li><strong>Ruby on Rails</strong> (4.2-7.x), OpenAPI (3.x), REST</li>
-</ul></li>
-<li>Testing
-<ul>
-<li><strong>RSpec</strong>, Capybara, minitest, Jest, React Testing
-Library</li>
-</ul></li>
-<li>Database
-<ul>
-<li>MySQL (5.7-8.0), PostgreSQL (9.5-), MongoDB (3.2-3.6), Redis</li>
-</ul></li>
-<li>Infrastructure
-<ul>
-<li>AWS, Docker</li>
-</ul></li>
-<li>Communication tools
-<ul>
-<li>GitHub, ZenHub, Slack</li>
-</ul></li>
-<li>SaaS
-<ul>
-<li>GitHub Actions, CircleCI, Athena, NewRelic, Google BigQuery</li>
-</ul></li>
-<li>Development framework
-<ul>
-<li>Agile, Scrum</li>
-</ul></li>
+<li><strong>Programming Languages</strong>: Ruby, TypeScript, Go</li>
+<li><strong>Frameworks &amp; Libraries</strong>: Ruby on Rails, React,
+React Admin</li>
+<li><strong>Tools &amp; Technologies</strong>: Docker, Git, SQL, REST
+API, OpenAPI, MySQL, PostgreSQL, MongoDB</li>
+<li><strong>Cloud Infrastructure &amp; DevOps</strong>: AWS, GitHub
+Actions, CircleCI, New Relic, Google BigQuery</li>
+<li><strong>Soft Skills</strong>: Team Collaboration, Agile
+Methodologies, Engineering Management, Scrum</li>
 </ul>
-<p><strong>太字</strong> はコアなスキルを表現します。</p>
-<section id="長所-強み" class="level3">
-<h3>長所 / 強み</h3>
-<section id="運用パフォーマンスを意識した設計実装" class="level4">
-<h4>運用、パフォーマンスを意識した設計・実装</h4>
-<p>ビジネスの要求を一時的に満たすだけでなく、パフォーマンス・計算量・将来にわたるデータ増加を意識した設計や実装の経験があります。加えて、運用中に生じた問題についてのパフォーマンスチューニングを行なってきました。</p>
-<p>バッチの冪等性・リトライ処理。決済におけるデータの整合性。開発した機能がどのように運用されるか。これらを意識した設計・開発・レビューに自信があります。</p>
-</section>
-<section id="oss-を活用改善する技術力" class="level4">
-<h4>OSS を活用、改善する技術力</h4>
-<p>現代においては特筆すべきことではありませんが、業務においては OSS
-を利用しています。技術選定の際には利便性やトレンドの最大瞬間風速だけでなくチームとして
-feasible な技術かどうか？を中心に検討し、並んで持続性や disposability
-を検討します。チームの生産性を優先した結果として保守的な選択をすることが多いです。製品の依存するライブラリ等については
-dependabot のような SaaS を活用しつつ dependencies
-の定期的なアップグレードも行なってきました。</p>
-<p>また、開発するプロダクトと OSS
-は地続きであると考えています。必要な機能がなければ自ら開発したりパッチを送ったり、bug
-や regression に気づいたら直す振る舞いを心がけています。（後述する<a
-href="#personal-projects">Personal Projects</a>欄、<a
-href="#public-output">Public Output</a>欄にても OSS contribution
-に関する内容を記述しています）</p>
-</section>
-<section id="チーム志向" class="level4">
-<h4>チーム志向</h4>
-<p>チームとして成果を上げることに強い関心があり、協働が生まれる仕組みづくりや文化の醸成を行ってきました。また、マネジャーとしてチームメンバー間の信頼関係の構築・強み・弱み・指向性・事業特性などの変数を考慮してチーム編成を決定した経験もあります。</p>
-<p>プロセスに問題があったとき、「ゴールを明確にする」「説明責任を果たす」「オーバーワークを防ぐ」ためにスクラムを導入し、スクラムマスターの役割を担ったこともあります。</p>
-</section>
-<section id="名規模のエンジニア組織における課題解決" class="level4">
-<h4>-60 名規模のエンジニア組織における課題解決</h4>
-<p>エンジニア数が 20-60 名規模の組織における Engineering Manager
-として、組織設計・チーム設計・採用活動・教育・オンボーディング・文化づくり・コミュニティ活動等々に関する実績と知見があります。</p>
-<p>チーム・組織規模が大きくなる中で生じる課題はその組織において初めて経験される類のものが多く、明確に真因の特定と優先度判断とアサインを行わないと放置され歪みが拡大することがしばしばあります。組織課題のそうした特性を知ったうえで対応してきた経験は、自身の役割がメンバーであれマネジャーであれ、同規模
-± 数十名のチーム・組織でも活かせると考えます。</p>
-</section>
-<section id="アウトプット志向" class="level4">
-<h4>アウトプット志向</h4>
-<p>趣味や業務を通じて調べたこと・学んだことをまとめてアウトプットすることを心がけています。アウトプットを意識した思索や試行を繰り返すことによって抽象化・共通化のスキルを磨けるだけでなく、課題の発見から解決までの総合力を高められると考えています。</p>
-<p>登壇発表・プレゼンテーションの類は得意ではありませんが、その機会を通じて学ぶことや得られるフィードバックがあるため、可能な範囲で挑戦しています。実績については<a
-href="#public-output">Public Output</a>欄をご参照ください。</p>
-</section>
-</section>
-<section id="経験のないこと" class="level3">
-<h3>経験のないこと</h3>
-<p>モノリシックなアプリケーションをバックエンドとするプロダクト開発や数名〜20
-名弱のチームにおいては上記のような強みを発揮できますが、以下の経験については乏しい、または全く経験がありません。</p>
-<ul>
-<li>Microservices、分散処理</li>
-<li>大規模トラフィックへの対応</li>
-<li>モバイルアプリ開発</li>
-<li>Cloud services (AWS, GCP, Azure etc.)
-を活用したアーキテクチャ設計や構成管理 (Terraform, Ansible etc.)</li>
-<li>ミドルウェアの技術選定、運用、チューニング</li>
-<li>ハードウェア、組み込みソフトウェア関連</li>
-</ul>
-<p>経験のない領域を学ぶ意欲はあり、業務上必要な技術に関するキャッチアップは過去に行なってきたように可能だと考えていますが、業務開始直後に初速を出すのは難しいと考えます。</p>
-</section>
 </section>
 <section id="職務経歴" class="level2">
 <h2>職務経歴</h2>
-<section id="smartbank-inc.-2020.08--" class="level3">
-<h3>SmartBank, Inc. (2020.08 - )</h3>
+<p>以下の成果の一部はブログや外部登壇を通じて詳しく説明しています。<a
+href="#プレゼンテーション">プレゼンテーション</a>と<a
+href="#ブログ">ブログ</a>もご参照ください。</p>
+<section id="smartbank-inc." class="level3">
+<h3>SmartBank, Inc.</h3>
+<table>
+<thead>
+<tr class="header">
+<th>期間</th>
+<th>ロール</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Aug 2020 - Present</td>
+<td>Senior Software Engineer</td>
+</tr>
+<tr class="even">
+<td>Oct 2023 - Present</td>
+<td>Engineering Manager</td>
+</tr>
+</tbody>
+</table>
 <p><a href="https://smartbank.co.jp/">SmartBank, Inc.</a> は BtoC の
 Fintech company
 です。同社はプリペイドカードを発行するイシュアであり、カードでの決済と連動して支出管理を可視化・自動化する
 <a href="https://b43.jp/">B/43</a>
 というプロダクトの開発・運用を行っています。</p>
-<p>同社における主要な成果を以下に記します。</p>
+<p>主要な成果:</p>
 <ul>
-<li>サブスクリプションサービス<a
-href="https://b43.jp/plus/">B/43プラス</a>の立ち上げ
+<li><strong>サブスクリプションサービスの開発</strong> (2022年10月 -) :
+外部SaaSに依存せずサブスクリプションサービスをゼロから開発。<a
+href="https://speakerdeck.com/ohbarye/behind-the-scenes-engineering-a-subscription-service">社内イベント</a>にて発表。
 <ul>
-<li>他社プラットフォームの調査等を通じて仕様検討</li>
-<li>課金機能を含む複数機能の開発、リリース後のグロース</li>
-<li>課金機能については<a
-href="https://speakerdeck.com/ohbarye/behind-the-scenes-engineering-a-subscription-service">発表</a>を参照</li>
+<li>(2023年12月 - 2024年10月)
+他金融機関からの支出データを取得する集計サービスを立ち上げ、サブスクリプション収益を増加。</li>
 </ul></li>
-<li>3Dセキュア対応
+<li><strong>銀行システムの開発</strong> (2020年8月 -) :
+出金、送金、目的別口座、ペア口座、支出管理など、多岐にわたる機能を開発。
 <ul>
-<li>Kaigi on Rails 2022にて<a
-href="https://speakerdeck.com/ohbarye/balance-security-and-usability-in-the-field-of-3d-secure">発表</a>を参照</li>
+<li>(2021年11月 - 2022年6月)
+セキュアなカード決済のための3Dセキュア認証機能を開発。<a
+href="https://speakerdeck.com/ohbarye/balance-security-and-usability-in-the-field-of-3d-secure">Kaigi
+on Rails 2022</a>にて発表。</li>
+<li>(2020年8月 - 2021年4月)
+カードイシュアとして必要な業務を行う社内システムとして、本人確認(eKYC)システムおよびカード配送システムを開発。</li>
 </ul></li>
-<li>対ユーザー向けの各種機能の開発
-<ul>
-<li>出金 / 送金 / 目的別口座 / ペア口座 / 支出管理</li>
-</ul></li>
-<li>イシュアとして必要な業務を行う社内システムの開発
-<ul>
-<li>本人確認 (eKYC) 機能 / カード配送機能</li>
-</ul></li>
-<li>開発者向けツール・機構の整備
+<li><strong>開発者体験の改善</strong> (2020年8月 -) :
+社内開発者向けのツールやシステムを開発。
 <ul>
 <li><a
 href="https://martinfowler.com/articles/feature-toggles.html">Feature
-Toggles</a> を導入し、デプロイとリリースを分離</li>
-<li>API を <a
+Toggles</a>を導入し、開発とリリースを分離。</li>
+<li>APIサーバーを<a
 href="https://brandur.org/fragments/idempotency-key-draft">Idempotency-Key
-Headers</a>
-に対応させ、多重リクエストが発生してもデータを保護できるよう堅牢化</li>
+Headers</a>に対応させ、多重リクエスト発生時もデータを保護できるよう堅牢化。</li>
+<li>開発生産性の向上に貢献。具体的には、CI/CDパイプラインの構築、デプロイフローの自動化、スキーマ/データマイグレーションフローの整備、ジョブキューイングシステムのDelayed
+JobからSQSへの移行などを実施。</li>
 </ul></li>
-<li>開発生産性に寄与する活動
-<ul>
-<li>CI/CD の整備・高速化</li>
-<li>デプロイフローの整備・自動化</li>
-<li>本番環境でのスキーママイグレーション、データマイグレーションフローの整備
-<ul>
-<li>Delayed JobからSQSへの移行</li>
-</ul></li>
-</ul></li>
-<li>採用広報・採用への貢献</li>
 </ul>
 </section>
-<section id="quipper-limited-2015.09---2020.05-4-yrs-8mos"
-class="level3">
-<h3>Quipper Limited (2015.09 - 2020.05) 4 yrs 8mos</h3>
+<section id="quipper-limited" class="level3">
+<h3>Quipper Limited</h3>
+<table>
+<thead>
+<tr class="header">
+<th>期間</th>
+<th>ロール</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Aug 2015 - May 2020</td>
+<td>Senior Software Engineer</td>
+</tr>
+<tr class="even">
+<td>Jun 2017 - May 2020</td>
+<td>Engineering Manager</td>
+</tr>
+</tbody>
+</table>
 <p><a href="https://www.quipper.com/">Quipper</a>は BtoC, BtoB
 両方の教育事業を営む企業です。日本国外には Quipper School, Quipper Video
 を、日本国内においては<a
 href="https://studysapuri.jp/">スタディサプリ</a>の開発・運用を行っています。</p>
-<p>スタディサプリブランド傘下には小中高大講座、社会人向けの
-ENGLISH、学校・自治体向けの forSchool 等が存在し、私は主に BtoC
-のスタディサプリ小中高大講座の開発・運用に携わりました。関わった
-Projects のうちいくつかを以下に記します。</p>
-<table>
-<colgroup>
-<col style="width: 51%" />
-<col style="width: 10%" />
-<col style="width: 38%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>タイトル</th>
-<th>期間</th>
-<th>語れるポイント</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="#code-cleanup">Code Cleanup</a></td>
-<td>2020.03</td>
-<td>腕力</td>
-</tr>
-<tr class="even">
-<td>価格変更対応</td>
-<td>2019.10-2020.01</td>
-<td>複雑な要件の設計・実装</td>
-</tr>
-<tr class="odd">
-<td><a href="#migration-from-react-native-to-pwa">Migration from React
-Native to PWA</a></td>
-<td>2019.07-2019.09</td>
-<td>技術選定、技術的負債返却</td>
-</tr>
-<tr class="even">
-<td><a
-href="#中学生向けコーチングサービス開発">中学生向けコーチングサービス開発</a></td>
-<td>2018.08-2019.03</td>
-<td>9 名 × 7 ヶ月規模のプロジェクトマネジメント / スクラム</td>
-</tr>
-<tr class="odd">
-<td><a href="#登録導線リニューアル">登録導線リニューアル</a></td>
-<td>2018.03</td>
-<td>技術選定、EFO</td>
-</tr>
-<tr class="even">
-<td><a href="#upgrade-grape-gem">Upgrade grape gem</a></td>
-<td>2017.10-2017.12</td>
-<td>技術的負債返却、OSS</td>
-</tr>
-<tr class="odd">
-<td><a href="#キャリア決済廃止検討">キャリア決済廃止検討</a></td>
-<td>2017.10</td>
-<td>A/B テスト、Data driven な意思決定</td>
-</tr>
-<tr class="even">
-<td>高校生向けコーチングサービス開発</td>
-<td>2016.12-2017.02</td>
-<td>短納期開発</td>
-</tr>
-<tr class="odd">
-<td>勉強サプリ移管プロジェクト</td>
-<td>2016.06-2016.12</td>
-<td>短納期開発</td>
-</tr>
-<tr class="even">
-<td><a href="#採用活動">採用活動</a></td>
-<td>2016.07-2020.03</td>
-<td>組織づくり</td>
-</tr>
-<tr class="odd">
-<td><a href="#in-app-purchase-機能実装">In-App Purchase
-機能実装</a></td>
-<td>2016.04-2016.06</td>
-<td>決済機能開発、OSS</td>
-</tr>
-<tr class="even">
-<td><a href="#その他">その他</a></td>
-<td>-</td>
-<td>地道な改善活動</td>
-</tr>
-</tbody>
-</table>
-<section id="code-cleanup" class="level4">
-<h4>Code Cleanup</h4>
-<p>複数プロダクトでコードを共用していた monorepo を fork し、dead code
-が大量に発生しました。その dead code
-の掃除が全体の開発体験に関わると考え、退職前の最後の仕事としてほぼ独力で提案から実行まで行いました。</p>
-<p>約 3 週間で 400,000 行のコードを削除するに至り、Rails
-の利用されていない model の削減では数を 390 から 281
-に減らすことができました。稼働中のシステムに大きく手を入れたものの顧客に影響を及ぼすような障害を起こすことなく完遂しました。</p>
-<table>
-<colgroup>
-<col style="width: 6%" />
-<col style="width: 10%" />
-<col style="width: 3%" />
-<col style="width: 80%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>期間</th>
-<th>チーム構成</th>
-<th>役割</th>
-<th>利用技術、ツール</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>2020.03</td>
-<td>1 名 (Web×1)</td>
-<td>Web</td>
-<td>Ruby, Rails, React, Redux, TypeScript (削除対象)<br />NewRelic,
-BigQuery (機能の利用状況調査)</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="migration-from-react-native-to-pwa" class="level4">
-<h4>Migration from React Native to PWA</h4>
-<p>React Native 製 iOS/Android の業務用 internal アプリを PWA
-にてリニューアルするプロジェクトです。主にプロジェクトの立ち上げとバックエンドを担当しました。（リニューアル時に
-UI/UX を刷新したため、バックエンドにも変更が必要でした）</p>
-<p>プロジェクト以前に API
-に関する仕様を共有する仕組みがなかったため、OpenAPI による API
-specification
-の記述をし、共有のための土台の整備も行いました。自動テストと Staging
-環境においてのみ動作する Rack middleware を活用し、Specification
-違反を検知する仕組みも導入しています。（詳細は<a
-href="https://ohbarye.hatenablog.jp/entry/2020/04/29/open-api-specification-for-existing-restish-api-endpoints">ブログ記事</a>にも書きました）</p>
-<p>また、プロジェクトの総括を<a
+<p>主要な成果:</p>
+<ul>
+<li><strong>大規模コードクリーンアップ</strong> (2020年3月) :
+プロダクション環境での障害ゼロで40万行のコード削除を主導し、Railsモデルを390から281に削減することで保守性を向上</li>
+<li><strong>React NativeからPWAへの移行</strong> (2019年7月-9月) :
+社内業務アプリケーションのプラットフォーム移行を主導。<a
 href="https://speakerdeck.com/ohbarye/migration-from-react-native-to-pwa">JSConf
-2019 にて発表</a>しました。</p>
-<table>
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 36%" />
-<col style="width: 4%" />
-<col style="width: 48%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>期間</th>
-<th>チーム構成</th>
-<th>役割</th>
-<th>利用技術、ツール</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>2019.07-2019.09</td>
-<td>6 名 (PdM×1, Designer×2, iOS×1, Frontend×1, Backend×1)</td>
-<td>Backend</td>
-<td>Ruby, Rails 5.0, RSpec, React 16.12, Redux 4.0, TypeScript 3.7,
-Cypress</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="中学生向けコーチングサービス開発" class="level4">
-<h4>中学生向けコーチングサービス開発</h4>
-<p>新規メンバーが大半の 10
-名超、かつ半年を超える規模である不確実性の大きいプロジェクトにおいて、スクラム・モブプロ・1-on-1
-等々のプラクティスを導入・実践することによりにリリースすることができました。また、定量的評価が難しいものの、メンバーの成長・定着にも繋がりました。</p>
-<p>本プロジェクトの詳細は『<a
-href="https://quipper.hatenablog.com/entry/2019/06/27/how-to-defeat-uncertainty">新メンバーが多い大型プロジェクトでの不確実性との戦い方</a>』にまとめています。</p>
-<table>
-<colgroup>
-<col style="width: 9%" />
-<col style="width: 32%" />
-<col style="width: 10%" />
-<col style="width: 47%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>期間</th>
-<th>チーム構成</th>
-<th>役割</th>
-<th>利用技術、ツール</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>2018.08-2019.03</td>
-<td>12 名 (PdM×1、Designer×1、iOS×1、Android×1、Web×8)</td>
-<td>Web, Scrum master</td>
-<td>Ruby, Rails, React, RSpec, Capybara, Redux, TypeScript, Jest, React
-Native</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="登録導線リニューアル" class="level4">
-<h4>登録導線リニューアル</h4>
-<p>BtoC の学習サービスにおいて最も重要な獲得の時期に向けた EFO (Entry
-Form Optimization) プロジェクトです。</p>
-<p>当時のチームにて扱うフロントエンドの大部分は MPA であり、登録導線は
-Rails の View と jQuery
-で実装されていました。リッチな体験が要求されるシーンであったため
-Webpacker を用いて Rails フロントエンドの一部で React
-を導入しました。</p>
-<p>同時期でなくリリース前後の比較ではありますが登録導線の CVR
-が有意に向上し、事業成果に直結する取り組みとなりました。</p>
-<p><a
-href="https://speakerdeck.com/ohbarye/level-up-front-end-skills-for-rails-developer">Meguro.rb
-にて取り組みの内容を発表</a>しました。</p>
-<table>
-<colgroup>
-<col style="width: 6%" />
-<col style="width: 28%" />
-<col style="width: 3%" />
-<col style="width: 60%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>期間</th>
-<th>チーム構成</th>
-<th>役割</th>
-<th>利用技術、ツール</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>2018.03</td>
-<td>3 名 (PdM×1, Designer×1, Web×1)</td>
-<td>Web</td>
-<td>Ruby, Rails, React, RSpec, Capybara, Redux, TypeScript,
-Webpacker</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="upgrade-grape-gem" class="level4">
-<h4>Upgrade grape gem</h4>
-<p>社内で最も大きい Rails の API server では <a
-href="https://github.com/ruby-grape/grape">grape</a> という gem
-を使っていましたが、この gem が 2015 年の導入時の v0.12.0
-から更新されていなかったのでアップグレードしました。</p>
-<p>Rails upgrade 等に比べて情報が少なく、依存している周辺 library が
-dead であるために迂回策を用意するなどの工夫が必要でした。minor version
-(-v0.19) を少しずつ上げながら最終的に当時の最新の v1.0.1 まで upgrade
-できました。</p>
-<p>余談ながら、この約 1 年後 2018 年 12 月に NewRelic で同 Rails
-アプリケーションのメトリクスが取れないという問題が起きました。これは
-NewRelic agent 側の問題だったため本体に<a
-href="https://github.com/newrelic/rpm/pull/293">パッチ</a>を投げて解決しました。</p>
-<table>
-<colgroup>
-<col style="width: 23%" />
-<col style="width: 18%" />
-<col style="width: 6%" />
-<col style="width: 51%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>期間</th>
-<th>チーム構成</th>
-<th>役割</th>
-<th>利用技術、ツール</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>2017.10-2017.12</td>
-<td>1 名 (Web×1)</td>
-<td>Web</td>
-<td>Rails 4.2, Ruby 2.4, RSpec, grape</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="キャリア決済廃止検討" class="level4">
-<h4>キャリア決済廃止検討</h4>
-<p>手数料が高く運用コストも高いキャリア決済を廃止する際に、どれぐらい事業へのインパクトがあるのかを検証するプロジェクトです。</p>
-<p>Optimizely という SaaS
-を用い、エンジニアによる開発やテスト実施の手間を極力抑えつつ A/B testing
-の実践と定量データの収集ができました。</p>
-<p>この取組については<a
-href="https://quipper.hatenablog.com/entry/2018/05/31/080000">ブログ記事</a>を執筆し、<a
-href="https://speakerdeck.com/ohbarye/fact-based-decision-making-and-development-by-quipper">Rails
-Developer Meetup 2018 Day 3</a>や<a
-href="https://speakerdeck.com/ohbarye/proof-of-value-with-ab-testing">Regional
-Scrum Gathering Tokyo
-2019</a>といったイベントでの登壇発表も行いました。</p>
-<table>
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 27%" />
-<col style="width: 5%" />
-<col style="width: 56%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>期間</th>
-<th>チーム構成</th>
-<th>役割</th>
-<th>利用技術、ツール</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>2017.10</td>
-<td>2 名 (PdM×1, Web×1)</td>
-<td>Web</td>
-<td>Rails 4.2, Ruby 2.4, jQuery, Optimizely</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="採用活動" class="level4">
-<h4>採用活動</h4>
-<p>書類選考・一次・コードテスト・二次・カジュアル面談・リファラルランチ・リファラルディナーへの主体的な参加を始めとし、全面的に貢献しました。</p>
-<ul>
-<li>Job description の執筆
-<ul>
-<li>HR やエージェントと連携しつつ作成</li>
-<li>採用状況の変化に合わせて 2 度書き直しました</li>
-</ul></li>
-<li>構造化面接の採用・実践・型化</li>
-<li><a
-href="https://quipper.hatenablog.com/entry/2018/10/09/coding_test">コードテストの設計と実装</a></li>
-<li>技術面接の設計と実装</li>
-<li>面接ガイドの公開</li>
-<li>コミュニティ活動
-<ul>
-<li><a
-href="https://quipper.hatenablog.com/entry/2018/07/20/172946">スタディサプリミートアップ第一回の運営</a></li>
-</ul></li>
-</ul>
-<p>また、採用活動と地続きである以下の活動にも取り組みました。</p>
-<ul>
-<li>オンボーディング</li>
-<li>上記活動に関する知見をまとめたブログ記事の執筆
-<ul>
-<li><a
-href="https://quipper.hatenablog.com/entry/2020/02/05/casual-interview-in-quipper">カジュアル面談</a></li>
-<li><a
-href="https://quipper.hatenablog.com/entry/2018/09/01/interview-guide">面接ガイドの公開</a></li>
-<li><a
-href="https://quipper.hatenablog.com/entry/2018/12/28/yet-quipper-moves">卒業生と在職者の交流会の開催</a></li>
-<li><a
-href="https://quipper.hatenablog.com/entry/2020/04/02/effective-offboarding">オフボーディング</a></li>
-</ul></li>
-</ul>
-<table>
-<colgroup>
-<col style="width: 16%" />
-<col style="width: 19%" />
-<col style="width: 4%" />
-<col style="width: 59%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>期間</th>
-<th>チーム構成</th>
-<th>役割</th>
-<th>利用技術、ツール</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>2016.07-2020.03</td>
-<td>4-10 名 (Web×4-10)</td>
-<td>Web</td>
-<td>Rails, Ruby, minitest, React, TypeScript (作問にて使用)</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="in-app-purchase-機能実装" class="level4">
-<h4>In-App Purchase 機能実装</h4>
-<p>当時、iOS
-アプリ内での課金手段として買い切りを提供していたものの売上が芳しく無く、クレカ等と同じように自動更新（Auto-renewable）による決済機能を提供したいというニーズがありました。</p>
-<p>私はサーバサイドの API と、subscription status
-を確認するバッチ処理を実装しました。その過程でサーバサイドで利用している
-AppStore API client library の <a
-href="https://github.com/nomad/venice">venice</a>
-が自動更新の形式に対応していなかったと気づいたため、自前で実装し、<a
-href="https://github.com/nomad/venice/pull/30">pull
-request</a>を送りました。（同 OSS
-はどうやら手が足りていないようなのでそのあとも<a
-href="https://github.com/nomad/venice/pulls?q=is%3Apr+author%3Aohbarye+is%3Aclosed">何度か
-contribution</a>しました）</p>
-<p>このあとの運用も含めて In-App Purchase
-のサーバサイドに関する知見が得られたので<a
+2019</a>にて成果を発表</li>
+<li><strong>決済システムの改善</strong> :
+iOSアプリの自動更新サブスクリプション機能実装、A/Bテストを用いた決済手段の最適化。<a
 href="https://speakerdeck.com/ohbarye/rethink-in-app-purchase-on-subscription-services">iOSDC
-2018 で登壇発表</a>を行いました。</p>
+2018</a>、<a
+href="https://speakerdeck.com/ohbarye/fact-based-decision-making-and-development-by-quipper">Rails
+Developer Meetup 2018</a>、<a
+href="https://speakerdeck.com/ohbarye/proof-of-value-with-ab-testing">Regional
+Scrum Gathering Tokyo 2019</a>にて成果を発表</li>
+<li><strong>中学生向けコーチングサービス開発</strong>
+(2018年8月-2019年3月) :
+不確実性の高いプロジェクトを12名のチームを率いてローンチ。モブプログラミングや1on1を通じてチームの生産性を向上</li>
+<li><strong>登録フォームの刷新</strong> (2018年3月) :
+レガシーシステムを刷新しつつ登録CVRを改善</li>
+<li><strong>採用・組織設計</strong> (2016年7月-2020年3月) :
+採用活動の計画と実行、構造化面接を設計、オンボーディングプロセス改善
+<ul>
+<li><a
+href="https://quipper.hatenablog.com/entry/2018/10/09/coding_test">コーディングテスト設計</a>、<a
+href="https://quipper.hatenablog.com/entry/2018/07/20/172946">スタディサプリMeetup
+#1の企画と開催</a>。<a
+href="https://quipper.hatenablog.com/entry/2020/04/02/effective-offboarding">効果的なオフボーディング</a>や<a
+href="https://quipper.hatenablog.com/entry/2018/11/14/working-out-loud">Working
+Out Loud</a>などに関するブログ記事執筆</li>
+</ul></li>
+</ul>
+</section>
+<section id="scsk-corporation" class="level3">
+<h3>SCSK Corporation</h3>
 <table>
-<colgroup>
-<col style="width: 16%" />
-<col style="width: 29%" />
-<col style="width: 4%" />
-<col style="width: 49%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>期間</th>
-<th>チーム構成</th>
-<th>役割</th>
-<th>利用技術、ツール</th>
+<th>ロール</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>2016.04-2016.06</td>
-<td>3 名 (PdM×1、iOS×1、Web×1)</td>
-<td>Web</td>
-<td>Rails 4.2, Ruby 2.3, RSpec, venice, AppStore</td>
+<td>Apr 2012 - Aug 2015</td>
+<td>System Engineer</td>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="その他" class="level4">
-<h4>その他</h4>
-<p>その他、定常的・突発的に行なった業務を以下に記します。</p>
-<ul>
-<li><a
-href="https://quipper.hatenablog.com/entry/2018/11/14/working-out-loud">協調しあう文化づくり</a></li>
-<li><a
-href="https://quipper.hatenablog.com/entry/2019/07/02/114507">社内留学の推進</a></li>
-<li>開発効率向上に関するツールの開発・導入 (<a
-href="https://github.com/ohbarye/kpt-bot">kpt-bot</a>, <a
-href="https://github.com/ohbarye/review-waiting-list-bot">review-bot</a>,
-<a href="https://pullpanda.com/">Pull Panda</a>)</li>
-<li>Dependencies upgrade with <a
-href="https://dependabot.com/">dependabot</a></li>
-<li>Release manager</li>
-<li>Quipper School / Video、スタディサプリのリリース分離</li>
-<li>健康促進のための懸垂台の導入</li>
-<li>読書会・勉強会の運営 (Real World HTTP, SRE 本 etc.)</li>
-<li>社内図書館の発案と実践</li>
-</ul>
-</section>
-</section>
-<section id="scsk-corporation-2012.04---2015.08-3-yrs-5mos"
-class="level3">
-<h3>SCSK Corporation (2012.04 - 2015.08) 3 yrs 5mos</h3>
 <p><a href="https://www.scsk.jp/">SCSK</a>は住友商事子会社の大手 SIer
-です。</p>
-<p>私はシステムエンジニアとして不動産業界向けの業務システム開発に携わっていました。複雑な要件のデータモデル設計・帳票出力プログラムの作成・Web
+です。システムエンジニアとして不動産業界向けの業務システム開発に携わり、複雑な要件のデータモデル設計・帳票出力プログラムの作成・Web
 アプリケーションやバッチ処理の開発を通じてソフトウェア開発の基礎を学びました。</p>
-<p>2014
-年以降は基本設計・テスト設計・運用・進行管理・ベンダーマネジメントが業務の大半を占めました。</p>
-<ul>
-<li>Web backend: Java6, Seasar2 (an open source web application
-framework)</li>
-<li>Web frontend: jQuery</li>
-<li>Web Server: Apache + Tomcat</li>
-<li>DB: Oracle Database 11g</li>
-</ul>
 </section>
 </section>
 <section id="public-output" class="level2">
 <h2>Public Output</h2>
-<p><a
-href="https://lapras.com/public/AVL0ALR">https://lapras.com/public/AVL0ALR</a>
-に概ね集約されています。</p>
-<section id="ブログ" class="level3">
-<h3>ブログ</h3>
-<ul>
-<li>個人 (日本語) <a
-href="https://ohbarye.hatenablog.jp/">https://ohbarye.hatenablog.jp/</a>
+<section id="oss-activities" class="level3">
+<h3>OSS Activities</h3>
 <ul>
 <li><a
-href="https://b.hatena.ne.jp/entrylist?url=https%3A%2F%2Fohbarye.hatenablog.jp%2F&amp;sort=count">人気順の記事一覧</a></li>
+href="https://github.com/pulls?q=is%3Apr+author%3Aohbarye+archived%3Afalse+-user%3Aohbarye+">Pull
+requests list</a></li>
+<li><a href="https://rubygems.org/profiles/ohbarye">Published Ruby
+gems</a>
+<ul>
+<li><strong>Property-Based Testing Tool</strong> (2024) : <a
+href="https://github.com/ohbarye/pbt">pbt</a>
+<ul>
+<li>Presented at RubyKaigi 2024: <a
+href="https://rubykaigi.org/2024/presentations/ohbarye.html">Unlocking
+Potential of Property Based Testing with Ractor</a>.</li>
+<li>Show HN: <a
+href="https://news.ycombinator.com/item?id=40441093">https://news.ycombinator.com/item?id=40441093</a></li>
 </ul></li>
-<li>個人 (英語) <a
+<li><strong>Route Validator</strong> (2020 - 2021) : <a
+href="https://github.com/ohbarye/route_mechanic">route_mechanic</a></li>
+<li><strong>Email previewer</strong> (2017) : <a
+href="https://github.com/ohbarye/automaildoc">automaildoc</a></li>
+</ul></li>
+<li><a href="https://www.npmjs.com/-ohbarye">Published npm packages</a>
+<ul>
+<li><strong>React Library for Japanese Form</strong> (2019) : <a
+href="https://github.com/ohbarye/react-use-kana">react-use-kana</a></li>
+</ul></li>
+<li>Other OSS projects
+<ul>
+<li><strong>OSS Finder for newbies</strong> (2020) : <a
+href="https://github.com/ohbarye/goofi">goofi</a> built with Next.js and
+GraphQL.
+<ul>
+<li>At Nodefest 2018, I <a
+href="https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-final">made
+a presentation about the service</a>.</li>
+</ul></li>
+<li><strong>Slack Bots to Help Team Development</strong> (2017 - 2020) :
+<a
+href="https://github.com/ohbarye/review-waiting-list-bot">review-waiting-list-bot</a>,
+<a href="https://github.com/ohbarye/kpt-bot">kpt-bot</a></li>
+</ul></li>
+</ul>
+</section>
+<section id="blogs" class="level3">
+<h3>Blogs</h3>
+<ul>
+<li>個人ブログ
+<ul>
+<li>Japanese: <a
+href="https://ohbarye.hatenablog.jp/">https://ohbarye.hatenablog.jp/</a></li>
+<li>English: <a
 href="https://dev.to/ohbarye">https://dev.to/ohbarye</a></li>
-</ul>
-<section id="企業ブログへの寄稿" class="level4">
-<h4>企業ブログへの寄稿</h4>
+</ul></li>
+<li>会社ブログ
 <ul>
-<li><a
-href="https://blog.smartbank.co.jp/entry/2023/07/21/b43-plus-inside-tech-talk">『B/43
-Tech Talk 〜
-Fintech×サブスクリプションサービス立ち上げの裏側〜』を開催します</a></li>
-<li><a
-href="https://blog.smartbank.co.jp/entry/2023/06/29/reviewdog-action-rubocop-suggestion-feature">reviewdog
-x Custom FormatterでRuboCopの自動修正を提案させるようにしました</a></li>
-<li><a
-href="https://blog.smartbank.co.jp/entry/2023/06/05/action-mailer-config-pitfall">ActionMailer::Baseのサブクラスで値を変更すると全てのMailerに反映されてしまう設定がある</a></li>
-<li><a
-href="https://blog.smartbank.co.jp/entry/2023/04/04/rails-generator-for-metadata">データベースのメタデータ整備をRails
-generatorで楽にする工夫</a></li>
-<li><a
-href="https://blog.smartbank.co.jp/entry/2023/02/16/dependabot-auto-merge-with-github-app">GitHub
-Appを使ってDependabotが作るpull requestを自動マージさせる</a></li>
-<li><a
-href="https://blog.smartbank.co.jp/entry/2022/11/11/3d-secure">3Dセキュア入門
--B/43の3Dセキュア開発・運用の裏側-</a></li>
-<li><a
-href="https://blog.smartbank.co.jp/entry/2022/04/25/create-react-app-to-vite">CRAからViteへ移行して190倍高速なdev
-server起動を得る</a></li>
-<li><a
-href="https://blog.smartbank.co.jp/entry/2021/11/25/sentry-ruby-meets-tracepoint">TracePoint
-活用事例: Sentry のローカル変数キャプチャ機能</a></li>
-<li><a
-href="https://blog.smartbank.co.jp/entry/2021/10/26/safe-retry-with-idempotency-key-header">Idempotency-Key
-Header を使ったリトライと、オンラインイベントの”Kaigi 感”</a></li>
-<li><a
-href="https://quipper.hatenablog.com/entry/2019/06/27/how-to-defeat-uncertainty">新メンバーが多い大型プロジェクトでの不確実性との戦い方</a></li>
-<li><a
-href="https://quipper.hatenablog.com/entry/2018/11/14/working-out-loud">Working
-Out Loud
-大声作業（しなさい）、チームメンバー同士でのトレーニング文化の醸成</a></li>
-<li><a
-href="https://quipper.hatenablog.com/entry/2018/09/01/interview-guide">より良い面接を実現するために
-“Quipper 採用面接ガイド” を公開しました</a></li>
-<li><a
-href="https://quipper.hatenablog.com/entry/2020/02/05/casual-interview-in-quipper">カジュアル面談への扉</a></li>
-<li><a
-href="https://quipper.hatenablog.com/entry/2018/05/31/080000">プロダクトの「負債」を「機能」と呼び直す
-〜A/B テストを用いた”価値”の定量化〜</a></li>
-<li><a
-href="https://quipper.hatenablog.com/entry/2020/04/02/effective-offboarding">退職の作法、あるいはオフボーディング実践入門</a></li>
-<li><a
-href="https://quipper.hatenablog.com/entry/2016/12/05/090000">グローバルサービスでのタイムゾーンとの向き合い方</a></li>
+<li>SmartBank Blog: <a
+href="https://blog.smartbank.co.jp/archive/author/ohbarye">https://blog.smartbank.co.jp/archive/author/ohbarye</a></li>
+<li>Quipper Blog: <a
+href="https://quipper.hatenablog.com/archive/author/ohbarye">https://quipper.hatenablog.com/archive/author/ohbarye</a></li>
+</ul></li>
 </ul>
 </section>
-</section>
-<section id="プレゼンテーション" class="level3">
-<h3>プレゼンテーション</h3>
+<section id="presentations" class="level3">
+<h3>Presentations</h3>
 <p><a
-href="https://speakerdeck.com/ohbarye">https://speakerdeck.com/ohbarye</a>に概ね集約されています。いくつか抜粋します。</p>
+href="https://speakerdeck.com/ohbarye">https://speakerdeck.com/ohbarye</a>に概ね集約されています。代表的なスライドをいくつか抜粋します。</p>
 <ul>
 <li><a
-href="https://speakerdeck.com/ohbarye/behind-the-scenes-engineering-a-subscription-service">サブスクリプションサービスをつくる時にエンジニアが考えること</a>
-(B/43 Techtalk)</li>
+href="https://speakerdeck.com/ohbarye/unlocking-potential-of-property-based-testing-with-ractor">Unlocking
+Potential of Property Based Testing with Ractor</a> (RubyKaigi
+2024)</li>
 <li><a
-href="https://speakerdeck.com/ohbarye/rubocop-custom-formatter-for-reviewdog-diagnostic-format">RuboCop
-Custom Formatter for Reviewdog Diagnostic Format</a>
-(Gotanda.rb#53)</li>
+href="https://speakerdeck.com/ohbarye/data-migration-on-rails">Data
+Migration on Rails</a> (Kaigi on Rails 2024)</li>
 <li><a
-href="https://speakerdeck.com/ohbarye/isolate-out-of-db-side-effects-from-transactions">DB外の副作用をトランザクションから分離しよう</a>
-(Gotanda.rb#52)</li>
+href="https://speakerdeck.com/ohbarye/behind-the-scenes-engineering-a-subscription-service">Behind
+the Scenes: Engineering a Subscription Service</a> (B/43 Techtalk
+2023)</li>
 <li><a
 href="https://speakerdeck.com/ohbarye/balance-security-and-usability-in-the-field-of-3d-secure">Balance
 Security and Usability in the Field of 3D Secure</a> (Kaigi on Rails
@@ -1941,273 +1486,33 @@ Retry with Idempotency-Key Header</a> (Kaigi on Rails 2021)</li>
 href="https://speakerdeck.com/ohbarye/migration-from-react-native-to-pwa">Migration
 from React Native to PWA</a> (JSConf JP 2019)</li>
 <li><a
-href="https://event.shoeisha.jp/devsumi/20190702/session/2091/">Lightning
-Talk Session Organizer</a> (Developers Summit 2019 Summer)</li>
+href="https://speakerdeck.com/ohbarye/proof-of-value-with-ab-testing">Verify
+Hypothesis with A/B Testing</a> (Regional Scrum Gathering Tokyo
+2019)</li>
 <li><a
-href="https://speakerdeck.com/ohbarye/proof-of-value-with-ab-testing">プロダクトの「負債」を「機能」と呼び直すために</a>
-(Regional Scrum Gathering Tokyo 2019)</li>
+href="https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-final">How
+to Find Good First Issues</a> (NodeFest JP 2018)</li>
 <li><a
-href="https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-final">貢献できる
-OSS の見つけ方 -完結編-</a> (NodeFest JP 2018)</li>
-<li><a
-href="https://speakerdeck.com/ohbarye/how-to-manage-payment-transaction">決済のトランザクション管理術</a>
-(Meguro.rb#19)</li>
-<li><a
-href="https://speakerdeck.com/ohbarye/rethink-in-app-purchase-on-subscription-services">サブスクリプションサービスにおける
-In-App Purchase 再考</a> (iOSDC Japan 2018)</li>
-<li><a
-href="https://speakerdeck.com/ohbarye/fact-based-decision-making-and-development-by-quipper">Quipper
-が実践する 定量データに基づく意思決定と開発</a> (Rails developer Meetup
-2018 Day 3 Extreme)</li>
-<li><a
-href="https://speakerdeck.com/ohbarye/color-accessibility-that-engineers-should-care">エンジニアも気にしたい色のアクセシビリティ</a>
-(Roppongi.js#3)</li>
-<li><a
-href="https://speakerdeck.com/ohbarye/level-up-front-end-skills-for-rails-developer">フロントエンドのレベル上げ</a>
-(Meguro.rb#15)</li>
+href="https://speakerdeck.com/ohbarye/rethink-in-app-purchase-on-subscription-services">Rethink
+In-App Purchase on Subscription Services</a> (iOSDC Japan 2018)</li>
 </ul>
 </section>
-<section id="oss-活動" class="level3">
-<h3>OSS 活動</h3>
-<ul>
-<li>Pull requests to OSS (<a
-href="https://github.com/pulls?q=is%3Apr+author%3Aohbarye+archived%3Afalse+-user%3Aohbarye+">pull
-requests 一覧</a>)
-<ul>
-<li>AppStore の In-App purchase 用 API クライアント gem
-<code>venice</code> が Auto-Renewable (自動更新)
-に対応していなかったのでその機能を自ら開発した<a
-href="https://github.com/nomad/venice/pull/30">pull request</a></li>
-<li>New Relic Ruby agent の gem <code>newrelic_rpm</code> が grape
-v1.2.0+ に対応していなかったので対応した<a
-href="https://github.com/newrelic/rpm/pull/293">pull request</a></li>
-<li>その他 Node.js, yarn, Ruby などのメジャー OSS
-にもわずかながらパッチを送った経験あり</li>
-</ul></li>
-<li>Tools
-<ul>
-<li><a href="https://github.com/ohbarye/goofi">goofi</a></li>
-<li><a
-href="https://github.com/ohbarye/review-waiting-list-bot">review-waiting-list-bot</a></li>
-<li><a href="https://github.com/ohbarye/kpt-bot">kpt-bot</a></li>
-<li><a
-href="https://github.com/ohbarye/markdown-server">markdown-server</a></li>
-</ul></li>
-<li><a href="https://rubygems.org/profiles/ohbarye">公開している
-gems</a></li>
-<li><a href="https://www.npmjs.com/-ohbarye">公開している npm
-packages</a></li>
-</ul>
-</section>
-<section id="コミュニティ活動" class="level3">
-<h3>コミュニティ活動</h3>
+<section id="community-activities" class="level3">
+<h3>Community Activities</h3>
 <ul>
 <li><a
 href="https://engineering-manager-meetup.connpass.com/">Engineering
 Manager Meetup</a>
 <ul>
-<li>役割: オーガナイザー</li>
-<li>日本ではいまだ母数の少ない Engineering Manager という position
-についての情報共有を目的としたコミュニティです</li>
-<li>述べ 500 人以上が参加しました</li>
-<li>約 1.5 年にわたり独力で運営し、2020 年 4
-月よりコミュニティでの運用にシフトしました</li>
+<li>Role: Founder / Meetup Organizer</li>
+<li>日本では母数の少ない Engineering Manager
+についての情報共有を目的としたコミュニティを立ち上げました。</li>
 </ul></li>
 <li><a href="https://eof2019.peatix.com/">EOF2019</a>
 <ul>
-<li>役割: コアメンバー</li>
-<li>日本ではあまり例のない「エンジニアリングマネジメント」をテーマに据えたフェスティバル</li>
-<li>OST セッションの開催を担当</li>
-</ul></li>
-<li>Meguro.rb
-<ul>
-<li>役割: メンバー、ホスト</li>
-<li>地域 Ruby コミュニティの 1 つである Meguro.rb
-の運営スタッフとして、イベント開催のホストを 2 度行いました</li>
+<li>Role: Core Staff</li>
 </ul></li>
 </ul>
-</section>
-<section id="personal-projects" class="level3">
-<h3>Personal Projects</h3>
-<p>趣味の開発や、学習の過程での成果物です。</p>
-<section id="goofi" class="level4">
-<h4>Goofi</h4>
-<p>OSS への貢献をより簡便にするためのツールです。OSS
-活動を始めたい初心者にとって最大の壁が「貢献対象を探すこと」だと考え、コントリビューションが推奨される
-repository と issue をリストアップする Web サービス<a
-href="https://goofi.now.sh/">Goofi</a>を作りました。</p>
-<p>Nodefest 2018 では<a
-href="https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-final">同サービスに関する発表</a>を行いました。</p>
-<p>2020 年 1 月に<a
-href="https://github.blog/2020-01-22-browse-good-first-issues-to-start-contributing-to-open-source/">GitHub
-が公式の類似機能を公開した</a>ので役目を終えそうですが、課題設定が正しかったことが追認された心持ちです。</p>
-<table>
-<colgroup>
-<col style="width: 4%" />
-<col style="width: 38%" />
-<col style="width: 56%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>時期</th>
-<th>Repository</th>
-<th>利用技術、ツール</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>2020.08-</td>
-<td><a
-href="https://github.com/ohbarye/goofi">https://github.com/ohbarye/goofi</a></td>
-<td>Node.js 13.x, TypeScript 3.8, Next.js 9.1, GraphQL (client), Now.sh
-v1-2 (現 Vercel), GitHub API v4</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="react-use-kana" class="level4">
-<h4>React Use Kana</h4>
-<p>漢字を入力するとふりがなが自動入力されるフォームを作成するためのライブラリです。jQuery
-で同機能を実現するものや、React
-の古めのバージョンに対応する類似ライブラリはありましたが、React hooks
-を利用したライブラリは見つからなかったため自作しました。</p>
-<table>
-<colgroup>
-<col style="width: 3%" />
-<col style="width: 72%" />
-<col style="width: 23%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>時期</th>
-<th>Repository</th>
-<th>利用技術、ツール</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>2019</td>
-<td><a
-href="https://github.com/ohbarye/react-use-kana">https://github.com/ohbarye/react-use-kana</a></td>
-<td>React 16.9, TypeScript 3.8.3</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="string-pixelater" class="level4">
-<h4>String Pixelater</h4>
-<p>文字を N * N dots の 2 次元配列に変換するライブラリです。当時<a
-href="https://processing.org/">Processing</a>にハマっており、Generative
-Art を作る過程で実装しました。</p>
-<table>
-<colgroup>
-<col style="width: 3%" />
-<col style="width: 73%" />
-<col style="width: 23%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>時期</th>
-<th>Repository</th>
-<th>利用技術、ツール</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>2018</td>
-<td><a
-href="https://github.com/ohbarye/string-pixelater">https://github.com/ohbarye/string-pixelater</a></td>
-<td>TypeScript 3.6.4, rollup 1.23</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="review-bot" class="level4">
-<h4>Review bot</h4>
-<p>チーム開発でのレビューを促進させる Slack bot です。
-指定した条件にマッチする pull requests 一覧を Slack に投稿します。</p>
-<p>2019 年 6 月に GitHub が買収した<a href="https://pullpanda.com/">Pull
-Panda</a>に類似していますが商用で有料だったためか、この bot を fork
-して利用していただける企業が数社ありました。</p>
-<table>
-<colgroup>
-<col style="width: 4%" />
-<col style="width: 59%" />
-<col style="width: 36%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>時期</th>
-<th>Repository</th>
-<th>利用技術、ツール</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>2017.08-</td>
-<td><a
-href="https://github.com/ohbarye/review-waiting-list-bot">https://github.com/ohbarye/review-waiting-list-bot</a></td>
-<td>Node.js 8.x, GraphQL (client) Slack API, GitHub API v3-4,
-Heroku</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="automaildoc" class="level4">
-<h4>Automaildoc</h4>
-<p>RSpec によるテスト実行時にメール文面をプレビューできる HTML
-を自動生成するライブラリです。</p>
-<table>
-<colgroup>
-<col style="width: 3%" />
-<col style="width: 79%" />
-<col style="width: 16%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>時期</th>
-<th>Repository</th>
-<th>利用技術、ツール</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>2017</td>
-<td><a
-href="https://github.com/ohbarye/automaildoc">https://github.com/ohbarye/automaildoc</a></td>
-<td>Ruby 2.4, RSpec 3</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="markdown-server" class="level4">
-<h4>Markdown Server</h4>
-<p>Markdown で記述された文書を HTML で配信する Web
-サーバを簡易に構築できるライブラリです。Python
-の学習のために自作しました。</p>
-<table>
-<colgroup>
-<col style="width: 3%" />
-<col style="width: 76%" />
-<col style="width: 20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>時期</th>
-<th>Repository</th>
-<th>利用技術、ツール</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>2015</td>
-<td><a
-href="https://github.com/ohbarye/markdown-server">https://github.com/ohbarye/markdown-server</a></td>
-<td>Python 3.7, bottle 0.12</td>
-</tr>
-</tbody>
-</table>
-</section>
 </section>
 </section>
 <section id="学歴" class="level2">
@@ -2221,18 +1526,17 @@ href="https://github.com/ohbarye/markdown-server">https://github.com/ohbarye/mar
 <ul>
 <li>AtCoder
 <ul>
-<li>(2020.06) アルゴリズム実技検定 初級</li>
+<li>(2020年6月) アルゴリズム実技検定 初級</li>
 </ul></li>
 <li>IPA
 <ul>
-<li>(2014.06) データベーススペシャリスト</li>
-<li>(2012.12) 応用情報処理技術者</li>
-<li>(2012.06) 基本情報処理技術者</li>
+<li>(2014年6月) データベーススペシャリスト</li>
+<li>(2012年12月) 応用情報処理技術者</li>
+<li>(2012年6月) 基本情報処理技術者</li>
 </ul></li>
 <li>Others
 <ul>
-<li>(2012.03) 教職課程履修完了</li>
-<li>(2010.12) 貸金業務取扱主任者</li>
+<li>(2010年12月) 貸金業務取扱主任者</li>
 </ul></li>
 </ul>
 </section>
