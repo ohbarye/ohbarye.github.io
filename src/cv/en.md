@@ -99,11 +99,11 @@ Achievements:
     - Presented at RubyKaigi 2024: [Unlocking Potential of Property Based Testing with Ractor](https://rubykaigi.org/2024/presentations/ohbarye.html).
     - Show HN: [https://news.ycombinator.com/item?id=40441093](https://news.ycombinator.com/item?id=40441093)
   - **Route Validator** (2020 - 2021) : [route_mechanic](https://github.com/ohbarye/route_mechanic)
-  - **Email previewer** (2017) : [automaildoc](https://github.com/ohbarye/automaildoc)
+  - **Email Preview Tool** (2017) : [automaildoc](https://github.com/ohbarye/automaildoc)
 - [Published npm packages](https://www.npmjs.com/-ohbarye)
   - **React Library for Japanese Form** (2019) : [react-use-kana](https://github.com/ohbarye/react-use-kana)
 - Other OSS projects
-  - **OSS Finder for newbies** (2020) : [goofi](https://github.com/ohbarye/goofi) built with Next.js and GraphQL.
+  - **OSS Finder for Newbies** (2020) : [goofi](https://github.com/ohbarye/goofi) built with Next.js and GraphQL.
     - At Nodefest 2018, I [made a presentation about the service](https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-final).
   - **Slack Bots to Help Team Development** (2017 - 2020) : [review-waiting-list-bot](https://github.com/ohbarye/review-waiting-list-bot), [kpt-bot](https://github.com/ohbarye/kpt-bot)
 

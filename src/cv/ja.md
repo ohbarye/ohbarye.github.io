@@ -24,7 +24,7 @@ English version: [https://ohbarye.github.io/en/cv/](https://ohbarye.github.io/en
 
 ## 職務要約
 
-RubyやGoを用いた決済・銀行システムにおける堅牢な開発から React による SPA/MPA の開発まで、フルサイクル開発の経験を持つ Software Engineer です。特に System of Record 領域におけるソフトウェア設計と、パフォーマンスやスケーラビリティを意識した設計・実装に強みがあります。OSS projects への積極的な貢献や技術登壇を通じて、エンジニアリングコミュニティへの還元も行っています。[Public Output](#public-output)もご参照ください。
+Ruby や Go を用いた決済・銀行システムにおける堅牢な開発から React による SPA/MPA の開発まで、フルサイクル開発の経験を持つ Software Engineer です。特に System of Record 領域におけるソフトウェア設計と、パフォーマンスやスケーラビリティを意識した設計・実装に強みがあります。OSS projects への積極的な貢献や技術登壇を通じて、エンジニアリングコミュニティへの還元も行っています。詳しくは [Public Output](#public-output) をご参照ください。
 
 また、エンジニア数が 20-60 名規模の組織における Engineering Manager を務め、チーム設計・プロジェクトマネジメント・採用活動・コーポレートブランディング・文化づくり・コミュニティ活動等々に関する実績と知見があります。
 
@@ -56,11 +56,11 @@ RubyやGoを用いた決済・銀行システムにおける堅牢な開発か�
 - **サブスクリプションサービスの開発** (2022年10月 -) : 外部SaaSに依存せずサブスクリプションサービスをゼロから開発。[社内イベント](https://speakerdeck.com/ohbarye/behind-the-scenes-engineering-a-subscription-service)にて発表。
   - (2023年12月 - 2024年10月) 他金融機関からの支出データを取得する集計サービスを立ち上げ、サブスクリプション収益を増加。
 - **銀行システムの開発** (2020年8月 -) : 出金、送金、目的別口座、ペア口座、支出管理など、多岐にわたる機能を開発。
-  - (2021年11月 - 2022年6月) セキュアなカード決済のための3Dセキュア認証機能を開発。[Kaigi on Rails 2022](https://speakerdeck.com/ohbarye/balance-security-and-usability-in-the-field-of-3d-secure)にて発表。
+  - (2021年11月 - 2022年6月) セキュアなカード決済のための3Dセキュア認証機能を開発。[Kaigi on Rails 2022](https://speakerdeck.com/ohbarye/balance-security-and-usability-in-the-field-of-3d-secure) にて発表。
   - (2020年8月 - 2021年4月) カードイシュアとして必要な業務を行う社内システムとして、本人確認(eKYC)システムおよびカード配送システムを開発。
 - **開発者体験の改善** (2020年8月 -) : 社内開発者向けのツールやシステムを開発。
-  - [Feature Toggles](https://martinfowler.com/articles/feature-toggles.html)を導入し、開発とリリースを分離。
-  - APIサーバーを[Idempotency-Key Headers](https://brandur.org/fragments/idempotency-key-draft)に対応させ、多重リクエスト発生時もデータを保護できるよう堅牢化。
+  - [Feature Toggles](https://martinfowler.com/articles/feature-toggles.html) を導入し、開発とリリースを分離。
+  - APIサーバーを[Idempotency-Key Headers](https://brandur.org/fragments/idempotency-key-draft) に対応させ、多重リクエスト発生時もデータを保護できるよう堅牢化。
   - 開発生産性の向上に貢献。具体的には、CI/CDパイプラインの構築、デプロイフローの自動化、スキーマ/データマイグレーションフローの整備、ジョブキューイングシステムのDelayed JobからSQSへの移行などを実施。
 
 ### Quipper Limited
@@ -70,17 +70,17 @@ RubyやGoを用いた決済・銀行システムにおける堅牢な開発か�
 | Aug 2015 - May 2020 | Senior Software Engineer |
 | Jun 2017 - May 2020 | Engineering Manager |
 
-[Quipper](https://www.quipper.com/)は BtoC, BtoB 両方の教育事業を営む企業です。日本国外には Quipper School, Quipper Video を、日本国内においては[スタディサプリ](https://studysapuri.jp/)の開発・運用を行っています。
+[Quipper](https://www.quipper.com/) は BtoC, BtoB 両方の教育事業を営む企業です。日本国外には Quipper School, Quipper Video を、日本国内においては[スタディサプリ](https://studysapuri.jp/)の開発・運用を行っています。
 
 主要な成果:
 
 - **大規模コードクリーンアップ** (2020年3月) : プロダクション環境での障害ゼロで40万行のコード削除を主導し、Railsモデルを390から281に削減することで保守性を向上
-- **React NativeからPWAへの移行** (2019年7月-9月) : 社内業務アプリケーションのプラットフォーム移行を主導。[JSConf 2019](https://speakerdeck.com/ohbarye/migration-from-react-native-to-pwa)にて成果を発表
-- **決済システムの改善** : iOSアプリの自動更新サブスクリプション機能実装、A/Bテストを用いた決済手段の最適化。[iOSDC 2018](https://speakerdeck.com/ohbarye/rethink-in-app-purchase-on-subscription-services)、[Rails Developer Meetup 2018](https://speakerdeck.com/ohbarye/fact-based-decision-making-and-development-by-quipper)、[Regional Scrum Gathering Tokyo 2019](https://speakerdeck.com/ohbarye/proof-of-value-with-ab-testing)にて成果を発表
+- **React NativeからPWAへの移行** (2019年7月-9月) : 社内業務アプリケーションのプラットフォーム移行を主導。[JSConf 2019](https://speakerdeck.com/ohbarye/migration-from-react-native-to-pwa) にて成果を発表
+- **決済システムの改善** : iOSアプリの自動更新サブスクリプション機能実装、A/Bテストを用いた決済手段の最適化。[iOSDC 2018](https://speakerdeck.com/ohbarye/rethink-in-app-purchase-on-subscription-services)、[Rails Developer Meetup 2018](https://speakerdeck.com/ohbarye/fact-based-decision-making-and-development-by-quipper)、[Regional Scrum Gathering Tokyo 2019](https://speakerdeck.com/ohbarye/proof-of-value-with-ab-testing) にて成果を発表
 - **中学生向けコーチングサービス開発** (2018年8月-2019年3月) : 不確実性の高いプロジェクトを12名のチームを率いてローンチ。モブプログラミングや1on1を通じてチームの生産性を向上
 - **登録フォームの刷新** (2018年3月) : レガシーシステムを刷新しつつ登録CVRを改善
 - **採用・組織設計** (2016年7月-2020年3月) : 採用活動の計画と実行、構造化面接を設計、オンボーディングプロセス改善
-  - [コーディングテスト設計](https://quipper.hatenablog.com/entry/2018/10/09/coding_test)、[スタディサプリMeetup #1の企画と開催](https://quipper.hatenablog.com/entry/2018/07/20/172946)。[効果的なオフボーディング](https://quipper.hatenablog.com/entry/2020/04/02/effective-offboarding)や[Working Out Loud](https://quipper.hatenablog.com/entry/2018/11/14/working-out-loud)などに関するブログ記事執筆
+  - [コーディングテスト設計](https://quipper.hatenablog.com/entry/2018/10/09/coding_test)、[スタディサプリ Meetup #1の企画と開催](https://quipper.hatenablog.com/entry/2018/07/20/172946)。[効果的なオフボーディング](https://quipper.hatenablog.com/entry/2020/04/02/effective-offboarding)や [Working Out Loud](https://quipper.hatenablog.com/entry/2018/11/14/working-out-loud) などに関するブログ記事を執筆
 
 ### SCSK Corporation
 
@@ -88,7 +88,7 @@ RubyやGoを用いた決済・銀行システムにおける堅牢な開発か�
 | --- | --- |
 | Apr 2012 - Aug 2015 | System Engineer |
 
-[SCSK](https://www.scsk.jp/)は住友商事子会社の大手 SIer です。システムエンジニアとして不動産業界向けの業務システム開発に携わり、複雑な要件のデータモデル設計・帳票出力プログラムの作成・Web アプリケーションやバッチ処理の開発を通じてソフトウェア開発の基礎を学びました。
+[SCSK](https://www.scsk.jp/) は住友商事子会社の大手 SIer です。システムエンジニアとして不動産業界向けの業務システム開発に携わり、複雑な要件のデータモデル設計・帳票出力プログラムの作成・Web アプリケーションやバッチ処理の開発を通じてソフトウェア開発の基礎を学びました。
 
 ## Public Output
 
@@ -100,12 +100,11 @@ RubyやGoを用いた決済・銀行システムにおける堅牢な開発か�
     - Presented at RubyKaigi 2024: [Unlocking Potential of Property Based Testing with Ractor](https://rubykaigi.org/2024/presentations/ohbarye.html).
     - Show HN: [https://news.ycombinator.com/item?id=40441093](https://news.ycombinator.com/item?id=40441093)
   - **Route Validator** (2020 - 2021) : [route_mechanic](https://github.com/ohbarye/route_mechanic)
-  - **Email previewer** (2017) : [automaildoc](https://github.com/ohbarye/automaildoc)
+  - **Email Preview Tool** (2017) : [automaildoc](https://github.com/ohbarye/automaildoc)
 - [Published npm packages](https://www.npmjs.com/-ohbarye)
   - **React Library for Japanese Form** (2019) : [react-use-kana](https://github.com/ohbarye/react-use-kana)
 - Other OSS projects
-  - **OSS Finder for newbies** (2020) : [goofi](https://github.com/ohbarye/goofi) built with Next.js and GraphQL.
-    - At Nodefest 2018, I [made a presentation about the service](https://speakerdeck.com/ohbarye/how-to-find-good-first-issues-final).
+  - **OSS Finder for Newbies** (2020) : [goofi](https://github.com/ohbarye/goofi) built with Next.js and GraphQL.
   - **Slack Bots to Help Team Development** (2017 - 2020) : [review-waiting-list-bot](https://github.com/ohbarye/review-waiting-list-bot), [kpt-bot](https://github.com/ohbarye/kpt-bot)
 
 ### Blogs
