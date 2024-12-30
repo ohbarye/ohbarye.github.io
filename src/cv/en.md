@@ -24,7 +24,7 @@ Japanese version: [https://ohbarye.github.io/ja/cv/](https://ohbarye.github.io/j
 
 ## Summary
 
-Software Engineer with extensive experience in full-cycle development, ranging from robust development of payment and banking systems with Ruby and Go to SPA/MPA development using React. My strengths lie in software design within System of Record domains and implementing solutions with a focus on performance and scalability. I actively contribute to the engineering community through OSS projects and technical presentations. (See [Personal Projects](#personal-projects), [Public Output](#public-output))
+Software Engineer with extensive experience in full-cycle development, ranging from robust development of payment and banking systems with Ruby and Go to SPA/MPA development using React. My strengths lie in software design within System of Record domains and implementing solutions with a focus on performance and scalability. I actively contribute to the engineering community through OSS projects and technical presentations. For additional information, please see [Public Output](#public-output).
 
 I have also served as an Engineering Manager in organizations of 20-60 engineers, gaining substantial experience and expertise in team design, project management, recruitment, corporate branding, culture building, and community activities.
 
