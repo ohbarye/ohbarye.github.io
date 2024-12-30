@@ -24,7 +24,7 @@ English version: [https://ohbarye.github.io/en/cv/](https://ohbarye.github.io/en
 
 ## 職務要約
 
-RubyやGoを用いた決済・銀行システムにおける堅牢な開発から React による SPA/MPA の開発まで、フルサイクル開発の経験を持つ Software Engineer です。特に System of Record 領域におけるソフトウェア設計と、パフォーマンスやスケーラビリティを意識した設計・実装に強みがあります。OSS projects への積極的な貢献や技術登壇を通じて、エンジニアリングコミュニティへの還元も行っています。（See [Personal Projects](#personal-projects), [Public Output](#public-output))
+RubyやGoを用いた決済・銀行システムにおける堅牢な開発から React による SPA/MPA の開発まで、フルサイクル開発の経験を持つ Software Engineer です。特に System of Record 領域におけるソフトウェア設計と、パフォーマンスやスケーラビリティを意識した設計・実装に強みがあります。OSS projects への積極的な貢献や技術登壇を通じて、エンジニアリングコミュニティへの還元も行っています。[Public Output](#public-output)もご参照ください。
 
 また、エンジニア数が 20-60 名規模の組織における Engineering Manager を務め、チーム設計・プロジェクトマネジメント・採用活動・コーポレートブランディング・文化づくり・コミュニティ活動等々に関する実績と知見があります。
 
@@ -153,20 +153,3 @@ RubyやGoを用いた決済・銀行システムにおける堅牢な開発か�
   - (2012年6月) 基本情報処理技術者
 - Others
   - (2010年12月) 貸金業務取扱主任者
-
-## 興味 / 関心
-
-2020 年まではソフトウェア工学の分野、特に事業会社の Web サービス開発のうちアプリケーションレイヤーの開発で求められる技術力を業務でも趣味でも伸ばしてきました。今後はコンピュータサイエンス全般やアルゴリズム、低レイヤーやミドルウェアの学習を通じてソフトウェアに関する理解を全般的に深めていきたいと考えています。
-
-- 競技プログラミング
-  - AtCoder 緑 [https://atcoder.jp/users/ohbarye](https://atcoder.jp/users/ohbarye)
-- コンピュータアーキテクチャ
-  - 『[コンピュータシステムの理論と実装](https://www.oreilly.co.jp/books/9784873117126/)』 (a.k.a. Nand to Tetris) の実践 [https://github.com/ohbarye/nand2tetris](https://github.com/ohbarye/nand2tetris)
-    - アセンブラ、VM 変換器、コンパイラを OCaml と Ruby で実装
-- データ構造とアルゴリズム
-  - Coursera: [Princeton University Algorithms Part 1](https://www.coursera.org/learn/algorithms-part1) 修了
-  - [『みんなのデータ構造』でデータ構造の基礎を学んだ](https://ohbarye.hatenablog.jp/entry/2020/05/10/open-data-structures)
-  - [データ構造とアルゴリズムの基礎を 100 時間学習してみての所感](https://ohbarye.hatenablog.jp/entry/2020/05/22/learning-data-structures-and-algorithms-for-100-hours)
-- データベース
-  - [C 言語で SQLite のクローンを作るチュートリアル](https://ohbarye.hatenablog.jp/entry/2020/04/17/sqlite-clone-db-tutorial)
-- 学習ノート [https://scrapbox.io/ohbarye/](https://scrapbox.io/ohbarye/)
