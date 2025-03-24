@@ -25,7 +25,7 @@
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "lint-staged": "^15.3.0",
-    "sass": "^1.83.0",
+    "sass": "^1.86.0",
     "typescript": "^5.7.2",
     "vite": "^6.0.6"
   },
